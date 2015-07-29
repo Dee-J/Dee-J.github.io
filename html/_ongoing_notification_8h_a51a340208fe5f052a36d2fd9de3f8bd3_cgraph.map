@@ -1,0 +1,10 @@
+<map id="NewOngoingNotification" name="NewOngoingNotification">
+<area shape="rect" id="node2" href="$_ongoing_notification_8c.html#aa3b4177c618d1016cdbe97475ec5295c" title="OngoingNotificationShow" alt="" coords="238,5,410,33"/>
+<area shape="rect" id="node3" href="$_ongoing_notification_8c.html#abc1585a31762b81c05240e1f9e3a2020" title="OngoingNotificationHide" alt="" coords="241,57,407,85"/>
+<area shape="rect" id="node4" href="$_ongoing_notification_8c.html#a2dc9fa2af95195449223af4ae7dbf7ca" title="setOngoingNotificationTitle" alt="" coords="234,109,414,137"/>
+<area shape="rect" id="node5" href="$_ongoing_notification_8c.html#aaca548f36d76f49211af6bf30711a41a" title="setOngoingNotificationText" alt="" coords="234,161,414,189"/>
+<area shape="rect" id="node6" href="$_ongoing_notification_8c.html#a4af980c3f0ee79a24c7d849ff6435cb4" title="setOngoingNotificationIcon" alt="" coords="234,213,414,241"/>
+<area shape="rect" id="node7" href="$_ongoing_notification_8c.html#a865e0ece8c9c0e15645e7413721c3f6e" title="setOngoingNotificationSound" alt="" coords="227,265,421,293"/>
+<area shape="rect" id="node8" href="$_ongoing_notification_8c.html#a59dd19d2a99617c7298b7f6b9be37eba" title="setOngoingNotificationProgress" alt="" coords="220,317,428,345"/>
+<area shape="rect" id="node9" href="$_ongoing_notification_8c.html#a24421fd412e51da7aa86c3aa8c54db0d" title="updateOngoingNotification" alt="" coords="235,369,413,397"/>
+</map>

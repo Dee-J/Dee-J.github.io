@@ -1,0 +1,7 @@
+<map id="NewLinearAccelation" name="NewLinearAccelation">
+<area shape="rect" id="node2" href="$d4/d9f/_sensor_8c.html#afafbb2277b9322dd67cdc616e5471543" title="LinearAccelationOff" alt="" coords="229,5,366,33"/>
+<area shape="rect" id="node3" href="$d4/d9f/_sensor_8c.html#a46a6fcd7ccfef0a1308e01454c2b473c" title="LinearAccelationOn" alt="" coords="228,57,366,85"/>
+<area shape="rect" id="node4" href="$d4/d9f/_sensor_8c.html#aa3869e70acee2232c80955b67cc505d6" title="addLinearAccelationCallback" alt="" coords="201,109,394,137"/>
+<area shape="rect" id="node5" href="$d4/d9f/_sensor_8c.html#afbb418983c529e62b36bac3f6909a603" title="getLinearAccelationValue" alt="" coords="212,161,383,189"/>
+<area shape="rect" id="node6" href="$d4/d9f/_sensor_8c.html#a2a94bd208e37017e2ab4f1cf579abf45" title="isLinearAccelationSupported" alt="" coords="202,213,393,241"/>
+</map>

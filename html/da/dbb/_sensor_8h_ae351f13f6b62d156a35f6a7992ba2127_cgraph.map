@@ -1,0 +1,7 @@
+<map id="NewHumidity" name="NewHumidity">
+<area shape="rect" id="node2" href="$d4/d9f/_sensor_8c.html#a21d0528b4d4c95bd878d7f39f2c03f91" title="HumidityOff" alt="" coords="183,5,273,33"/>
+<area shape="rect" id="node3" href="$d4/d9f/_sensor_8c.html#a27884ac9db17ed26581e59ee5d1ae39d" title="HumidityOn" alt="" coords="183,57,273,85"/>
+<area shape="rect" id="node4" href="$d4/d9f/_sensor_8c.html#ad5eee5a7971b815b9507f5c4d4c73a24" title="addHumidityCallback" alt="" coords="155,109,301,137"/>
+<area shape="rect" id="node5" href="$d4/d9f/_sensor_8c.html#a6e1191957657b1f121d9f6d939ccff84" title="getHumidityValue" alt="" coords="166,161,290,189"/>
+<area shape="rect" id="node6" href="$d4/d9f/_sensor_8c.html#a22264d7c177587b6428bdd9b3f2bfe9f" title="isHumiditySupported" alt="" coords="156,213,300,241"/>
+</map>

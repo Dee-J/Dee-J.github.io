@@ -1,0 +1,25 @@
+var DeviceStatus_8c =
+[
+    [ "DestoryBattery", "d0/df5/DeviceStatus_8c.html#a01b69d107b6708af6900d4279eeff281", null ],
+    [ "DestoryFlash", "d0/df5/DeviceStatus_8c.html#a4d0567730f41384d32902ef2b7c4b242", null ],
+    [ "DestroyDisplay", "d0/df5/DeviceStatus_8c.html#aa18ddc0342d1ca47145c759a8fa35d91", null ],
+    [ "DestroyVibration", "d0/df5/DeviceStatus_8c.html#a336e3f65421006097670aec144c07e4a", null ],
+    [ "DeviceStatusErrorCheck", "d0/df5/DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946", null ],
+    [ "DisplayDim", "d0/df5/DeviceStatus_8c.html#a35d4bf5e52fdb81d5d8d83f8b22569b2", null ],
+    [ "DisplayLock", "d0/df5/DeviceStatus_8c.html#a45616f571bc7211e0749656b85b3baab", null ],
+    [ "DisplayUnlock", "d0/df5/DeviceStatus_8c.html#a9e66aaebf66d63ec1555c4226f4154ca", null ],
+    [ "getBatteryRemainsPercent", "d0/df5/DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23", null ],
+    [ "getDisplayBrightLevel", "d0/df5/DeviceStatus_8c.html#abf038dea7a71738b751dfdd3ce88ebf9", null ],
+    [ "isBatteryCharging", "d0/df5/DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636", null ],
+    [ "NewBattery", "d0/df5/DeviceStatus_8c.html#a0fe7ab1f89e01e459f94bdecce693301", null ],
+    [ "NewDisplay", "d0/df5/DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f", null ],
+    [ "NewFlash", "d0/df5/DeviceStatus_8c.html#a503e0814548cc9f370f87a3359187bff", null ],
+    [ "NewVibration", "d0/df5/DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266", null ],
+    [ "offFlash", "d0/df5/DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4", null ],
+    [ "onFlash", "d0/df5/DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc", null ],
+    [ "setDisplayBrightLevel", "d0/df5/DeviceStatus_8c.html#a2ce601f6c832e1d4f587fec0a1ddaa86", null ],
+    [ "VibrationCustom", "d0/df5/DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3", null ],
+    [ "VibrationLong", "d0/df5/DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb", null ],
+    [ "VibrationMiddle", "d0/df5/DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6", null ],
+    [ "VibrationShort", "d0/df5/DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9", null ]
+];

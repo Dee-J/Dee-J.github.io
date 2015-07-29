@@ -1,0 +1,4 @@
+<map id="onBluetoothConnect" name="onBluetoothConnect">
+<area shape="rect" id="node2" href="$_bluetooth_8c.html#af102a9da5ddc6b86887ac5b0abb1264e" title="adapter_state_changed_cbx" alt="" coords="199,5,388,33"/>
+<area shape="rect" id="node3" href="$_bluetooth_8c.html#a19683ff9c0bf9d502db56904241ff5e2" title="adapter_bonded_device_cbx" alt="" coords="197,57,390,85"/>
+</map>

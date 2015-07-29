@@ -1,0 +1,7 @@
+<map id="NewVibration" name="NewVibration">
+<area shape="rect" id="node2" href="$d0/df5/DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="155,5,274,33"/>
+<area shape="rect" id="node4" href="$d0/df5/DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="162,57,267,85"/>
+<area shape="rect" id="node5" href="$d0/df5/DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="158,109,271,137"/>
+<area shape="rect" id="node6" href="$d0/df5/DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="163,161,266,189"/>
+<area shape="rect" id="node3" href="$d0/df5/DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="323,83,490,111"/>
+</map>

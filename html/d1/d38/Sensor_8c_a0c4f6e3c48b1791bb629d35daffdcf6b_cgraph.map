@@ -1,0 +1,8 @@
+<map id="NewLight" name="NewLight">
+<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#aad1fdcdf9884e0840827b0329b6b1cce" title="LightOff" alt="" coords="167,5,235,33"/>
+<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a847e9da22f2baad56de0654d984af5d1" title="LightOn" alt="" coords="167,57,235,85"/>
+<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#aa4f6134645858f7f5d08c83f900c139e" title="addLightCallback" alt="" coords="140,109,263,137"/>
+<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#ab434c60f52e68a2c286306c2ea3a0526" title="getLightValue" alt="" coords="150,161,252,189"/>
+<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a91ed62c28cde9df2bfd3c441b8b5b37f" title="isLightSupported" alt="" coords="141,213,262,241"/>
+<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a424a8e7f55421c31ece706f1b08f42db" title="detachLightCallback" alt="" coords="131,265,272,293"/>
+</map>

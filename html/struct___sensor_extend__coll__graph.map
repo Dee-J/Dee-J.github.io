@@ -1,0 +1,4 @@
+<map id="_SensorExtend" name="_SensorExtend">
+<area shape="rect" id="node2" href="$struct___sensor.html" title="{_Sensor\n|+ hasAccelerometer\l+ hasGravity\l+ hasLinearAccelation\l+ getLinearAccelationData\l+ hasMagnetoMeter\l+ hasRotationVector\l+ hasOrientation\l+ getOrientationData\l+ hasGyroscope\l+ hasLight\l그리고 7개 더...\l|}" alt="" coords="4,312,181,557"/>
+<area shape="rect" id="node3" href="$struct___sensor_value.html" title="{_SensorValue\n|+ values\l|}" alt="" coords="41,6,145,87"/>
+</map>

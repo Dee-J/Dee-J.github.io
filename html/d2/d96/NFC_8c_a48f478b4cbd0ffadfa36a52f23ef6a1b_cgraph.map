@@ -1,0 +1,8 @@
+<map id="NewNFC" name="NewNFC">
+<area shape="rect" id="node2" href="$d2/d96/NFC_8c.html#af4d6a3d2d34a4e040db1c9558d3a6605" title="현재 NFC 기능 지원 여부를 반환 한다. " alt="" coords="135,5,257,33"/>
+<area shape="rect" id="node3" href="$d2/d96/NFC_8c.html#ace29c66a88baa5247a996d2f324532ff" title="NFC 장치 활성화를 시도하며 이의 성공 여부를 반환한다. " alt="" coords="139,57,253,85"/>
+<area shape="rect" id="node4" href="$d2/d96/NFC_8c.html#a967e0ea57b1755212f3793e2b6133f46" title="NFC 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. " alt="" coords="131,109,261,137"/>
+<area shape="rect" id="node6" href="$d2/d96/NFC_8c.html#a76b16289f7445b7c82b644be334a7500" title="NFC 장치에 생성한 NDEF를 기록한다. " alt="" coords="156,161,236,189"/>
+<area shape="rect" id="node7" href="$d2/d96/NFC_8c.html#ae8da301bbf98e31b07f5c5f541a7976c" title="NFC 장치에서 NDEF를 읽어온다. " alt="" coords="156,213,236,241"/>
+<area shape="rect" id="node5" href="$d2/d96/NFC_8c.html#a81f968dfae15980c1fdec56858df0c0f" title="NFCErrorChecker API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="309,135,437,163"/>
+</map>

@@ -1,0 +1,609 @@
+\hypertarget{GPS_8c}{\section{G\-P\-S.\-c File Reference}
+\label{GPS_8c}\index{G\-P\-S.\-c@{G\-P\-S.\-c}}
+}
+
+
+G\-P\-S A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Commnucation/\-G\-P\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$locations.\-h$>$}\\*
+{\ttfamily \#include $<$system\-\_\-info.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+Include dependency graph for G\-P\-S.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dc0/GPS_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct__gps}{G\-P\-S} \hyperlink{GPS_8c_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 G\-P\-S 객체를 생성한다. \end{DoxyCompactList}\item 
+void \hyperlink{GPS_8c_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} (\hyperlink{struct__gps}{G\-P\-S} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 G\-P\-S 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool \hyperlink{GPS_8c_a4c9fefb1b2513013e6e5c66a413e387d}{is\-G\-P\-S\-Accessible} (\hyperlink{struct__gps}{G\-P\-S} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 G\-P\-S 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{GPS_8c_a7ccea786da98fd739ff94af37c8b629a}{on\-G\-P\-S\-Connect} (\hyperlink{struct__gps}{G\-P\-S} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool \hyperlink{GPS_8c_a8eca216e670944b8a549406a8fc8dc44}{on\-G\-P\-S\-Disconnect} (\hyperlink{struct__gps}{G\-P\-S} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+\hyperlink{GPS_8h_d1/d4f/struct__location}{Location} \hyperlink{GPS_8c_ad567d557fd52762282c7eee89c69352c}{G\-P\-S\-Recv} (\hyperlink{struct__gps}{G\-P\-S} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로 부터 위치 정보를 수신한다. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511}{G\-P\-S\-Error\-Checker} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\-P\-S A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+G\-P\-S A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h}{G\-P\-S.\-h} 
+\end{DoxySeeAlso}
+
+
+Definition in file \hyperlink{GPS_8c_source}{G\-P\-S.\-c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{GPS_8c_a2c75d277f0c7f390ccc06701aa27660b}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!Destroy\-Gps@{Destroy\-Gps}}
+\index{Destroy\-Gps@{Destroy\-Gps}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{Destroy\-Gps}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Gps (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-P\-S}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_a2c75d277f0c7f390ccc06701aa27660b}
+
+
+생성한 G\-P\-S 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 G\-P\-S 객체를 소멸 시킨다. \par
+ G\-P\-S 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 40 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+41 \{
+42     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+43     \{
+44         \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)this\_gen;
+45 
+46         location\_manager\_unset\_service\_state\_changed\_cb (this->manager);
+47         location\_manager\_destroy (this->manager);
+48         this->manager = NULL;
+49         free (\textcolor{keyword}{this});
+50     \}
+51 \}
+\end{DoxyCode}
+\hypertarget{GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!G\-P\-S\-Error\-Checker@{G\-P\-S\-Error\-Checker}}
+\index{G\-P\-S\-Error\-Checker@{G\-P\-S\-Error\-Checker}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{G\-P\-S\-Error\-Checker}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ G\-P\-S\-Error\-Checker (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511}
+
+
+G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-C\-C\-E\-S\-S\-I\-B\-I\-L\-I\-T\-Y\-\_\-\-N\-O\-T\-\_\-\-A\-L\-L\-O\-W\-E\-D} & \-: Permission denied \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-C\-O\-R\-R\-E\-C\-T\-\_\-\-M\-E\-T\-H\-O\-D} & \-: Location manager contains incorrect method for a given call \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-E\-T\-W\-O\-R\-K\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Network unavailable \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E} & \-: Location service is not available \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-G\-P\-S\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-O\-F\-F} & \-: G\-P\-S/\-W\-P\-S setting is not enabled \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by security system policy \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-W\-O\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 11가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/group__CAPI__LOCATION__GPS__STATUS__MODULE.html}{\tt https\-://developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/group\-\_\-\-\_\-\-C\-A\-P\-I\-\_\-\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-\_\-\-G\-P\-S\-\_\-\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-\_\-\-M\-O\-D\-U\-L\-E.\-html} 
+\end{DoxySeeAlso}
+
+
+Definition at line 164 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+165 \{
+166     \textcolor{keywordflow}{switch} (errCode)
+167     \{
+168     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_NONE:
+169         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_NONE : Successful"};
+170 
+171     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_OUT\_OF\_MEMORY:
+172         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_OUT\_OF\_MEMORY : Out of memory"};
+173 
+174     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_INVALID\_PARAMETER:
+175         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_INVALID\_PARAMETER : Invalid parameter"};
+176 
+177     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_ACCESSIBILITY\_NOT\_ALLOWED:
+178         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_ACCESSIBILITY\_NOT\_ALLOWED : Permission denied"};
+179 
+180     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_NOT\_SUPPORTED:
+181         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_NOT\_SUPPORTED : Not supported"};
+182 
+183     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_INCORRECT\_METHOD:
+184         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_INCORRECT\_METHOD : Location manager contains incorrect method for a given
+       call"};
+185 
+186     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_NETWORK\_FAILED:
+187         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_NETWORK\_FAILED : Network unavailable"};
+188 
+189     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_SERVICE\_NOT\_AVAILABLE:
+190         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_SERVICE\_NOT\_AVAILABLE : Location service is not available"};
+191 
+192     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_GPS\_SETTING\_OFF:
+193         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_GPS\_SETTING\_OFF : GPS/WPS setting is not enabled"};
+194 
+195     \textcolor{keywordflow}{case} LOCATIONS\_ERROR\_SECURITY\_RESTRICTED:
+196         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_SECURITY\_RESTRICTED : Restricted by security system policy"};
+197 
+198     \textcolor{keywordflow}{default}:
+199         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"LOCATIONS\_ERROR\_UNKNWON"};
+200     \}
+201 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dfe/GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{GPS_8c_ad567d557fd52762282c7eee89c69352c}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!G\-P\-S\-Recv@{G\-P\-S\-Recv}}
+\index{G\-P\-S\-Recv@{G\-P\-S\-Recv}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{G\-P\-S\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location} G\-P\-S\-Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-P\-S}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_ad567d557fd52762282c7eee89c69352c}
+
+
+G\-P\-S로 부터 위치 정보를 수신한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 수신할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로 부터 위치 정보를 수신한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} \par
+ \hyperlink{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} \par
+ \hyperlink{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d}{is\-G\-P\-S\-Accessible} \par
+ \hyperlink{GPS_8h_a7ccea786da98fd739ff94af37c8b629a}{on\-G\-P\-S\-Connect} \par
+ \hyperlink{GPS_8h_a8eca216e670944b8a549406a8fc8dc44}{on\-G\-P\-S\-Disconnect} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 142 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+143 \{
+144     \hyperlink{GPS_8h_d1/d4f/struct__location}{Location} l = \{0,\};
+145 
+146     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+147     \{
+148         \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)this\_gen;
+149 
+150         \textcolor{keywordflow}{if} ( this->connect && (this->state == LOCATIONS\_SERVICE\_ENABLED))
+151         \{
+152             \textcolor{keywordflow}{return} this->location;
+153         \}
+154         \textcolor{keywordflow}{else}
+155         \{
+156             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"GPS NOT RECEIVED"});
+157             \textcolor{keywordflow}{return} l;
+158         \}
+159     \}
+160     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+161     \textcolor{keywordflow}{return} l;
+162 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d2/dfe/GPS_8c_ad567d557fd52762282c7eee89c69352c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{GPS_8c_a4c9fefb1b2513013e6e5c66a413e387d}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!is\-G\-P\-S\-Accessible@{is\-G\-P\-S\-Accessible}}
+\index{is\-G\-P\-S\-Accessible@{is\-G\-P\-S\-Accessible}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{is\-G\-P\-S\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-G\-P\-S\-Accessible (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-P\-S}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_a4c9fefb1b2513013e6e5c66a413e387d}
+
+
+현재 G\-P\-S 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 G\-P\-S 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} \par
+ \hyperlink{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} \par
+ \hyperlink{GPS_8h_a7ccea786da98fd739ff94af37c8b629a}{on\-G\-P\-S\-Connect} \par
+ \hyperlink{GPS_8h_a8eca216e670944b8a549406a8fc8dc44}{on\-G\-P\-S\-Disconnect} \par
+ \hyperlink{GPS_8h_ad567d557fd52762282c7eee89c69352c}{G\-P\-S\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 53 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+54 \{
+55     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+56     \{
+57         \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)this\_gen;
+58 
+59         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/location"}, &this->access);
+60 
+61         \textcolor{keywordflow}{return} this->access;
+62     \}
+63     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+64     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+65 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{d2/dfe/GPS_8c_a4c9fefb1b2513013e6e5c66a413e387d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{GPS_8c_aaf1f2e8f7650a9ec24d3fedebd22e106}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!New\-Gps@{New\-Gps}}
+\index{New\-Gps@{New\-Gps}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{New\-Gps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-P\-S} New\-Gps (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_aaf1f2e8f7650a9ec24d3fedebd22e106}
+
+
+새로운 G\-P\-S 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em G\-P\-S} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 G\-P\-S 객체를 생성한다. \par
+ G\-P\-S 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} \par
+ \hyperlink{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d}{is\-G\-P\-S\-Accessible} \par
+ \hyperlink{GPS_8h_a7ccea786da98fd739ff94af37c8b629a}{on\-G\-P\-S\-Connect} \par
+ \hyperlink{GPS_8h_a8eca216e670944b8a549406a8fc8dc44}{on\-G\-P\-S\-Disconnect} \par
+ \hyperlink{GPS_8h_ad567d557fd52762282c7eee89c69352c}{G\-P\-S\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 19 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+20 \{
+21     \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends}));
+22 
+23     this->gps.isAccessible = \hyperlink{GPS_8c_a4c9fefb1b2513013e6e5c66a413e387d}{isGPSAccessible};
+24     this->gps.onConnect    = \hyperlink{GPS_8c_a7ccea786da98fd739ff94af37c8b629a}{onGPSConnect};
+25     this->gps.onDisconnect = \hyperlink{GPS_8c_a8eca216e670944b8a549406a8fc8dc44}{onGPSDisconnect};
+26     this->gps.Recv         = \hyperlink{GPS_8c_ad567d557fd52762282c7eee89c69352c}{GPSRecv};
+27 
+28     location\_manager\_create (LOCATIONS\_METHOD\_GPS, &this->manager);
+29 
+30     this->state = LOCATIONS\_SERVICE\_DISABLED;
+31 
+32     \hyperlink{GPS_8h_d1/d4f/struct__location}{Location} location = \{0,\};
+33     this->location = location;
+34     this->access   = \textcolor{keyword}{false};
+35     this->connect  = \textcolor{keyword}{false};
+36 
+37     \textcolor{keywordflow}{return} &this->gps;
+38 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dfe/GPS_8c_aaf1f2e8f7650a9ec24d3fedebd22e106_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{GPS_8c_a7ccea786da98fd739ff94af37c8b629a}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!on\-G\-P\-S\-Connect@{on\-G\-P\-S\-Connect}}
+\index{on\-G\-P\-S\-Connect@{on\-G\-P\-S\-Connect}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{on\-G\-P\-S\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-G\-P\-S\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-P\-S}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_a7ccea786da98fd739ff94af37c8b629a}
+
+
+G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 성공 여부를 확인할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} \par
+ \hyperlink{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} \par
+ \hyperlink{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d}{is\-G\-P\-S\-Accessible} \par
+ \hyperlink{GPS_8h_a8eca216e670944b8a549406a8fc8dc44}{on\-G\-P\-S\-Disconnect} \par
+ \hyperlink{GPS_8h_ad567d557fd52762282c7eee89c69352c}{G\-P\-S\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 97 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+98 \{
+99     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+100     \{
+101         \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)this\_gen;
+102         \textcolor{keywordtype}{int} error = LOCATIONS\_ERROR\_NONE;
+103         error = location\_manager\_set\_service\_state\_changed\_cb (this->manager, gps\_state\_changed\_cb, \textcolor{keyword}{this});
+104 
+105         error = location\_manager\_start (this->manager);
+106 
+107         \textcolor{keywordflow}{if} ( error == LOCATIONS\_ERROR\_NONE )
+108         \{
+109             \textcolor{keywordflow}{return} this->connect = \textcolor{keyword}{true};
+110         \}
+111         \textcolor{keywordflow}{else}
+112         \{
+113             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511}{GPSErrorChecker} (error));
+114             \textcolor{keywordflow}{return} this->connect = \textcolor{keyword}{false};
+115         \}
+116     \}
+117     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+118     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+119 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d2/dfe/GPS_8c_a7ccea786da98fd739ff94af37c8b629a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d2/dfe/GPS_8c_a7ccea786da98fd739ff94af37c8b629a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{GPS_8c_a8eca216e670944b8a549406a8fc8dc44}{\index{G\-P\-S.\-c@{G\-P\-S.\-c}!on\-G\-P\-S\-Disconnect@{on\-G\-P\-S\-Disconnect}}
+\index{on\-G\-P\-S\-Disconnect@{on\-G\-P\-S\-Disconnect}!GPS.c@{G\-P\-S.\-c}}
+\subsubsection[{on\-G\-P\-S\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-G\-P\-S\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-P\-S}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{GPS_8c_a8eca216e670944b8a549406a8fc8dc44}
+
+
+G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 해제 여부를 확인할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. \par
+ 연결 해제에 성공하면 @ true, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}{New\-Gps} \par
+ \hyperlink{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}{Destroy\-Gps} \par
+ \hyperlink{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d}{is\-G\-P\-S\-Accessible} \par
+ \hyperlink{GPS_8h_a7ccea786da98fd739ff94af37c8b629a}{on\-G\-P\-S\-Connect} \par
+ \hyperlink{GPS_8h_ad567d557fd52762282c7eee89c69352c}{G\-P\-S\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/location}{\tt http\-://tizen.\-org/feature/location} / \href{http://tizen.org/feature/location.gps}{\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyPrecond}
+
+
+Definition at line 121 of file G\-P\-S.\-c.
+
+
+\begin{DoxyCode}
+122 \{
+123     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+124     \{
+125         \hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} * \textcolor{keyword}{this} = (\hyperlink{GPS_8h_d2/d56/struct__GPSExtends}{GPSExtends} *)this\_gen;
+126         \textcolor{keywordtype}{int} error = location\_manager\_stop (this->manager);
+127         \textcolor{keywordflow}{if} ( error == LOCATIONS\_ERROR\_NONE )
+128         \{
+129             this->access = \textcolor{keyword}{false};
+130             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+131         \}
+132         \textcolor{keywordflow}{else}
+133         \{
+134             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{GPS_8c_af36af61d3d44e7127d7b0c6cddcd8511}{GPSErrorChecker} (error));
+135             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+136         \}
+137     \}
+138     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+139     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+140 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d2/dfe/GPS_8c_a8eca216e670944b8a549406a8fc8dc44_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{d2/dfe/GPS_8c_a8eca216e670944b8a549406a8fc8dc44_icgraph}
+\end{center}
+\end{figure}
+
+

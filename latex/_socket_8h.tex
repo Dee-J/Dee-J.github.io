@@ -1,0 +1,407 @@
+\hypertarget{_socket_8h}{\section{Socket.\-h 파일 참조}
+\label{_socket_8h}\index{Socket.\-h@{Socket.\-h}}
+}
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$curl.\-h$>$}\\*
+\subsection*{데이타 구조}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct___socket}{\-\_\-\-Socket}
+\item 
+struct \hyperlink{_socket_8h_struct_socket_extends}{Socket\-Extends}
+\end{DoxyCompactItemize}
+\subsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct___socket}{\-\_\-\-Socket} $\ast$ \hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket}
+\end{DoxyCompactItemize}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} \hyperlink{_socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae}{New\-Socket} (void)
+\item 
+void \hyperlink{_socket_8h_a72ff91c23eed60f629fbae39dbce94e2}{Destory\-Socket} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen)
+\item 
+bool \hyperlink{_socket_8h_aabc799937e9e7c40e65fb70e5856bf77}{is\-Socket\-Accessible} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen)
+\item 
+bool \hyperlink{_socket_8h_aa91c538d1bd84f6ea61db070ea8f290f}{on\-Socket\-Connect} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} url, int port)
+\item 
+bool \hyperlink{_socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406}{on\-Socket\-Disconnect} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen)
+\item 
+bool \hyperlink{_socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a}{Socket\-Message\-Send} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} msg)
+\item 
+bool \hyperlink{_socket_8h_a5964e35367912cf00c951d053f2aef10}{Socket\-Message\-Recv} (\hyperlink{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{Socket} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} msg)
+\item 
+const char $\ast$ \hyperlink{_socket_8h_a89bce65fc625a53579a88101c2bf9dac}{Socket\-Error\-Check} (C\-U\-R\-Lcode error\-Code)
+\end{DoxyCompactItemize}
+
+
+\subsection{데이타 구조 문서화}
+\index{Socket\-Extends@{Socket\-Extends}}\label{struct_socket_extends}
+\hypertarget{_socket_8h_struct_socket_extends}{}
+\subsubsection{struct Socket\-Extends}
+
+
+Socket.\-h 파일의 45 번째 라인에서 정의되었습니다.
+
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_socket_8h_ab4e2372937bb1eec89f2a954a4db6604}{bool}\label{_socket_8h_ab4e2372937bb1eec89f2a954a4db6604}
+&
+access&
+\\
+\hline
+
+\hypertarget{_socket_8h_a506634736b4585cbeac7cbdefec1e540}{bool}\label{_socket_8h_a506634736b4585cbeac7cbdefec1e540}
+&
+conect&
+\\
+\hline
+
+\hypertarget{_socket_8h_a63c89c04d1feae07ca35558055155ffb}{int}\label{_socket_8h_a63c89c04d1feae07ca35558055155ffb}
+&
+port&
+\\
+\hline
+
+\hypertarget{_socket_8h_a6d8ff51667f3038e4e0974b8dfcb8b59}{struct \hyperlink{struct___socket}{\-\_\-\-Socket}}\label{_socket_8h_a6d8ff51667f3038e4e0974b8dfcb8b59}
+&
+socket&
+\\
+\hline
+
+\hypertarget{_socket_8h_a983d3a00cb7e2cdac046d6ef1ce9f8f2}{\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String}}\label{_socket_8h_a983d3a00cb7e2cdac046d6ef1ce9f8f2}
+&
+url&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{타입정의 문서화}
+\hypertarget{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}{\index{Socket.\-h@{Socket.\-h}!Socket@{Socket}}
+\index{Socket@{Socket}!Socket.h@{Socket.\-h}}
+\subsubsection[{Socket}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Socket}$\ast$ {\bf Socket}}}\label{_socket_8h_acf44cb15f4425e3df069d9e6639bd989}
+
+
+Socket.\-h 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{함수 문서화}
+\hypertarget{_socket_8h_a72ff91c23eed60f629fbae39dbce94e2}{\index{Socket.\-h@{Socket.\-h}!Destory\-Socket@{Destory\-Socket}}
+\index{Destory\-Socket@{Destory\-Socket}!Socket.h@{Socket.\-h}}
+\subsubsection[{Destory\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}void Destory\-Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_a72ff91c23eed60f629fbae39dbce94e2}
+
+
+Socket.\-c 파일의 31 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+32 \{
+33     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+34     \{
+35         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+36 
+37         \textcolor{keywordflow}{if} ( this->url != NULL)
+38         \{
+39             free (this->url);
+40         \}
+41 
+42         free (\textcolor{keyword}{this});
+43     \}
+44 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_aabc799937e9e7c40e65fb70e5856bf77}{\index{Socket.\-h@{Socket.\-h}!is\-Socket\-Accessible@{is\-Socket\-Accessible}}
+\index{is\-Socket\-Accessible@{is\-Socket\-Accessible}!Socket.h@{Socket.\-h}}
+\subsubsection[{is\-Socket\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Socket\-Accessible (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_aabc799937e9e7c40e65fb70e5856bf77}
+
+
+Socket.\-c 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+47 \{
+48     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+49     \{
+50         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+51 
+52         \textcolor{keywordtype}{bool} check1, check2;
+53 
+54         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.wifi"}, &check1);
+55         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.telephony"}, &check2);
+56 
+57         this->access = check1 || check2;
+58         \textcolor{keywordflow}{return} this->access;
+59     \}
+60     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+61 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae}{\index{Socket.\-h@{Socket.\-h}!New\-Socket@{New\-Socket}}
+\index{New\-Socket@{New\-Socket}!Socket.h@{Socket.\-h}}
+\subsubsection[{New\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Socket} New\-Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae}
+
+
+Socket.\-c 파일의 12 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+13 \{
+14     \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends}));
+15 
+16     this->socket.isAccessible = \hyperlink{_socket_8c_aabc799937e9e7c40e65fb70e5856bf77}{isSocketAccessible};
+17     this->socket.onConnect    = \hyperlink{_socket_8c_aa91c538d1bd84f6ea61db070ea8f290f}{onSocketConnect};
+18     this->socket.onDisconnect = \hyperlink{_socket_8c_a9ad6ab6f567f68b9d0fb508babc0e406}{onSocketDisconnect};
+19     this->socket.Send         = \hyperlink{_socket_8c_ac8f8449fafaf2cb32af836eacc2dcc8a}{SocketMessageSend};
+20     this->socket.Recv         = \hyperlink{_socket_8c_a5964e35367912cf00c951d053f2aef10}{SocketMessageRecv};
+21 
+22     this->url  = NULL;
+23     this->port = 3000;
+24 
+25     this->access = \textcolor{keyword}{false};
+26     this->conect = \textcolor{keyword}{false};
+27 
+28     \textcolor{keywordflow}{return} &this->socket;
+29 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_aa91c538d1bd84f6ea61db070ea8f290f}{\index{Socket.\-h@{Socket.\-h}!on\-Socket\-Connect@{on\-Socket\-Connect}}
+\index{on\-Socket\-Connect@{on\-Socket\-Connect}!Socket.h@{Socket.\-h}}
+\subsubsection[{on\-Socket\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Socket\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen, }
+\item[{{\bf String}}]{url, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_aa91c538d1bd84f6ea61db070ea8f290f}
+
+
+Socket.\-c 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+64 \{
+65     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+66     \{
+67         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+68 
+69         \textcolor{keywordflow}{if} ( this->access )
+70         \{
+71             \textcolor{keywordtype}{int} lenght = strlen (url);
+72             this->url = (\textcolor{keywordtype}{char} *)malloc (lenght + 1);
+73             strcpy(this->url, url);
+74             this->port = port;
+75 
+76             CURL * curl;
+77             CURLcode r;
+78             curl\_global\_init (CURL\_GLOBAL\_ALL);
+79 
+80             curl = curl\_easy\_init ();
+81             \textcolor{keywordflow}{if} ( curl )
+82             \{
+83                 curl\_easy\_setopt (curl, CURLOPT\_URL, url);
+84                 curl\_easy\_setopt (curl, CURLOPT\_PORT, port);
+85 
+86                 curl\_easy\_setopt (curl, CURLOPT\_CONNECT\_ONLY, 1L);
+87 
+88                 r = curl\_easy\_perform (curl);
+89 
+90                 \textcolor{keywordflow}{if} ( r == CURLE\_OK )
+91                 \{
+92                     this->conect = \textcolor{keyword}{true};
+93                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+94                 \}
+95             \}
+96         \}
+97     \}
+98     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+99 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406}{\index{Socket.\-h@{Socket.\-h}!on\-Socket\-Disconnect@{on\-Socket\-Disconnect}}
+\index{on\-Socket\-Disconnect@{on\-Socket\-Disconnect}!Socket.h@{Socket.\-h}}
+\subsubsection[{on\-Socket\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Socket\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406}
+
+
+Socket.\-c 파일의 101 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+102 \{
+103     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+104     \{
+105         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+106 
+107         \textcolor{keywordflow}{if} ( this->access )
+108         \{
+109             \textcolor{keywordflow}{if} ( this->url != NULL)
+110             \{
+111                 free (this->url);
+112                 this->url = NULL;
+113             \}
+114 
+115             this->conect = \textcolor{keyword}{false};
+116             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+117         \}
+118     \}
+119     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+120 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_a89bce65fc625a53579a88101c2bf9dac}{\index{Socket.\-h@{Socket.\-h}!Socket\-Error\-Check@{Socket\-Error\-Check}}
+\index{Socket\-Error\-Check@{Socket\-Error\-Check}!Socket.h@{Socket.\-h}}
+\subsubsection[{Socket\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Socket\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{C\-U\-R\-Lcode}]{error\-Code}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_a89bce65fc625a53579a88101c2bf9dac}
+
+
+Socket.\-c 파일의 248 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+249 \{
+250     \textcolor{keywordflow}{return} curl\_easy\_strerror (errorCode);
+251 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_a5964e35367912cf00c951d053f2aef10}{\index{Socket.\-h@{Socket.\-h}!Socket\-Message\-Recv@{Socket\-Message\-Recv}}
+\index{Socket\-Message\-Recv@{Socket\-Message\-Recv}!Socket.h@{Socket.\-h}}
+\subsubsection[{Socket\-Message\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}bool Socket\-Message\-Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen, }
+\item[{{\bf String}}]{msg}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_a5964e35367912cf00c951d053f2aef10}
+
+
+Socket.\-c 파일의 166 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+167 \{
+168     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+169     \{
+170         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+171 
+172         \textcolor{keywordflow}{if} ( this->conect )
+173         \{
+174             CURL * curl;
+175             CURLcode res;
+176 
+177             curl = curl\_easy\_init ();
+178 
+179             \textcolor{keywordflow}{if} ( curl )
+180             \{
+181                 curl\_easy\_setopt (curl, CURLOPT\_URL, this->url);
+182                 curl\_easy\_setopt (curl, CURLOPT\_PORT, this->port);
+183                 curl\_easy\_setopt (curl, CURLOPT\_CONNECT\_ONLY, 1L);
+184 
+185                 res = curl\_easy\_perform (curl);
+186 
+187                 \textcolor{keywordflow}{if} ( res != CURLE\_OK )
+188                 \{
+189                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+190                 \}
+191 
+192                 curl\_socket\_t sockfd;
+193                 \textcolor{keywordtype}{long}          sockextr;
+194                 res          = curl\_easy\_getinfo (curl, CURLINFO\_LASTSOCKET, &sockextr);
+195                 sockfd       = sockextr;
+196 
+197                 wait\_on\_socket (sockfd, 1, 10000L);
+198 
+199                 \textcolor{keywordtype}{char}   buf[1024];
+200                 \textcolor{keywordtype}{size\_t} iolen = 0;
+201                 res = curl\_easy\_recv (curl, buf, 1024, &iolen);
+202                 printf (\textcolor{stringliteral}{"%s\(\backslash\)n"}, buf);
+203                 \textcolor{keywordflow}{if} ( res )
+204                 \{
+205                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+206                 \}
+207 
+208                 msg = (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String})malloc (iolen + 1);
+209                 strcpy(msg, buf);
+210 
+211                 curl\_easy\_cleanup (curl);
+212 
+213                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+214             \}
+215         \}
+216     \}
+217     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+218 \}
+\end{DoxyCode}
+\hypertarget{_socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a}{\index{Socket.\-h@{Socket.\-h}!Socket\-Message\-Send@{Socket\-Message\-Send}}
+\index{Socket\-Message\-Send@{Socket\-Message\-Send}!Socket.h@{Socket.\-h}}
+\subsubsection[{Socket\-Message\-Send}]{\setlength{\rightskip}{0pt plus 5cm}bool Socket\-Message\-Send (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket}}]{this\-\_\-gen, }
+\item[{{\bf String}}]{msg}
+\end{DoxyParamCaption}
+)}}\label{_socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a}
+
+
+Socket.\-c 파일의 122 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+123 \{
+124     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+125     \{
+126         \hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} * \textcolor{keyword}{this} = (\hyperlink{_socket_8h_struct_socket_extends}{SocketExtends} *)this\_gen;
+127 
+128         \textcolor{keywordflow}{if} ( this->conect )
+129         \{
+130             CURL * curl;
+131             CURLcode res;
+132 
+133             curl = curl\_easy\_init ();
+134 
+135             \textcolor{keywordflow}{if} ( curl )
+136             \{
+137                 curl\_easy\_setopt (curl, CURLOPT\_URL, this->url);
+138                 curl\_easy\_setopt (curl, CURLOPT\_PORT, this->port);
+139                 curl\_easy\_setopt (curl, CURLOPT\_CONNECT\_ONLY, 1L);
+140 
+141                 res = curl\_easy\_perform (curl);
+142 
+143                 \textcolor{keywordflow}{if} ( res != CURLE\_OK )
+144                 \{
+145                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+146                 \}
+147 
+148                 \textcolor{keywordtype}{size\_t} iolen = 0;
+149 
+150                 res = curl\_easy\_send (curl, msg, strlen (msg) + 1, &iolen);
+151 
+152                 \textcolor{keywordflow}{if} ( res != CURLE\_OK )
+153                 \{
+154                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+155                 \}
+156 
+157                 curl\_easy\_cleanup (curl);
+158 
+159                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+160             \}
+161         \}
+162     \}
+163     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+164 \}
+\end{DoxyCode}

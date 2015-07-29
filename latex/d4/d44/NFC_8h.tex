@@ -1,0 +1,1061 @@
+\hypertarget{NFC_8h}{\section{N\-F\-C.\-h File Reference}
+\label{NFC_8h}\index{N\-F\-C.\-h@{N\-F\-C.\-h}}
+}
+
+
+N\-F\-C A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+Include dependency graph for N\-F\-C.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{d8/d2d/NFC_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{d7/d00/NFC_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{NFC_8h_d2/dce/struct__NDEF}{\-\_\-\-N\-D\-E\-F}
+\begin{DoxyCompactList}\small\item\em N\-F\-C통신에 필요한 N\-D\-E\-F (N\-F\-C Data Exchange Format)에 대한 구조체이다.  \hyperlink{NFC_8h_d2/dce/struct__NDEF}{More...}\end{DoxyCompactList}\item 
+struct \hyperlink{struct__NFC}{\-\_\-\-N\-F\-C}
+\begin{DoxyCompactList}\small\item\em N\-F\-C모듈에 대한 구조체이다. \end{DoxyCompactList}\item 
+struct \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{\-\_\-\-N\-F\-C\-Extends}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{NFC_8h_a73ba5afe6299de320f1f8fe1c385ee3e}{typedef struct \hyperlink{NFC_8h_d2/dce/struct__NDEF}{\-\_\-\-N\-D\-E\-F} {\bfseries N\-D\-E\-F}}\label{NFC_8h_a73ba5afe6299de320f1f8fe1c385ee3e}
+
+\item 
+\hypertarget{NFC_8h_a7e2c6bf812cf2288597e00d96785ffc1}{typedef struct \hyperlink{struct__NFC}{\-\_\-\-N\-F\-C} $\ast$ {\bfseries N\-F\-C}}\label{NFC_8h_a7e2c6bf812cf2288597e00d96785ffc1}
+
+\item 
+\hypertarget{NFC_8h_a3425ab61ba43168feca697c3cd29f872}{typedef struct \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{\-\_\-\-N\-F\-C\-Extends} {\bfseries N\-F\-C\-Extends}}\label{NFC_8h_a3425ab61ba43168feca697c3cd29f872}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{NFC_8h_a809ed6979169650ef43f0782d2e37720}{N\-F\-C\-Error\-Checker} (int errorcode)
+\begin{DoxyCompactList}\small\item\em N\-F\-C\-Error\-Checker A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+\hyperlink{NFC_8h_d2/dce/struct__NDEF}{N\-D\-E\-F} \hyperlink{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}{Create\-N\-D\-E\-F} (String tag, String msg)
+\begin{DoxyCompactList}\small\item\em 새로운 Bluetooth 객체를 생성한다. \end{DoxyCompactList}\item 
+void \hyperlink{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}{Delete\-N\-D\-E\-F} (\hyperlink{NFC_8h_d2/dce/struct__NDEF}{N\-D\-E\-F} $\ast$ndef)
+\begin{DoxyCompactList}\small\item\em 생성한 N\-D\-E\-F 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+\hyperlink{struct__NFC}{N\-F\-C} \hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 N\-F\-C 객체를 생성한다. \end{DoxyCompactList}\item 
+void \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 N\-F\-C 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 N\-F\-C 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen, \hyperlink{NFC_8h_d2/dce/struct__NDEF}{N\-D\-E\-F} message)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. \end{DoxyCompactList}\item 
+\hyperlink{NFC_8h_d2/dce/struct__NDEF}{N\-D\-E\-F} \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} (\hyperlink{struct__NFC}{N\-F\-C} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+N\-F\-C A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+N\-F\-C의 Create\-N\-D\-E\-F / Delete\-N\-D\-E\-F / is\-Accessible / on\-Connect / is\-Connected / on\-Disconnect / Send / Recv A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/development/api-references/native-application?redirect=https%3A//developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/index.html}{\tt https\-://developer.\-tizen.\-org/development/api-\/references/native-\/application?redirect=https\%3\-A//developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/index.\-html} 
+\end{DoxySeeAlso}
+
+
+Definition in file \hyperlink{NFC_8h_source}{N\-F\-C.\-h}.
+
+
+
+\subsection{Data Structure Documentation}
+\index{\-\_\-\-N\-D\-E\-F@{\-\_\-\-N\-D\-E\-F}}\label{d2/dce/struct__NDEF}
+\hypertarget{NFC_8h_d2/dce/struct__NDEF}{}
+\subsubsection{struct \-\_\-\-N\-D\-E\-F}
+N\-F\-C통신에 필요한 N\-D\-E\-F (N\-F\-C Data Exchange Format)에 대한 구조체이다. 
+
+\begin{DoxyNote}{Note}
+N\-F\-C통신에 필요한 N\-D\-E\-F (N\-F\-C Data Exchange Format)에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \hyperlink{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}{Create\-N\-D\-E\-F()} 함수를 사용해야 하며 사용이 끝났을 때 \hyperlink{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}{Delete\-N\-D\-E\-F()} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/group__CAPI__NETWORK__NFC__NDEF__MODULE.html}{\tt https\-://developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/group\-\_\-\-\_\-\-C\-A\-P\-I\-\_\-\-\_\-\-N\-E\-T\-W\-O\-R\-K\-\_\-\-\_\-\-N\-F\-C\-\_\-\-\_\-\-N\-D\-E\-F\-\_\-\-\_\-\-M\-O\-D\-U\-L\-E.\-html} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature에 \char`\"{}http\-://tizen.\-org/feature/network.\-nfc\char`\"{} 을 반드시 추가해야 한다. 
+\end{DoxyPrecond}
+
+
+Definition at line 62 of file N\-F\-C.\-h.
+
+
+
+Collaboration diagram for \-\_\-\-N\-D\-E\-F\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{d4/d50/struct__NDEF__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+\hypertarget{NFC_8h_a05873af37984ef32c8ba2a6308956bb3}{String}\label{NFC_8h_a05873af37984ef32c8ba2a6308956bb3}
+&
+msg&
+\\
+\hline
+
+\hypertarget{NFC_8h_a3d1b2b9aa7be6b4548fc2e6dbd97103f}{String}\label{NFC_8h_a3d1b2b9aa7be6b4548fc2e6dbd97103f}
+&
+tag&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-N\-F\-C\-Extends@{\-\_\-\-N\-F\-C\-Extends}}\label{db/d53/struct__NFCExtends}
+\hypertarget{NFC_8h_db/d53/struct__NFCExtends}{}
+\subsubsection{struct \-\_\-\-N\-F\-C\-Extends}
+
+
+Definition at line 236 of file N\-F\-C.\-h.
+
+
+
+Collaboration diagram for \-\_\-\-N\-F\-C\-Extends\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{d9/dc2/struct__NFCExtends__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+\hypertarget{NFC_8h_ab4e2372937bb1eec89f2a954a4db6604}{bool}\label{NFC_8h_ab4e2372937bb1eec89f2a954a4db6604}
+&
+access&
+\\
+\hline
+
+\hypertarget{NFC_8h_af404558710d345372ee7a9bff25f8503}{\hyperlink{NFC_8h_d2/dce/struct__NDEF}{N\-D\-E\-F}}\label{NFC_8h_af404558710d345372ee7a9bff25f8503}
+&
+ndef\-Message&
+\\
+\hline
+
+\hypertarget{NFC_8h_ae03fa1ef4831c704d0f7cc1a805a754e}{struct \hyperlink{struct__NFC}{\-\_\-\-N\-F\-C}}\label{NFC_8h_ae03fa1ef4831c704d0f7cc1a805a754e}
+&
+nfc&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Create\-N\-D\-E\-F@{Create\-N\-D\-E\-F}}
+\index{Create\-N\-D\-E\-F@{Create\-N\-D\-E\-F}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Create\-N\-D\-E\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-D\-E\-F} Create\-N\-D\-E\-F (
+\begin{DoxyParamCaption}
+\item[{String}]{tag, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}
+
+
+새로운 Bluetooth 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & N\-D\-E\-F에 저장 할 태그 \\
+\hline
+\mbox{\tt in}  & {\em msg} & N\-D\-E\-F에 저장 할 메세지 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-D\-E\-F} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 N\-D\-E\-F 객체를 생성한다. \par
+ N\-D\-E\-F 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}{Delete\-N\-D\-E\-F} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 19 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+20 \{
+21     \hyperlink{NFC_8h_d2/dce/struct__NDEF}{NDEF} ndef = \{0, 0\};
+22 
+23     ndef.tag = (String)malloc (strlen (tag) + 1);
+24     strcpy(ndef.tag, tag);
+25 
+26     ndef.msg = (String)malloc (strlen (msg) + 1);
+27     strcpy(ndef.msg, msg);
+28 
+29     \textcolor{keywordflow}{return} ndef;
+30 \}
+\end{DoxyCode}
+\hypertarget{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Delete\-N\-D\-E\-F@{Delete\-N\-D\-E\-F}}
+\index{Delete\-N\-D\-E\-F@{Delete\-N\-D\-E\-F}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Delete\-N\-D\-E\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Delete\-N\-D\-E\-F (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-D\-E\-F} $\ast$}]{ndef}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}
+
+
+생성한 N\-D\-E\-F 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ndef} & 소멸시킬 N\-D\-E\-F 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 N\-D\-E\-F 객체를 소멸 시킨다. \par
+ N\-D\-E\-F 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}{Create\-N\-D\-E\-F} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 32 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+33 \{
+34     \textcolor{keywordflow}{if} ( ndef != NULL)
+35     \{
+36         \textcolor{keywordflow}{if} ( ndef->tag != NULL)
+37         \{
+38             free (ndef->tag);
+39         \}
+40 
+41         \textcolor{keywordflow}{if} ( ndef->msg != NULL)
+42         \{
+43             free (ndef->msg);
+44         \}
+45     \}
+46 \}
+\end{DoxyCode}
+\hypertarget{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Destroy\-N\-F\-C@{Destroy\-N\-F\-C}}
+\index{Destroy\-N\-F\-C@{Destroy\-N\-F\-C}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Destroy\-N\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-N\-F\-C (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}
+
+
+생성한 N\-F\-C 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 N\-F\-C 객체를 소멸 시킨다. \par
+ N\-F\-C 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+\hypertarget{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!is\-N\-F\-C\-Accessible@{is\-N\-F\-C\-Accessible}}
+\index{is\-N\-F\-C\-Accessible@{is\-N\-F\-C\-Accessible}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{is\-N\-F\-C\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-N\-F\-C\-Accessible (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}
+
+
+현재 N\-F\-C 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 N\-F\-C 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} \par
+ \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} \par
+ \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} \par
+ \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} \par
+ \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 72 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+73 \{
+74     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+75     \{
+76         \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends}  * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)this\_gen;
+77 
+78         \textcolor{keywordtype}{bool} ret;
+79         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.nfc"}, &ret);
+80 
+81         \textcolor{keywordflow}{if} ( ret == \textcolor{keyword}{true} )
+82         \{
+83             nfc\_manager\_set\_tag\_filter (NFC\_TAG\_FILTER\_ALL\_ENABLE);
+84 
+85         \}
+86         this->access = ret;
+87 
+88         \textcolor{keywordflow}{return} ret;
+89     \}
+90     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+91     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+92 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{d4/d44/NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!New\-N\-F\-C@{New\-N\-F\-C}}
+\index{New\-N\-F\-C@{New\-N\-F\-C}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{New\-N\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-F\-C} New\-N\-F\-C (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}
+
+
+새로운 N\-F\-C 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-F\-C} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 N\-F\-C 객체를 생성한다. \par
+ N\-F\-C 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} \par
+ \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} \par
+ \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} \par
+ \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} \par
+ \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 48 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+49 \{
+50     \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends}));
+51 
+52     this->nfc.isAccessible = \hyperlink{NFC_8c_af4d6a3d2d34a4e040db1c9558d3a6605}{isNFCAccessible};
+53     this->nfc.onConnect    = \hyperlink{NFC_8c_ace29c66a88baa5247a996d2f324532ff}{onNFCConnect};
+54     this->nfc.onDisconnect = \hyperlink{NFC_8c_a967e0ea57b1755212f3793e2b6133f46}{onNFCDisconnect};
+55     this->nfc.Send         = \hyperlink{NFC_8c_a76b16289f7445b7c82b644be334a7500}{NFCSend};
+56     this->nfc.Recv         = \hyperlink{NFC_8c_ae8da301bbf98e31b07f5c5f541a7976c}{NFCRecv};
+57 
+58     \textcolor{keywordflow}{return} &this->nfc;
+59 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d44/NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_a809ed6979169650ef43f0782d2e37720}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Error\-Checker@{N\-F\-C\-Error\-Checker}}
+\index{N\-F\-C\-Error\-Checker@{N\-F\-C\-Error\-Checker}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Error\-Checker}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ N\-F\-C\-Error\-Checker (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a809ed6979169650ef43f0782d2e37720}
+
+
+N\-F\-C\-Error\-Checker A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Operation failed \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-N\-D\-E\-F\-\_\-\-M\-E\-S\-S\-A\-G\-E} & \-: Invalid N\-D\-E\-F message \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-T\-Y\-P\-E} & \-: Invalid record type \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T} & \-: Timeout error, no answer \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-B\-U\-S\-Y} & \-: Previous operation is not finished still busy \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-D\-E\-V\-I\-C\-E} & \-: No device \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: N\-F\-C is not activated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: Already activated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-D\-E\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: Already deactivated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-A\-D\-\_\-\-O\-N\-L\-Y\-\_\-\-N\-D\-E\-F} & \-: Read only tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-S\-P\-A\-C\-E\-\_\-\-O\-N\-\_\-\-N\-D\-E\-F} & \-: No enough space on tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-N\-D\-E\-F\-\_\-\-M\-E\-S\-S\-A\-G\-E} & \-: No N\-D\-E\-F Message on Tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-N\-D\-E\-F\-\_\-\-F\-O\-R\-M\-A\-T} & \-: Not N\-D\-E\-F format Tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by access control \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Restricted by Smack \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-L\-L\-E\-G\-A\-L\-\_\-\-S\-T\-A\-T\-E} & \-: The state is wrong \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} & \-: N\-F\-C is not initialized \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-A\-G\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Tag is not supported \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 23가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/group__CAPI__NETWORK__NFC__MANAGER__MODULE.html#ga32702c7145a8871aec23069f95c7d132}{\tt https\-://developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/group\-\_\-\-\_\-\-C\-A\-P\-I\-\_\-\-\_\-\-N\-E\-T\-W\-O\-R\-K\-\_\-\-\_\-\-N\-F\-C\-\_\-\-\_\-\-M\-A\-N\-A\-G\-E\-R\-\_\-\-\_\-\-M\-O\-D\-U\-L\-E.\-html\#ga32702c7145a8871aec23069f95c7d132} 
+\end{DoxySeeAlso}
+
+
+Definition at line 292 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+293 \{
+294     \textcolor{keywordflow}{switch} (errorcode)
+295     \{
+296     \textcolor{keywordflow}{case} NFC\_ERROR\_NONE:
+297         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NONE: Successful"};
+298 
+299     \textcolor{keywordflow}{case} NFC\_ERROR\_OUT\_OF\_MEMORY:
+300         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_OUT\_OF\_MEMORY: Out of memory"};
+301 
+302     \textcolor{keywordflow}{case} NFC\_ERROR\_OPERATION\_FAILED:
+303         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_OPERATION\_FAILED: Operation failed"};
+304 
+305     \textcolor{keywordflow}{case} NFC\_ERROR\_INVALID\_PARAMETER:
+306         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_INVALID\_PARAMETER: Invalid parameter"};
+307 
+308     \textcolor{keywordflow}{case} NFC\_ERROR\_INVALID\_NDEF\_MESSAGE:
+309         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_INVALID\_NDEF\_MESSAGE: Invalid NDEF message"};
+310 
+311     \textcolor{keywordflow}{case} NFC\_ERROR\_INVALID\_RECORD\_TYPE:
+312         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_INVALID\_RECORD\_TYPE: Invalid record type"};
+313 
+314     \textcolor{keywordflow}{case} NFC\_ERROR\_TIMED\_OUT:
+315         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_TIMED\_OUT: Timeout error, no answer"};
+316 
+317     \textcolor{keywordflow}{case} NFC\_ERROR\_DEVICE\_BUSY:
+318         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_DEVICE\_BUSY: Previous operation is not finished still busy"};
+319 
+320     \textcolor{keywordflow}{case} NFC\_ERROR\_NO\_DEVICE:
+321         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NO\_DEVICE: no device"};
+322 
+323     \textcolor{keywordflow}{case} NFC\_ERROR\_NOT\_ACTIVATED:
+324         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NOT\_ACTIVATED: NFC is not activated"};
+325 
+326     \textcolor{keywordflow}{case} NFC\_ERROR\_NOT\_SUPPORTED:
+327         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NOT\_SUPPORTED: Not supported"};
+328 
+329     \textcolor{keywordflow}{case} NFC\_ERROR\_ALREADY\_ACTIVATED:
+330         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_ALREADY\_ACTIVATED: Already activated"};
+331 
+332     \textcolor{keywordflow}{case} NFC\_ERROR\_ALREADY\_DEACTIVATED:
+333         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_ALREADY\_DEACTIVATED: Already deactivated"};
+334 
+335     \textcolor{keywordflow}{case} NFC\_ERROR\_READ\_ONLY\_NDEF:
+336         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_READ\_ONLY\_NDEF: Read only tag"};
+337 
+338     \textcolor{keywordflow}{case} NFC\_ERROR\_NO\_SPACE\_ON\_NDEF:
+339         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NO\_SPACE\_ON\_NDEF: No enough space on tag"};
+340 
+341     \textcolor{keywordflow}{case} NFC\_ERROR\_NO\_NDEF\_MESSAGE:
+342         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NO\_NDEF\_MESSAGE: No NDEF Message on Tag"};
+343 
+344     \textcolor{keywordflow}{case} NFC\_ERROR\_NOT\_NDEF\_FORMAT:
+345         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NOT\_NDEF\_FORMAT: Not NDEF format Tag"};
+346 
+347     \textcolor{keywordflow}{case} NFC\_ERROR\_SECURITY\_RESTRICTED:
+348         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_SECURITY\_RESTRICTED: Restricted by access control"};
+349 
+350     \textcolor{keywordflow}{case} NFC\_ERROR\_PERMISSION\_DENIED:
+351         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_PERMISSION\_DENIED: Restricted by Smack"};
+352 
+353     \textcolor{keywordflow}{case} NFC\_ERROR\_ILLEGAL\_STATE:
+354         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_ILLEGAL\_STATE: The state is wrong"};
+355 
+356     \textcolor{keywordflow}{case} NFC\_ERROR\_NOT\_INITIALIZED:
+357         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_NOT\_INITIALIZED: NFC is not initialized"};
+358 
+359     \textcolor{keywordflow}{case} NFC\_ERROR\_TAG\_NOT\_SUPPORTED:
+360         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_TAG\_NOT\_SUPPORTED: Tag is not supported"};
+361 
+362     \textcolor{keywordflow}{default}:
+363         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NFC\_ERROR\_UNKNOWN"};
+364     \}
+365 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d44/NFC_8h_a809ed6979169650ef43f0782d2e37720_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Recv@{N\-F\-C\-Recv}}
+\index{N\-F\-C\-Recv@{N\-F\-C\-Recv}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-D\-E\-F} N\-F\-C\-Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}
+
+
+N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & N\-D\-E\-F를 읽어 올 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-D\-E\-F} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} \par
+ \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} \par
+ \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} \par
+ \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} \par
+ \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 256 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+257 \{
+258     \hyperlink{NFC_8h_d2/dce/struct__NDEF}{NDEF} ret = \{0, 0\};
+259     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+260     \{
+261         \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)this\_gen;
+262         \textcolor{keywordtype}{bool} access = this->access;
+263 
+264         \textcolor{keywordflow}{if} ( access == \textcolor{keyword}{true} )
+265         \{
+266             nfc\_tag\_h tag;
+267             nfc\_tag\_read\_ndef (tag, NULL, NULL);
+268 
+269             \textcolor{keywordtype}{char}* tagChar;
+270             \textcolor{keywordtype}{int}  tagLength;
+271 
+272             nfc\_ndef\_record\_get\_type (NULL, &tagChar, &tagLength);
+273             ret.tag = (String)malloc (tagLength + 1);
+274             strcpy(ret.tag, tagChar);
+275 
+276             \textcolor{keywordtype}{char}* msgChar;
+277             \textcolor{keywordtype}{int}  msgLength;
+278 
+279             nfc\_ndef\_record\_get\_type (NULL, &msgChar, &msgLength);
+280             ret.msg = (String)malloc (msgLength + 1);
+281             strcpy(ret.msg, msgChar);
+282         \}
+283         \textcolor{keywordflow}{else}
+284         \{
+285             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"can't accessible"});
+286         \}
+287     \}
+288     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+289     \textcolor{keywordflow}{return} ret;
+290 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{d4/d44/NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_a391630c994207503df21aa33b58bcb1a}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Send@{N\-F\-C\-Send}}
+\index{N\-F\-C\-Send@{N\-F\-C\-Send}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void N\-F\-C\-Send (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen, }
+\item[{{\bf N\-D\-E\-F}}]{message}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a391630c994207503df21aa33b58bcb1a}
+
+
+N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & N\-D\-E\-F를 기록할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt in}  & {\em message} & 기록할 N\-D\-E\-F \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} \par
+ \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} \par
+ \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} \par
+ \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} \par
+ \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 185 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+186 \{
+187     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+188     \{
+189         \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)this\_gen;
+190 
+191         \textcolor{keywordtype}{bool} access = this->access;
+192 
+193         \textcolor{keywordflow}{if} ( access == \textcolor{keyword}{true} )
+194         \{
+195             nfc\_ndef\_message\_h ndef\_message = NULL;
+196             nfc\_error\_e        ret          = NFC\_ERROR\_NONE;
+197             ret = nfc\_ndef\_message\_create (&ndef\_message);
+198             \textcolor{keywordflow}{if} ( ret != NFC\_ERROR\_NONE )
+199             \{
+200                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (ret));
+201                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+202             \}
+203 
+204             \textcolor{keywordflow}{if} ( strcmp (message.tag, \textcolor{stringliteral}{"TEXT"}) == 0 )
+205             \{
+206                 ret = nfc\_ndef\_record\_create\_text (&ndef\_message, message.msg, \textcolor{stringliteral}{"en-US"}, NFC\_ENCODE\_UTF\_8);
+207                 \textcolor{keywordflow}{if} ( ret != NFC\_ERROR\_NONE )
+208                 \{
+209                     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (ret));
+210                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+211                 \}
+212             \}
+213             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( strcmp (message.tag, \textcolor{stringliteral}{"URI"}) == 0 )
+214             \{
+215                 ret = nfc\_ndef\_record\_create\_uri (&ndef\_message, message.msg);
+216                 \textcolor{keywordflow}{if} ( ret != NFC\_ERROR\_NONE )
+217                 \{
+218                     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (ret));
+219                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+220                 \}
+221             \}
+222             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( strcmp (message.tag, \textcolor{stringliteral}{"MIME"}) == 0 )
+223             \{
+224                 ret = nfc\_ndef\_record\_create\_mime (&ndef\_message, \textcolor{stringliteral}{"image/jpeg"}, message.msg, sizeof (
+      message.msg));
+225                 \textcolor{keywordflow}{if} ( ret != NFC\_ERROR\_NONE )
+226                 \{
+227                     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (ret));
+228                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+229                 \}
+230             \}
+231             \textcolor{keywordflow}{else}
+232             \{
+233                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NFC\_ERROR\_NOT\_NDEF\_FORMAT: Not NDEF format Tag"});
+234                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+235             \}
+236 
+237             nfc\_tag\_h tag;
+238             ret = nfc\_tag\_write\_ndef (tag, ndef\_message, NULL, NULL);
+239             \textcolor{keywordflow}{if} ( ret != NFC\_ERROR\_NONE )
+240             \{
+241                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (ret));
+242                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+243             \}
+244 
+245             nfc\_ndef\_record\_destroy (&ndef\_message);
+246         \}
+247         \textcolor{keywordflow}{else}
+248         \{
+249             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"can't accessible"});
+250         \}
+251     \}
+252     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+253     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+254 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{d4/d44/NFC_8h_a391630c994207503df21aa33b58bcb1a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{d4/d44/NFC_8h_a391630c994207503df21aa33b58bcb1a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!on\-N\-F\-C\-Connect@{on\-N\-F\-C\-Connect}}
+\index{on\-N\-F\-C\-Connect@{on\-N\-F\-C\-Connect}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{on\-N\-F\-C\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-N\-F\-C\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_ace29c66a88baa5247a996d2f324532ff}
+
+
+N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 활성화 성공 여부를 확인할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} \par
+ \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} \par
+ \hyperlink{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{on\-N\-F\-C\-Disconnect} \par
+ \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} \par
+ \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 94 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+95 \{
+96     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+97     \{
+98         \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)this\_gen;
+99 
+100         \textcolor{keywordtype}{bool} access = this->access;
+101         \textcolor{keywordtype}{bool} ret = \textcolor{keyword}{true};
+102 
+103         \textcolor{keywordflow}{if} ( access == \textcolor{keyword}{false} )
+104         \{
+105             \textcolor{keywordtype}{int}         r;
+106             nfc\_error\_e res = NFC\_ERROR\_NONE;
+107             res = nfc\_manager\_is\_supported ();
+108             \textcolor{keywordflow}{if} ( res != NFC\_ERROR\_NONE )
+109             \{
+110                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NFC Not supported"});
+111                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+112             \}
+113             nfc\_manager\_initialize ();
+114 
+115             \textcolor{comment}{//NFC 메니저 생성}
+116             app\_control\_h service = NULL;
+117             app\_control\_create (&service);
+118 
+119             \textcolor{comment}{//app\_control 생성}
+120             app\_control\_set\_operation (service, \textcolor{stringliteral}{"http://tizen.org/appcontrol/operation/setting/nfc"});
+121             app\_control\_add\_extra\_data (service, \textcolor{stringliteral}{"type"}, \textcolor{stringliteral}{"nfc"});
+122             r = app\_control\_send\_launch\_request (service, NULL, NULL);
+123             \textcolor{comment}{//NFC 켜기}
+124             \textcolor{keywordflow}{if} ( r != APP\_CONTROL\_ERROR\_NONE )
+125             \{
+126                 ret = \textcolor{keyword}{false};
+127             \}
+128             app\_control\_destroy (service);
+129 
+130             nfc\_manager\_set\_tag\_filter (NFC\_TAG\_FILTER\_ALL\_ENABLE);
+131 
+132             \textcolor{keywordflow}{if} ( nfc\_manager\_is\_system\_handler\_enabled () != \textcolor{keyword}{true} )
+133             \{
+134                 \textcolor{keywordflow}{if} ( nfc\_manager\_set\_system\_handler\_enable (\textcolor{keyword}{true}) == NFC\_ERROR\_NONE )
+135                 \{
+136                     ret = \textcolor{keyword}{true};
+137                 \}
+138                 \textcolor{keywordflow}{else}
+139                 \{
+140                     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"can't activate NFC"});
+141                     ret = \textcolor{keyword}{false};
+142                 \}
+143             \}
+144         \}
+145         \textcolor{keywordflow}{else}
+146         \{
+147             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"can't accessible"});
+148         \}
+149         \textcolor{keywordflow}{return} ret;
+150     \}
+151     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+152     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+153 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{d4/d44/NFC_8h_ace29c66a88baa5247a996d2f324532ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}{\index{N\-F\-C.\-h@{N\-F\-C.\-h}!on\-N\-F\-C\-Disconnect@{on\-N\-F\-C\-Disconnect}}
+\index{on\-N\-F\-C\-Disconnect@{on\-N\-F\-C\-Disconnect}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{on\-N\-F\-C\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-N\-F\-C\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-F\-C}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}
+
+
+N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 비활성화 성공 여부를 확인할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}{New\-N\-F\-C} \par
+ \hyperlink{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}{Destroy\-N\-F\-C} \par
+ \hyperlink{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}{is\-N\-F\-C\-Accessible} \par
+ \hyperlink{NFC_8h_ace29c66a88baa5247a996d2f324532ff}{on\-N\-F\-C\-Connect} \par
+ \hyperlink{NFC_8h_a391630c994207503df21aa33b58bcb1a}{N\-F\-C\-Send} \par
+ \hyperlink{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}{N\-F\-C\-Recv} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+feature \-: \href{http://tizen.org/feature/network.nfc}{\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyPrecond}
+
+
+Definition at line 155 of file N\-F\-C.\-c.
+
+
+\begin{DoxyCode}
+156 \{
+157     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+158     \{
+159         \hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} * \textcolor{keyword}{this} = (\hyperlink{NFC_8h_db/d53/struct__NFCExtends}{NFCExtends} *)this\_gen;
+160 
+161         \textcolor{keywordtype}{bool} access = this->access;
+162         \textcolor{keywordtype}{bool} ret = \textcolor{keyword}{false};
+163 
+164         \textcolor{keywordflow}{if} ( access == \textcolor{keyword}{true} )
+165         \{
+166             nfc\_error\_e nfcerror = NFC\_ERROR\_NONE;
+167             nfcerror = nfc\_manager\_deinitialize ();
+168             \textcolor{keywordflow}{if} ( nfcerror != NFC\_ERROR\_NONE )
+169             \{
+170                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{NFC_8c_a81f968dfae15980c1fdec56858df0c0f}{NFCErrorChecker} (nfcerror));
+171             \}
+172             ret = \textcolor{keyword}{true};
+173         \}
+174         \textcolor{keywordflow}{else}
+175         \{
+176             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"can't accessible"});
+177         \}
+178 
+179         \textcolor{keywordflow}{return} ret;
+180     \}
+181     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+182     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+183 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d4/d44/NFC_8h_a967e0ea57b1755212f3793e2b6133f46_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{d4/d44/NFC_8h_a967e0ea57b1755212f3793e2b6133f46_icgraph}
+\end{center}
+\end{figure}
+
+

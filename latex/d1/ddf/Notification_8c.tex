@@ -1,0 +1,1025 @@
+\hypertarget{Notification_8c}{\section{Notification.\-c File Reference}
+\label{Notification_8c}\index{Notification.\-c@{Notification.\-c}}
+}
+
+
+Notification A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Interface/\-Notification.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+Include dependency graph for Notification.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d6b/Notification_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{Notification\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+\hyperlink{struct__Notification}{Notification} \hyperlink{Notification_8c_a404347c07b739823c244d09934047898}{New\-Notification} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Notification 객체를 생성한다. \end{DoxyCompactList}\item 
+void \hyperlink{Notification_8c_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Notification 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Notification을 Notification 바에 등록한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Notification 바에 등록되어 있는 Notification을 삭제한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen, String title)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 title을 설정 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen, String text)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 text를 설정 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen, String image\-Path)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 아이콘 이미지를 설정 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen, String sound\-Path)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 알림음을 설정 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Notification_8c_a0460ad83205311ebfd590002c853d65d}{update\-Notification} (\hyperlink{struct__Notification}{Notification} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 새로 설정한 Notification 객체의 정보들을 새로 적용 한다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Notification A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+Notification A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h}{Notification.\-h} 
+\end{DoxySeeAlso}
+
+
+Definition in file \hyperlink{Notification_8c_source}{Notification.\-c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{Notification_8c_a940d91a8e15dc9c5fd098c134842a326}{\index{Notification.\-c@{Notification.\-c}!Destroy\-Notification@{Destroy\-Notification}}
+\index{Destroy\-Notification@{Destroy\-Notification}!Notification.c@{Notification.\-c}}
+\subsubsection[{Destroy\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Notification (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a940d91a8e15dc9c5fd098c134842a326}
+
+
+생성한 Notification 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Notification 객체를 소멸 시킨다. \par
+ Notification 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 43 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+44 \{
+45 
+46     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+47     \{
+48         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+49 
+50         \textcolor{keywordflow}{if} ( NULL != this->title )
+51         \{
+52             free (this->title);
+53         \}
+54 
+55         \textcolor{keywordflow}{if} ( NULL != this->text )
+56         \{
+57             free (this->text);
+58         \}
+59 
+60         \textcolor{keywordflow}{if} ( NULL != this->imagePath )
+61         \{
+62             free (this->imagePath);
+63         \}
+64 
+65         \textcolor{keywordflow}{if} ( NULL != this->soundPath )
+66         \{
+67             free (this->soundPath);
+68         \}
+69 
+70         \textcolor{keywordflow}{if} ( this->visible )
+71         \{
+72             notification\_delete (this->notification\_handle);
+73             this->visible = \textcolor{keyword}{false};
+74         \}
+75 
+76         \textcolor{keywordflow}{if} ( NULL != this->notification\_handle )
+77         \{
+78             notification\_free (this->notification\_handle);
+79         \}
+80 
+81         free (\textcolor{keyword}{this});
+82     \}
+83 
+84 \}
+\end{DoxyCode}
+\hypertarget{Notification_8c_a404347c07b739823c244d09934047898}{\index{Notification.\-c@{Notification.\-c}!New\-Notification@{New\-Notification}}
+\index{New\-Notification@{New\-Notification}!Notification.c@{Notification.\-c}}
+\subsubsection[{New\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Notification} New\-Notification (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a404347c07b739823c244d09934047898}
+
+
+새로운 Notification 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Notification} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Notification 객체를 생성한다. \par
+ Notification 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 19 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+20 \{
+21     \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this};
+22 
+23     \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend}));
+24 
+25     this->notification.Show     = \hyperlink{Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9}{NotificationShow};
+26     this->notification.Hide     = \hyperlink{Notification_8c_a794983d0273383c1a035ef5cfc43d4c1}{NotificationHide};
+27     this->notification.setTitle = \hyperlink{Notification_8c_a835bde3b937fae6a72adacf87502ab5e}{setNotificationTitle};
+28     this->notification.setText  = \hyperlink{Notification_8c_a46b9e58ccdafdfc68870055f63976d8b}{setNotificationText};
+29     this->notification.setIcon  = \hyperlink{Notification_8c_a1eedf20663a58e41027151e6eb1b21a1}{setNotificationIcon};
+30     this->notification.setSound = \hyperlink{Notification_8c_a521d477948d0adfc2c2daf20b80095af}{setNotificationSound};
+31     this->notification.update   = \hyperlink{Notification_8c_a0460ad83205311ebfd590002c853d65d}{updateNotification};
+32 
+33     this->notification\_handle = notification\_create (NOTIFICATION\_TYPE\_NOTI);
+34     this->title               = NULL;
+35     this->text                = NULL;
+36     this->imagePath           = NULL;
+37     this->soundPath           = NULL;
+38     this->visible             = \textcolor{keyword}{false};
+39 
+40     \textcolor{keywordflow}{return} &this->notification;
+41 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/ddf/Notification_8c_a404347c07b739823c244d09934047898_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{\index{Notification.\-c@{Notification.\-c}!Notification\-Error\-Check@{Notification\-Error\-Check}}
+\index{Notification\-Error\-Check@{Notification\-Error\-Check}!Notification.c@{Notification.\-c}}
+\subsubsection[{Notification\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Notification\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}
+
+
+Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Success \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-O\-\_\-\-E\-R\-R\-O\-R} & \-: I/\-O error \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B} & \-: Error from D\-B query \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Already exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B\-U\-S} & \-: Error from D\-Bus \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Not exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-R\-E\-A\-D\-Y} & \-: No response from notification service \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 11가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/group__NOTIFICATION__MODULE.html#gga59877a522577b6129d8a6175816a0867ace8d6426fa0e542f22d36e7b87bfe6c4}{\tt https\-://developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/group\-\_\-\-\_\-\-N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-\_\-\-M\-O\-D\-U\-L\-E.\-html\#gga59877a522577b6129d8a6175816a0867ace8d6426fa0e542f22d36e7b87bfe6c4} 
+\end{DoxySeeAlso}
+
+
+Definition at line 282 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+283 \{
+284     \textcolor{keywordflow}{switch} (errCode)
+285     \{
+286     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_NONE :
+287         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_NONE : Success"};
+288 
+289     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_INVALID\_PARAMETER :
+290         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_INVALID\_PARAMETER : Invalid parameter"};
+291 
+292     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_OUT\_OF\_MEMORY:
+293         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_OUT\_OF\_MEMORY : Out of memory"};
+294 
+295     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_IO\_ERROR :
+296         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_IO\_ERROR : I/O error"};
+297 
+298     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_PERMISSION\_DENIED :
+299         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_PERMISSION\_DENIED : Permission denied"};
+300 
+301     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_FROM\_DB:
+302         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_FROM\_DB : Error from DB query"};
+303 
+304     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_ALREADY\_EXIST\_ID:
+305         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_ALREADY\_EXIST\_ID : Already exist private ID"};
+306 
+307     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_FROM\_DBUS :
+308         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_FROM\_DBUS : Error from DBus"};
+309 
+310     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_NOT\_EXIST\_ID:
+311         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_NOT\_EXIST\_ID : Not exist private ID"};
+312 
+313     \textcolor{keywordflow}{case} NOTIFICATION\_ERROR\_SERVICE\_NOT\_READY:
+314         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_SERVICE\_NOT\_READY : No response from notification service"};
+315 
+316     \textcolor{keywordflow}{default}:
+317         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"NOTIFICATION\_ERROR\_UNKNOWN"};
+318     \}
+319 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/ddf/Notification_8c_a85994bee153321238b1ad4ed8b41e96d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a794983d0273383c1a035ef5cfc43d4c1}{\index{Notification.\-c@{Notification.\-c}!Notification\-Hide@{Notification\-Hide}}
+\index{Notification\-Hide@{Notification\-Hide}!Notification.c@{Notification.\-c}}
+\subsubsection[{Notification\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}bool Notification\-Hide (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a794983d0273383c1a035ef5cfc43d4c1}
+
+
+Notification 바에 등록되어 있는 Notification을 삭제한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에서 삭제할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+\hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show()}를 통해 Notification 바에 등록 되어 있는 Notification을 삭제한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 107 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+108 \{
+109     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+110     \{
+111         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+112         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+113 
+114         ret = notification\_delete (this->notification\_handle);
+115         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+116         \{
+117             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+118             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+119         \}
+120         this->visible = \textcolor{keyword}{false};
+121         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+122 
+123     \}
+124     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+125     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+126 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d1/ddf/Notification_8c_a794983d0273383c1a035ef5cfc43d4c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{d1/ddf/Notification_8c_a794983d0273383c1a035ef5cfc43d4c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9}{\index{Notification.\-c@{Notification.\-c}!Notification\-Show@{Notification\-Show}}
+\index{Notification\-Show@{Notification\-Show}!Notification.c@{Notification.\-c}}
+\subsubsection[{Notification\-Show}]{\setlength{\rightskip}{0pt plus 5cm}bool Notification\-Show (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9}
+
+
+생성한 Notification을 Notification 바에 등록한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에 등록할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Notification을 Notification 바에 등록한다. \par
+ 이제 막 생성한 Notification은 Icon과 Sound 값에 기본 값이 설정되어 있지만 Title과 Text는 기본 값이 없기 때문에 \par
+ 사용하기 전에 \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title()} 과 \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text()} 을 통해 설정을 미리 해야한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 86 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+87 \{
+88     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+89     \{
+90 
+91         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+92         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+93 
+94         ret = notification\_post (this->notification\_handle);
+95         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+96         \{
+97             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+98             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+99         \}
+100         this->visible = \textcolor{keyword}{true};
+101         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+102     \}
+103     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+104     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+105 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d1/ddf/Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{d1/ddf/Notification_8c_a923c898b974f6e556e8a50cfb5e62fd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a1eedf20663a58e41027151e6eb1b21a1}{\index{Notification.\-c@{Notification.\-c}!set\-Notification\-Icon@{set\-Notification\-Icon}}
+\index{set\-Notification\-Icon@{set\-Notification\-Icon}!Notification.c@{Notification.\-c}}
+\subsubsection[{set\-Notification\-Icon}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Icon (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen, }
+\item[{String}]{image\-Path}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a1eedf20663a58e41027151e6eb1b21a1}
+
+
+Notification 객체의 아이콘 이미지를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & image를 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em image\-Path} & Notification의 image 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 아이콘 이미지를 설정 한다. \par
+ 기본으로 설정된 값은 tizen logo이다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification()}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 196 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+197 \{
+198     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+199     \{
+200         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+201 
+202         \textcolor{keywordflow}{if} ( NULL == imagePath )
+203         \{
+204             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL iconpath"});
+205 
+206             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+207         \}
+208 
+209         \textcolor{keywordflow}{if} ( NULL != this->imagePath )
+210         \{
+211             free (this->imagePath);
+212         \}
+213 
+214         this->imagePath = malloc (strlen (imagePath) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+215         strcpy(this->imagePath, imagePath);
+216         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+217         ret = notification\_set\_image (this->notification\_handle, NOTIFICATION\_IMAGE\_TYPE\_ICON, this->
+      imagePath);
+218         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+219         \{
+220             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+221             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+222         \}
+223         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+224     \}
+225     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+226     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+227 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d1/ddf/Notification_8c_a1eedf20663a58e41027151e6eb1b21a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d1/ddf/Notification_8c_a1eedf20663a58e41027151e6eb1b21a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a521d477948d0adfc2c2daf20b80095af}{\index{Notification.\-c@{Notification.\-c}!set\-Notification\-Sound@{set\-Notification\-Sound}}
+\index{set\-Notification\-Sound@{set\-Notification\-Sound}!Notification.c@{Notification.\-c}}
+\subsubsection[{set\-Notification\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Sound (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen, }
+\item[{String}]{sound\-Path}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a521d477948d0adfc2c2daf20b80095af}
+
+
+Notification 객체의 알림음을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 알림음을 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em sound\-Path} & Notification의 sound 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 알림음을 설정 한다.\par
+ 기본으로 설정된 값은 tizen 알림 기본음이다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification()}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 229 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+230 \{
+231 
+232     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+233     \{
+234 
+235         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+236 
+237         \textcolor{keywordflow}{if} ( NULL == soundPath )
+238         \{
+239             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL soundpath"});
+240             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+241         \}
+242 
+243         \textcolor{keywordflow}{if} ( NULL != this->soundPath )
+244         \{
+245             free (this->soundPath);
+246         \}
+247 
+248         this->soundPath = malloc (strlen (soundPath) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+249         strcpy(this->soundPath, soundPath);
+250         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+251         ret = notification\_set\_sound (this->notification\_handle, NOTIFICATION\_SOUND\_TYPE\_USER\_DATA, this->
+      soundPath);
+252         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+253         \{
+254             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+255             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+256         \}
+257         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+258     \}
+259     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+260     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+261 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d1/ddf/Notification_8c_a521d477948d0adfc2c2daf20b80095af_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d1/ddf/Notification_8c_a521d477948d0adfc2c2daf20b80095af_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a46b9e58ccdafdfc68870055f63976d8b}{\index{Notification.\-c@{Notification.\-c}!set\-Notification\-Text@{set\-Notification\-Text}}
+\index{set\-Notification\-Text@{set\-Notification\-Text}!Notification.c@{Notification.\-c}}
+\subsubsection[{set\-Notification\-Text}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen, }
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a46b9e58ccdafdfc68870055f63976d8b}
+
+
+Notification 객체의 text를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & text를 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em text} & Notification의 text \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 text을 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification()}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 162 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+163 \{
+164     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+165     \{
+166 
+167         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+168 
+169         \textcolor{keywordflow}{if} ( NULL == text )
+170         \{
+171             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL Text"});
+172             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+173         \}
+174 
+175         \textcolor{keywordflow}{if} ( NULL != this->text )
+176         \{
+177             free (this->text);
+178         \}
+179 
+180         this->text = malloc (strlen (text) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+181         strcpy(this->text, text);
+182         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+183         ret = notification\_set\_text (this->notification\_handle, NOTIFICATION\_TEXT\_TYPE\_CONTENT, this->text,
+       NULL, NOTIFICATION\_VARIABLE\_TYPE\_NONE);
+184         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+185         \{
+186             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+187             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+188         \}
+189         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+190 
+191     \}
+192     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+193     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+194 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d1/ddf/Notification_8c_a46b9e58ccdafdfc68870055f63976d8b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d1/ddf/Notification_8c_a46b9e58ccdafdfc68870055f63976d8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a835bde3b937fae6a72adacf87502ab5e}{\index{Notification.\-c@{Notification.\-c}!set\-Notification\-Title@{set\-Notification\-Title}}
+\index{set\-Notification\-Title@{set\-Notification\-Title}!Notification.c@{Notification.\-c}}
+\subsubsection[{set\-Notification\-Title}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Title (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen, }
+\item[{String}]{title}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a835bde3b937fae6a72adacf87502ab5e}
+
+
+Notification 객체의 title을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & title을 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em title} & Notification의 title \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 title을 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification()}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} \par
+ \hyperlink{Notification_8h_a0460ad83205311ebfd590002c853d65d}{update\-Notification} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 128 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+129 \{
+130     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+131     \{
+132         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+133 
+134         \textcolor{keywordflow}{if} ( NULL == title )
+135         \{
+136             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL Title"});
+137             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+138         \}
+139 
+140         \textcolor{keywordflow}{if} ( NULL != this->title )
+141         \{
+142             free (this->title);
+143         \}
+144 
+145         this->title = malloc (strlen (title) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+146         strcpy(this->title, title);
+147         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+148 
+149         ret = notification\_set\_text (this->notification\_handle, NOTIFICATION\_TEXT\_TYPE\_TITLE, this->title, 
+      NULL, NOTIFICATION\_VARIABLE\_TYPE\_NONE);
+150         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+151         \{
+152             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+153             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+154         \}
+155         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+156 
+157     \}
+158     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+159     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+160 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d1/ddf/Notification_8c_a835bde3b937fae6a72adacf87502ab5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d1/ddf/Notification_8c_a835bde3b937fae6a72adacf87502ab5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Notification_8c_a0460ad83205311ebfd590002c853d65d}{\index{Notification.\-c@{Notification.\-c}!update\-Notification@{update\-Notification}}
+\index{update\-Notification@{update\-Notification}!Notification.c@{Notification.\-c}}
+\subsubsection[{update\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}bool update\-Notification (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Notification_8c_a0460ad83205311ebfd590002c853d65d}
+
+
+새로 설정한 Notification 객체의 정보들을 새로 적용 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 정보를 새로 적용 할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로 설정한 Notification 객체의 정보들을 새로 적용 한다. \par
+ 현재 Notification 바에 등록되어 있는 Notification의 정보를 갱신할 때 사용한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Notification_8h_a404347c07b739823c244d09934047898}{New\-Notification} \par
+ \hyperlink{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}{Destroy\-Notification} \par
+ \hyperlink{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}{Notification\-Show} \par
+ \hyperlink{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}{Notification\-Hide} \par
+ \hyperlink{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}{set\-Notification\-Title} \par
+ \hyperlink{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}{set\-Notification\-Text} \par
+ \hyperlink{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}{set\-Notification\-Icon} \par
+ \hyperlink{Notification_8h_a521d477948d0adfc2c2daf20b80095af}{set\-Notification\-Sound} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/notification}{\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyPrecond}
+
+
+Definition at line 263 of file Notification.\-c.
+
+
+\begin{DoxyCode}
+264 \{
+265     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+266     \{
+267         \hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} * \textcolor{keyword}{this} = (\hyperlink{Notification_8h_db/d4a/struct__NotificationExtend}{NotificationExtend} *)this\_gen;
+268         notification\_error\_e ret = NOTIFICATION\_ERROR\_NONE;
+269 
+270         ret = notification\_update (this->notification\_handle);
+271         \textcolor{keywordflow}{if} ( ret != NOTIFICATION\_ERROR\_NONE )
+272         \{
+273             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Notification_8c_a85994bee153321238b1ad4ed8b41e96d}{NotificationErrorCheck} (ret));
+274             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+275         \}
+276         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+277     \}
+278     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+279     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+280 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d1/ddf/Notification_8c_a0460ad83205311ebfd590002c853d65d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d1/ddf/Notification_8c_a0460ad83205311ebfd590002c853d65d_icgraph}
+\end{center}
+\end{figure}
+
+

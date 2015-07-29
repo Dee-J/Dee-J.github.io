@@ -1,0 +1,5 @@
+<map id="NFCErrorChecker" name="NFCErrorChecker">
+<area shape="rect" id="node2" href="$d2/d96/NFC_8c.html#a967e0ea57b1755212f3793e2b6133f46" title="NFC 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. " alt="" coords="182,5,311,33"/>
+<area shape="rect" id="node4" href="$d2/d96/NFC_8c.html#a76b16289f7445b7c82b644be334a7500" title="NFC 장치에 생성한 NDEF를 기록한다. " alt="" coords="207,57,287,85"/>
+<area shape="rect" id="node3" href="$d2/d96/NFC_8c.html#a48f478b4cbd0ffadfa36a52f23ef6a1b" title="새로운 NFC 객체를 생성한다. " alt="" coords="361,31,436,59"/>
+</map>

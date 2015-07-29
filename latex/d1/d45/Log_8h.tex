@@ -1,0 +1,248 @@
+\hypertarget{Log_8h}{\section{Log.\-h File Reference}
+\label{Log_8h}\index{Log.\-h@{Log.\-h}}
+}
+
+
+Log A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+Include dependency graph for Log.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{d4/d5f/Log_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Log_8h_aa94af3115d0a53801b50754e955e9989}{L\-O\-G\-I\-N\-F\-O}(tag, format, arg...)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-I\-N\-F\-O, tag, format, \#\#arg)
+\begin{DoxyCompactList}\small\item\em 문자열에 특정 태그를 붙여서 Information log를 발생시킨다. \end{DoxyCompactList}\item 
+\#define \hyperlink{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{L\-O\-G\-D\-E\-B\-U\-G}(tag, format, arg...)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G, tag, format, \#\#arg)
+\begin{DoxyCompactList}\small\item\em 문자열에 특정 태그를 붙여서 Debug log를 발생시킨다. \end{DoxyCompactList}\item 
+\#define \hyperlink{Log_8h_aee90243981a666028b135574eb609243}{L\-O\-G\-W\-A\-R\-N\-I\-N\-G}(tag, format, arg...)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-W\-A\-R\-N, tag, format, \#\#arg)
+\begin{DoxyCompactList}\small\item\em 문자열에 특정 태그를 붙여서 Warning log를 발생시킨다. \end{DoxyCompactList}\item 
+\#define \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{L\-O\-G\-E\-R\-R\-O\-R}(tag, format, arg...)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R, tag, format, \#\#arg)
+\begin{DoxyCompactList}\small\item\em 문자열에 특정 태그를 붙여서 Error log를 발생시킨다. \end{DoxyCompactList}\item 
+\#define \hyperlink{Log_8h_a18d0813effbf93547b491a4d4c94d809}{L\-O\-G\-I\-F}(expr, tag, format, arg...)
+\begin{DoxyCompactList}\small\item\em 특정한 조건에서 문자열에 해당 태그를 붙여서 Error log를 발생시킨다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Log A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Log의 Info / Debug / Warning / Error 관련 Log A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/development/api-references/native-application?redirect=https%3A//developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/index.html}{\tt https\-://developer.\-tizen.\-org/development/api-\/references/native-\/application?redirect=https\%3\-A//developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/index.\-html} 
+\end{DoxySeeAlso}
+
+
+Definition in file \hyperlink{Log_8h_source}{Log.\-h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{\index{Log.\-h@{Log.\-h}!L\-O\-G\-D\-E\-B\-U\-G@{L\-O\-G\-D\-E\-B\-U\-G}}
+\index{L\-O\-G\-D\-E\-B\-U\-G@{L\-O\-G\-D\-E\-B\-U\-G}!Log.h@{Log.\-h}}
+\subsubsection[{L\-O\-G\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-D\-E\-B\-U\-G(
+\begin{DoxyParamCaption}
+\item[{}]{tag, }
+\item[{}]{format, }
+\item[{}]{arg...}
+\end{DoxyParamCaption}
+)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G, tag, format, \#\#arg)}}\label{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}
+
+
+문자열에 특정 태그를 붙여서 Debug log를 발생시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & 발생시키고자 하는 log의 태그 이름 \\
+\hline
+\mbox{\tt in}  & {\em format} & 발생시키고자 하는 log의 문자열 \\
+\hline
+\mbox{\tt in}  & {\em arg} & 발생시키고자 하는 log의 arguments \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+문자열에 특정 태그를 붙여서 Debug log를 발생시킨다. \par
+ arg 는 가변인자이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Log_8h_aa94af3115d0a53801b50754e955e9989}{L\-O\-G\-I\-N\-F\-O} \par
+ \hyperlink{Log_8h_aee90243981a666028b135574eb609243}{L\-O\-G\-W\-A\-R\-N\-I\-N\-G} \par
+ \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{L\-O\-G\-E\-R\-R\-O\-R} \par
+ \hyperlink{Log_8h_a18d0813effbf93547b491a4d4c94d809}{L\-O\-G\-I\-F} 
+\end{DoxySeeAlso}
+
+
+Definition at line 48 of file Log.\-h.
+
+\hypertarget{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{\index{Log.\-h@{Log.\-h}!L\-O\-G\-E\-R\-R\-O\-R@{L\-O\-G\-E\-R\-R\-O\-R}}
+\index{L\-O\-G\-E\-R\-R\-O\-R@{L\-O\-G\-E\-R\-R\-O\-R}!Log.h@{Log.\-h}}
+\subsubsection[{L\-O\-G\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E\-R\-R\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{tag, }
+\item[{}]{format, }
+\item[{}]{arg...}
+\end{DoxyParamCaption}
+)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R, tag, format, \#\#arg)}}\label{Log_8h_a848c587934ef00c023e6328d09eb1e6d}
+
+
+문자열에 특정 태그를 붙여서 Error log를 발생시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & 발생시키고자 하는 log의 태그 이름 \\
+\hline
+\mbox{\tt in}  & {\em format} & 발생시키고자 하는 log의 문자열 \\
+\hline
+\mbox{\tt in}  & {\em arg} & 발생시키고자 하는 log의 arguments \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+문자열에 특정 태그를 붙여서 Error log를 발생시킨다. \par
+ arg 는 가변인자이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Log_8h_aa94af3115d0a53801b50754e955e9989}{L\-O\-G\-I\-N\-F\-O} \par
+ \hyperlink{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{L\-O\-G\-D\-E\-B\-U\-G} \par
+ \hyperlink{Log_8h_aee90243981a666028b135574eb609243}{L\-O\-G\-W\-A\-R\-N\-I\-N\-G} \par
+ \hyperlink{Log_8h_a18d0813effbf93547b491a4d4c94d809}{L\-O\-G\-I\-F} 
+\end{DoxySeeAlso}
+
+
+Definition at line 78 of file Log.\-h.
+
+\hypertarget{Log_8h_a18d0813effbf93547b491a4d4c94d809}{\index{Log.\-h@{Log.\-h}!L\-O\-G\-I\-F@{L\-O\-G\-I\-F}}
+\index{L\-O\-G\-I\-F@{L\-O\-G\-I\-F}!Log.h@{Log.\-h}}
+\subsubsection[{L\-O\-G\-I\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I\-F(
+\begin{DoxyParamCaption}
+\item[{}]{expr, }
+\item[{}]{tag, }
+\item[{}]{format, }
+\item[{}]{arg...}
+\end{DoxyParamCaption}
+)}}\label{Log_8h_a18d0813effbf93547b491a4d4c94d809}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+    if (expr) \(\backslash\)
+    \{ \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{\(\backslash\)}
+\hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{        LOGERROR}(tag, format, ##arg); \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+특정한 조건에서 문자열에 해당 태그를 붙여서 Error log를 발생시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em expr} & 발생시키고자 하는 log의 발생 조건 \\
+\hline
+\mbox{\tt in}  & {\em tag} & 발생시키고자 하는 log의 태그 이름 \\
+\hline
+\mbox{\tt in}  & {\em format} & 발생시키고자 하는 log의 문자열 \\
+\hline
+\mbox{\tt in}  & {\em arg} & 발생시키고자 하는 log의 arguments \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+특정한 조건에서 문자열에 해당 태그를 붙여서 Error log를 발생시킨다. arg 는 가변인자이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Log_8h_aa94af3115d0a53801b50754e955e9989}{L\-O\-G\-I\-N\-F\-O} \par
+ \hyperlink{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{L\-O\-G\-D\-E\-B\-U\-G} \par
+ \hyperlink{Log_8h_aee90243981a666028b135574eb609243}{L\-O\-G\-W\-A\-R\-N\-I\-N\-G} \par
+ \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{L\-O\-G\-E\-R\-R\-O\-R} 
+\end{DoxySeeAlso}
+
+
+Definition at line 94 of file Log.\-h.
+
+\hypertarget{Log_8h_aa94af3115d0a53801b50754e955e9989}{\index{Log.\-h@{Log.\-h}!L\-O\-G\-I\-N\-F\-O@{L\-O\-G\-I\-N\-F\-O}}
+\index{L\-O\-G\-I\-N\-F\-O@{L\-O\-G\-I\-N\-F\-O}!Log.h@{Log.\-h}}
+\subsubsection[{L\-O\-G\-I\-N\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I\-N\-F\-O(
+\begin{DoxyParamCaption}
+\item[{}]{tag, }
+\item[{}]{format, }
+\item[{}]{arg...}
+\end{DoxyParamCaption}
+)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-I\-N\-F\-O, tag, format, \#\#arg)}}\label{Log_8h_aa94af3115d0a53801b50754e955e9989}
+
+
+문자열에 특정 태그를 붙여서 Information log를 발생시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & 발생시키고자 하는 log의 태그 이름 \\
+\hline
+\mbox{\tt in}  & {\em format} & 발생시키고자 하는 log의 문자열 \\
+\hline
+\mbox{\tt in}  & {\em arg} & 발생시키고자 하는 log의 arguments \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+문자열에 특정 태그를 붙여서 Information log를 발생시킨다. \par
+ arg는 가변인자이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{L\-O\-G\-D\-E\-B\-U\-G} \par
+ \hyperlink{Log_8h_aee90243981a666028b135574eb609243}{L\-O\-G\-W\-A\-R\-N\-I\-N\-G} \par
+ \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{L\-O\-G\-E\-R\-R\-O\-R} \par
+ \hyperlink{Log_8h_a18d0813effbf93547b491a4d4c94d809}{L\-O\-G\-I\-F} 
+\end{DoxySeeAlso}
+
+
+Definition at line 33 of file Log.\-h.
+
+\hypertarget{Log_8h_aee90243981a666028b135574eb609243}{\index{Log.\-h@{Log.\-h}!L\-O\-G\-W\-A\-R\-N\-I\-N\-G@{L\-O\-G\-W\-A\-R\-N\-I\-N\-G}}
+\index{L\-O\-G\-W\-A\-R\-N\-I\-N\-G@{L\-O\-G\-W\-A\-R\-N\-I\-N\-G}!Log.h@{Log.\-h}}
+\subsubsection[{L\-O\-G\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-W\-A\-R\-N\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{tag, }
+\item[{}]{format, }
+\item[{}]{arg...}
+\end{DoxyParamCaption}
+)~L\-O\-G\-\_\-(L\-O\-G\-\_\-\-I\-D\-\_\-\-M\-A\-I\-N, D\-L\-O\-G\-\_\-\-W\-A\-R\-N, tag, format, \#\#arg)}}\label{Log_8h_aee90243981a666028b135574eb609243}
+
+
+문자열에 특정 태그를 붙여서 Warning log를 발생시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & 발생시키고자 하는 log의 태그 이름 \\
+\hline
+\mbox{\tt in}  & {\em format} & 발생시키고자 하는 log의 문자열 \\
+\hline
+\mbox{\tt in}  & {\em arg} & 발생시키고자 하는 log의 arguments \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+문자열에 특정 태그를 붙여서 Warning log를 발생시킨다. \par
+ arg 는 가변인자이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Log_8h_aa94af3115d0a53801b50754e955e9989}{L\-O\-G\-I\-N\-F\-O} \par
+ \hyperlink{Log_8h_a4fd0cf9e1f644ee07ef8d3719ba2cd02}{L\-O\-G\-D\-E\-B\-U\-G} \par
+ \hyperlink{Log_8h_a848c587934ef00c023e6328d09eb1e6d}{L\-O\-G\-E\-R\-R\-O\-R} \par
+ \hyperlink{Log_8h_a18d0813effbf93547b491a4d4c94d809}{L\-O\-G\-I\-F} 
+\end{DoxySeeAlso}
+
+
+Definition at line 63 of file Log.\-h.
+

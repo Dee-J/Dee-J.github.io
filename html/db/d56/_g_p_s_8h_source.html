@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Do It Tizen: GPS.h 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../tizenpinwheel.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Do It Tizen
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">Samsung Software Membership</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="../../globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d56/_g_p_s_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GPS.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d56/_g_p_s_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DIT_GPS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DIT_GPS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdalign.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;locations.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#abd7b5738587f7a619dbeddcd69e8a319">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d5/d82/struct__gps.html">_gps</a> * <a class="code" href="../../db/d56/_g_p_s_8h.html#abd7b5738587f7a619dbeddcd69e8a319">GPS</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../db/d56/_g_p_s_8h.html#d1/d4f/struct__location">_location</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a2b13d276aee0d9fd646c8fa3647e869b">   16</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a2b13d276aee0d9fd646c8fa3647e869b">altitude</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a76714bdbc5c536fa77dfb14533ff82a9">   17</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a76714bdbc5c536fa77dfb14533ff82a9">latitude</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#ac155e35fdeebafc89723a51520fb9fe6">   18</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#ac155e35fdeebafc89723a51520fb9fe6">longitude</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a72cbc74638e72ebd02fc3b0bd2cb80af">   19</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a72cbc74638e72ebd02fc3b0bd2cb80af">climb</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a8da9718bd3d0396135453cbb12751a5b">   20</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a8da9718bd3d0396135453cbb12751a5b">direction</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a6dc6e6f3c75c509ce943163afb5dade7">   21</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a6dc6e6f3c75c509ce943163afb5dade7">speed</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#ab42edaa8e596f16b6ff545b9256a4508">   22</a></span>&#160;    location_accuracy_level_e <a class="code" href="../../db/d56/_g_p_s_8h.html#ab42edaa8e596f16b6ff545b9256a4508">level</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#aababb3cab13d0b7706c591b114d9ef9a">   23</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#aababb3cab13d0b7706c591b114d9ef9a">horizontal</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#af585cb3fb143047cf641307ab9f5a2f0">   24</a></span>&#160;    <span class="keywordtype">double</span>                    <a class="code" href="../../db/d56/_g_p_s_8h.html#af585cb3fb143047cf641307ab9f5a2f0">vertical</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a2f48d949c7a1e7bf2ce81c70caa7c3ec">   25</a></span>&#160;    time_t                    <a class="code" href="../../db/d56/_g_p_s_8h.html#a2f48d949c7a1e7bf2ce81c70caa7c3ec">timestamp</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="../../db/d56/_g_p_s_8h.html#ac4745ca529cacca07c33d7d83cce62c9">Location</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d5/d82/struct__gps.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/d82/struct__gps.html">_gps</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d82/struct__gps.html#ab422e6e9531279ce2cf7836d6fdad824">   31</a></span>&#160;    bool (* <a class="code" href="../../d5/d82/struct__gps.html#ab422e6e9531279ce2cf7836d6fdad824">isAccessible</a>) (GPS this_gen);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d82/struct__gps.html#ac1e7688363e326df6919afc5d8cc848c">   33</a></span>&#160;    bool (* <a class="code" href="../../d5/d82/struct__gps.html#ac1e7688363e326df6919afc5d8cc848c">onConnect</a>) (GPS this_gen);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d5/d82/struct__gps.html#a7ad2cd5581984147767aa12d71a7ff74">   35</a></span>&#160;    bool (* <a class="code" href="../../d5/d82/struct__gps.html#a7ad2cd5581984147767aa12d71a7ff74">onDisconnect</a>) (GPS this_gen);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d5/d82/struct__gps.html#a983b023f987a119a6df5c57b8a998f61">   37</a></span>&#160;    <a class="code" href="../../db/d56/_g_p_s_8h.html#ac4745ca529cacca07c33d7d83cce62c9">Location</a> (* <a class="code" href="../../d5/d82/struct__gps.html#a983b023f987a119a6df5c57b8a998f61">Recv</a>) (GPS this_gen);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;GPS      <a class="code" href="../../db/d56/_g_p_s_8h.html#aaf1f2e8f7650a9ec24d3fedebd22e106">NewGps</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span>     <a class="code" href="../../db/d56/_g_p_s_8h.html#a2c75d277f0c7f390ccc06701aa27660b">DestroyGps</a> (GPS this_gen);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span>     <a class="code" href="../../db/d56/_g_p_s_8h.html#a4c9fefb1b2513013e6e5c66a413e387d">isGPSAccessible</a> (GPS this_gen);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">bool</span>     <a class="code" href="../../db/d56/_g_p_s_8h.html#a7ccea786da98fd739ff94af37c8b629a">onGPSConnect</a> (GPS this_gen);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span>     <a class="code" href="../../db/d56/_g_p_s_8h.html#a8eca216e670944b8a549406a8fc8dc44">onGPSDisconnect</a> (GPS this_gen);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="../../db/d56/_g_p_s_8h.html#d1/d4f/struct__location">Location</a> <a class="code" href="../../db/d56/_g_p_s_8h.html#ad567d557fd52762282c7eee89c69352c">GPSRecv</a> (GPS this_gen);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../db/d56/_g_p_s_8h.html#af36af61d3d44e7127d7b0c6cddcd8511">GPSErrorChecker</a> (<span class="keywordtype">int</span> errCode);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#ab3ecc8b2ec37f482acf1ac0c1a3d5e4e">   52</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d5/d82/struct__gps.html">_gps</a>              gps;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a3454051e15c896bc1d5271d43c810958">   53</a></span>&#160;    location_manager_h       <a class="code" href="../../db/d56/_g_p_s_8h.html#a3454051e15c896bc1d5271d43c810958">manager</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#ad003a392ffec4bbd3a2839bb4e042e56">   54</a></span>&#160;    location_service_state_e <a class="code" href="../../db/d56/_g_p_s_8h.html#ad003a392ffec4bbd3a2839bb4e042e56">state</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#a260defa82d536dcea2aa22452b862110">   55</a></span>&#160;    <a class="code" href="../../db/d56/_g_p_s_8h.html#d1/d4f/struct__location">Location</a>                 <a class="code" href="../../db/d56/_g_p_s_8h.html#a260defa82d536dcea2aa22452b862110">location</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#ab4e2372937bb1eec89f2a954a4db6604">   56</a></span>&#160;    <span class="keywordtype">bool</span>                     <a class="code" href="../../db/d56/_g_p_s_8h.html#ab4e2372937bb1eec89f2a954a4db6604">access</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/d56/_g_p_s_8h.html#af4e68d5926444b7651a9095ee0b26e48">   57</a></span>&#160;    <span class="keywordtype">bool</span>                     <a class="code" href="../../db/d56/_g_p_s_8h.html#af4e68d5926444b7651a9095ee0b26e48">connect</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="../../db/d56/_g_p_s_8h.html#dd/dc2/struct_g_p_s_extends">GPSExtends</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif //DIT_GPS_H</span></div>
+<div class="ttc" id="_g_p_s_8h_html_a2b13d276aee0d9fd646c8fa3647e869b"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a2b13d276aee0d9fd646c8fa3647e869b">_location::altitude</a></div><div class="ttdeci">double altitude</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00016">GPS.h:16</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_aababb3cab13d0b7706c591b114d9ef9a"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#aababb3cab13d0b7706c591b114d9ef9a">_location::horizontal</a></div><div class="ttdeci">double horizontal</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00023">GPS.h:23</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_aaf1f2e8f7650a9ec24d3fedebd22e106"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#aaf1f2e8f7650a9ec24d3fedebd22e106">NewGps</a></div><div class="ttdeci">GPS NewGps(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00011">GPS.c:11</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a6dc6e6f3c75c509ce943163afb5dade7"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a6dc6e6f3c75c509ce943163afb5dade7">_location::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00021">GPS.h:21</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a8eca216e670944b8a549406a8fc8dc44"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a8eca216e670944b8a549406a8fc8dc44">onGPSDisconnect</a></div><div class="ttdeci">bool onGPSDisconnect(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00108">GPS.c:108</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a3454051e15c896bc1d5271d43c810958"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a3454051e15c896bc1d5271d43c810958">GPSExtends::manager</a></div><div class="ttdeci">location_manager_h manager</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00053">GPS.h:53</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_af4e68d5926444b7651a9095ee0b26e48"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#af4e68d5926444b7651a9095ee0b26e48">GPSExtends::connect</a></div><div class="ttdeci">bool connect</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00057">GPS.h:57</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ad003a392ffec4bbd3a2839bb4e042e56"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ad003a392ffec4bbd3a2839bb4e042e56">GPSExtends::state</a></div><div class="ttdeci">location_service_state_e state</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00054">GPS.h:54</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_abd7b5738587f7a619dbeddcd69e8a319"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#abd7b5738587f7a619dbeddcd69e8a319">GPS</a></div><div class="ttdeci">struct _gps * GPS</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00013">GPS.h:13</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a76714bdbc5c536fa77dfb14533ff82a9"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a76714bdbc5c536fa77dfb14533ff82a9">_location::latitude</a></div><div class="ttdeci">double latitude</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00017">GPS.h:17</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a8da9718bd3d0396135453cbb12751a5b"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a8da9718bd3d0396135453cbb12751a5b">_location::direction</a></div><div class="ttdeci">double direction</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00020">GPS.h:20</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_dd/dc2/struct_g_p_s_extends"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#dd/dc2/struct_g_p_s_extends">GPSExtends</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00050">GPS.h:50</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ac155e35fdeebafc89723a51520fb9fe6"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ac155e35fdeebafc89723a51520fb9fe6">_location::longitude</a></div><div class="ttdeci">double longitude</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00018">GPS.h:18</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ad567d557fd52762282c7eee89c69352c"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ad567d557fd52762282c7eee89c69352c">GPSRecv</a></div><div class="ttdeci">Location GPSRecv(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00126">GPS.c:126</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a7ccea786da98fd739ff94af37c8b629a"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a7ccea786da98fd739ff94af37c8b629a">onGPSConnect</a></div><div class="ttdeci">bool onGPSConnect(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00087">GPS.c:87</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a2c75d277f0c7f390ccc06701aa27660b"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a2c75d277f0c7f390ccc06701aa27660b">DestroyGps</a></div><div class="ttdeci">void DestroyGps(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00032">GPS.c:32</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a2f48d949c7a1e7bf2ce81c70caa7c3ec"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a2f48d949c7a1e7bf2ce81c70caa7c3ec">_location::timestamp</a></div><div class="ttdeci">time_t timestamp</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00025">GPS.h:25</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a72cbc74638e72ebd02fc3b0bd2cb80af"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a72cbc74638e72ebd02fc3b0bd2cb80af">_location::climb</a></div><div class="ttdeci">double climb</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00019">GPS.h:19</a></div></div>
+<div class="ttc" id="struct__gps_html_ab422e6e9531279ce2cf7836d6fdad824"><div class="ttname"><a href="../../d5/d82/struct__gps.html#ab422e6e9531279ce2cf7836d6fdad824">_gps::isAccessible</a></div><div class="ttdeci">bool(* isAccessible)(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00031">GPS.h:31</a></div></div>
+<div class="ttc" id="struct__gps_html"><div class="ttname"><a href="../../d5/d82/struct__gps.html">_gps</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00029">GPS.h:29</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ab4e2372937bb1eec89f2a954a4db6604"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ab4e2372937bb1eec89f2a954a4db6604">GPSExtends::access</a></div><div class="ttdeci">bool access</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00056">GPS.h:56</a></div></div>
+<div class="ttc" id="struct__gps_html_a983b023f987a119a6df5c57b8a998f61"><div class="ttname"><a href="../../d5/d82/struct__gps.html#a983b023f987a119a6df5c57b8a998f61">_gps::Recv</a></div><div class="ttdeci">Location(* Recv)(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00037">GPS.h:37</a></div></div>
+<div class="ttc" id="struct__gps_html_a7ad2cd5581984147767aa12d71a7ff74"><div class="ttname"><a href="../../d5/d82/struct__gps.html#a7ad2cd5581984147767aa12d71a7ff74">_gps::onDisconnect</a></div><div class="ttdeci">bool(* onDisconnect)(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00035">GPS.h:35</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ab42edaa8e596f16b6ff545b9256a4508"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ab42edaa8e596f16b6ff545b9256a4508">_location::level</a></div><div class="ttdeci">location_accuracy_level_e level</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00022">GPS.h:22</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_a260defa82d536dcea2aa22452b862110"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a260defa82d536dcea2aa22452b862110">GPSExtends::location</a></div><div class="ttdeci">Location location</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00055">GPS.h:55</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_af585cb3fb143047cf641307ab9f5a2f0"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#af585cb3fb143047cf641307ab9f5a2f0">_location::vertical</a></div><div class="ttdeci">double vertical</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00024">GPS.h:24</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_d1/d4f/struct__location"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#d1/d4f/struct__location">_location</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00014">GPS.h:14</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_ac4745ca529cacca07c33d7d83cce62c9"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#ac4745ca529cacca07c33d7d83cce62c9">Location</a></div><div class="ttdeci">struct _location Location</div></div>
+<div class="ttc" id="_g_p_s_8h_html_a4c9fefb1b2513013e6e5c66a413e387d"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#a4c9fefb1b2513013e6e5c66a413e387d">isGPSAccessible</a></div><div class="ttdeci">bool isGPSAccessible(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00045">GPS.c:45</a></div></div>
+<div class="ttc" id="struct__gps_html_ac1e7688363e326df6919afc5d8cc848c"><div class="ttname"><a href="../../d5/d82/struct__gps.html#ac1e7688363e326df6919afc5d8cc848c">_gps::onConnect</a></div><div class="ttdeci">bool(* onConnect)(GPS this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d56/_g_p_s_8h_source.html#l00033">GPS.h:33</a></div></div>
+<div class="ttc" id="_g_p_s_8h_html_af36af61d3d44e7127d7b0c6cddcd8511"><div class="ttname"><a href="../../db/d56/_g_p_s_8h.html#af36af61d3d44e7127d7b0c6cddcd8511">GPSErrorChecker</a></div><div class="ttdeci">const char * GPSErrorChecker(int errCode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dea/_g_p_s_8c_source.html#l00139">GPS.c:139</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_e2c88a9c3d830e594a88bfb657bfbe66.html">Dropbox</a></li><li class="navelem"><a class="el" href="../../dir_beeca0844f0b986207508ef8a897f9be.html">DJ</a></li><li class="navelem"><a class="el" href="../../dir_535975018cac6ecbedf1d757271dec4b.html">SSM</a></li><li class="navelem"><a class="el" href="../../dir_97ea4a36b8dfa2f29c6acdb06c079dd7.html">DIT Documents_7_25</a></li><li class="navelem"><a class="el" href="../../dir_6862d95ab45d02024dd512f27353e4c4.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_02af1127c230e8f4750b4092c11f984a.html">Commnucation</a></li><li class="navelem"><a class="el" href="../../db/d56/_g_p_s_8h.html">GPS.h</a></li>
+    <li class="footer">생성시간 : 토 7월 25 2015 03:37:32, 프로젝트명 : Do It Tizen, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

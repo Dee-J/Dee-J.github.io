@@ -1,0 +1,7 @@
+<map id="HttpErrorCheck" name="HttpErrorCheck">
+<area shape="rect" id="node2" href="$d6/d77/Http_8c.html#a1174037f2ecd0c70d1c2c4e608245e2e" title="Http로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="170,5,280,33"/>
+<area shape="rect" id="node4" href="$d6/d77/Http_8c.html#a55342ea8d5f8480cfc94ed46ac19a8a5" title="Http로부터 데이터를 수신 받는다. " alt="" coords="173,57,278,85"/>
+<area shape="rect" id="node5" href="$d6/d77/Http_8c.html#a85205d030fb71fe75bf32f42453d91e1" title="POST 방식을 사용하여 연결된 세션으로 req와 res를 입력해서 결과를 res로 받는다. " alt="" coords="169,109,282,137"/>
+<area shape="rect" id="node6" href="$d6/d77/Http_8c.html#a6cc920eab655ba420f68afb21e7a4466" title="GET 방식을 사용하여 연결된 세션으로 req와 res를 입력해서 결과를 res로 받는다. " alt="" coords="171,161,279,189"/>
+<area shape="rect" id="node3" href="$d6/d77/Http_8c.html#a8f651c47670c3bb629ce2fe7e5d64d57" title="새로운 Http 객체를 생성한다. " alt="" coords="330,83,403,111"/>
+</map>

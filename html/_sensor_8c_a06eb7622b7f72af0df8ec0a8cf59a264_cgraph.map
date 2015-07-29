@@ -1,0 +1,7 @@
+<map id="NewAccelerometer" name="NewAccelerometer">
+<area shape="rect" id="node2" href="$_sensor_8c.html#a32486442211f1b5b2ce325bf656ba2b2" title="AccelerometerOff" alt="" coords="215,5,340,33"/>
+<area shape="rect" id="node3" href="$_sensor_8c.html#a75055c3d4e99de5ef06dddef16a3b2be" title="AccelerometerOn" alt="" coords="215,57,340,85"/>
+<area shape="rect" id="node4" href="$_sensor_8c.html#a433b4b99717da31f334a3bdd3637af13" title="addAccelerometerCallback" alt="" coords="187,109,368,137"/>
+<area shape="rect" id="node5" href="$_sensor_8c.html#a0b4861d129661a62f373681cb041176d" title="getAccelerometerValue" alt="" coords="198,161,357,189"/>
+<area shape="rect" id="node6" href="$_sensor_8c.html#a2b6a66daff2b6f6a9cc300fa0527d287" title="isAccelerometerSupported" alt="" coords="188,213,367,241"/>
+</map>

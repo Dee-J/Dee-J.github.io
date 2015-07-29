@@ -1,0 +1,7 @@
+<map id="NewGps" name="NewGps">
+<area shape="rect" id="node2" href="$d2/dfe/GPS_8c.html#a4c9fefb1b2513013e6e5c66a413e387d" title="현재 GPS 기능 지원 여부를 반환 한다. " alt="" coords="129,5,252,33"/>
+<area shape="rect" id="node3" href="$d2/dfe/GPS_8c.html#a7ccea786da98fd739ff94af37c8b629a" title="GPS로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="134,57,248,85"/>
+<area shape="rect" id="node5" href="$d2/dfe/GPS_8c.html#a8eca216e670944b8a549406a8fc8dc44" title="GPS로의 연결을 해제하며 이의 성공 여부를 반환한다. " alt="" coords="126,109,256,137"/>
+<area shape="rect" id="node6" href="$d2/dfe/GPS_8c.html#ad567d557fd52762282c7eee89c69352c" title="GPS로 부터 위치 정보를 수신한다. " alt="" coords="151,161,231,189"/>
+<area shape="rect" id="node4" href="$d2/dfe/GPS_8c.html#af36af61d3d44e7127d7b0c6cddcd8511" title="GPS API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="305,83,434,111"/>
+</map>

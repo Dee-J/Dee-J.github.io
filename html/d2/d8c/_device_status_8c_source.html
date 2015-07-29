@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Do It Tizen: DeviceStatus.c 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../tizenpinwheel.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Do It Tizen
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">Samsung Software Membership</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="../../globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d2/d8c/_device_status_8c_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DeviceStatus.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d8c/_device_status_8c.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d10/_device_status_8h.html">Device/DeviceStatus.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;device/battery.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;device/display.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;device/led.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;device/haptic.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/* DeviceStatusErrorCheck */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a945d238478c332d3a5f212cd5b1f9946">   30</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../d2/d8c/_device_status_8c.html#a945d238478c332d3a5f212cd5b1f9946">DeviceStatusErrorCheck</a> (<span class="keywordtype">int</span> errCode)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">switch</span> (errCode)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_NONE:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_NONE : Successful&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_OPERATION_FAILED:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_OPERATION_FAILED : Operation not permitted&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_PERMISSION_DENIED:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_PERMISSION_DENIED : Permission denied&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_INVALID_PARAMETER:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_INVALID_PARAMETER : Invalid parameter&quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_ALREADY_IN_PROGRESS:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_ALREADY_IN_PROGRESS : Operation already in progress&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_NOT_SUPPORTED:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_NOT_SUPPORTED : Not supported in this device&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> DEVICE_ERROR_NOT_INITIALIZED:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_NOT_INITIALIZED : Not initialized&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DEVICE_ERROR_NOT_UNKWON&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266">   60</a></span>&#160;<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> <a class="code" href="../../d2/d8c/_device_status_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266">NewVibration</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)malloc (<span class="keyword">sizeof</span> (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a>));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    this-&gt;vibration.Custom = <a class="code" href="../../d2/d8c/_device_status_8c.html#a12b27c8b15cf2fc480ed507b736f904e">VibrationCustom</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    this-&gt;vibration.Short  = <a class="code" href="../../d2/d8c/_device_status_8c.html#abc95c6f53d6267b0f00edc164bd669a1">VibrationShort</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    this-&gt;vibration.Middle = <a class="code" href="../../d2/d8c/_device_status_8c.html#a17681efad217ed59c00e73c38a3ace65">VibrationMiddle</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    this-&gt;vibration.Long   = <a class="code" href="../../d2/d8c/_device_status_8c.html#adc4527fcf98d260c039c14ed26afa96f">VibrationLong</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    device_haptic_open (0, &amp;this-&gt;handle);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> &amp;this-&gt;vibration;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a336e3f65421006097670aec144c07e4a">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a336e3f65421006097670aec144c07e4a">DestroyVibration</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> this_gen)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//this-&gt;error = device_haptic_stop(this-&gt;handle, 0);</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">//this-&gt;error = device_haptic_close(this-&gt;handle);</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// No Issue</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        free (<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a12b27c8b15cf2fc480ed507b736f904e">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a12b27c8b15cf2fc480ed507b736f904e">VibrationCustom</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> this_gen, <span class="keywordtype">int</span> period)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        device_haptic_vibrate (this-&gt;handle, period, 0, 0);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#abc95c6f53d6267b0f00edc164bd669a1">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#abc95c6f53d6267b0f00edc164bd669a1">VibrationShort</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> this_gen)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        device_haptic_vibrate (this-&gt;handle, 100, 0, 0);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a17681efad217ed59c00e73c38a3ace65">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a17681efad217ed59c00e73c38a3ace65">VibrationMiddle</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> this_gen)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        device_haptic_vibrate (this-&gt;handle, 500, 0, 0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#adc4527fcf98d260c039c14ed26afa96f">  118</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#adc4527fcf98d260c039c14ed26afa96f">VibrationLong</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a> this_gen)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">VibrationExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        device_haptic_vibrate (this-&gt;handle, 1500, 0, 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a239d9485c4000ae77b11e5f12378f95f">  128</a></span>&#160;<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> <a class="code" href="../../d2/d8c/_device_status_8c.html#a239d9485c4000ae77b11e5f12378f95f">NewDisplay</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)malloc (<span class="keyword">sizeof</span> (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a>));</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    this-&gt;display.Lock      = <a class="code" href="../../d2/d8c/_device_status_8c.html#a87f2b7767d49dd3e159c64b75ff75908">DisplayLock</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    this-&gt;display.Unlock    = <a class="code" href="../../d2/d8c/_device_status_8c.html#a31d1cbf3823841fc843b5f6efbf22089">DisplayUnlock</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    this-&gt;display.Dim       = <a class="code" href="../../d2/d8c/_device_status_8c.html#a683879a96e81e501d9eb5d8cf1a26dd0">DisplayDim</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    this-&gt;display.getBright = <a class="code" href="../../d2/d8c/_device_status_8c.html#abf038dea7a71738b751dfdd3ce88ebf9">getDisplayBrightLevel</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    this-&gt;display.setBright = <a class="code" href="../../d2/d8c/_device_status_8c.html#a124de52394ef0f246697c6b2a21bc15d">setDisplayBrightLevel</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> &amp;this-&gt;display;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#aa18ddc0342d1ca47145c759a8fa35d91">  141</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#aa18ddc0342d1ca47145c759a8fa35d91">DestroyDisplay</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        free (<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a87f2b7767d49dd3e159c64b75ff75908">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a87f2b7767d49dd3e159c64b75ff75908">DisplayLock</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        device_display_get_state (&amp;this-&gt;state);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> ( this-&gt;state != DISPLAY_STATE_SCREEN_OFF )</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            device_display_change_state (DISPLAY_STATE_SCREEN_OFF);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a31d1cbf3823841fc843b5f6efbf22089">  165</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a31d1cbf3823841fc843b5f6efbf22089">DisplayUnlock</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        device_display_get_state (&amp;this-&gt;state);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> ( this-&gt;state != DISPLAY_STATE_NORMAL )</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            device_display_change_state (DISPLAY_STATE_NORMAL);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a683879a96e81e501d9eb5d8cf1a26dd0">  180</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a683879a96e81e501d9eb5d8cf1a26dd0">DisplayDim</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        device_display_get_state (&amp;this-&gt;state);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">if</span> ( this-&gt;state != DISPLAY_STATE_SCREEN_DIM )</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            device_display_change_state (DISPLAY_STATE_SCREEN_DIM);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#abf038dea7a71738b751dfdd3ce88ebf9">  195</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#abf038dea7a71738b751dfdd3ce88ebf9">getDisplayBrightLevel</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        device_display_get_brightness (0, &amp;this-&gt;brightLevel);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span> this-&gt;brightLevel;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a124de52394ef0f246697c6b2a21bc15d">  207</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a124de52394ef0f246697c6b2a21bc15d">setDisplayBrightLevel</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a> this_gen, <span class="keywordtype">int</span> brightLevel)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">DisplayExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">if</span> ( brightLevel &gt; 100 )</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            brightLevel = 100;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( brightLevel &lt; 0 )</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            brightLevel = 0;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        this-&gt;brightLevel = brightLevel;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        device_display_set_brightness (0, this-&gt;brightLevel);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a0fe7ab1f89e01e459f94bdecce693301">  229</a></span>&#160;<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#de/d4d/struct_battery">Battery</a> <a class="code" href="../../d2/d8c/_device_status_8c.html#a0fe7ab1f89e01e459f94bdecce693301">NewBattery</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> *)malloc (<span class="keyword">sizeof</span> (<a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a>));</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    this-&gt;battery.getLevel   = <a class="code" href="../../d2/d8c/_device_status_8c.html#a983756d9f5b610b7d60c545546321b23">getBatteryRemainsPercent</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    this-&gt;battery.isCharging = <a class="code" href="../../d2/d8c/_device_status_8c.html#af3fec730c212903458752e7fe4582636">isBatteryCharging</a>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> &amp;this-&gt;battery;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a01b69d107b6708af6900d4279eeff281">  239</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a01b69d107b6708af6900d4279eeff281">DestoryBattery</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#de/d4d/struct_battery">Battery</a> this_gen)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        free (<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a983756d9f5b610b7d60c545546321b23">  249</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a983756d9f5b610b7d60c545546321b23">getBatteryRemainsPercent</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#de/d4d/struct_battery">Battery</a> this_gen)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        device_battery_get_percent (&amp;this-&gt;batteryLevel);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">return</span> this-&gt;batteryLevel;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#af3fec730c212903458752e7fe4582636">  261</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#af3fec730c212903458752e7fe4582636">isBatteryCharging</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#de/d4d/struct_battery">Battery</a> this_gen)</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> * <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">BatteryExtend</a> *)this_gen;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        device_battery_is_charging (&amp;this-&gt;charging);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> this-&gt;charging;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a503e0814548cc9f370f87a3359187bff">  274</a></span>&#160;<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#db/d75/struct_flash">Flash</a> <a class="code" href="../../d2/d8c/_device_status_8c.html#a503e0814548cc9f370f87a3359187bff">NewFlash</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="../../d0/deb/namespace_3global_scope_4.html#db/d75/struct_flash">Flash</a> <span class="keyword">this</span> = (<a class="code" href="../../df/d10/_device_status_8h.html#a62a35ce2d59d0a7399e912ef75d5227e">Flash</a>)malloc (<span class="keyword">sizeof</span> (<span class="keyword">struct</span> <a class="code" href="../../d7/d24/struct___flash.html">_Flash</a>));</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    this-&gt;On  = <a class="code" href="../../d2/d8c/_device_status_8c.html#a27939143d46a5f253038f0a08a781a80">onFlash</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    this-&gt;Off = <a class="code" href="../../d2/d8c/_device_status_8c.html#a652cf60a29c20901662a9ec231d8ce5a">offFlash</a>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a4d0567730f41384d32902ef2b7c4b242">  284</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a4d0567730f41384d32902ef2b7c4b242">DestoryFlash</a> (<a class="code" href="../../d0/deb/namespace_3global_scope_4.html#db/d75/struct_flash">Flash</a> this_gen)</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> ( this_gen != NULL)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        free (this_gen);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a27939143d46a5f253038f0a08a781a80">  292</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a27939143d46a5f253038f0a08a781a80">onFlash</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> value;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    device_flash_get_max_brightness (&amp;value);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    device_flash_set_brightness (value);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="../../d2/d8c/_device_status_8c.html#a652cf60a29c20901662a9ec231d8ce5a">  300</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d8c/_device_status_8c.html#a652cf60a29c20901662a9ec231d8ce5a">offFlash</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    device_flash_set_brightness (0);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div>
+<div class="ttc" id="_device_status_8h_html_a62a35ce2d59d0a7399e912ef75d5227e"><div class="ttname"><a href="../../df/d10/_device_status_8h.html#a62a35ce2d59d0a7399e912ef75d5227e">Flash</a></div><div class="ttdeci">struct _Flash * Flash</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_device_status_8h_source.html#l00150">DeviceStatus.h:150</a></div></div>
+<div class="ttc" id="_device_status_8c_html_abf038dea7a71738b751dfdd3ce88ebf9"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#abf038dea7a71738b751dfdd3ce88ebf9">getDisplayBrightLevel</a></div><div class="ttdeci">int getDisplayBrightLevel(Display this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00195">DeviceStatus.c:195</a></div></div>
+<div class="ttc" id="_device_status_8h_html_d7/dcc/struct___vibration_extend"><div class="ttname"><a href="../../df/d10/_device_status_8h.html#d7/dcc/struct___vibration_extend">_VibrationExtend</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_device_status_8h_source.html#l00062">DeviceStatus.h:62</a></div></div>
+<div class="ttc" id="_device_status_8c_html_aa18ddc0342d1ca47145c759a8fa35d91"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#aa18ddc0342d1ca47145c759a8fa35d91">DestroyDisplay</a></div><div class="ttdeci">void DestroyDisplay(Display this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00141">DeviceStatus.c:141</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a983756d9f5b610b7d60c545546321b23"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a983756d9f5b610b7d60c545546321b23">getBatteryRemainsPercent</a></div><div class="ttdeci">int getBatteryRemainsPercent(Battery this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00249">DeviceStatus.c:249</a></div></div>
+<div class="ttc" id="_device_status_8c_html_af3fec730c212903458752e7fe4582636"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#af3fec730c212903458752e7fe4582636">isBatteryCharging</a></div><div class="ttdeci">bool isBatteryCharging(Battery this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00261">DeviceStatus.c:261</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a0fe7ab1f89e01e459f94bdecce693301"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a0fe7ab1f89e01e459f94bdecce693301">NewBattery</a></div><div class="ttdeci">Battery NewBattery(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00229">DeviceStatus.c:229</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a124de52394ef0f246697c6b2a21bc15d"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a124de52394ef0f246697c6b2a21bc15d">setDisplayBrightLevel</a></div><div class="ttdeci">void setDisplayBrightLevel(Display this_gen, int brightLevel)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00207">DeviceStatus.c:207</a></div></div>
+<div class="ttc" id="namespace_3global_scope_4_html_de/d4d/struct_battery"><div class="ttname"><a href="../../d0/deb/namespace_3global_scope_4.html#de/d4d/struct_battery">Battery</a></div><div class="ttdoc">Battery 모듈에 대한 구조체이다. </div></div>
+<div class="ttc" id="_device_status_8c_html_a503e0814548cc9f370f87a3359187bff"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a503e0814548cc9f370f87a3359187bff">NewFlash</a></div><div class="ttdeci">Flash NewFlash(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00274">DeviceStatus.c:274</a></div></div>
+<div class="ttc" id="_device_status_8h_html_d7/de1/struct___battery_extend"><div class="ttname"><a href="../../df/d10/_device_status_8h.html#d7/de1/struct___battery_extend">_BatteryExtend</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_device_status_8h_source.html#l00131">DeviceStatus.h:131</a></div></div>
+<div class="ttc" id="namespace_3global_scope_4_html_db/d75/struct_flash"><div class="ttname"><a href="../../d0/deb/namespace_3global_scope_4.html#db/d75/struct_flash">Flash</a></div><div class="ttdoc">Flash 모듈에 대한 구조체이다. </div></div>
+<div class="ttc" id="_device_status_8c_html_a336e3f65421006097670aec144c07e4a"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a336e3f65421006097670aec144c07e4a">DestroyVibration</a></div><div class="ttdeci">void DestroyVibration(Vibration this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00074">DeviceStatus.c:74</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a31d1cbf3823841fc843b5f6efbf22089"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a31d1cbf3823841fc843b5f6efbf22089">DisplayUnlock</a></div><div class="ttdeci">void DisplayUnlock(Display this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00165">DeviceStatus.c:165</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a4d0567730f41384d32902ef2b7c4b242"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a4d0567730f41384d32902ef2b7c4b242">DestoryFlash</a></div><div class="ttdeci">void DestoryFlash(Flash this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00284">DeviceStatus.c:284</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a01b69d107b6708af6900d4279eeff281"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a01b69d107b6708af6900d4279eeff281">DestoryBattery</a></div><div class="ttdeci">void DestoryBattery(Battery this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00239">DeviceStatus.c:239</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a12b27c8b15cf2fc480ed507b736f904e"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a12b27c8b15cf2fc480ed507b736f904e">VibrationCustom</a></div><div class="ttdeci">void VibrationCustom(Vibration this_gen, int period)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00088">DeviceStatus.c:88</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a9c3d84ca51a859ceb9eaa0097fa14266"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266">NewVibration</a></div><div class="ttdeci">Vibration NewVibration(void)</div><div class="ttdoc">NewVibration 간략한 설명 </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00060">DeviceStatus.c:60</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a239d9485c4000ae77b11e5f12378f95f"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a239d9485c4000ae77b11e5f12378f95f">NewDisplay</a></div><div class="ttdeci">Display NewDisplay(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00128">DeviceStatus.c:128</a></div></div>
+<div class="ttc" id="_device_status_8h_html_da/dc4/struct___display_extend"><div class="ttname"><a href="../../df/d10/_device_status_8h.html#da/dc4/struct___display_extend">_DisplayExtend</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_device_status_8h_source.html#l00101">DeviceStatus.h:101</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a17681efad217ed59c00e73c38a3ace65"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a17681efad217ed59c00e73c38a3ace65">VibrationMiddle</a></div><div class="ttdeci">void VibrationMiddle(Vibration this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00108">DeviceStatus.c:108</a></div></div>
+<div class="ttc" id="_device_status_8c_html_adc4527fcf98d260c039c14ed26afa96f"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#adc4527fcf98d260c039c14ed26afa96f">VibrationLong</a></div><div class="ttdeci">void VibrationLong(Vibration this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00118">DeviceStatus.c:118</a></div></div>
+<div class="ttc" id="namespace_3global_scope_4_html_d1/d55/struct_vibration"><div class="ttname"><a href="../../d0/deb/namespace_3global_scope_4.html#d1/d55/struct_vibration">Vibration</a></div><div class="ttdoc">Vibration 모듈에 대한 구조체이다. </div></div>
+<div class="ttc" id="_device_status_8c_html_a945d238478c332d3a5f212cd5b1f9946"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a945d238478c332d3a5f212cd5b1f9946">DeviceStatusErrorCheck</a></div><div class="ttdeci">const char * DeviceStatusErrorCheck(int errCode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00030">DeviceStatus.c:30</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a652cf60a29c20901662a9ec231d8ce5a"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a652cf60a29c20901662a9ec231d8ce5a">offFlash</a></div><div class="ttdeci">void offFlash(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00300">DeviceStatus.c:300</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a683879a96e81e501d9eb5d8cf1a26dd0"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a683879a96e81e501d9eb5d8cf1a26dd0">DisplayDim</a></div><div class="ttdeci">void DisplayDim(Display this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00180">DeviceStatus.c:180</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a87f2b7767d49dd3e159c64b75ff75908"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a87f2b7767d49dd3e159c64b75ff75908">DisplayLock</a></div><div class="ttdeci">void DisplayLock(Display this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00150">DeviceStatus.c:150</a></div></div>
+<div class="ttc" id="namespace_3global_scope_4_html_d4/d3c/struct_display"><div class="ttname"><a href="../../d0/deb/namespace_3global_scope_4.html#d4/d3c/struct_display">Display</a></div><div class="ttdoc">Display 모듈에 대한 구조체이다. </div></div>
+<div class="ttc" id="_device_status_8c_html_abc95c6f53d6267b0f00edc164bd669a1"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#abc95c6f53d6267b0f00edc164bd669a1">VibrationShort</a></div><div class="ttdeci">void VibrationShort(Vibration this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00098">DeviceStatus.c:98</a></div></div>
+<div class="ttc" id="struct___flash_html"><div class="ttname"><a href="../../d7/d24/struct___flash.html">_Flash</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d10/_device_status_8h_source.html#l00152">DeviceStatus.h:152</a></div></div>
+<div class="ttc" id="_device_status_8c_html_a27939143d46a5f253038f0a08a781a80"><div class="ttname"><a href="../../d2/d8c/_device_status_8c.html#a27939143d46a5f253038f0a08a781a80">onFlash</a></div><div class="ttdeci">void onFlash(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d8c/_device_status_8c_source.html#l00292">DeviceStatus.c:292</a></div></div>
+<div class="ttc" id="_device_status_8h_html"><div class="ttname"><a href="../../df/d10/_device_status_8h.html">DeviceStatus.h</a></div><div class="ttdoc">Device Status API 를 사용하기 위해 포함해줘야 하는 헤더이다. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_e2c88a9c3d830e594a88bfb657bfbe66.html">Dropbox</a></li><li class="navelem"><a class="el" href="../../dir_beeca0844f0b986207508ef8a897f9be.html">DJ</a></li><li class="navelem"><a class="el" href="../../dir_535975018cac6ecbedf1d757271dec4b.html">SSM</a></li><li class="navelem"><a class="el" href="../../dir_97ea4a36b8dfa2f29c6acdb06c079dd7.html">DIT Documents_7_25</a></li><li class="navelem"><a class="el" href="../../dir_7599098db5eb5f5fa7954bf0131ac207.html">src</a></li><li class="navelem"><a class="el" href="../../dir_2e3710c83723a6335fd06b28713a9a5d.html">Device</a></li><li class="navelem"><a class="el" href="../../d2/d8c/_device_status_8c.html">DeviceStatus.c</a></li>
+    <li class="footer">생성시간 : 토 7월 25 2015 03:37:32, 프로젝트명 : Do It Tizen, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

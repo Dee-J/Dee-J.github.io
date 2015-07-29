@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Do It Tizen: NFC.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tizenpinwheel.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Do It Tizen
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">Samsung Software Membership</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_n_f_c_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">NFC.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_f_c_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DIT_NFC_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DIT_NFC_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdalign.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dit_8h.html">dit.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#a3d1b2b9aa7be6b4548fc2e6dbd97103f">   15</a></span>&#160;    <a class="code" href="dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="_n_f_c_8h.html#a3d1b2b9aa7be6b4548fc2e6dbd97103f">tag</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#a05873af37984ef32c8ba2a6308956bb3">   16</a></span>&#160;    <a class="code" href="dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="_n_f_c_8h.html#a05873af37984ef32c8ba2a6308956bb3">msg</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> <a class="code" href="_n_f_c_8h.html#a34d5da2bbb95a1a046f787f4d62d4c81">CreateNDEF</a> (<a class="code" href="dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> tag, <a class="code" href="dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> msg);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_n_f_c_8h.html#ac7b8ed054a4665a5812ce95f5c4ec80b">DeleteNDEF</a> (<a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> * ndef);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#a7bdae2e07bee15118569bfc4e3a7bcc3">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__nfc.html">_nfc</a> * <a class="code" href="_n_f_c_8h.html#a7bdae2e07bee15118569bfc4e3a7bcc3">NFC</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct__nfc.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__nfc.html">_nfc</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct__nfc.html#ac1c45ebcef1f0a82a2bc140a9a2d572b">   35</a></span>&#160;    bool (* <a class="code" href="struct__nfc.html#ac1c45ebcef1f0a82a2bc140a9a2d572b">isAccessible</a>) (NFC this_gen);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct__nfc.html#a070219e871b65c63119b2b9fcf2f7e40">   37</a></span>&#160;    bool (* <a class="code" href="struct__nfc.html#a070219e871b65c63119b2b9fcf2f7e40">onConnect</a>) (NFC this_gen);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct__nfc.html#a3c638b599b78d063fd8472ea015597e0">   39</a></span>&#160;    bool (* <a class="code" href="struct__nfc.html#a3c638b599b78d063fd8472ea015597e0">onDisconnect</a>) (NFC this_gen);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct__nfc.html#aca64adb6ba471126be23b84178dbd887">   41</a></span>&#160;    void (* <a class="code" href="struct__nfc.html#aca64adb6ba471126be23b84178dbd887">Send</a>) (NFC this_gen, <a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> message);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct__nfc.html#a2c24741e6d306b941e4b30559e5b7a52">   43</a></span>&#160;    <a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> (* <a class="code" href="struct__nfc.html#a2c24741e6d306b941e4b30559e5b7a52">Recv</a>) (NFC this_gen);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;NFC  <a class="code" href="_n_f_c_8h.html#a5dd50b1415b758303e92a689a9b62174">newNFC</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_n_f_c_8h.html#ab64285fbbfeb79c32a11d40966116b84">deleteNFC</a> (NFC this_gen);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_n_f_c_8h.html#af4d6a3d2d34a4e040db1c9558d3a6605">isNFCAccessible</a> (NFC this_gen);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_n_f_c_8h.html#ace29c66a88baa5247a996d2f324532ff">onNFCConnect</a> (NFC this_gen);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_n_f_c_8h.html#a967e0ea57b1755212f3793e2b6133f46">onNFCDisconnect</a> (NFC this_gen);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_n_f_c_8h.html#a391630c994207503df21aa33b58bcb1a">NFCSend</a> (NFC this_gen, <a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> message);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a> <a class="code" href="_n_f_c_8h.html#ae8da301bbf98e31b07f5c5f541a7976c">NFCRecv</a> (NFC this_gen);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html">   61</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#acf0441e1462c7b5253838f663761996a">   63</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct__nfc.html">_nfc</a> nfc;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#af404558710d345372ee7a9bff25f8503">   64</a></span>&#160;    <a class="code" href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a>        <a class="code" href="_n_f_c_8h.html#af404558710d345372ee7a9bff25f8503">ndefMessage</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_n_f_c_8h.html#ab4e2372937bb1eec89f2a954a4db6604">   65</a></span>&#160;    <span class="keywordtype">bool</span>        <a class="code" href="_n_f_c_8h.html#ab4e2372937bb1eec89f2a954a4db6604">access</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <a class="code" href="_n_f_c_8h.html#struct_n_f_c_extends">NFCExtends</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif //DIT_NFC_H</span></div>
+<div class="ttc" id="_n_f_c_8h_html_struct_n_d_e_f"><div class="ttname"><a href="_n_f_c_8h.html#struct_n_d_e_f">NDEF</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00013">NFC.h:13</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a5dd50b1415b758303e92a689a9b62174"><div class="ttname"><a href="_n_f_c_8h.html#a5dd50b1415b758303e92a689a9b62174">newNFC</a></div><div class="ttdeci">NFC newNFC(void)</div></div>
+<div class="ttc" id="_n_f_c_8h_html_ac7b8ed054a4665a5812ce95f5c4ec80b"><div class="ttname"><a href="_n_f_c_8h.html#ac7b8ed054a4665a5812ce95f5c4ec80b">DeleteNDEF</a></div><div class="ttdeci">void DeleteNDEF(NDEF *ndef)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00022">NFC.c:22</a></div></div>
+<div class="ttc" id="struct__nfc_html_a3c638b599b78d063fd8472ea015597e0"><div class="ttname"><a href="struct__nfc.html#a3c638b599b78d063fd8472ea015597e0">_nfc::onDisconnect</a></div><div class="ttdeci">bool(* onDisconnect)(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00039">NFC.h:39</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a05873af37984ef32c8ba2a6308956bb3"><div class="ttname"><a href="_n_f_c_8h.html#a05873af37984ef32c8ba2a6308956bb3">NDEF::msg</a></div><div class="ttdeci">String msg</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00016">NFC.h:16</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_ae8da301bbf98e31b07f5c5f541a7976c"><div class="ttname"><a href="_n_f_c_8h.html#ae8da301bbf98e31b07f5c5f541a7976c">NFCRecv</a></div><div class="ttdeci">NDEF NFCRecv(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00190">NFC.c:190</a></div></div>
+<div class="ttc" id="dit_8h_html_a2efe6d463d80744789f228f5dc4baa39"><div class="ttname"><a href="dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a></div><div class="ttdeci">char * String</div><div class="ttdef"><b>Definition:</b> <a href="dit_8h_source.html#l00050">dit.h:50</a></div></div>
+<div class="ttc" id="struct__nfc_html_ac1c45ebcef1f0a82a2bc140a9a2d572b"><div class="ttname"><a href="struct__nfc.html#ac1c45ebcef1f0a82a2bc140a9a2d572b">_nfc::isAccessible</a></div><div class="ttdeci">bool(* isAccessible)(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00035">NFC.h:35</a></div></div>
+<div class="ttc" id="struct__nfc_html_a2c24741e6d306b941e4b30559e5b7a52"><div class="ttname"><a href="struct__nfc.html#a2c24741e6d306b941e4b30559e5b7a52">_nfc::Recv</a></div><div class="ttdeci">NDEF(* Recv)(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00043">NFC.h:43</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_struct_n_f_c_extends"><div class="ttname"><a href="_n_f_c_8h.html#struct_n_f_c_extends">NFCExtends</a></div><div class="ttdoc">NFC확장모듈에 대한 구조체이다. </div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00061">NFC.h:61</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a3d1b2b9aa7be6b4548fc2e6dbd97103f"><div class="ttname"><a href="_n_f_c_8h.html#a3d1b2b9aa7be6b4548fc2e6dbd97103f">NDEF::tag</a></div><div class="ttdeci">String tag</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00015">NFC.h:15</a></div></div>
+<div class="ttc" id="struct__nfc_html_aca64adb6ba471126be23b84178dbd887"><div class="ttname"><a href="struct__nfc.html#aca64adb6ba471126be23b84178dbd887">_nfc::Send</a></div><div class="ttdeci">void(* Send)(NFC this_gen, NDEF message)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00041">NFC.h:41</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_ace29c66a88baa5247a996d2f324532ff"><div class="ttname"><a href="_n_f_c_8h.html#ace29c66a88baa5247a996d2f324532ff">onNFCConnect</a></div><div class="ttdeci">bool onNFCConnect(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00082">NFC.c:82</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a391630c994207503df21aa33b58bcb1a"><div class="ttname"><a href="_n_f_c_8h.html#a391630c994207503df21aa33b58bcb1a">NFCSend</a></div><div class="ttdeci">void NFCSend(NFC this_gen, NDEF message)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00151">NFC.c:151</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a7bdae2e07bee15118569bfc4e3a7bcc3"><div class="ttname"><a href="_n_f_c_8h.html#a7bdae2e07bee15118569bfc4e3a7bcc3">NFC</a></div><div class="ttdeci">struct _nfc * NFC</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00024">NFC.h:24</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_ab64285fbbfeb79c32a11d40966116b84"><div class="ttname"><a href="_n_f_c_8h.html#ab64285fbbfeb79c32a11d40966116b84">deleteNFC</a></div><div class="ttdeci">void deleteNFC(NFC this_gen)</div></div>
+<div class="ttc" id="struct__nfc_html_a070219e871b65c63119b2b9fcf2f7e40"><div class="ttname"><a href="struct__nfc.html#a070219e871b65c63119b2b9fcf2f7e40">_nfc::onConnect</a></div><div class="ttdeci">bool(* onConnect)(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00037">NFC.h:37</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a34d5da2bbb95a1a046f787f4d62d4c81"><div class="ttname"><a href="_n_f_c_8h.html#a34d5da2bbb95a1a046f787f4d62d4c81">CreateNDEF</a></div><div class="ttdeci">NDEF CreateNDEF(String tag, String msg)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00009">NFC.c:9</a></div></div>
+<div class="ttc" id="struct__nfc_html"><div class="ttname"><a href="struct__nfc.html">_nfc</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00033">NFC.h:33</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_af4d6a3d2d34a4e040db1c9558d3a6605"><div class="ttname"><a href="_n_f_c_8h.html#af4d6a3d2d34a4e040db1c9558d3a6605">isNFCAccessible</a></div><div class="ttdeci">bool isNFCAccessible(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00062">NFC.c:62</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_ab4e2372937bb1eec89f2a954a4db6604"><div class="ttname"><a href="_n_f_c_8h.html#ab4e2372937bb1eec89f2a954a4db6604">NFCExtends::access</a></div><div class="ttdeci">bool access</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00065">NFC.h:65</a></div></div>
+<div class="ttc" id="dit_8h_html"><div class="ttname"><a href="dit_8h.html">dit.h</a></div><div class="ttdoc">DIT Library를 통합 관리한다. </div></div>
+<div class="ttc" id="_n_f_c_8h_html_af404558710d345372ee7a9bff25f8503"><div class="ttname"><a href="_n_f_c_8h.html#af404558710d345372ee7a9bff25f8503">NFCExtends::ndefMessage</a></div><div class="ttdeci">NDEF ndefMessage</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8h_source.html#l00064">NFC.h:64</a></div></div>
+<div class="ttc" id="_n_f_c_8h_html_a967e0ea57b1755212f3793e2b6133f46"><div class="ttname"><a href="_n_f_c_8h.html#a967e0ea57b1755212f3793e2b6133f46">onNFCDisconnect</a></div><div class="ttdeci">bool onNFCDisconnect(NFC this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="_n_f_c_8c_source.html#l00131">NFC.c:131</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e2c88a9c3d830e594a88bfb657bfbe66.html">Dropbox</a></li><li class="navelem"><a class="el" href="dir_beeca0844f0b986207508ef8a897f9be.html">DJ</a></li><li class="navelem"><a class="el" href="dir_535975018cac6ecbedf1d757271dec4b.html">SSM</a></li><li class="navelem"><a class="el" href="dir_97ea4a36b8dfa2f29c6acdb06c079dd7.html">DIT Documents_7_25</a></li><li class="navelem"><a class="el" href="dir_6862d95ab45d02024dd512f27353e4c4.html">inc</a></li><li class="navelem"><a class="el" href="dir_02af1127c230e8f4750b4092c11f984a.html">Commnucation</a></li><li class="navelem"><a class="el" href="_n_f_c_8h.html">NFC.h</a></li>
+    <li class="footer">생성시간 : 토 7월 25 2015 03:34:34, 프로젝트명 : Do It Tizen, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

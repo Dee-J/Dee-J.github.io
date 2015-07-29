@@ -1,0 +1,8 @@
+<map id="NewOrientation" name="NewOrientation">
+<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#ab066d53e2553663195ec202037b4c90e" title="생성한 Orientation를 비활성화 시킨다. " alt="" coords="205,5,309,33"/>
+<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#ad315026a5c51a1e139e4e83ed9aa57c0" title="생성한 Orientation를 활성화 시킨다. " alt="" coords="205,57,310,85"/>
+<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#ab79f8a05d768ee307b1a50319d556e98" title="생성한 Orientation에 callback 함수를 등록한다. " alt="" coords="177,109,337,137"/>
+<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#aca22031b16714ba50a646b347bf662a6" title="활성화 되어 있는 Orientation의 센서 값을 반환한다. " alt="" coords="188,161,326,189"/>
+<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#aa96ba937a81f05a243c500ff3a20c882" title="Orientation의 사용 가능 여부를 판단한다. " alt="" coords="178,213,336,241"/>
+<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#add335b9eed4b0d6edb8a78bc1f25bd97" title="생성한 Orientation에서 callback 함수를 삭제한다. " alt="" coords="168,265,346,293"/>
+</map>

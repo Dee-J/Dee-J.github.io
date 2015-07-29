@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Do It Tizen: File.h 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../tizenpinwheel.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Do It Tizen
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">Samsung Software Membership</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="../../globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/d0c/_file_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">File.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/d0c/_file_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _FILE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _FILE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdalign.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dff/dit_8h.html">dit.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;player.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;metadata_extractor.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;media_content.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;media_info.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Evas.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;glib.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* File */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a45c510e0fb5b6f017899effc87dbb2b1">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d0/d3c/struct___file.html">_File</a> * <a class="code" href="../../df/d0c/_file_8h.html#a45c510e0fb5b6f017899effc87dbb2b1">File</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d0/d3c/struct___file.html">_File</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html#a53d84115a9c66fe30c652f908da6d3b7">   34</a></span>&#160;    void (* <a class="code" href="../../d0/d3c/struct___file.html#a53d84115a9c66fe30c652f908da6d3b7">Delete</a>) (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html#a92496803181c17bf9099dd7a8daf15b9">   36</a></span>&#160;    void (* <a class="code" href="../../d0/d3c/struct___file.html#a92496803181c17bf9099dd7a8daf15b9">Copy</a>) (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html#a7eb122224c5bd93834784151526da9e2">   38</a></span>&#160;    void (* <a class="code" href="../../d0/d3c/struct___file.html#a7eb122224c5bd93834784151526da9e2">Move</a>) (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html#a4372eaf72ad5ad415c0dc75a3420e1bb">   40</a></span>&#160;    GList * (* Search) (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d0/d3c/struct___file.html#a688001b808e44b036dac30773decb791">   42</a></span>&#160;    void (* <a class="code" href="../../d0/d3c/struct___file.html#a688001b808e44b036dac30773decb791">deleteSearchedList</a>) (GList * searchedList);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;File <a class="code" href="../../df/d0c/_file_8h.html#a1f0fe23f2354710d5a4365375b7d9787">NewFile</a> ();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d0c/_file_8h.html#ab44ac1360d2598918dd2c655833e10c0">DestroyFile</a> (File this_gen);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d0c/_file_8h.html#ad189205626097979d619616eec687c29">deleteFile</a> (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d0c/_file_8h.html#a9d83a800fb7cdb6ab6042c3b8208603e">copyFile</a> (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d0c/_file_8h.html#aae2f7d950e3022f08c886332538ed231">moveFile</a> (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;GList * <a class="code" href="../../df/d0c/_file_8h.html#aa237f6e1a4cc51ea14e4a91540cccdb6">searchFile</a> (<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> dst);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d0c/_file_8h.html#a3f94bfe8bf8674fcb686bee025ccfd1f">deleteSearchedList</a> (GList * searchedList);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/* Video */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#aabe6dc4fa995ed8e3f85097dd589ea6f">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d1/dd7/struct___video.html">_Video</a> * <a class="code" href="../../df/d0c/_file_8h.html#aabe6dc4fa995ed8e3f85097dd589ea6f">Video</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/dd7/struct___video.html">_Video</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#a638d742602c39ab64bbded0f4521d106">   58</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#a638d742602c39ab64bbded0f4521d106">Play</a>) (Video this_gen);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#af1d96a39825d2bb1300661601fd0aa7a">   60</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#af1d96a39825d2bb1300661601fd0aa7a">Pause</a>) (Video this_gen);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#ad9c252b2b06ead2f188d91339e651485">   62</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#ad9c252b2b06ead2f188d91339e651485">Stop</a>) (Video this_gen);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#aabb39795a3af7a469d10950d2b088ce6">   64</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#aabb39795a3af7a469d10950d2b088ce6">Record</a>) (Video this_gen);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#a28466d9896b523beacac4a1add633aa6">   66</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> (* <a class="code" href="../../d1/dd7/struct___video.html#a28466d9896b523beacac4a1add633aa6">getInfo</a>) (Video this_gen, metadata_extractor_attr_e element);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#a1b806abc2d87bcfdb8fc81eeb349062e">   68</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#a1b806abc2d87bcfdb8fc81eeb349062e">setURI</a>) (Video this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> uri);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d1/dd7/struct___video.html#a1245c2a3dff66080a4c0f9fd812c25e1">   70</a></span>&#160;    void (* <a class="code" href="../../d1/dd7/struct___video.html#a1245c2a3dff66080a4c0f9fd812c25e1">setObject</a>) (Video this_gen, Evas_Object * EvasObject);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;Video  <a class="code" href="../../df/d0c/_file_8h.html#a78a40226b2a70fa8372ae14b58f2dad8">NewVideo</a> ();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a23fb13c9330e924604c6d93e67e957c6">DestroyVideo</a> (Video this_gen);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a7073fc7cfe96be95f74c825568473c79">playVideo</a> (Video this_gen);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a7d6bf405559699710a43dccea8d0a4e1">pauseVideo</a> (Video this_gen);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#af01f9025ee8223f530578cb9d13b090d">stopVideo</a> (Video this_gen);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a5b40295ac61cd591f16df0830662cf41">recordVideo</a> (Video this_gen);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#a270efb2f74fd2361e50e9ccb7e4f8994">getVideoInfo</a> (Video this_gen, metadata_extractor_attr_e element);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a802060123b98d25cf02e2883ed640576">setVideoURI</a> (Video this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> URI);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#aaff5acd3166a9688ec8264308e24f983">setEvasObject</a> (Video this_gen, Evas_Object * EvasObject);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d0c/_file_8h.html#d8/d6c/struct___video_extends">_VideoExtends</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#aa5784e2c1293cd9248e7bd28183fc1f8">   86</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d1/dd7/struct___video.html">_Video</a> <a class="code" href="../../df/d0c/_file_8h.html#aa5784e2c1293cd9248e7bd28183fc1f8">video</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#ae90b76aa97f5689ba22a80cbf6f95a84">   87</a></span>&#160;    Evas_Object * <a class="code" href="../../df/d0c/_file_8h.html#ae90b76aa97f5689ba22a80cbf6f95a84">EvasObject</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#acdbf0738be9fa70a60412d48cad881ee">   88</a></span>&#160;    player_h             <a class="code" href="../../df/d0c/_file_8h.html#acdbf0738be9fa70a60412d48cad881ee">player_handle</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a0c761970ca029f0974eadbb58090641c">   89</a></span>&#160;    metadata_extractor_h <a class="code" href="../../df/d0c/_file_8h.html#a0c761970ca029f0974eadbb58090641c">videoMetadataHandle</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#ac0b02717b928a36338653c49b0821365">   90</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a>               <a class="code" href="../../df/d0c/_file_8h.html#ac0b02717b928a36338653c49b0821365">uri</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <a class="code" href="../../df/d0c/_file_8h.html#a28bed31813d704b8e396d105b6b678b2">VideoExtends</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/* Audio */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a37d3938964971e2cb1ed957c60f7a5b9">   96</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d6/dc3/struct___audio.html">_Audio</a> * <a class="code" href="../../df/d0c/_file_8h.html#a37d3938964971e2cb1ed957c60f7a5b9">Audio</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html">   98</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dc3/struct___audio.html">_Audio</a></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#a406855bb5ad50dfefae012be99b06cde">  100</a></span>&#160;    void (* <a class="code" href="../../d6/dc3/struct___audio.html#a406855bb5ad50dfefae012be99b06cde">Play</a>) (Audio this_gen);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#a3d78751cda929e033894cbd9f552ae8e">  102</a></span>&#160;    void (* <a class="code" href="../../d6/dc3/struct___audio.html#a3d78751cda929e033894cbd9f552ae8e">Pause</a>) (Audio this_gen);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#a04a848082fe555df88ae9bc35f4223d3">  104</a></span>&#160;    void (* <a class="code" href="../../d6/dc3/struct___audio.html#a04a848082fe555df88ae9bc35f4223d3">Stop</a>) (Audio this_gen);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#abcf52f46187e6c2e2fbc5bd8512adad1">  106</a></span>&#160;    void (* <a class="code" href="../../d6/dc3/struct___audio.html#abcf52f46187e6c2e2fbc5bd8512adad1">Record</a>) (Audio this_gen);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#af557af230def744c4b3ed69d5b3c2076">  108</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> (* <a class="code" href="../../d6/dc3/struct___audio.html#af557af230def744c4b3ed69d5b3c2076">getInfo</a>) (Audio this_gen, metadata_extractor_attr_e metadataKey);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d6/dc3/struct___audio.html#a1c40fa54cdb34775aeb35430f5901990">  110</a></span>&#160;    void (* <a class="code" href="../../d6/dc3/struct___audio.html#a1c40fa54cdb34775aeb35430f5901990">setURI</a>) (Audio this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> uri);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;Audio  <a class="code" href="../../df/d0c/_file_8h.html#a5131353393d09f147cbc061ad339e106">NewAudio</a> ();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a1c24d11e9397892d289591033dd8d174">DestroyAudio</a> (Audio this_gen);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a223afacb101c29984502fb9de2268a2a">playAudio</a> (Audio this_gen);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a07bff016d794342402eac0008abf3f62">pauseAudio</a> (Audio this_gen);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a593160c5700f408e45aa387e4698dff5">stopAudio</a> (Audio this_gen);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#af2d3caee7d7fb4f2b1a52b62f47b4000">recordAudio</a> (Audio this_gen);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#a03603cc9bcb829b069fe0d1d9f97f5ab">getAudioInfo</a> (Audio this_gen, metadata_extractor_attr_e metadataKey);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a180e9ce66a35b03ca09693ff083320d0">setAudioURI</a> (Audio this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> uri);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html">  122</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d0c/_file_8h.html#d9/d1c/struct___audio_extends">_AudioExtends</a></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a5fd9dfc5896f2475249e5814bc957cd3">  124</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d6/dc3/struct___audio.html">_Audio</a>        <a class="code" href="../../df/d0c/_file_8h.html#a5fd9dfc5896f2475249e5814bc957cd3">audio</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#acdbf0738be9fa70a60412d48cad881ee">  125</a></span>&#160;    player_h             <a class="code" href="../../df/d0c/_file_8h.html#acdbf0738be9fa70a60412d48cad881ee">player_handle</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#afb8274c680a31f19a7967b768e11ba52">  126</a></span>&#160;    metadata_extractor_h <a class="code" href="../../df/d0c/_file_8h.html#afb8274c680a31f19a7967b768e11ba52">audioMetadataHandle</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#ac0b02717b928a36338653c49b0821365">  127</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a>               <a class="code" href="../../df/d0c/_file_8h.html#ac0b02717b928a36338653c49b0821365">uri</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <a class="code" href="../../df/d0c/_file_8h.html#a690640387f7b7aa6802c456446607b7e">AudioExtends</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/* Image */</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#aeb62f8214ffbffd373f144739b9eca60">  132</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d5/da0/struct___image.html">_Image</a> * <a class="code" href="../../df/d0c/_file_8h.html#aeb62f8214ffbffd373f144739b9eca60">Image</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html">  134</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da0/struct___image.html">_Image</a></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#ab6c9b3a1c46d72f02fd0197b3d154b75">  136</a></span>&#160;    void       (* <a class="code" href="../../d5/da0/struct___image.html#ab6c9b3a1c46d72f02fd0197b3d154b75">extractInfo</a>) (Image this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#a43ccbbf065326a2647887464f16b7373">  138</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a>     (* <a class="code" href="../../d5/da0/struct___image.html#a43ccbbf065326a2647887464f16b7373">getBurstId</a>) (Image this_gen);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#a3ebc4a1fcad891955f6bd315dbf79b87">  140</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a>     (* <a class="code" href="../../d5/da0/struct___image.html#a3ebc4a1fcad891955f6bd315dbf79b87">getMediaId</a>) (Image this_gen);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#a170cc9a88ad9e65b2d8725d1370bc946">  142</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a>     (* <a class="code" href="../../d5/da0/struct___image.html#a170cc9a88ad9e65b2d8725d1370bc946">getDateTaken</a>) (Image this_gen);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#ac1af259a21d8c67dab2729dc2ca8e6ab">  144</a></span>&#160;    int        (* <a class="code" href="../../d5/da0/struct___image.html#ac1af259a21d8c67dab2729dc2ca8e6ab">getWidth</a>) (Image this_gen);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="../../d5/da0/struct___image.html#a8958794ba1906035ca256305dc103399">  146</a></span>&#160;    int        (* <a class="code" href="../../d5/da0/struct___image.html#a8958794ba1906035ca256305dc103399">getHeight</a>) (Image this_gen);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;};</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html">  149</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d0c/_file_8h.html#dd/dec/struct___image_extends">_ImageExtends</a></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a24c96542e7d59186d5d414503928920a">  152</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d5/da0/struct___image.html">_Image</a> <a class="code" href="../../df/d0c/_file_8h.html#a24c96542e7d59186d5d414503928920a">image</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a9cb994692e8daaf094623152f5f88d53">  153</a></span>&#160;    image_meta_h  <a class="code" href="../../df/d0c/_file_8h.html#a9cb994692e8daaf094623152f5f88d53">imageMetaHandle</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a2474a5474cbff19523a51eb1de01cda4">  154</a></span>&#160;    <span class="keywordtype">int</span>           <a class="code" href="../../df/d0c/_file_8h.html#a2474a5474cbff19523a51eb1de01cda4">width</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#ad12fc34ce789bce6c8a05d8a17138534">  155</a></span>&#160;    <span class="keywordtype">int</span>           <a class="code" href="../../df/d0c/_file_8h.html#ad12fc34ce789bce6c8a05d8a17138534">height</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#a077fc46f97fd76e21ef941afe99e6eaa">  157</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#a077fc46f97fd76e21ef941afe99e6eaa">datetaken</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#ac42679c44413eda88288568352b90dd9">  158</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#ac42679c44413eda88288568352b90dd9">burst_id</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../df/d0c/_file_8h.html#af61699ef5054dcf075cbf29d59ed8d3c">  159</a></span>&#160;    <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#af61699ef5054dcf075cbf29d59ed8d3c">media_id</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;} <a class="code" href="../../df/d0c/_file_8h.html#a35ac9763da91618c3d9e8ba346f79db7">ImageExtends</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;Image  <a class="code" href="../../df/d0c/_file_8h.html#ad17366b79a466f9119bb51eb66959ceb">NewImage</a> ();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a4dcf832a1b8f74b72f2fd59b99c53eb6">DestroyImage</a> (Image this_gen);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../df/d0c/_file_8h.html#a5222eaad094d10f30280a92e6262c7f3">getImageInfo</a> (Image this_gen, <a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> src);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#aca1b404580307734c234029ee9ec785f">getImageBurstId</a> (Image this_gen);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#afa46334dca385b7745cc9b24125af485">getImageMediaId</a> (Image this_gen);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<a class="code" href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a> <a class="code" href="../../df/d0c/_file_8h.html#aa257a3267f9eba5245c8827456c364d1">getImageDateTaken</a> (Image this_gen);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">int</span>    <a class="code" href="../../df/d0c/_file_8h.html#a265af397b45973553ffe7b24f5b294a1">getImageWidth</a> (Image this_gen);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">int</span>    <a class="code" href="../../df/d0c/_file_8h.html#a234e4aeffbda89026d122582504b1eb8">getImageHeight</a> (Image this_gen);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif //_FILE_H</span></div>
+<div class="ttc" id="struct___video_html_a28466d9896b523beacac4a1add633aa6"><div class="ttname"><a href="../../d1/dd7/struct___video.html#a28466d9896b523beacac4a1add633aa6">_Video::getInfo</a></div><div class="ttdeci">String(* getInfo)(Video this_gen, metadata_extractor_attr_e element)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00066">File.h:66</a></div></div>
+<div class="ttc" id="_file_8h_html_a78a40226b2a70fa8372ae14b58f2dad8"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a78a40226b2a70fa8372ae14b58f2dad8">NewVideo</a></div><div class="ttdeci">Video NewVideo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00150">File.c:150</a></div></div>
+<div class="ttc" id="_file_8h_html_af01f9025ee8223f530578cb9d13b090d"><div class="ttname"><a href="../../df/d0c/_file_8h.html#af01f9025ee8223f530578cb9d13b090d">stopVideo</a></div><div class="ttdeci">void stopVideo(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00218">File.c:218</a></div></div>
+<div class="ttc" id="_file_8h_html_a270efb2f74fd2361e50e9ccb7e4f8994"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a270efb2f74fd2361e50e9ccb7e4f8994">getVideoInfo</a></div><div class="ttdeci">String getVideoInfo(Video this_gen, metadata_extractor_attr_e element)</div><div class="ttdoc">for use this function, caller must import &lt;metadata_extractor.h&gt; </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00237">File.c:237</a></div></div>
+<div class="ttc" id="_file_8h_html_ae90b76aa97f5689ba22a80cbf6f95a84"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ae90b76aa97f5689ba22a80cbf6f95a84">_VideoExtends::EvasObject</a></div><div class="ttdeci">Evas_Object * EvasObject</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00087">File.h:87</a></div></div>
+<div class="ttc" id="_file_8h_html_a5222eaad094d10f30280a92e6262c7f3"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a5222eaad094d10f30280a92e6262c7f3">getImageInfo</a></div><div class="ttdeci">void getImageInfo(Image this_gen, String src)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00470">File.c:470</a></div></div>
+<div class="ttc" id="_file_8h_html_a1c24d11e9397892d289591033dd8d174"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a1c24d11e9397892d289591033dd8d174">DestroyAudio</a></div><div class="ttdeci">void DestroyAudio(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00309">File.c:309</a></div></div>
+<div class="ttc" id="_file_8h_html_a07bff016d794342402eac0008abf3f62"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a07bff016d794342402eac0008abf3f62">pauseAudio</a></div><div class="ttdeci">void pauseAudio(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00343">File.c:343</a></div></div>
+<div class="ttc" id="_file_8h_html_a690640387f7b7aa6802c456446607b7e"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a690640387f7b7aa6802c456446607b7e">AudioExtends</a></div><div class="ttdeci">struct _AudioExtends AudioExtends</div></div>
+<div class="ttc" id="struct___file_html"><div class="ttname"><a href="../../d0/d3c/struct___file.html">_File</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00031">File.h:31</a></div></div>
+<div class="ttc" id="struct___audio_html"><div class="ttname"><a href="../../d6/dc3/struct___audio.html">_Audio</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00098">File.h:98</a></div></div>
+<div class="ttc" id="_file_8h_html_a2474a5474cbff19523a51eb1de01cda4"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a2474a5474cbff19523a51eb1de01cda4">_ImageExtends::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00154">File.h:154</a></div></div>
+<div class="ttc" id="_file_8h_html_a23fb13c9330e924604c6d93e67e957c6"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a23fb13c9330e924604c6d93e67e957c6">DestroyVideo</a></div><div class="ttdeci">void DestroyVideo(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00175">File.c:175</a></div></div>
+<div class="ttc" id="struct___video_html_af1d96a39825d2bb1300661601fd0aa7a"><div class="ttname"><a href="../../d1/dd7/struct___video.html#af1d96a39825d2bb1300661601fd0aa7a">_Video::Pause</a></div><div class="ttdeci">void(* Pause)(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00060">File.h:60</a></div></div>
+<div class="ttc" id="_file_8h_html_aeb62f8214ffbffd373f144739b9eca60"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aeb62f8214ffbffd373f144739b9eca60">Image</a></div><div class="ttdeci">struct _Image * Image</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00132">File.h:132</a></div></div>
+<div class="ttc" id="_file_8h_html_aa257a3267f9eba5245c8827456c364d1"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aa257a3267f9eba5245c8827456c364d1">getImageDateTaken</a></div><div class="ttdeci">String getImageDateTaken(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00568">File.c:568</a></div></div>
+<div class="ttc" id="_file_8h_html_a7073fc7cfe96be95f74c825568473c79"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a7073fc7cfe96be95f74c825568473c79">playVideo</a></div><div class="ttdeci">void playVideo(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00195">File.c:195</a></div></div>
+<div class="ttc" id="_file_8h_html_afb8274c680a31f19a7967b768e11ba52"><div class="ttname"><a href="../../df/d0c/_file_8h.html#afb8274c680a31f19a7967b768e11ba52">_AudioExtends::audioMetadataHandle</a></div><div class="ttdeci">metadata_extractor_h audioMetadataHandle</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00126">File.h:126</a></div></div>
+<div class="ttc" id="_file_8h_html_dd/dec/struct___image_extends"><div class="ttname"><a href="../../df/d0c/_file_8h.html#dd/dec/struct___image_extends">_ImageExtends</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00149">File.h:149</a></div></div>
+<div class="ttc" id="struct___file_html_a688001b808e44b036dac30773decb791"><div class="ttname"><a href="../../d0/d3c/struct___file.html#a688001b808e44b036dac30773decb791">_File::deleteSearchedList</a></div><div class="ttdeci">void(* deleteSearchedList)(GList *searchedList)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00042">File.h:42</a></div></div>
+<div class="ttc" id="_file_8h_html_a35ac9763da91618c3d9e8ba346f79db7"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a35ac9763da91618c3d9e8ba346f79db7">ImageExtends</a></div><div class="ttdeci">struct _ImageExtends ImageExtends</div></div>
+<div class="ttc" id="_file_8h_html_a24c96542e7d59186d5d414503928920a"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a24c96542e7d59186d5d414503928920a">_ImageExtends::image</a></div><div class="ttdeci">struct _Image image</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00152">File.h:152</a></div></div>
+<div class="ttc" id="_file_8h_html_a0c761970ca029f0974eadbb58090641c"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a0c761970ca029f0974eadbb58090641c">_VideoExtends::videoMetadataHandle</a></div><div class="ttdeci">metadata_extractor_h videoMetadataHandle</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00089">File.h:89</a></div></div>
+<div class="ttc" id="struct___video_html_a1b806abc2d87bcfdb8fc81eeb349062e"><div class="ttname"><a href="../../d1/dd7/struct___video.html#a1b806abc2d87bcfdb8fc81eeb349062e">_Video::setURI</a></div><div class="ttdeci">void(* setURI)(Video this_gen, String uri)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00068">File.h:68</a></div></div>
+<div class="ttc" id="_file_8h_html_ad17366b79a466f9119bb51eb66959ceb"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ad17366b79a466f9119bb51eb66959ceb">NewImage</a></div><div class="ttdeci">Image NewImage()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00407">File.c:407</a></div></div>
+<div class="ttc" id="_file_8h_html_af61699ef5054dcf075cbf29d59ed8d3c"><div class="ttname"><a href="../../df/d0c/_file_8h.html#af61699ef5054dcf075cbf29d59ed8d3c">_ImageExtends::media_id</a></div><div class="ttdeci">String media_id</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00159">File.h:159</a></div></div>
+<div class="ttc" id="struct___video_html_aabb39795a3af7a469d10950d2b088ce6"><div class="ttname"><a href="../../d1/dd7/struct___video.html#aabb39795a3af7a469d10950d2b088ce6">_Video::Record</a></div><div class="ttdeci">void(* Record)(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00064">File.h:64</a></div></div>
+<div class="ttc" id="_file_8h_html_a9d83a800fb7cdb6ab6042c3b8208603e"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a9d83a800fb7cdb6ab6042c3b8208603e">copyFile</a></div><div class="ttdeci">void copyFile(String src, String dst)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00058">File.c:58</a></div></div>
+<div class="ttc" id="struct___audio_html_a3d78751cda929e033894cbd9f552ae8e"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#a3d78751cda929e033894cbd9f552ae8e">_Audio::Pause</a></div><div class="ttdeci">void(* Pause)(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00102">File.h:102</a></div></div>
+<div class="ttc" id="struct___video_html_ad9c252b2b06ead2f188d91339e651485"><div class="ttname"><a href="../../d1/dd7/struct___video.html#ad9c252b2b06ead2f188d91339e651485">_Video::Stop</a></div><div class="ttdeci">void(* Stop)(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00062">File.h:62</a></div></div>
+<div class="ttc" id="struct___image_html_a170cc9a88ad9e65b2d8725d1370bc946"><div class="ttname"><a href="../../d5/da0/struct___image.html#a170cc9a88ad9e65b2d8725d1370bc946">_Image::getDateTaken</a></div><div class="ttdeci">String(* getDateTaken)(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00142">File.h:142</a></div></div>
+<div class="ttc" id="_file_8h_html_a234e4aeffbda89026d122582504b1eb8"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a234e4aeffbda89026d122582504b1eb8">getImageHeight</a></div><div class="ttdeci">int getImageHeight(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00580">File.c:580</a></div></div>
+<div class="ttc" id="_file_8h_html_a265af397b45973553ffe7b24f5b294a1"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a265af397b45973553ffe7b24f5b294a1">getImageWidth</a></div><div class="ttdeci">int getImageWidth(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00574">File.c:574</a></div></div>
+<div class="ttc" id="_file_8h_html_aca1b404580307734c234029ee9ec785f"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aca1b404580307734c234029ee9ec785f">getImageBurstId</a></div><div class="ttdeci">String getImageBurstId(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00554">File.c:554</a></div></div>
+<div class="ttc" id="_file_8h_html_a7d6bf405559699710a43dccea8d0a4e1"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a7d6bf405559699710a43dccea8d0a4e1">pauseVideo</a></div><div class="ttdeci">void pauseVideo(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00210">File.c:210</a></div></div>
+<div class="ttc" id="_file_8h_html_a180e9ce66a35b03ca09693ff083320d0"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a180e9ce66a35b03ca09693ff083320d0">setAudioURI</a></div><div class="ttdeci">void setAudioURI(Audio this_gen, String uri)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00367">File.c:367</a></div></div>
+<div class="ttc" id="struct___image_html_ab6c9b3a1c46d72f02fd0197b3d154b75"><div class="ttname"><a href="../../d5/da0/struct___image.html#ab6c9b3a1c46d72f02fd0197b3d154b75">_Image::extractInfo</a></div><div class="ttdeci">void(* extractInfo)(Image this_gen, String src)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00136">File.h:136</a></div></div>
+<div class="ttc" id="_file_8h_html_aa5784e2c1293cd9248e7bd28183fc1f8"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aa5784e2c1293cd9248e7bd28183fc1f8">_VideoExtends::video</a></div><div class="ttdeci">struct _Video video</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00086">File.h:86</a></div></div>
+<div class="ttc" id="struct___audio_html_a04a848082fe555df88ae9bc35f4223d3"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#a04a848082fe555df88ae9bc35f4223d3">_Audio::Stop</a></div><div class="ttdeci">void(* Stop)(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00104">File.h:104</a></div></div>
+<div class="ttc" id="_file_8h_html_aaff5acd3166a9688ec8264308e24f983"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aaff5acd3166a9688ec8264308e24f983">setEvasObject</a></div><div class="ttdeci">void setEvasObject(Video this_gen, Evas_Object *EvasObject)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00272">File.c:272</a></div></div>
+<div class="ttc" id="_file_8h_html_aae2f7d950e3022f08c886332538ed231"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aae2f7d950e3022f08c886332538ed231">moveFile</a></div><div class="ttdeci">void moveFile(String src, String dst)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00053">File.c:53</a></div></div>
+<div class="ttc" id="_file_8h_html_ad12fc34ce789bce6c8a05d8a17138534"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ad12fc34ce789bce6c8a05d8a17138534">_ImageExtends::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00155">File.h:155</a></div></div>
+<div class="ttc" id="dit_8h_html_a2efe6d463d80744789f228f5dc4baa39"><div class="ttname"><a href="../../d6/dff/dit_8h.html#a2efe6d463d80744789f228f5dc4baa39">String</a></div><div class="ttdeci">char * String</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dff/dit_8h_source.html#l00050">dit.h:50</a></div></div>
+<div class="ttc" id="_file_8h_html_a077fc46f97fd76e21ef941afe99e6eaa"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a077fc46f97fd76e21ef941afe99e6eaa">_ImageExtends::datetaken</a></div><div class="ttdeci">String datetaken</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00157">File.h:157</a></div></div>
+<div class="ttc" id="_file_8h_html_a28bed31813d704b8e396d105b6b678b2"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a28bed31813d704b8e396d105b6b678b2">VideoExtends</a></div><div class="ttdeci">struct _VideoExtends VideoExtends</div></div>
+<div class="ttc" id="struct___image_html_ac1af259a21d8c67dab2729dc2ca8e6ab"><div class="ttname"><a href="../../d5/da0/struct___image.html#ac1af259a21d8c67dab2729dc2ca8e6ab">_Image::getWidth</a></div><div class="ttdeci">int(* getWidth)(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00144">File.h:144</a></div></div>
+<div class="ttc" id="_file_8h_html_ab44ac1360d2598918dd2c655833e10c0"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ab44ac1360d2598918dd2c655833e10c0">DestroyFile</a></div><div class="ttdeci">void DestroyFile(File this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00035">File.c:35</a></div></div>
+<div class="ttc" id="struct___image_html_a43ccbbf065326a2647887464f16b7373"><div class="ttname"><a href="../../d5/da0/struct___image.html#a43ccbbf065326a2647887464f16b7373">_Image::getBurstId</a></div><div class="ttdeci">String(* getBurstId)(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00138">File.h:138</a></div></div>
+<div class="ttc" id="_file_8h_html_a5fd9dfc5896f2475249e5814bc957cd3"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a5fd9dfc5896f2475249e5814bc957cd3">_AudioExtends::audio</a></div><div class="ttdeci">struct _Audio audio</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00124">File.h:124</a></div></div>
+<div class="ttc" id="struct___image_html_a3ebc4a1fcad891955f6bd315dbf79b87"><div class="ttname"><a href="../../d5/da0/struct___image.html#a3ebc4a1fcad891955f6bd315dbf79b87">_Image::getMediaId</a></div><div class="ttdeci">String(* getMediaId)(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00140">File.h:140</a></div></div>
+<div class="ttc" id="_file_8h_html_a593160c5700f408e45aa387e4698dff5"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a593160c5700f408e45aa387e4698dff5">stopAudio</a></div><div class="ttdeci">void stopAudio(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00352">File.c:352</a></div></div>
+<div class="ttc" id="struct___audio_html_a406855bb5ad50dfefae012be99b06cde"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#a406855bb5ad50dfefae012be99b06cde">_Audio::Play</a></div><div class="ttdeci">void(* Play)(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00100">File.h:100</a></div></div>
+<div class="ttc" id="_file_8h_html_a3f94bfe8bf8674fcb686bee025ccfd1f"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a3f94bfe8bf8674fcb686bee025ccfd1f">deleteSearchedList</a></div><div class="ttdeci">void deleteSearchedList(GList *searchedList)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00137">File.c:137</a></div></div>
+<div class="ttc" id="struct___audio_html_a1c40fa54cdb34775aeb35430f5901990"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#a1c40fa54cdb34775aeb35430f5901990">_Audio::setURI</a></div><div class="ttdeci">void(* setURI)(Audio this_gen, String uri)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00110">File.h:110</a></div></div>
+<div class="ttc" id="struct___image_html_a8958794ba1906035ca256305dc103399"><div class="ttname"><a href="../../d5/da0/struct___image.html#a8958794ba1906035ca256305dc103399">_Image::getHeight</a></div><div class="ttdeci">int(* getHeight)(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00146">File.h:146</a></div></div>
+<div class="ttc" id="struct___file_html_a53d84115a9c66fe30c652f908da6d3b7"><div class="ttname"><a href="../../d0/d3c/struct___file.html#a53d84115a9c66fe30c652f908da6d3b7">_File::Delete</a></div><div class="ttdeci">void(* Delete)(String src)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00034">File.h:34</a></div></div>
+<div class="ttc" id="_file_8h_html_af2d3caee7d7fb4f2b1a52b62f47b4000"><div class="ttname"><a href="../../df/d0c/_file_8h.html#af2d3caee7d7fb4f2b1a52b62f47b4000">recordAudio</a></div><div class="ttdeci">void recordAudio(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00361">File.c:361</a></div></div>
+<div class="ttc" id="_file_8h_html_ac0b02717b928a36338653c49b0821365"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ac0b02717b928a36338653c49b0821365">_VideoExtends::uri</a></div><div class="ttdeci">String uri</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00090">File.h:90</a></div></div>
+<div class="ttc" id="struct___video_html_a1245c2a3dff66080a4c0f9fd812c25e1"><div class="ttname"><a href="../../d1/dd7/struct___video.html#a1245c2a3dff66080a4c0f9fd812c25e1">_Video::setObject</a></div><div class="ttdeci">void(* setObject)(Video this_gen, Evas_Object *EvasObject)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00070">File.h:70</a></div></div>
+<div class="ttc" id="_file_8h_html_aabe6dc4fa995ed8e3f85097dd589ea6f"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aabe6dc4fa995ed8e3f85097dd589ea6f">Video</a></div><div class="ttdeci">struct _Video * Video</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00054">File.h:54</a></div></div>
+<div class="ttc" id="struct___video_html"><div class="ttname"><a href="../../d1/dd7/struct___video.html">_Video</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00056">File.h:56</a></div></div>
+<div class="ttc" id="_file_8h_html_ac42679c44413eda88288568352b90dd9"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ac42679c44413eda88288568352b90dd9">_ImageExtends::burst_id</a></div><div class="ttdeci">String burst_id</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00158">File.h:158</a></div></div>
+<div class="ttc" id="struct___audio_html_abcf52f46187e6c2e2fbc5bd8512adad1"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#abcf52f46187e6c2e2fbc5bd8512adad1">_Audio::Record</a></div><div class="ttdeci">void(* Record)(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00106">File.h:106</a></div></div>
+<div class="ttc" id="struct___video_html_a638d742602c39ab64bbded0f4521d106"><div class="ttname"><a href="../../d1/dd7/struct___video.html#a638d742602c39ab64bbded0f4521d106">_Video::Play</a></div><div class="ttdeci">void(* Play)(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00058">File.h:58</a></div></div>
+<div class="ttc" id="_file_8h_html_d8/d6c/struct___video_extends"><div class="ttname"><a href="../../df/d0c/_file_8h.html#d8/d6c/struct___video_extends">_VideoExtends</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00084">File.h:84</a></div></div>
+<div class="ttc" id="_file_8h_html_afa46334dca385b7745cc9b24125af485"><div class="ttname"><a href="../../df/d0c/_file_8h.html#afa46334dca385b7745cc9b24125af485">getImageMediaId</a></div><div class="ttdeci">String getImageMediaId(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00561">File.c:561</a></div></div>
+<div class="ttc" id="_file_8h_html_a9cb994692e8daaf094623152f5f88d53"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a9cb994692e8daaf094623152f5f88d53">_ImageExtends::imageMetaHandle</a></div><div class="ttdeci">image_meta_h imageMetaHandle</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00153">File.h:153</a></div></div>
+<div class="ttc" id="_file_8h_html_d9/d1c/struct___audio_extends"><div class="ttname"><a href="../../df/d0c/_file_8h.html#d9/d1c/struct___audio_extends">_AudioExtends</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00122">File.h:122</a></div></div>
+<div class="ttc" id="struct___file_html_a7eb122224c5bd93834784151526da9e2"><div class="ttname"><a href="../../d0/d3c/struct___file.html#a7eb122224c5bd93834784151526da9e2">_File::Move</a></div><div class="ttdeci">void(* Move)(String src, String dst)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00038">File.h:38</a></div></div>
+<div class="ttc" id="_file_8h_html_acdbf0738be9fa70a60412d48cad881ee"><div class="ttname"><a href="../../df/d0c/_file_8h.html#acdbf0738be9fa70a60412d48cad881ee">_VideoExtends::player_handle</a></div><div class="ttdeci">player_h player_handle</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00088">File.h:88</a></div></div>
+<div class="ttc" id="struct___file_html_a92496803181c17bf9099dd7a8daf15b9"><div class="ttname"><a href="../../d0/d3c/struct___file.html#a92496803181c17bf9099dd7a8daf15b9">_File::Copy</a></div><div class="ttdeci">void(* Copy)(String src, String dst)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00036">File.h:36</a></div></div>
+<div class="ttc" id="_file_8h_html_a5b40295ac61cd591f16df0830662cf41"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a5b40295ac61cd591f16df0830662cf41">recordVideo</a></div><div class="ttdeci">void recordVideo(Video this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00226">File.c:226</a></div></div>
+<div class="ttc" id="_file_8h_html_a802060123b98d25cf02e2883ed640576"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a802060123b98d25cf02e2883ed640576">setVideoURI</a></div><div class="ttdeci">void setVideoURI(Video this_gen, String URI)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00247">File.c:247</a></div></div>
+<div class="ttc" id="struct___audio_html_af557af230def744c4b3ed69d5b3c2076"><div class="ttname"><a href="../../d6/dc3/struct___audio.html#af557af230def744c4b3ed69d5b3c2076">_Audio::getInfo</a></div><div class="ttdeci">String(* getInfo)(Audio this_gen, metadata_extractor_attr_e metadataKey)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00108">File.h:108</a></div></div>
+<div class="ttc" id="_file_8h_html_a4dcf832a1b8f74b72f2fd59b99c53eb6"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a4dcf832a1b8f74b72f2fd59b99c53eb6">DestroyImage</a></div><div class="ttdeci">void DestroyImage(Image this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00427">File.c:427</a></div></div>
+<div class="ttc" id="_file_8h_html_a37d3938964971e2cb1ed957c60f7a5b9"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a37d3938964971e2cb1ed957c60f7a5b9">Audio</a></div><div class="ttdeci">struct _Audio * Audio</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00096">File.h:96</a></div></div>
+<div class="ttc" id="struct___image_html"><div class="ttname"><a href="../../d5/da0/struct___image.html">_Image</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00134">File.h:134</a></div></div>
+<div class="ttc" id="_file_8h_html_a223afacb101c29984502fb9de2268a2a"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a223afacb101c29984502fb9de2268a2a">playAudio</a></div><div class="ttdeci">void playAudio(Audio this_gen)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00330">File.c:330</a></div></div>
+<div class="ttc" id="_file_8h_html_ad189205626097979d619616eec687c29"><div class="ttname"><a href="../../df/d0c/_file_8h.html#ad189205626097979d619616eec687c29">deleteFile</a></div><div class="ttdeci">void deleteFile(String src)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00043">File.c:43</a></div></div>
+<div class="ttc" id="_file_8h_html_aa237f6e1a4cc51ea14e4a91540cccdb6"><div class="ttname"><a href="../../df/d0c/_file_8h.html#aa237f6e1a4cc51ea14e4a91540cccdb6">searchFile</a></div><div class="ttdeci">GList * searchFile(String src, String dst)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00120">File.c:120</a></div></div>
+<div class="ttc" id="dit_8h_html"><div class="ttname"><a href="../../d6/dff/dit_8h.html">dit.h</a></div><div class="ttdoc">DIT Library를 통합 관리한다. </div></div>
+<div class="ttc" id="_file_8h_html_a45c510e0fb5b6f017899effc87dbb2b1"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a45c510e0fb5b6f017899effc87dbb2b1">File</a></div><div class="ttdeci">struct _File * File</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00029">File.h:29</a></div></div>
+<div class="ttc" id="_file_8h_html_a1f0fe23f2354710d5a4365375b7d9787"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a1f0fe23f2354710d5a4365375b7d9787">NewFile</a></div><div class="ttdeci">File NewFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00023">File.c:23</a></div></div>
+<div class="ttc" id="_file_8h_html_a03603cc9bcb829b069fe0d1d9f97f5ab"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a03603cc9bcb829b069fe0d1d9f97f5ab">getAudioInfo</a></div><div class="ttdeci">String getAudioInfo(Audio this_gen, metadata_extractor_attr_e metadataKey)</div><div class="ttdoc">for use this function, caller must import &lt;metadata_extractor.h&gt; </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00395">File.c:395</a></div></div>
+<div class="ttc" id="_file_8h_html_a5131353393d09f147cbc061ad339e106"><div class="ttname"><a href="../../df/d0c/_file_8h.html#a5131353393d09f147cbc061ad339e106">NewAudio</a></div><div class="ttdeci">Audio NewAudio()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9c/_file_8c_source.html#l00285">File.c:285</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_e2c88a9c3d830e594a88bfb657bfbe66.html">Dropbox</a></li><li class="navelem"><a class="el" href="../../dir_beeca0844f0b986207508ef8a897f9be.html">DJ</a></li><li class="navelem"><a class="el" href="../../dir_535975018cac6ecbedf1d757271dec4b.html">SSM</a></li><li class="navelem"><a class="el" href="../../dir_97ea4a36b8dfa2f29c6acdb06c079dd7.html">DIT Documents_7_25</a></li><li class="navelem"><a class="el" href="../../dir_6862d95ab45d02024dd512f27353e4c4.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_992a70ae559b407e83cb9aace1cbb4a9.html">Device</a></li><li class="navelem"><a class="el" href="../../df/d0c/_file_8h.html">File.h</a></li>
+    <li class="footer">생성시간 : 토 7월 25 2015 03:37:32, 프로젝트명 : Do It Tizen, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

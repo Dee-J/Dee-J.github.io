@@ -1,0 +1,7 @@
+<map id="NewAudio" name="NewAudio">
+<area shape="rect" id="node2" href="$d7/d37/File_8c.html#a03603cc9bcb829b069fe0d1d9f97f5ab" title="음악 파일의 meta data를 가져온다. " alt="" coords="136,5,232,33"/>
+<area shape="rect" id="node3" href="$d7/d37/File_8c.html#a590735dcb945de607b535b3dd459bff8" title="음악 파일을 일시 정지한다. " alt="" coords="138,57,230,85"/>
+<area shape="rect" id="node4" href="$d7/d37/File_8c.html#a05d8028494e17474e3a40fbbd16255af" title="음악 파일을 재생한다. " alt="" coords="144,109,224,137"/>
+<area shape="rect" id="node5" href="$d7/d37/File_8c.html#ab9513344a0f0e1b777159e36cc30c2f0" title="동영상 파일을 정지한다. " alt="" coords="144,161,224,189"/>
+<area shape="rect" id="node6" href="$d7/d37/File_8c.html#ae05ed13da39c10e526f86acd1c45f8da" title="생성한 Audio 객체의 URI를 설정한다. " alt="" coords="136,213,232,241"/>
+</map>

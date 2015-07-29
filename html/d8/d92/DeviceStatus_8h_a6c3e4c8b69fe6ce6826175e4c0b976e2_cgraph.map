@@ -1,0 +1,4 @@
+<map id="NewBattery" name="NewBattery">
+<area shape="rect" id="node2" href="$d0/df5/DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23" title="getBatteryRemainsPercent" alt="" coords="144,5,325,33"/>
+<area shape="rect" id="node3" href="$d0/df5/DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636" title="isBatteryCharging" alt="" coords="171,57,298,85"/>
+</map>

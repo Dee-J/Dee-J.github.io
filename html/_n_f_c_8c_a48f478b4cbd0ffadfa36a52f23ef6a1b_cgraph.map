@@ -1,0 +1,7 @@
+<map id="NewNFC" name="NewNFC">
+<area shape="rect" id="node2" href="$_n_f_c_8c.html#af4d6a3d2d34a4e040db1c9558d3a6605" title="isNFCAccessible" alt="" coords="135,5,257,33"/>
+<area shape="rect" id="node3" href="$_n_f_c_8c.html#ace29c66a88baa5247a996d2f324532ff" title="onNFCConnect" alt="" coords="139,57,253,85"/>
+<area shape="rect" id="node4" href="$_n_f_c_8c.html#a967e0ea57b1755212f3793e2b6133f46" title="onNFCDisconnect" alt="" coords="131,109,261,137"/>
+<area shape="rect" id="node5" href="$_n_f_c_8c.html#a391630c994207503df21aa33b58bcb1a" title="NFCSend" alt="" coords="156,161,236,189"/>
+<area shape="rect" id="node6" href="$_n_f_c_8c.html#ae8da301bbf98e31b07f5c5f541a7976c" title="NFCRecv" alt="" coords="156,213,236,241"/>
+</map>

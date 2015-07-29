@@ -1,0 +1,4600 @@
+\hypertarget{_sensor_8h}{\section{Sensor.\-h 파일 참조}
+\label{_sensor_8h}\index{Sensor.\-h@{Sensor.\-h}}
+}
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$sensor.\-h$>$}\\*
+Sensor.\-h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{de/d36/_sensor_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{dc/d6a/_sensor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{데이타 구조}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_d9/d01/struct__4d__data}{\-\_\-4d\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_d9/df4/struct___light__data}{\-\_\-\-Light\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_d5/d13/struct___proximity__data}{\-\_\-\-Proximity\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_df/d97/struct___pressure__data}{\-\_\-\-Pressure\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_df/d48/struct___ultra_violet__data}{\-\_\-\-Ultra\-Violet\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_da/dc1/struct___temperature__data}{\-\_\-\-Temperature\-\_\-data}
+\item 
+struct \hyperlink{_sensor_8h_df/de3/struct___humidity__data}{\-\_\-\-Humidity\-\_\-data}
+\item 
+struct \hyperlink{struct___accelerometer}{\-\_\-\-Accelerometer}
+\item 
+struct \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{\-\_\-\-Accelerometer\-Extend}
+\item 
+struct \hyperlink{struct___gravity}{\-\_\-\-Gravity}
+\item 
+struct \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{\-\_\-\-Gravity\-Extend}
+\item 
+struct \hyperlink{struct___linear_accelation}{\-\_\-\-Linear\-Accelation}
+\item 
+struct \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{\-\_\-\-Linear\-Accelation\-Extend}
+\item 
+struct \hyperlink{struct___magneto_meter}{\-\_\-\-Magneto\-Meter}
+\item 
+struct \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{\-\_\-\-Magneto\-Meter\-Extend}
+\item 
+struct \hyperlink{struct___rotation_vector}{\-\_\-\-Rotation\-Vector}
+\item 
+struct \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{\-\_\-\-Rotation\-Vector\-Extend}
+\item 
+struct \hyperlink{struct___orientation}{\-\_\-\-Orientation}
+\item 
+struct \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{\-\_\-\-Orientation\-Extend}
+\item 
+struct \hyperlink{struct___gyroscope}{\-\_\-\-Gyroscope}
+\item 
+struct \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{\-\_\-\-Gyroscope\-Extend}
+\item 
+struct \hyperlink{struct___light}{\-\_\-\-Light}
+\item 
+struct \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{\-\_\-\-Light\-Extend}
+\item 
+struct \hyperlink{struct___proximity}{\-\_\-\-Proximity}
+\item 
+struct \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{\-\_\-\-Proximity\-Extend}
+\item 
+struct \hyperlink{struct___pressure}{\-\_\-\-Pressure}
+\item 
+struct \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{\-\_\-\-Pressure\-Extend}
+\item 
+struct \hyperlink{struct___ultra_violet}{\-\_\-\-Ultra\-Violet}
+\item 
+struct \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{\-\_\-\-Ultra\-Violet\-Extend}
+\item 
+struct \hyperlink{struct___temperature}{\-\_\-\-Temperature}
+\item 
+struct \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{\-\_\-\-Temperature\-Extend}
+\item 
+struct \hyperlink{struct___humidity}{\-\_\-\-Humidity}
+\item 
+struct \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{\-\_\-\-Humidity\-Extend}
+\end{DoxyCompactItemize}
+\subsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} )(sensor\-\_\-h sensor, sensor\-\_\-event\-\_\-s $\ast$event, void $\ast$user\-\_\-data)
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_a07dca4068be90bc25a2045875cefa290}{\-\_\-3d\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_aad4991bb642841f2928476723063a8c6}{Accelerometer\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_a6e9c581566bfca9e8c63cb6e4a703062}{Gravity\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_ab972181c85e723d7d5b22be3b9519281}{Linear\-Acceleration\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_afbe589975942218ce5662af2ba07d106}{Magnetometer\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_a7c3785888229956a330934052e67f0bc}{Orientation\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d29/struct__3d__data}{\-\_\-3d\-\_\-data} \hyperlink{_sensor_8h_a10859114954f1b73537e418caa4cd698}{Gyroscope\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_d9/d01/struct__4d__data}{\-\_\-4d\-\_\-data} \hyperlink{_sensor_8h_a544a9cbbdfd547167181ebc171137ad6}{Rotation\-Vector\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_d9/df4/struct___light__data}{\-\_\-\-Light\-\_\-data} \hyperlink{_sensor_8h_a457745a8acf045e2ed86752fb84543f4}{Light\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_d5/d13/struct___proximity__data}{\-\_\-\-Proximity\-\_\-data} \hyperlink{_sensor_8h_a662d5923038d3329cc0219faaed6ddf3}{Proximity\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d97/struct___pressure__data}{\-\_\-\-Pressure\-\_\-data} \hyperlink{_sensor_8h_aa9f86b0945dd3aa53269e0a120cce2b0}{Pressure\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/d48/struct___ultra_violet__data}{\-\_\-\-Ultra\-Violet\-\_\-data} \hyperlink{_sensor_8h_a7638ff5043cb10408c5bd3c3aef6e01c}{Ultra\-Violet\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_da/dc1/struct___temperature__data}{\-\_\-\-Temperature\-\_\-data} \hyperlink{_sensor_8h_aa61939fab26530f076ca04c0a058a287}{Temperature\-\_\-data}
+\item 
+typedef struct \hyperlink{_sensor_8h_df/de3/struct___humidity__data}{\-\_\-\-Humidity\-\_\-data} \hyperlink{_sensor_8h_ab28ba6903f252ea8a21375f598f0b83f}{Humidity\-\_\-data}
+\item 
+typedef struct \hyperlink{struct___accelerometer}{\-\_\-\-Accelerometer} $\ast$ \hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer}
+\item 
+typedef struct \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{\-\_\-\-Accelerometer\-Extend} \hyperlink{_sensor_8h_a71ee9c7ba23000d2ae955c827ba4262c}{Accelerometer\-Extend}
+\item 
+typedef struct \hyperlink{struct___gravity}{\-\_\-\-Gravity} $\ast$ \hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity}
+\item 
+typedef struct \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{\-\_\-\-Gravity\-Extend} \hyperlink{_sensor_8h_a4217164c977e03f27e194b6aa38864b7}{Gravity\-Extend}
+\item 
+typedef struct \hyperlink{struct___linear_accelation}{\-\_\-\-Linear\-Accelation} $\ast$ \hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation}
+\item 
+typedef struct \\*
+\hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{\-\_\-\-Linear\-Accelation\-Extend} \hyperlink{_sensor_8h_ac7cf2fca08fdc55bf8b359496ddb7286}{Linear\-Accelation\-Extend}
+\item 
+typedef struct \hyperlink{struct___magneto_meter}{\-\_\-\-Magneto\-Meter} $\ast$ \hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter}
+\item 
+typedef struct \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{\-\_\-\-Magneto\-Meter\-Extend} \hyperlink{_sensor_8h_ae56ce581a13244129664a7e5581ea46f}{Magneto\-Meter\-Extend}
+\item 
+typedef struct \hyperlink{struct___rotation_vector}{\-\_\-\-Rotation\-Vector} $\ast$ \hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector}
+\item 
+typedef struct \\*
+\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{\-\_\-\-Rotation\-Vector\-Extend} \hyperlink{_sensor_8h_aeae7ca8c2f220d6bc01a6a397bc82e6b}{Rotation\-Vector\-Extend}
+\item 
+typedef struct \hyperlink{struct___orientation}{\-\_\-\-Orientation} $\ast$ \hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation}
+\item 
+typedef struct \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{\-\_\-\-Orientation\-Extend} \hyperlink{_sensor_8h_ae63789ddd581760ca0731c08b233e9f5}{Orientation\-Extend}
+\item 
+typedef struct \hyperlink{struct___gyroscope}{\-\_\-\-Gyroscope} $\ast$ \hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope}
+\item 
+typedef struct \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{\-\_\-\-Gyroscope\-Extend} \hyperlink{_sensor_8h_a1ec83165645264aa9f6f45d750608125}{Gyroscope\-Extend}
+\item 
+typedef struct \hyperlink{struct___light}{\-\_\-\-Light} $\ast$ \hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light}
+\item 
+typedef struct \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{\-\_\-\-Light\-Extend} \hyperlink{_sensor_8h_a5cccfff7391c181f1a4de72ec3909282}{Light\-Extend}
+\item 
+typedef struct \hyperlink{struct___proximity}{\-\_\-\-Proximity} $\ast$ \hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity}
+\item 
+typedef struct \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{\-\_\-\-Proximity\-Extend} \hyperlink{_sensor_8h_a7123e0aa06c59719ba0debf7a906119e}{Proximity\-Extend}
+\item 
+typedef struct \hyperlink{struct___pressure}{\-\_\-\-Pressure} $\ast$ \hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure}
+\item 
+typedef struct \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{\-\_\-\-Pressure\-Extend} \hyperlink{_sensor_8h_a57b79966a6ee910b7d2047aa4932a399}{Pressure\-Extend}
+\item 
+typedef struct \hyperlink{struct___ultra_violet}{\-\_\-\-Ultra\-Violet} $\ast$ \hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet}
+\item 
+typedef struct \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{\-\_\-\-Ultra\-Violet\-Extend} \hyperlink{_sensor_8h_ace0c44e9ad2dc93f9f363d7d1e5b20e6}{Ultra\-Violet\-Extend}
+\item 
+typedef struct \hyperlink{struct___temperature}{\-\_\-\-Temperature} $\ast$ \hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature}
+\item 
+typedef struct \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{\-\_\-\-Temperature\-Extend} \hyperlink{_sensor_8h_a30c930518956d438b6c21c7d1df52916}{Temperature\-Extend}
+\item 
+typedef struct \hyperlink{struct___humidity}{\-\_\-\-Humidity} $\ast$ \hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity}
+\item 
+typedef struct \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{\-\_\-\-Humidity\-Extend} \hyperlink{_sensor_8h_a8a0f43e5c9d354763c0a5f5520179eef}{Humidity\-Extend}
+\end{DoxyCompactItemize}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} \hyperlink{_sensor_8h_a06eb7622b7f72af0df8ec0a8cf59a264}{New\-Accelerometer} ()
+\item 
+void \hyperlink{_sensor_8h_a275aeca9a471074bf414e5e9b817c8c1}{Destroy\-Accelerometer} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a2bfe312aa57e942492ca642483caf809}{add\-Accelerometer\-Callback} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a75055c3d4e99de5ef06dddef16a3b2be}{Accelerometer\-On} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a32486442211f1b5b2ce325bf656ba2b2}{Accelerometer\-Off} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a2b6a66daff2b6f6a9cc300fa0527d287}{is\-Accelerometer\-Supported} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_aad4991bb642841f2928476723063a8c6}{Accelerometer\-\_\-data} \hyperlink{_sensor_8h_a0b4861d129661a62f373681cb041176d}{get\-Accelerometer\-Value} (\hyperlink{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{Accelerometer} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} \hyperlink{_sensor_8h_a51cda1ca45f021ebf34ccb2e0506d08e}{New\-Gravity} ()
+\item 
+void \hyperlink{_sensor_8h_a4ac22619e930846038a60e69536844db}{Destroy\-Gravity} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a89cd825129358662ffd45c81216cca99}{add\-Gravity\-Callback} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_ab20c5c8ec881c6535fc224e305b130b3}{Gravity\-On} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a3d81ebb8299e2a04502aa300762ecbc1}{Gravity\-Off} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a22e9689eecee23872e261891f307b0a0}{is\-Gravity\-Supported} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a6e9c581566bfca9e8c63cb6e4a703062}{Gravity\-\_\-data} \hyperlink{_sensor_8h_a4ee54192834c7c04958013b4b07ff6ac}{get\-Gravity\-Value} (\hyperlink{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{Gravity} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} \hyperlink{_sensor_8h_abc0a6735c2aea4434517ced5dc52f549}{New\-Linear\-Accelation} ()
+\item 
+void \hyperlink{_sensor_8h_a855b978e0631263963def31aa53c3545}{Destroy\-Linear\-Accelation} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a5e72f4677624e63dcd7f6d3178636e6f}{add\-Linear\-Accelation\-Callback} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a46a6fcd7ccfef0a1308e01454c2b473c}{Linear\-Accelation\-On} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_afafbb2277b9322dd67cdc616e5471543}{Linear\-Accelation\-Off} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a2a94bd208e37017e2ab4f1cf579abf45}{is\-Linear\-Accelation\-Supported} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_ab972181c85e723d7d5b22be3b9519281}{Linear\-Acceleration\-\_\-data} \hyperlink{_sensor_8h_afbb418983c529e62b36bac3f6909a603}{get\-Linear\-Accelation\-Value} (\hyperlink{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{Linear\-Accelation} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} \hyperlink{_sensor_8h_ab2bf68e0ae5cc960f29112ffff6f08ae}{New\-Magneto\-Meter} ()
+\item 
+void \hyperlink{_sensor_8h_ae298bc095317e4a35cc6e0a875a5cf92}{Destroy\-Magneto\-Meter} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_acb8a9621960fdcc0f593aab88ecaac10}{add\-Magneto\-Meter\-Callback} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a39a353a14e3db0ce85502a35c5ccffb8}{Magneto\-Meter\-On} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_aa189af9499407c54b0814186aad32a89}{Magneto\-Meter\-Off} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a3c5023cd863dc994ca4da0e18237cc0e}{is\-Magneto\-Meter\-Supported} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_afbe589975942218ce5662af2ba07d106}{Magnetometer\-\_\-data} \hyperlink{_sensor_8h_af8d66fbc3858ea86baaec2cc3c1d33fc}{get\-Magneto\-Meter\-Value} (\hyperlink{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{Magneto\-Meter} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} \hyperlink{_sensor_8h_a09ad301eb5e821b4b88a1a994b5d5cc7}{New\-Rotation\-Vector} ()
+\item 
+void \hyperlink{_sensor_8h_a88e94d5f3af20819de0f97b12f5435b1}{Destroy\-Rotation\-Vector} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a00edfee78b3821c7e9e1099323810eef}{add\-Rotation\-Vector\-Callback} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a501763c17b7cd3e3a45dc595eee0e653}{Rotation\-Vector\-On} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a9b47e7ff5c669403305b3e2b5dec54a7}{Rotation\-Vector\-Off} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_ad26fd4fc6dd7b0968a47c9773759ba99}{is\-Rotation\-Vector\-Supported} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a544a9cbbdfd547167181ebc171137ad6}{Rotation\-Vector\-\_\-data} \hyperlink{_sensor_8h_ac36694c7e6f5b3b500268fcac7679abd}{get\-Rotation\-Vector\-Value} (\hyperlink{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{Rotation\-Vector} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} \hyperlink{_sensor_8h_ac3560f1e6ce8f03a1c34fb6f109da572}{New\-Orientation} ()
+\item 
+void \hyperlink{_sensor_8h_ab42d602375fb6943a8823543a349100a}{Destroy\-Orientation} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_aef10958529b5f1fb56d627dcf79ee46d}{add\-Orientation\-Callback} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_ad315026a5c51a1e139e4e83ed9aa57c0}{Orientation\-On} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_ab066d53e2553663195ec202037b4c90e}{Orientation\-Off} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_aa96ba937a81f05a243c500ff3a20c882}{is\-Orientation\-Supported} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a7c3785888229956a330934052e67f0bc}{Orientation\-\_\-data} \hyperlink{_sensor_8h_aca22031b16714ba50a646b347bf662a6}{get\-Orientation\-Value} (\hyperlink{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{Orientation} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} \hyperlink{_sensor_8h_a9e1a411a1d82a32b868fdd228b0a6f38}{New\-Gyroscope} ()
+\item 
+void \hyperlink{_sensor_8h_a33c4827cef482ac97b726c6afd4f2c02}{Destroy\-Gyroscope} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a9d7d07ef1eb6020144a3f7f73cb83322}{add\-Gyroscope\-Callback} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a3bd51264b2d2c9d88a28459ae55e5612}{Gyroscope\-On} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a64e72d01f92e9cd2f11538576b9bb25a}{Gyroscope\-Off} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a6ecc487a57d98c882e694edfc36b2c8a}{is\-Gyroscope\-Supported} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a10859114954f1b73537e418caa4cd698}{Gyroscope\-\_\-data} \hyperlink{_sensor_8h_a7cecfd5ca0547a9c75d70ec0e0747600}{get\-Gyroscope\-Value} (\hyperlink{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{Gyroscope} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} \hyperlink{_sensor_8h_a0c4f6e3c48b1791bb629d35daffdcf6b}{New\-Light} ()
+\item 
+void \hyperlink{_sensor_8h_a8886d4cca6cda321936c1db6050f46c9}{Destroy\-Light} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a84ab9c704285cfd7583f5dc91d004c8c}{add\-Light\-Callback} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a847e9da22f2baad56de0654d984af5d1}{Light\-On} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_aad1fdcdf9884e0840827b0329b6b1cce}{Light\-Off} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a91ed62c28cde9df2bfd3c441b8b5b37f}{is\-Light\-Supported} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a457745a8acf045e2ed86752fb84543f4}{Light\-\_\-data} \hyperlink{_sensor_8h_ab434c60f52e68a2c286306c2ea3a0526}{get\-Light\-Value} (\hyperlink{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{Light} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} \hyperlink{_sensor_8h_a4838a670d0babf7c4e9536ac90b5ce31}{New\-Proximity} ()
+\item 
+void \hyperlink{_sensor_8h_a826d9c3073df9e3332c8f6110bb3f991}{Destroy\-Proximity} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a4867bf176feb4485403cbfc8987f9b23}{add\-Proximity\-Callback} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a937d47b9ecf9519c249264f792e374e6}{Proximity\-On} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_aaa69c014251c0c8b0af42dc206ab7654}{Proximity\-Off} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_abc7f9541812695b9e33c550be306b3ea}{is\-Proximity\-Supported} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a662d5923038d3329cc0219faaed6ddf3}{Proximity\-\_\-data} \hyperlink{_sensor_8h_ab5d031471ccaac54c82623fac97cbd38}{get\-Proximity\-Value} (\hyperlink{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{Proximity} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} \hyperlink{_sensor_8h_a2e31d67fd20d2d4d8cf5ffcfcdfb372b}{New\-Pressure} ()
+\item 
+void \hyperlink{_sensor_8h_af30fd514c8a87224bc535116633bbba3}{Destroy\-Pressure} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a5b32cf60904b2e4c0770c0e2c279380d}{add\-Pressure\-Callback} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a830d2a896c4c8dd4991123976d241c6a}{Pressure\-On} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_add6c19cf32d48922624fcb270aed18ca}{Pressure\-Off} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a4a982f1d712c2603cba455cf3e0a4bce}{is\-Pressure\-Supported} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_aa9f86b0945dd3aa53269e0a120cce2b0}{Pressure\-\_\-data} \hyperlink{_sensor_8h_a46345879d23125c7d5d8d47a9c5a0854}{get\-Pressure\-Value} (\hyperlink{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{Pressure} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} \hyperlink{_sensor_8h_aa1bc7209d80c10661efecad94a9a413b}{New\-Ultra\-Violet} ()
+\item 
+void \hyperlink{_sensor_8h_a42bd8c6715137f5fd8892667fe232c5c}{Destroy\-Ultra\-Violet} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a9aec71aa3ca243dc5237c97df58f1fa7}{add\-Ultra\-Violet\-Callback} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a1c2365b2cd8c611014af58c29b4cd0b4}{Ultra\-Violet\-On} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_ae88a4f6ad9e9078a5188a603bfb8c638}{Ultra\-Violet\-Off} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_af0cc0227baf15db2ebcbccb183fdfa5b}{is\-Ultra\-Violet\-Supported} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a7638ff5043cb10408c5bd3c3aef6e01c}{Ultra\-Violet\-\_\-data} \hyperlink{_sensor_8h_a5fe7dc8b14714ace15c1e61f2229a0fc}{get\-Ultra\-Violet\-Value} (\hyperlink{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{Ultra\-Violet} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} \hyperlink{_sensor_8h_ac6bbff0f149ca6c8ab9315accf6b8235}{New\-Temperature} ()
+\item 
+void \hyperlink{_sensor_8h_a31db7bd04fb88393523fe985fe007023}{Destroy\-Temperature} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a03481f7bc6ba03a9b45bbff6b0edca38}{add\-Temperature\-Callback} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a618e482f104d7eb72bd47a37586334db}{Temperature\-On} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a9f5b9a0490e2f413db412c87b3c2c0c8}{Temperature\-Off} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_aec6c9326762b2f8f8f7ce662a03e9d5f}{is\-Temperature\-Supported} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_aa61939fab26530f076ca04c0a058a287}{Temperature\-\_\-data} \hyperlink{_sensor_8h_ade596fb9c371d8a5a12e12874d22d547}{get\-Temperature\-Value} (\hyperlink{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{Temperature} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} \hyperlink{_sensor_8h_ae351f13f6b62d156a35f6a7992ba2127}{New\-Humidity} ()
+\item 
+void \hyperlink{_sensor_8h_a229737618125919dd35eac6ef10906dc}{Destroy\-Humidity} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a47a70d164d2e1f7bdc07dc2ff71de214}{add\-Humidity\-Callback} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen, \hyperlink{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{sensor\-\_\-callback} sensor\-Callback, int timeenterval, void $\ast$data)
+\item 
+void \hyperlink{_sensor_8h_a27884ac9db17ed26581e59ee5d1ae39d}{Humidity\-On} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen)
+\item 
+void \hyperlink{_sensor_8h_a21d0528b4d4c95bd878d7f39f2c03f91}{Humidity\-Off} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen)
+\item 
+bool \hyperlink{_sensor_8h_a22264d7c177587b6428bdd9b3f2bfe9f}{is\-Humidity\-Supported} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen)
+\item 
+\hyperlink{_sensor_8h_ab28ba6903f252ea8a21375f598f0b83f}{Humidity\-\_\-data} \hyperlink{_sensor_8h_a6e1191957657b1f121d9f6d939ccff84}{get\-Humidity\-Value} (\hyperlink{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{Humidity} this\-\_\-gen)
+\end{DoxyCompactItemize}
+
+
+\subsection{데이타 구조 문서화}
+\index{\-\_\-3d\-\_\-data@{\-\_\-3d\-\_\-data}}\label{df/d29/struct__3d__data}
+\hypertarget{_sensor_8h_df/d29/struct__3d__data}{}
+\subsubsection{struct \-\_\-3d\-\_\-data}
+
+
+Sensor.\-h 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-3d\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{d9/dad/struct__3d__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\hypertarget{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{float}\label{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}
+&
+x&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{float}\label{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}
+&
+y&
+\\
+\hline
+
+\hypertarget{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{float}\label{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-4d\-\_\-data@{\-\_\-4d\-\_\-data}}\label{d9/d01/struct__4d__data}
+\hypertarget{_sensor_8h_d9/d01/struct__4d__data}{}
+\subsubsection{struct \-\_\-4d\-\_\-data}
+
+
+Sensor.\-h 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-4d\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{de/d5e/struct__4d__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a56eca241e2896b9f57a79589e76fd24b}{float}\label{_sensor_8h_a56eca241e2896b9f57a79589e76fd24b}
+&
+w&
+\\
+\hline
+
+\hypertarget{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{float}\label{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}
+&
+x&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{float}\label{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}
+&
+y&
+\\
+\hline
+
+\hypertarget{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{float}\label{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Light\-\_\-data@{\-\_\-\-Light\-\_\-data}}\label{d9/df4/struct___light__data}
+\hypertarget{_sensor_8h_d9/df4/struct___light__data}{}
+\subsubsection{struct \-\_\-\-Light\-\_\-data}
+
+
+Sensor.\-h 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Light\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{d6/d02/struct___light__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a450c3ab9b94a4663caad892b7193b547}{float}\label{_sensor_8h_a450c3ab9b94a4663caad892b7193b547}
+&
+level&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Proximity\-\_\-data@{\-\_\-\-Proximity\-\_\-data}}\label{d5/d13/struct___proximity__data}
+\hypertarget{_sensor_8h_d5/d13/struct___proximity__data}{}
+\subsubsection{struct \-\_\-\-Proximity\-\_\-data}
+
+
+Sensor.\-h 파일의 58 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Proximity\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{dd/d1d/struct___proximity__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5767a762273412ecff24202966e9d67b}{float}\label{_sensor_8h_a5767a762273412ecff24202966e9d67b}
+&
+proximity&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Pressure\-\_\-data@{\-\_\-\-Pressure\-\_\-data}}\label{df/d97/struct___pressure__data}
+\hypertarget{_sensor_8h_df/d97/struct___pressure__data}{}
+\subsubsection{struct \-\_\-\-Pressure\-\_\-data}
+
+
+Sensor.\-h 파일의 66 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Pressure\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{df/d4e/struct___pressure__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_af5bafbc5db27b95f2b41516f5f61336f}{float}\label{_sensor_8h_af5bafbc5db27b95f2b41516f5f61336f}
+&
+h\-Pa&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Ultra\-Violet\-\_\-data@{\-\_\-\-Ultra\-Violet\-\_\-data}}\label{df/d48/struct___ultra_violet__data}
+\hypertarget{_sensor_8h_df/d48/struct___ultra_violet__data}{}
+\subsubsection{struct \-\_\-\-Ultra\-Violet\-\_\-data}
+
+
+Sensor.\-h 파일의 74 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Ultra\-Violet\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{db/d01/struct___ultra_violet__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a46f441c4177376452cb467caa0b7fa46}{float}\label{_sensor_8h_a46f441c4177376452cb467caa0b7fa46}
+&
+uvindex&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Temperature\-\_\-data@{\-\_\-\-Temperature\-\_\-data}}\label{da/dc1/struct___temperature__data}
+\hypertarget{_sensor_8h_da/dc1/struct___temperature__data}{}
+\subsubsection{struct \-\_\-\-Temperature\-\_\-data}
+
+
+Sensor.\-h 파일의 82 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Temperature\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{df/d1f/struct___temperature__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aadc6619595463c1d61980fc95cad3f53}{float}\label{_sensor_8h_aadc6619595463c1d61980fc95cad3f53}
+&
+celsius&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Humidity\-\_\-data@{\-\_\-\-Humidity\-\_\-data}}\label{df/de3/struct___humidity__data}
+\hypertarget{_sensor_8h_df/de3/struct___humidity__data}{}
+\subsubsection{struct \-\_\-\-Humidity\-\_\-data}
+
+
+Sensor.\-h 파일의 90 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Humidity\-\_\-data에 대한 협력 다이어그램\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{d9/d6f/struct___humidity__data__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{int}\label{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}
+&
+accuracy&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aac167f3972a2f244f4b32c8ee5b89364}{float}\label{_sensor_8h_aac167f3972a2f244f4b32c8ee5b89364}
+&
+percent&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{unsigned long long int}\label{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}
+&
+timestamp&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a40a079bfc72408819dc78da308203a74}{int}\label{_sensor_8h_a40a079bfc72408819dc78da308203a74}
+&
+value\-\_\-count&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Accelerometer\-Extend@{\-\_\-\-Accelerometer\-Extend}}\label{de/d7a/struct___accelerometer_extend}
+\hypertarget{_sensor_8h_de/d7a/struct___accelerometer_extend}{}
+\subsubsection{struct \-\_\-\-Accelerometer\-Extend}
+
+
+Sensor.\-h 파일의 115 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Accelerometer\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d5/dcd/struct___accelerometer_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a98b975c883ef9905587ac41117f74f4c}{struct \hyperlink{struct___accelerometer}{\-\_\-\-Accelerometer}}\label{_sensor_8h_a98b975c883ef9905587ac41117f74f4c}
+&
+accelerometer&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Gravity\-Extend@{\-\_\-\-Gravity\-Extend}}\label{d8/d6e/struct___gravity_extend}
+\hypertarget{_sensor_8h_d8/d6e/struct___gravity_extend}{}
+\subsubsection{struct \-\_\-\-Gravity\-Extend}
+
+
+Sensor.\-h 파일의 155 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Gravity\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{d8/db0/struct___gravity_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_ae4623ab137188f79a517066e08032746}{struct \hyperlink{struct___gravity}{\-\_\-\-Gravity}}\label{_sensor_8h_ae4623ab137188f79a517066e08032746}
+&
+gravity&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Linear\-Accelation\-Extend@{\-\_\-\-Linear\-Accelation\-Extend}}\label{d4/da4/struct___linear_accelation_extend}
+\hypertarget{_sensor_8h_d4/da4/struct___linear_accelation_extend}{}
+\subsubsection{struct \-\_\-\-Linear\-Accelation\-Extend}
+
+
+Sensor.\-h 파일의 195 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Linear\-Accelation\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{d4/dbb/struct___linear_accelation_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a12d1cee667dc4d73c2096e6e7b9951bf}{struct \hyperlink{struct___linear_accelation}{\-\_\-\-Linear\-Accelation}}\label{_sensor_8h_a12d1cee667dc4d73c2096e6e7b9951bf}
+&
+linearaccelation&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Magneto\-Meter\-Extend@{\-\_\-\-Magneto\-Meter\-Extend}}\label{d7/d8e/struct___magneto_meter_extend}
+\hypertarget{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{}
+\subsubsection{struct \-\_\-\-Magneto\-Meter\-Extend}
+
+
+Sensor.\-h 파일의 235 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Magneto\-Meter\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d1/d28/struct___magneto_meter_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a8679591114ee0c09969a82b9bd9f9fe4}{struct \hyperlink{struct___magneto_meter}{\-\_\-\-Magneto\-Meter}}\label{_sensor_8h_a8679591114ee0c09969a82b9bd9f9fe4}
+&
+magnetometer&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Rotation\-Vector\-Extend@{\-\_\-\-Rotation\-Vector\-Extend}}\label{d6/df2/struct___rotation_vector_extend}
+\hypertarget{_sensor_8h_d6/df2/struct___rotation_vector_extend}{}
+\subsubsection{struct \-\_\-\-Rotation\-Vector\-Extend}
+
+
+Sensor.\-h 파일의 275 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Rotation\-Vector\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{da/d0c/struct___rotation_vector_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a273e40af4ef4690cbb95f7f77b6ef54e}{struct \hyperlink{struct___rotation_vector}{\-\_\-\-Rotation\-Vector}}\label{_sensor_8h_a273e40af4ef4690cbb95f7f77b6ef54e}
+&
+rotationvector&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Orientation\-Extend@{\-\_\-\-Orientation\-Extend}}\label{d6/d35/struct___orientation_extend}
+\hypertarget{_sensor_8h_d6/d35/struct___orientation_extend}{}
+\subsubsection{struct \-\_\-\-Orientation\-Extend}
+
+
+Sensor.\-h 파일의 315 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Orientation\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d5/d1f/struct___orientation_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_ad28b7e9f0c184d60aba7731570671894}{struct \hyperlink{struct___orientation}{\-\_\-\-Orientation}}\label{_sensor_8h_ad28b7e9f0c184d60aba7731570671894}
+&
+orientation&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Gyroscope\-Extend@{\-\_\-\-Gyroscope\-Extend}}\label{d0/ddb/struct___gyroscope_extend}
+\hypertarget{_sensor_8h_d0/ddb/struct___gyroscope_extend}{}
+\subsubsection{struct \-\_\-\-Gyroscope\-Extend}
+
+
+Sensor.\-h 파일의 355 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Gyroscope\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d1/d7a/struct___gyroscope_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_a2836faf982e7b52971a419061d4a4ae7}{struct \hyperlink{struct___gyroscope}{\-\_\-\-Gyroscope}}\label{_sensor_8h_a2836faf982e7b52971a419061d4a4ae7}
+&
+gyroscope&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Light\-Extend@{\-\_\-\-Light\-Extend}}\label{d8/d26/struct___light_extend}
+\hypertarget{_sensor_8h_d8/d26/struct___light_extend}{}
+\subsubsection{struct \-\_\-\-Light\-Extend}
+
+
+Sensor.\-h 파일의 395 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Light\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{dc/d08/struct___light_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_ac99fe442698fe6dee34b12dae4f856b3}{struct \hyperlink{struct___light}{\-\_\-\-Light}}\label{_sensor_8h_ac99fe442698fe6dee34b12dae4f856b3}
+&
+light&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Proximity\-Extend@{\-\_\-\-Proximity\-Extend}}\label{da/d95/struct___proximity_extend}
+\hypertarget{_sensor_8h_da/d95/struct___proximity_extend}{}
+\subsubsection{struct \-\_\-\-Proximity\-Extend}
+
+
+Sensor.\-h 파일의 435 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Proximity\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d5/d0c/struct___proximity_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a79740711df66cd887ecab71528fc1f70}{struct \hyperlink{struct___proximity}{\-\_\-\-Proximity}}\label{_sensor_8h_a79740711df66cd887ecab71528fc1f70}
+&
+proximity&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Pressure\-Extend@{\-\_\-\-Pressure\-Extend}}\label{d3/dcd/struct___pressure_extend}
+\hypertarget{_sensor_8h_d3/dcd/struct___pressure_extend}{}
+\subsubsection{struct \-\_\-\-Pressure\-Extend}
+
+
+Sensor.\-h 파일의 475 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Pressure\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{dd/dd1/struct___pressure_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a9dba4e614ab2adf5a3ffa8d5bb899412}{struct \hyperlink{struct___pressure}{\-\_\-\-Pressure}}\label{_sensor_8h_a9dba4e614ab2adf5a3ffa8d5bb899412}
+&
+pressure&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Ultra\-Violet\-Extend@{\-\_\-\-Ultra\-Violet\-Extend}}\label{d0/dbb/struct___ultra_violet_extend}
+\hypertarget{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{}
+\subsubsection{struct \-\_\-\-Ultra\-Violet\-Extend}
+
+
+Sensor.\-h 파일의 515 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Ultra\-Violet\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{dc/d5e/struct___ultra_violet_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5ecfbeb3a1030d60f8478b26f0ea7fb0}{struct \hyperlink{struct___ultra_violet}{\-\_\-\-Ultra\-Violet}}\label{_sensor_8h_a5ecfbeb3a1030d60f8478b26f0ea7fb0}
+&
+ultraviolet&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Temperature\-Extend@{\-\_\-\-Temperature\-Extend}}\label{d7/dab/struct___temperature_extend}
+\hypertarget{_sensor_8h_d7/dab/struct___temperature_extend}{}
+\subsubsection{struct \-\_\-\-Temperature\-Extend}
+
+
+Sensor.\-h 파일의 555 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Temperature\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d0/d8c/struct___temperature_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_ae174a42339036c716d64258eab61d521}{struct \hyperlink{struct___temperature}{\-\_\-\-Temperature}}\label{_sensor_8h_ae174a42339036c716d64258eab61d521}
+&
+temperature&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+\index{\-\_\-\-Humidity\-Extend@{\-\_\-\-Humidity\-Extend}}\label{d1/de0/struct___humidity_extend}
+\hypertarget{_sensor_8h_d1/de0/struct___humidity_extend}{}
+\subsubsection{struct \-\_\-\-Humidity\-Extend}
+
+
+Sensor.\-h 파일의 595 번째 라인에서 정의되었습니다.
+
+
+
+\-\_\-\-Humidity\-Extend에 대한 협력 다이어그램\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{df/d33/struct___humidity_extend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{데이타 필드}
+\hypertarget{_sensor_8h_aeae7c9d5a8189e24f5e832b83559896f}{struct \hyperlink{struct___humidity}{\-\_\-\-Humidity}}\label{_sensor_8h_aeae7c9d5a8189e24f5e832b83559896f}
+&
+humidity&
+\\
+\hline
+
+\hypertarget{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}{sensor\-\_\-listener\-\_\-h}\label{_sensor_8h_aa977dfb866b24fd7d9a20a9a01b2fd1f}
+&
+listener&
+\\
+\hline
+
+\hypertarget{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}{sensor\-\_\-h}\label{_sensor_8h_a5bae9b7801bc3808411925cde81d3f26}
+&
+sensor&
+\\
+\hline
+
+\hypertarget{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}{sensor\-\_\-type\-\_\-e}\label{_sensor_8h_abffb09766da2fc510a79bb51f82a36e1}
+&
+type&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{타입정의 문서화}
+\hypertarget{_sensor_8h_a07dca4068be90bc25a2045875cefa290}{\index{Sensor.\-h@{Sensor.\-h}!\-\_\-3d\-\_\-data@{\-\_\-3d\-\_\-data}}
+\index{\-\_\-3d\-\_\-data@{\-\_\-3d\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{\-\_\-3d\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data}  {\bf \-\_\-3d\-\_\-data}}}\label{_sensor_8h_a07dca4068be90bc25a2045875cefa290}
+\hypertarget{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}{\index{Sensor.\-h@{Sensor.\-h}!Accelerometer@{Accelerometer}}
+\index{Accelerometer@{Accelerometer}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Accelerometer}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Accelerometer}$\ast$ {\bf Accelerometer}}}\label{_sensor_8h_a9ad3b9b652159c9011a7dc9023d0d914}
+
+
+Sensor.\-h 파일의 98 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_aad4991bb642841f2928476723063a8c6}{\index{Sensor.\-h@{Sensor.\-h}!Accelerometer\-\_\-data@{Accelerometer\-\_\-data}}
+\index{Accelerometer\-\_\-data@{Accelerometer\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Accelerometer\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Accelerometer\-\_\-data}}}\label{_sensor_8h_aad4991bb642841f2928476723063a8c6}
+
+
+Sensor.\-h 파일의 29 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a71ee9c7ba23000d2ae955c827ba4262c}{\index{Sensor.\-h@{Sensor.\-h}!Accelerometer\-Extend@{Accelerometer\-Extend}}
+\index{Accelerometer\-Extend@{Accelerometer\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Accelerometer\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Accelerometer\-Extend}  {\bf Accelerometer\-Extend}}}\label{_sensor_8h_a71ee9c7ba23000d2ae955c827ba4262c}
+\hypertarget{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}{\index{Sensor.\-h@{Sensor.\-h}!Gravity@{Gravity}}
+\index{Gravity@{Gravity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gravity}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Gravity}$\ast$ {\bf Gravity}}}\label{_sensor_8h_a4ceb392904d2aa4af24c1934cb8acb43}
+
+
+Sensor.\-h 파일의 138 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a6e9c581566bfca9e8c63cb6e4a703062}{\index{Sensor.\-h@{Sensor.\-h}!Gravity\-\_\-data@{Gravity\-\_\-data}}
+\index{Gravity\-\_\-data@{Gravity\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gravity\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Gravity\-\_\-data}}}\label{_sensor_8h_a6e9c581566bfca9e8c63cb6e4a703062}
+
+
+Sensor.\-h 파일의 30 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a4217164c977e03f27e194b6aa38864b7}{\index{Sensor.\-h@{Sensor.\-h}!Gravity\-Extend@{Gravity\-Extend}}
+\index{Gravity\-Extend@{Gravity\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gravity\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Gravity\-Extend}  {\bf Gravity\-Extend}}}\label{_sensor_8h_a4217164c977e03f27e194b6aa38864b7}
+\hypertarget{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}{\index{Sensor.\-h@{Sensor.\-h}!Gyroscope@{Gyroscope}}
+\index{Gyroscope@{Gyroscope}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gyroscope}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Gyroscope}$\ast$ {\bf Gyroscope}}}\label{_sensor_8h_a24afd023a4f5a5d89435215fc22449b9}
+
+
+Sensor.\-h 파일의 338 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a10859114954f1b73537e418caa4cd698}{\index{Sensor.\-h@{Sensor.\-h}!Gyroscope\-\_\-data@{Gyroscope\-\_\-data}}
+\index{Gyroscope\-\_\-data@{Gyroscope\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gyroscope\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Gyroscope\-\_\-data}}}\label{_sensor_8h_a10859114954f1b73537e418caa4cd698}
+
+
+Sensor.\-h 파일의 34 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a1ec83165645264aa9f6f45d750608125}{\index{Sensor.\-h@{Sensor.\-h}!Gyroscope\-Extend@{Gyroscope\-Extend}}
+\index{Gyroscope\-Extend@{Gyroscope\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gyroscope\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Gyroscope\-Extend}  {\bf Gyroscope\-Extend}}}\label{_sensor_8h_a1ec83165645264aa9f6f45d750608125}
+\hypertarget{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}{\index{Sensor.\-h@{Sensor.\-h}!Humidity@{Humidity}}
+\index{Humidity@{Humidity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Humidity}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Humidity}$\ast$ {\bf Humidity}}}\label{_sensor_8h_a5abed9efddb633f3bc97781dbd9870b2}
+
+
+Sensor.\-h 파일의 578 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_ab28ba6903f252ea8a21375f598f0b83f}{\index{Sensor.\-h@{Sensor.\-h}!Humidity\-\_\-data@{Humidity\-\_\-data}}
+\index{Humidity\-\_\-data@{Humidity\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Humidity\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Humidity\-\_\-data}  {\bf Humidity\-\_\-data}}}\label{_sensor_8h_ab28ba6903f252ea8a21375f598f0b83f}
+\hypertarget{_sensor_8h_a8a0f43e5c9d354763c0a5f5520179eef}{\index{Sensor.\-h@{Sensor.\-h}!Humidity\-Extend@{Humidity\-Extend}}
+\index{Humidity\-Extend@{Humidity\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Humidity\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Humidity\-Extend}  {\bf Humidity\-Extend}}}\label{_sensor_8h_a8a0f43e5c9d354763c0a5f5520179eef}
+\hypertarget{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}{\index{Sensor.\-h@{Sensor.\-h}!Light@{Light}}
+\index{Light@{Light}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Light}$\ast$ {\bf Light}}}\label{_sensor_8h_a51c7b02c797bd458035bde93d4cf87e8}
+
+
+Sensor.\-h 파일의 378 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a457745a8acf045e2ed86752fb84543f4}{\index{Sensor.\-h@{Sensor.\-h}!Light\-\_\-data@{Light\-\_\-data}}
+\index{Light\-\_\-data@{Light\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Light\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Light\-\_\-data}  {\bf Light\-\_\-data}}}\label{_sensor_8h_a457745a8acf045e2ed86752fb84543f4}
+\hypertarget{_sensor_8h_a5cccfff7391c181f1a4de72ec3909282}{\index{Sensor.\-h@{Sensor.\-h}!Light\-Extend@{Light\-Extend}}
+\index{Light\-Extend@{Light\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Light\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Light\-Extend}  {\bf Light\-Extend}}}\label{_sensor_8h_a5cccfff7391c181f1a4de72ec3909282}
+\hypertarget{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}{\index{Sensor.\-h@{Sensor.\-h}!Linear\-Accelation@{Linear\-Accelation}}
+\index{Linear\-Accelation@{Linear\-Accelation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Linear\-Accelation}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Linear\-Accelation}$\ast$ {\bf Linear\-Accelation}}}\label{_sensor_8h_ab6e374e44978536ed25c1f68f0cb0268}
+
+
+Sensor.\-h 파일의 178 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_ac7cf2fca08fdc55bf8b359496ddb7286}{\index{Sensor.\-h@{Sensor.\-h}!Linear\-Accelation\-Extend@{Linear\-Accelation\-Extend}}
+\index{Linear\-Accelation\-Extend@{Linear\-Accelation\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Linear\-Accelation\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Linear\-Accelation\-Extend}  {\bf Linear\-Accelation\-Extend}}}\label{_sensor_8h_ac7cf2fca08fdc55bf8b359496ddb7286}
+\hypertarget{_sensor_8h_ab972181c85e723d7d5b22be3b9519281}{\index{Sensor.\-h@{Sensor.\-h}!Linear\-Acceleration\-\_\-data@{Linear\-Acceleration\-\_\-data}}
+\index{Linear\-Acceleration\-\_\-data@{Linear\-Acceleration\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Linear\-Acceleration\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Linear\-Acceleration\-\_\-data}}}\label{_sensor_8h_ab972181c85e723d7d5b22be3b9519281}
+
+
+Sensor.\-h 파일의 31 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}{\index{Sensor.\-h@{Sensor.\-h}!Magneto\-Meter@{Magneto\-Meter}}
+\index{Magneto\-Meter@{Magneto\-Meter}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Magneto\-Meter}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Magneto\-Meter}$\ast$ {\bf Magneto\-Meter}}}\label{_sensor_8h_ad8c508f6ecfa0fb3f0cc332431821142}
+
+
+Sensor.\-h 파일의 218 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_afbe589975942218ce5662af2ba07d106}{\index{Sensor.\-h@{Sensor.\-h}!Magnetometer\-\_\-data@{Magnetometer\-\_\-data}}
+\index{Magnetometer\-\_\-data@{Magnetometer\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Magnetometer\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Magnetometer\-\_\-data}}}\label{_sensor_8h_afbe589975942218ce5662af2ba07d106}
+
+
+Sensor.\-h 파일의 32 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_ae56ce581a13244129664a7e5581ea46f}{\index{Sensor.\-h@{Sensor.\-h}!Magneto\-Meter\-Extend@{Magneto\-Meter\-Extend}}
+\index{Magneto\-Meter\-Extend@{Magneto\-Meter\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Magneto\-Meter\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Magneto\-Meter\-Extend}  {\bf Magneto\-Meter\-Extend}}}\label{_sensor_8h_ae56ce581a13244129664a7e5581ea46f}
+\hypertarget{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}{\index{Sensor.\-h@{Sensor.\-h}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Orientation}$\ast$ {\bf Orientation}}}\label{_sensor_8h_a058ad66677a03fd816875edcfc7874ad}
+
+
+Sensor.\-h 파일의 298 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a7c3785888229956a330934052e67f0bc}{\index{Sensor.\-h@{Sensor.\-h}!Orientation\-\_\-data@{Orientation\-\_\-data}}
+\index{Orientation\-\_\-data@{Orientation\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Orientation\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-3d\-\_\-data} {\bf Orientation\-\_\-data}}}\label{_sensor_8h_a7c3785888229956a330934052e67f0bc}
+
+
+Sensor.\-h 파일의 33 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_ae63789ddd581760ca0731c08b233e9f5}{\index{Sensor.\-h@{Sensor.\-h}!Orientation\-Extend@{Orientation\-Extend}}
+\index{Orientation\-Extend@{Orientation\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Orientation\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Orientation\-Extend}  {\bf Orientation\-Extend}}}\label{_sensor_8h_ae63789ddd581760ca0731c08b233e9f5}
+\hypertarget{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}{\index{Sensor.\-h@{Sensor.\-h}!Pressure@{Pressure}}
+\index{Pressure@{Pressure}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Pressure}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Pressure}$\ast$ {\bf Pressure}}}\label{_sensor_8h_a2365e53ab6f346814862c92c2c207e7a}
+
+
+Sensor.\-h 파일의 458 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_aa9f86b0945dd3aa53269e0a120cce2b0}{\index{Sensor.\-h@{Sensor.\-h}!Pressure\-\_\-data@{Pressure\-\_\-data}}
+\index{Pressure\-\_\-data@{Pressure\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Pressure\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Pressure\-\_\-data}  {\bf Pressure\-\_\-data}}}\label{_sensor_8h_aa9f86b0945dd3aa53269e0a120cce2b0}
+\hypertarget{_sensor_8h_a57b79966a6ee910b7d2047aa4932a399}{\index{Sensor.\-h@{Sensor.\-h}!Pressure\-Extend@{Pressure\-Extend}}
+\index{Pressure\-Extend@{Pressure\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Pressure\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Pressure\-Extend}  {\bf Pressure\-Extend}}}\label{_sensor_8h_a57b79966a6ee910b7d2047aa4932a399}
+\hypertarget{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}{\index{Sensor.\-h@{Sensor.\-h}!Proximity@{Proximity}}
+\index{Proximity@{Proximity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Proximity}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Proximity}$\ast$ {\bf Proximity}}}\label{_sensor_8h_a6ba1e9dd519249c4112807daf04e17e5}
+
+
+Sensor.\-h 파일의 418 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a662d5923038d3329cc0219faaed6ddf3}{\index{Sensor.\-h@{Sensor.\-h}!Proximity\-\_\-data@{Proximity\-\_\-data}}
+\index{Proximity\-\_\-data@{Proximity\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Proximity\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Proximity\-\_\-data}  {\bf Proximity\-\_\-data}}}\label{_sensor_8h_a662d5923038d3329cc0219faaed6ddf3}
+\hypertarget{_sensor_8h_a7123e0aa06c59719ba0debf7a906119e}{\index{Sensor.\-h@{Sensor.\-h}!Proximity\-Extend@{Proximity\-Extend}}
+\index{Proximity\-Extend@{Proximity\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Proximity\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Proximity\-Extend}  {\bf Proximity\-Extend}}}\label{_sensor_8h_a7123e0aa06c59719ba0debf7a906119e}
+\hypertarget{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}{\index{Sensor.\-h@{Sensor.\-h}!Rotation\-Vector@{Rotation\-Vector}}
+\index{Rotation\-Vector@{Rotation\-Vector}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Rotation\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Rotation\-Vector}$\ast$ {\bf Rotation\-Vector}}}\label{_sensor_8h_a9b05582479731d0c51a02be87c1f6b4a}
+
+
+Sensor.\-h 파일의 258 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a544a9cbbdfd547167181ebc171137ad6}{\index{Sensor.\-h@{Sensor.\-h}!Rotation\-Vector\-\_\-data@{Rotation\-Vector\-\_\-data}}
+\index{Rotation\-Vector\-\_\-data@{Rotation\-Vector\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Rotation\-Vector\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-4d\-\_\-data}  {\bf Rotation\-Vector\-\_\-data}}}\label{_sensor_8h_a544a9cbbdfd547167181ebc171137ad6}
+\hypertarget{_sensor_8h_aeae7ca8c2f220d6bc01a6a397bc82e6b}{\index{Sensor.\-h@{Sensor.\-h}!Rotation\-Vector\-Extend@{Rotation\-Vector\-Extend}}
+\index{Rotation\-Vector\-Extend@{Rotation\-Vector\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Rotation\-Vector\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Rotation\-Vector\-Extend}  {\bf Rotation\-Vector\-Extend}}}\label{_sensor_8h_aeae7ca8c2f220d6bc01a6a397bc82e6b}
+\hypertarget{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}{\index{Sensor.\-h@{Sensor.\-h}!sensor\-\_\-callback@{sensor\-\_\-callback}}
+\index{sensor\-\_\-callback@{sensor\-\_\-callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{sensor\-\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$  sensor\-\_\-callback)(sensor\-\_\-h sensor, sensor\-\_\-event\-\_\-s $\ast$event, void $\ast$user\-\_\-data)}}\label{_sensor_8h_ad8114207845fc5e0aa30832f0c718cd6}
+
+
+Sensor.\-h 파일의 15 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}{\index{Sensor.\-h@{Sensor.\-h}!Temperature@{Temperature}}
+\index{Temperature@{Temperature}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Temperature}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Temperature}$\ast$ {\bf Temperature}}}\label{_sensor_8h_a9d4d4bb9117d2f01bf1bcde4e7108c6e}
+
+
+Sensor.\-h 파일의 538 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_aa61939fab26530f076ca04c0a058a287}{\index{Sensor.\-h@{Sensor.\-h}!Temperature\-\_\-data@{Temperature\-\_\-data}}
+\index{Temperature\-\_\-data@{Temperature\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Temperature\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Temperature\-\_\-data}  {\bf Temperature\-\_\-data}}}\label{_sensor_8h_aa61939fab26530f076ca04c0a058a287}
+\hypertarget{_sensor_8h_a30c930518956d438b6c21c7d1df52916}{\index{Sensor.\-h@{Sensor.\-h}!Temperature\-Extend@{Temperature\-Extend}}
+\index{Temperature\-Extend@{Temperature\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Temperature\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Temperature\-Extend}  {\bf Temperature\-Extend}}}\label{_sensor_8h_a30c930518956d438b6c21c7d1df52916}
+\hypertarget{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}{\index{Sensor.\-h@{Sensor.\-h}!Ultra\-Violet@{Ultra\-Violet}}
+\index{Ultra\-Violet@{Ultra\-Violet}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Ultra\-Violet}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Ultra\-Violet}$\ast$ {\bf Ultra\-Violet}}}\label{_sensor_8h_a387fe6cb5841dad3dbb90b1eed691ab6}
+
+
+Sensor.\-h 파일의 498 번째 라인에서 정의되었습니다.
+
+\hypertarget{_sensor_8h_a7638ff5043cb10408c5bd3c3aef6e01c}{\index{Sensor.\-h@{Sensor.\-h}!Ultra\-Violet\-\_\-data@{Ultra\-Violet\-\_\-data}}
+\index{Ultra\-Violet\-\_\-data@{Ultra\-Violet\-\_\-data}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Ultra\-Violet\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Ultra\-Violet\-\_\-data}  {\bf Ultra\-Violet\-\_\-data}}}\label{_sensor_8h_a7638ff5043cb10408c5bd3c3aef6e01c}
+\hypertarget{_sensor_8h_ace0c44e9ad2dc93f9f363d7d1e5b20e6}{\index{Sensor.\-h@{Sensor.\-h}!Ultra\-Violet\-Extend@{Ultra\-Violet\-Extend}}
+\index{Ultra\-Violet\-Extend@{Ultra\-Violet\-Extend}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Ultra\-Violet\-Extend}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Ultra\-Violet\-Extend}  {\bf Ultra\-Violet\-Extend}}}\label{_sensor_8h_ace0c44e9ad2dc93f9f363d7d1e5b20e6}
+
+
+\subsection{함수 문서화}
+\hypertarget{_sensor_8h_a32486442211f1b5b2ce325bf656ba2b2}{\index{Sensor.\-h@{Sensor.\-h}!Accelerometer\-Off@{Accelerometer\-Off}}
+\index{Accelerometer\-Off@{Accelerometer\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Accelerometer\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Accelerometer\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a32486442211f1b5b2ce325bf656ba2b2}
+
+
+Sensor.\-c 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+63 \{
+64     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} *)this\_gen;
+65     sensor\_listener\_stop (this->listener);
+66 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{da/dbb/_sensor_8h_a32486442211f1b5b2ce325bf656ba2b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a75055c3d4e99de5ef06dddef16a3b2be}{\index{Sensor.\-h@{Sensor.\-h}!Accelerometer\-On@{Accelerometer\-On}}
+\index{Accelerometer\-On@{Accelerometer\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Accelerometer\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Accelerometer\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a75055c3d4e99de5ef06dddef16a3b2be}
+
+
+Sensor.\-c 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+57 \{
+58     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} *)this\_gen;
+59     sensor\_listener\_start (this->listener);
+60 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{da/dbb/_sensor_8h_a75055c3d4e99de5ef06dddef16a3b2be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a2bfe312aa57e942492ca642483caf809}{\index{Sensor.\-h@{Sensor.\-h}!add\-Accelerometer\-Callback@{add\-Accelerometer\-Callback}}
+\index{add\-Accelerometer\-Callback@{add\-Accelerometer\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Accelerometer\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Accelerometer\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a2bfe312aa57e942492ca642483caf809}
+
+
+Sensor.\-c 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+50 \{
+51     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} *)this\_gen;
+52 
+53     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+54 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a2bfe312aa57e942492ca642483caf809_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a89cd825129358662ffd45c81216cca99}{\index{Sensor.\-h@{Sensor.\-h}!add\-Gravity\-Callback@{add\-Gravity\-Callback}}
+\index{add\-Gravity\-Callback@{add\-Gravity\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Gravity\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Gravity\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a89cd825129358662ffd45c81216cca99}
+
+
+Sensor.\-c 파일의 134 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+135 \{
+136     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} *)this\_gen;
+137 
+138     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+139 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{da/dbb/_sensor_8h_a89cd825129358662ffd45c81216cca99_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a9d7d07ef1eb6020144a3f7f73cb83322}{\index{Sensor.\-h@{Sensor.\-h}!add\-Gyroscope\-Callback@{add\-Gyroscope\-Callback}}
+\index{add\-Gyroscope\-Callback@{add\-Gyroscope\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Gyroscope\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Gyroscope\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a9d7d07ef1eb6020144a3f7f73cb83322}
+
+
+Sensor.\-c 파일의 564 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+565 \{
+566     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} *)this\_gen;
+567 
+568     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+569 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/dbb/_sensor_8h_a9d7d07ef1eb6020144a3f7f73cb83322_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a47a70d164d2e1f7bdc07dc2ff71de214}{\index{Sensor.\-h@{Sensor.\-h}!add\-Humidity\-Callback@{add\-Humidity\-Callback}}
+\index{add\-Humidity\-Callback@{add\-Humidity\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Humidity\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Humidity\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a47a70d164d2e1f7bdc07dc2ff71de214}
+
+
+Sensor.\-c 파일의 1064 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1065 \{
+1066     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} *)this\_gen;
+1067 
+1068     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+1069 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{da/dbb/_sensor_8h_a47a70d164d2e1f7bdc07dc2ff71de214_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a84ab9c704285cfd7583f5dc91d004c8c}{\index{Sensor.\-h@{Sensor.\-h}!add\-Light\-Callback@{add\-Light\-Callback}}
+\index{add\-Light\-Callback@{add\-Light\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Light\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Light\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a84ab9c704285cfd7583f5dc91d004c8c}
+
+
+Sensor.\-c 파일의 649 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+650 \{
+651     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} *)this\_gen;
+652 
+653     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+654 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{da/dbb/_sensor_8h_a84ab9c704285cfd7583f5dc91d004c8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a5e72f4677624e63dcd7f6d3178636e6f}{\index{Sensor.\-h@{Sensor.\-h}!add\-Linear\-Accelation\-Callback@{add\-Linear\-Accelation\-Callback}}
+\index{add\-Linear\-Accelation\-Callback@{add\-Linear\-Accelation\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Linear\-Accelation\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Linear\-Accelation\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a5e72f4677624e63dcd7f6d3178636e6f}
+
+
+Sensor.\-c 파일의 219 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+220 \{
+221     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} *)this\_gen;
+222 
+223     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+224 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a5e72f4677624e63dcd7f6d3178636e6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_acb8a9621960fdcc0f593aab88ecaac10}{\index{Sensor.\-h@{Sensor.\-h}!add\-Magneto\-Meter\-Callback@{add\-Magneto\-Meter\-Callback}}
+\index{add\-Magneto\-Meter\-Callback@{add\-Magneto\-Meter\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Magneto\-Meter\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Magneto\-Meter\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_acb8a9621960fdcc0f593aab88ecaac10}
+
+
+Sensor.\-c 파일의 305 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+306 \{
+307     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} *)this\_gen;
+308 
+309     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+310 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_acb8a9621960fdcc0f593aab88ecaac10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aef10958529b5f1fb56d627dcf79ee46d}{\index{Sensor.\-h@{Sensor.\-h}!add\-Orientation\-Callback@{add\-Orientation\-Callback}}
+\index{add\-Orientation\-Callback@{add\-Orientation\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Orientation\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Orientation\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aef10958529b5f1fb56d627dcf79ee46d}
+
+
+Sensor.\-c 파일의 478 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+479 \{
+480     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} *)this\_gen;
+481 
+482     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+483 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{da/dbb/_sensor_8h_aef10958529b5f1fb56d627dcf79ee46d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a5b32cf60904b2e4c0770c0e2c279380d}{\index{Sensor.\-h@{Sensor.\-h}!add\-Pressure\-Callback@{add\-Pressure\-Callback}}
+\index{add\-Pressure\-Callback@{add\-Pressure\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Pressure\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Pressure\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a5b32cf60904b2e4c0770c0e2c279380d}
+
+
+Sensor.\-c 파일의 814 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+815 \{
+816     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} *)this\_gen;
+817 
+818     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+819 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/dbb/_sensor_8h_a5b32cf60904b2e4c0770c0e2c279380d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a4867bf176feb4485403cbfc8987f9b23}{\index{Sensor.\-h@{Sensor.\-h}!add\-Proximity\-Callback@{add\-Proximity\-Callback}}
+\index{add\-Proximity\-Callback@{add\-Proximity\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Proximity\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Proximity\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a4867bf176feb4485403cbfc8987f9b23}
+
+
+Sensor.\-c 파일의 732 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+733 \{
+734     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} *)this\_gen;
+735 
+736     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+737 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{da/dbb/_sensor_8h_a4867bf176feb4485403cbfc8987f9b23_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a00edfee78b3821c7e9e1099323810eef}{\index{Sensor.\-h@{Sensor.\-h}!add\-Rotation\-Vector\-Callback@{add\-Rotation\-Vector\-Callback}}
+\index{add\-Rotation\-Vector\-Callback@{add\-Rotation\-Vector\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Rotation\-Vector\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Rotation\-Vector\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a00edfee78b3821c7e9e1099323810eef}
+
+
+Sensor.\-c 파일의 392 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+393 \{
+394     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} *)this\_gen;
+395 
+396     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+397 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a00edfee78b3821c7e9e1099323810eef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a03481f7bc6ba03a9b45bbff6b0edca38}{\index{Sensor.\-h@{Sensor.\-h}!add\-Temperature\-Callback@{add\-Temperature\-Callback}}
+\index{add\-Temperature\-Callback@{add\-Temperature\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Temperature\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Temperature\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a03481f7bc6ba03a9b45bbff6b0edca38}
+
+
+Sensor.\-c 파일의 981 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+982 \{
+983     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} *)this\_gen;
+984 
+985     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+986 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{da/dbb/_sensor_8h_a03481f7bc6ba03a9b45bbff6b0edca38_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a9aec71aa3ca243dc5237c97df58f1fa7}{\index{Sensor.\-h@{Sensor.\-h}!add\-Ultra\-Violet\-Callback@{add\-Ultra\-Violet\-Callback}}
+\index{add\-Ultra\-Violet\-Callback@{add\-Ultra\-Violet\-Callback}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{add\-Ultra\-Violet\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Ultra\-Violet\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen, }
+\item[{{\bf sensor\-\_\-callback}}]{sensor\-Callback, }
+\item[{int}]{timeenterval, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a9aec71aa3ca243dc5237c97df58f1fa7}
+
+
+Sensor.\-c 파일의 898 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+899 \{
+900     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} *)this\_gen;
+901 
+902     sensor\_listener\_set\_event\_cb (this->listener, timeinterval, sensorCallback, data);
+903 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{da/dbb/_sensor_8h_a9aec71aa3ca243dc5237c97df58f1fa7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a275aeca9a471074bf414e5e9b817c8c1}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Accelerometer@{Destroy\-Accelerometer}}
+\index{Destroy\-Accelerometer@{Destroy\-Accelerometer}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Accelerometer}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Accelerometer (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a275aeca9a471074bf414e5e9b817c8c1}
+
+
+Sensor.\-c 파일의 31 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+32 \{
+33     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+34     \{
+35         \textcolor{keywordflow}{return};
+36     \}
+37 
+38     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} *)this\_gen;
+39     \textcolor{keywordflow}{if} ( this->listener )
+40     \{
+41         sensor\_listener\_unset\_event\_cb (this->listener);
+42         sensor\_listener\_stop (this->listener);
+43         sensor\_destroy\_listener (this->listener);
+44 
+45     \}
+46     free (this\_gen);
+47 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a4ac22619e930846038a60e69536844db}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Gravity@{Destroy\-Gravity}}
+\index{Destroy\-Gravity@{Destroy\-Gravity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Gravity}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Gravity (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a4ac22619e930846038a60e69536844db}
+
+
+Sensor.\-c 파일의 116 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+117 \{
+118     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+119     \{
+120         \textcolor{keywordflow}{return};
+121     \}
+122 
+123     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} *)this\_gen;
+124     \textcolor{keywordflow}{if} ( this->listener )
+125     \{
+126         sensor\_listener\_unset\_event\_cb (this->listener);
+127         sensor\_listener\_stop (this->listener);
+128         sensor\_destroy\_listener (this->listener);
+129 
+130     \}
+131     free (this\_gen);
+132 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a33c4827cef482ac97b726c6afd4f2c02}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Gyroscope@{Destroy\-Gyroscope}}
+\index{Destroy\-Gyroscope@{Destroy\-Gyroscope}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Gyroscope}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Gyroscope (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a33c4827cef482ac97b726c6afd4f2c02}
+
+
+Sensor.\-c 파일의 546 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+547 \{
+548     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+549     \{
+550         \textcolor{keywordflow}{return};
+551     \}
+552 
+553     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} *)this\_gen;
+554     \textcolor{keywordflow}{if} ( this->listener )
+555     \{
+556         sensor\_listener\_unset\_event\_cb (this->listener);
+557         sensor\_listener\_stop (this->listener);
+558         sensor\_destroy\_listener (this->listener);
+559 
+560     \}
+561     free (this\_gen);
+562 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a229737618125919dd35eac6ef10906dc}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Humidity@{Destroy\-Humidity}}
+\index{Destroy\-Humidity@{Destroy\-Humidity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Humidity}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Humidity (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a229737618125919dd35eac6ef10906dc}
+
+
+Sensor.\-c 파일의 1046 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1047 \{
+1048     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+1049     \{
+1050         \textcolor{keywordflow}{return};
+1051     \}
+1052 
+1053     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} *)this\_gen;
+1054     \textcolor{keywordflow}{if} ( this->listener )
+1055     \{
+1056         sensor\_listener\_unset\_event\_cb (this->listener);
+1057         sensor\_listener\_stop (this->listener);
+1058         sensor\_destroy\_listener (this->listener);
+1059 
+1060     \}
+1061     free (this\_gen);
+1062 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a8886d4cca6cda321936c1db6050f46c9}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Light@{Destroy\-Light}}
+\index{Destroy\-Light@{Destroy\-Light}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Light}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a8886d4cca6cda321936c1db6050f46c9}
+
+
+Sensor.\-c 파일의 631 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+632 \{
+633     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+634     \{
+635         \textcolor{keywordflow}{return};
+636     \}
+637 
+638     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} *)this\_gen;
+639     \textcolor{keywordflow}{if} ( this->listener )
+640     \{
+641         sensor\_listener\_unset\_event\_cb (this->listener);
+642         sensor\_listener\_stop (this->listener);
+643         sensor\_destroy\_listener (this->listener);
+644 
+645     \}
+646     free (this\_gen);
+647 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a855b978e0631263963def31aa53c3545}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Linear\-Accelation@{Destroy\-Linear\-Accelation}}
+\index{Destroy\-Linear\-Accelation@{Destroy\-Linear\-Accelation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Linear\-Accelation}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Linear\-Accelation (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a855b978e0631263963def31aa53c3545}
+
+
+Sensor.\-c 파일의 201 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+202 \{
+203     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+204     \{
+205         \textcolor{keywordflow}{return};
+206     \}
+207 
+208     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} *)this\_gen;
+209     \textcolor{keywordflow}{if} ( this->listener )
+210     \{
+211         sensor\_listener\_unset\_event\_cb (this->listener);
+212         sensor\_listener\_stop (this->listener);
+213         sensor\_destroy\_listener (this->listener);
+214 
+215     \}
+216     free (this\_gen);
+217 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_ae298bc095317e4a35cc6e0a875a5cf92}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Magneto\-Meter@{Destroy\-Magneto\-Meter}}
+\index{Destroy\-Magneto\-Meter@{Destroy\-Magneto\-Meter}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Magneto\-Meter}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Magneto\-Meter (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ae298bc095317e4a35cc6e0a875a5cf92}
+
+
+Sensor.\-c 파일의 287 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+288 \{
+289     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+290     \{
+291         \textcolor{keywordflow}{return};
+292     \}
+293 
+294     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} *)this\_gen;
+295     \textcolor{keywordflow}{if} ( this->listener )
+296     \{
+297         sensor\_listener\_unset\_event\_cb (this->listener);
+298         sensor\_listener\_stop (this->listener);
+299         sensor\_destroy\_listener (this->listener);
+300 
+301     \}
+302     free (this\_gen);
+303 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_ab42d602375fb6943a8823543a349100a}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Orientation@{Destroy\-Orientation}}
+\index{Destroy\-Orientation@{Destroy\-Orientation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Orientation (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab42d602375fb6943a8823543a349100a}
+
+
+Sensor.\-c 파일의 460 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+461 \{
+462     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+463     \{
+464         \textcolor{keywordflow}{return};
+465     \}
+466 
+467     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} *)this\_gen;
+468     \textcolor{keywordflow}{if} ( this->listener )
+469     \{
+470         sensor\_listener\_unset\_event\_cb (this->listener);
+471         sensor\_listener\_stop (this->listener);
+472         sensor\_destroy\_listener (this->listener);
+473 
+474     \}
+475     free (this\_gen);
+476 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_af30fd514c8a87224bc535116633bbba3}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Pressure@{Destroy\-Pressure}}
+\index{Destroy\-Pressure@{Destroy\-Pressure}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Pressure (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_af30fd514c8a87224bc535116633bbba3}
+
+
+Sensor.\-c 파일의 796 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+797 \{
+798     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+799     \{
+800         \textcolor{keywordflow}{return};
+801     \}
+802 
+803     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} *)this\_gen;
+804     \textcolor{keywordflow}{if} ( this->listener )
+805     \{
+806         sensor\_listener\_unset\_event\_cb (this->listener);
+807         sensor\_listener\_stop (this->listener);
+808         sensor\_destroy\_listener (this->listener);
+809 
+810     \}
+811     free (this\_gen);
+812 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a826d9c3073df9e3332c8f6110bb3f991}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Proximity@{Destroy\-Proximity}}
+\index{Destroy\-Proximity@{Destroy\-Proximity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Proximity}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Proximity (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a826d9c3073df9e3332c8f6110bb3f991}
+
+
+Sensor.\-c 파일의 714 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+715 \{
+716     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+717     \{
+718         \textcolor{keywordflow}{return};
+719     \}
+720 
+721     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} *)this\_gen;
+722     \textcolor{keywordflow}{if} ( this->listener )
+723     \{
+724         sensor\_listener\_unset\_event\_cb (this->listener);
+725         sensor\_listener\_stop (this->listener);
+726         sensor\_destroy\_listener (this->listener);
+727 
+728     \}
+729     free (this\_gen);
+730 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a88e94d5f3af20819de0f97b12f5435b1}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Rotation\-Vector@{Destroy\-Rotation\-Vector}}
+\index{Destroy\-Rotation\-Vector@{Destroy\-Rotation\-Vector}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Rotation\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Rotation\-Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a88e94d5f3af20819de0f97b12f5435b1}
+
+
+Sensor.\-c 파일의 374 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+375 \{
+376     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+377     \{
+378         \textcolor{keywordflow}{return};
+379     \}
+380 
+381     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} *)this\_gen;
+382     \textcolor{keywordflow}{if} ( this->listener )
+383     \{
+384         sensor\_listener\_unset\_event\_cb (this->listener);
+385         sensor\_listener\_stop (this->listener);
+386         sensor\_destroy\_listener (this->listener);
+387 
+388     \}
+389     free (this\_gen);
+390 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a31db7bd04fb88393523fe985fe007023}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Temperature@{Destroy\-Temperature}}
+\index{Destroy\-Temperature@{Destroy\-Temperature}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Temperature (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a31db7bd04fb88393523fe985fe007023}
+
+
+Sensor.\-c 파일의 963 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+964 \{
+965     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+966     \{
+967         \textcolor{keywordflow}{return};
+968     \}
+969 
+970     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} *)this\_gen;
+971     \textcolor{keywordflow}{if} ( this->listener )
+972     \{
+973         sensor\_listener\_unset\_event\_cb (this->listener);
+974         sensor\_listener\_stop (this->listener);
+975         sensor\_destroy\_listener (this->listener);
+976 
+977     \}
+978     free (this\_gen);
+979 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a42bd8c6715137f5fd8892667fe232c5c}{\index{Sensor.\-h@{Sensor.\-h}!Destroy\-Ultra\-Violet@{Destroy\-Ultra\-Violet}}
+\index{Destroy\-Ultra\-Violet@{Destroy\-Ultra\-Violet}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Destroy\-Ultra\-Violet}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Ultra\-Violet (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a42bd8c6715137f5fd8892667fe232c5c}
+
+
+Sensor.\-c 파일의 880 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+881 \{
+882     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+883     \{
+884         \textcolor{keywordflow}{return};
+885     \}
+886 
+887     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} *)this\_gen;
+888     \textcolor{keywordflow}{if} ( this->listener )
+889     \{
+890         sensor\_listener\_unset\_event\_cb (this->listener);
+891         sensor\_listener\_stop (this->listener);
+892         sensor\_destroy\_listener (this->listener);
+893 
+894     \}
+895     free (this\_gen);
+896 \}
+\end{DoxyCode}
+\hypertarget{_sensor_8h_a0b4861d129661a62f373681cb041176d}{\index{Sensor.\-h@{Sensor.\-h}!get\-Accelerometer\-Value@{get\-Accelerometer\-Value}}
+\index{get\-Accelerometer\-Value@{get\-Accelerometer\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Accelerometer\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accelerometer\-\_\-data} get\-Accelerometer\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a0b4861d129661a62f373681cb041176d}
+
+
+Sensor.\-c 파일의 75 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+76 \{
+77     sensor\_event\_s data;
+78     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} *)this\_gen;
+79     sensor\_listener\_read\_data (this->listener, &data);
+80     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{Accelerometer\_data} vs;
+81     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+82     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+83     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+84 
+85     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+86     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+87     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+88     \textcolor{keywordflow}{return} vs;
+89 
+90 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{da/dbb/_sensor_8h_a0b4861d129661a62f373681cb041176d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a4ee54192834c7c04958013b4b07ff6ac}{\index{Sensor.\-h@{Sensor.\-h}!get\-Gravity\-Value@{get\-Gravity\-Value}}
+\index{get\-Gravity\-Value@{get\-Gravity\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Gravity\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gravity\-\_\-data} get\-Gravity\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a4ee54192834c7c04958013b4b07ff6ac}
+
+
+Sensor.\-c 파일의 160 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+161 \{
+162     sensor\_event\_s data;
+163     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} *)this\_gen;
+164     sensor\_listener\_read\_data (this->listener, &data);
+165     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{Gravity\_data} vs;
+166     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+167     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+168     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+169 
+170     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+171     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+172     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+173     \textcolor{keywordflow}{return} vs;
+174 
+175 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{da/dbb/_sensor_8h_a4ee54192834c7c04958013b4b07ff6ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a7cecfd5ca0547a9c75d70ec0e0747600}{\index{Sensor.\-h@{Sensor.\-h}!get\-Gyroscope\-Value@{get\-Gyroscope\-Value}}
+\index{get\-Gyroscope\-Value@{get\-Gyroscope\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Gyroscope\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gyroscope\-\_\-data} get\-Gyroscope\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a7cecfd5ca0547a9c75d70ec0e0747600}
+
+
+Sensor.\-c 파일의 590 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+591 \{
+592     sensor\_event\_s data;
+593     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} *)this\_gen;
+594     sensor\_listener\_read\_data (this->listener, &data);
+595     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{Gyroscope\_data} vs;
+596     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+597     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+598     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+599 
+600     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+601     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+602     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+603     \textcolor{keywordflow}{return} vs;
+604 
+605 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/dbb/_sensor_8h_a7cecfd5ca0547a9c75d70ec0e0747600_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a6e1191957657b1f121d9f6d939ccff84}{\index{Sensor.\-h@{Sensor.\-h}!get\-Humidity\-Value@{get\-Humidity\-Value}}
+\index{get\-Humidity\-Value@{get\-Humidity\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Humidity\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Humidity\-\_\-data} get\-Humidity\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a6e1191957657b1f121d9f6d939ccff84}
+
+
+Sensor.\-c 파일의 1090 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1091 \{
+1092     sensor\_event\_s data;
+1093     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} *)this\_gen;
+1094     sensor\_listener\_read\_data (this->listener, &data);
+1095     \hyperlink{_sensor_8h_df/de3/struct___humidity__data}{Humidity\_data} vs;
+1096     vs.\hyperlink{_sensor_8h_aac167f3972a2f244f4b32c8ee5b89364}{percent}     = data.values[0];
+1097     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+1098     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+1099     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+1100     \textcolor{keywordflow}{return} vs;
+1101     \textcolor{keywordflow}{return} vs;
+1102 
+1103 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{da/dbb/_sensor_8h_a6e1191957657b1f121d9f6d939ccff84_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ab434c60f52e68a2c286306c2ea3a0526}{\index{Sensor.\-h@{Sensor.\-h}!get\-Light\-Value@{get\-Light\-Value}}
+\index{get\-Light\-Value@{get\-Light\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Light\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light\-\_\-data} get\-Light\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab434c60f52e68a2c286306c2ea3a0526}
+
+
+Sensor.\-c 파일의 675 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+676 \{
+677     sensor\_event\_s data;
+678     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} *)this\_gen;
+679     sensor\_listener\_read\_data (this->listener, &data);
+680     \hyperlink{_sensor_8h_d9/df4/struct___light__data}{Light\_data} vs;
+681 
+682     vs.\hyperlink{_sensor_8h_a450c3ab9b94a4663caad892b7193b547}{level}       = data.values[0];
+683     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+684     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+685     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+686     \textcolor{keywordflow}{return} vs;
+687 
+688 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{da/dbb/_sensor_8h_ab434c60f52e68a2c286306c2ea3a0526_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_afbb418983c529e62b36bac3f6909a603}{\index{Sensor.\-h@{Sensor.\-h}!get\-Linear\-Accelation\-Value@{get\-Linear\-Accelation\-Value}}
+\index{get\-Linear\-Accelation\-Value@{get\-Linear\-Accelation\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Linear\-Accelation\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linear\-Acceleration\-\_\-data} get\-Linear\-Accelation\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_afbb418983c529e62b36bac3f6909a603}
+
+
+Sensor.\-c 파일의 245 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+246 \{
+247     sensor\_event\_s data;
+248     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} *)this\_gen;
+249     sensor\_listener\_read\_data (this->listener, &data);
+250     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{LinearAcceleration\_data} vs;
+251     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+252     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+253     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+254 
+255     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+256     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+257     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+258 
+259     \textcolor{keywordflow}{return} vs;
+260 
+261 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_afbb418983c529e62b36bac3f6909a603_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_af8d66fbc3858ea86baaec2cc3c1d33fc}{\index{Sensor.\-h@{Sensor.\-h}!get\-Magneto\-Meter\-Value@{get\-Magneto\-Meter\-Value}}
+\index{get\-Magneto\-Meter\-Value@{get\-Magneto\-Meter\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Magneto\-Meter\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Magnetometer\-\_\-data} get\-Magneto\-Meter\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_af8d66fbc3858ea86baaec2cc3c1d33fc}
+
+
+Sensor.\-c 파일의 331 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+332 \{
+333     sensor\_event\_s data;
+334     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} *)this\_gen;
+335     sensor\_listener\_read\_data (this->listener, &data);
+336     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{Magnetometer\_data} vs;
+337 
+338     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+339     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+340     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+341 
+342     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+343     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+344     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+345 
+346     \textcolor{keywordflow}{return} vs;
+347 
+348 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{da/dbb/_sensor_8h_af8d66fbc3858ea86baaec2cc3c1d33fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aca22031b16714ba50a646b347bf662a6}{\index{Sensor.\-h@{Sensor.\-h}!get\-Orientation\-Value@{get\-Orientation\-Value}}
+\index{get\-Orientation\-Value@{get\-Orientation\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Orientation\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Orientation\-\_\-data} get\-Orientation\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aca22031b16714ba50a646b347bf662a6}
+
+
+Sensor.\-c 파일의 504 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+505 \{
+506     sensor\_event\_s data;
+507     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} *)this\_gen;
+508     sensor\_listener\_read\_data (this->listener, &data);
+509     \hyperlink{_sensor_8h_df/d29/struct__3d__data}{Orientation\_data} vs;
+510 
+511     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+512     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+513     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+514 
+515     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+516     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+517     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+518     \textcolor{keywordflow}{return} vs;
+519 
+520 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{da/dbb/_sensor_8h_aca22031b16714ba50a646b347bf662a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a46345879d23125c7d5d8d47a9c5a0854}{\index{Sensor.\-h@{Sensor.\-h}!get\-Pressure\-Value@{get\-Pressure\-Value}}
+\index{get\-Pressure\-Value@{get\-Pressure\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Pressure\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pressure\-\_\-data} get\-Pressure\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a46345879d23125c7d5d8d47a9c5a0854}
+
+
+Sensor.\-c 파일의 840 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+841 \{
+842     sensor\_event\_s data;
+843     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} *)this\_gen;
+844     sensor\_listener\_read\_data (this->listener, &data);
+845     \hyperlink{_sensor_8h_df/d97/struct___pressure__data}{Pressure\_data} vs;
+846 
+847     vs.\hyperlink{_sensor_8h_af5bafbc5db27b95f2b41516f5f61336f}{hPa} = data.values[0];
+848 
+849     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+850     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+851     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+852     \textcolor{keywordflow}{return} vs;
+853 
+854 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{da/dbb/_sensor_8h_a46345879d23125c7d5d8d47a9c5a0854_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ab5d031471ccaac54c82623fac97cbd38}{\index{Sensor.\-h@{Sensor.\-h}!get\-Proximity\-Value@{get\-Proximity\-Value}}
+\index{get\-Proximity\-Value@{get\-Proximity\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Proximity\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Proximity\-\_\-data} get\-Proximity\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab5d031471ccaac54c82623fac97cbd38}
+
+
+Sensor.\-c 파일의 758 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+759 \{
+760     sensor\_event\_s data;
+761     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} *)this\_gen;
+762     sensor\_listener\_read\_data (this->listener, &data);
+763     \hyperlink{_sensor_8h_d5/d13/struct___proximity__data}{Proximity\_data} vs;
+764     vs.\hyperlink{_sensor_8h_a5767a762273412ecff24202966e9d67b}{proximity}   = data.values[0];
+765     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+766     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+767     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+768     \textcolor{keywordflow}{return} vs;
+769 
+770 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{da/dbb/_sensor_8h_ab5d031471ccaac54c82623fac97cbd38_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ac36694c7e6f5b3b500268fcac7679abd}{\index{Sensor.\-h@{Sensor.\-h}!get\-Rotation\-Vector\-Value@{get\-Rotation\-Vector\-Value}}
+\index{get\-Rotation\-Vector\-Value@{get\-Rotation\-Vector\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Rotation\-Vector\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rotation\-Vector\-\_\-data} get\-Rotation\-Vector\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ac36694c7e6f5b3b500268fcac7679abd}
+
+
+Sensor.\-c 파일의 418 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+419 \{
+420     sensor\_event\_s data;
+421     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} *)this\_gen;
+422     sensor\_listener\_read\_data (this->listener, &data);
+423     \hyperlink{_sensor_8h_d9/d01/struct__4d__data}{RotationVector\_data} vs;
+424     vs.\hyperlink{_sensor_8h_ad0da36b2558901e21e7a30f6c227a45e}{x} = data.values[0];
+425     vs.\hyperlink{_sensor_8h_aa4f0d3eebc3c443f9be81bf48561a217}{y} = data.values[1];
+426     vs.\hyperlink{_sensor_8h_af73583b1e980b0aa03f9884812e9fd4d}{z} = data.values[2];
+427     vs.\hyperlink{_sensor_8h_a56eca241e2896b9f57a79589e76fd24b}{w} = data.values[3];
+428 
+429     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+430     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+431     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+432     \textcolor{keywordflow}{return} vs;
+433 
+434 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{da/dbb/_sensor_8h_ac36694c7e6f5b3b500268fcac7679abd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ade596fb9c371d8a5a12e12874d22d547}{\index{Sensor.\-h@{Sensor.\-h}!get\-Temperature\-Value@{get\-Temperature\-Value}}
+\index{get\-Temperature\-Value@{get\-Temperature\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Temperature\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temperature\-\_\-data} get\-Temperature\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ade596fb9c371d8a5a12e12874d22d547}
+
+
+Sensor.\-c 파일의 1007 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1008 \{
+1009     sensor\_event\_s data;
+1010     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} *)this\_gen;
+1011     sensor\_listener\_read\_data (this->listener, &data);
+1012     \hyperlink{_sensor_8h_da/dc1/struct___temperature__data}{Temperature\_data} vs;
+1013 
+1014     vs.\hyperlink{_sensor_8h_aadc6619595463c1d61980fc95cad3f53}{celsius}     = data.values[0];
+1015     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+1016     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+1017     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+1018     \textcolor{keywordflow}{return} vs;
+1019 
+1020 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/dbb/_sensor_8h_ade596fb9c371d8a5a12e12874d22d547_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a5fe7dc8b14714ace15c1e61f2229a0fc}{\index{Sensor.\-h@{Sensor.\-h}!get\-Ultra\-Violet\-Value@{get\-Ultra\-Violet\-Value}}
+\index{get\-Ultra\-Violet\-Value@{get\-Ultra\-Violet\-Value}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{get\-Ultra\-Violet\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ultra\-Violet\-\_\-data} get\-Ultra\-Violet\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a5fe7dc8b14714ace15c1e61f2229a0fc}
+
+
+Sensor.\-c 파일의 924 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+925 \{
+926     sensor\_event\_s data;
+927     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} *)this\_gen;
+928     sensor\_listener\_read\_data (this->listener, &data);
+929     \hyperlink{_sensor_8h_df/d48/struct___ultra_violet__data}{UltraViolet\_data} vs;
+930 
+931     vs.\hyperlink{_sensor_8h_a46f441c4177376452cb467caa0b7fa46}{uvindex}     = data.values[0];
+932     vs.\hyperlink{_sensor_8h_a40a079bfc72408819dc78da308203a74}{value\_count} = data.value\_count;
+933     vs.\hyperlink{_sensor_8h_a8de02c4128636a7bf630ff5428f60c8d}{timestamp}   = data.timestamp;
+934     vs.\hyperlink{_sensor_8h_a5565cf9073275f9713f9016e7c10d25f}{accuracy}    = data.accuracy;
+935     \textcolor{keywordflow}{return} vs;
+936 
+937 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{da/dbb/_sensor_8h_a5fe7dc8b14714ace15c1e61f2229a0fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a3d81ebb8299e2a04502aa300762ecbc1}{\index{Sensor.\-h@{Sensor.\-h}!Gravity\-Off@{Gravity\-Off}}
+\index{Gravity\-Off@{Gravity\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gravity\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a3d81ebb8299e2a04502aa300762ecbc1}
+
+
+Sensor.\-c 파일의 147 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+148 \{
+149     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} *)this\_gen;
+150     sensor\_listener\_stop (this->listener);
+151 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{da/dbb/_sensor_8h_a3d81ebb8299e2a04502aa300762ecbc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ab20c5c8ec881c6535fc224e305b130b3}{\index{Sensor.\-h@{Sensor.\-h}!Gravity\-On@{Gravity\-On}}
+\index{Gravity\-On@{Gravity\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gravity\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab20c5c8ec881c6535fc224e305b130b3}
+
+
+Sensor.\-c 파일의 141 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+142 \{
+143     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} *)this\_gen;
+144     sensor\_listener\_start (this->listener);
+145 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{da/dbb/_sensor_8h_ab20c5c8ec881c6535fc224e305b130b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a64e72d01f92e9cd2f11538576b9bb25a}{\index{Sensor.\-h@{Sensor.\-h}!Gyroscope\-Off@{Gyroscope\-Off}}
+\index{Gyroscope\-Off@{Gyroscope\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gyroscope\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Gyroscope\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a64e72d01f92e9cd2f11538576b9bb25a}
+
+
+Sensor.\-c 파일의 577 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+578 \{
+579     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} *)this\_gen;
+580     sensor\_listener\_stop (this->listener);
+581 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{da/dbb/_sensor_8h_a64e72d01f92e9cd2f11538576b9bb25a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a3bd51264b2d2c9d88a28459ae55e5612}{\index{Sensor.\-h@{Sensor.\-h}!Gyroscope\-On@{Gyroscope\-On}}
+\index{Gyroscope\-On@{Gyroscope\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Gyroscope\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Gyroscope\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a3bd51264b2d2c9d88a28459ae55e5612}
+
+
+Sensor.\-c 파일의 571 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+572 \{
+573     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} *)this\_gen;
+574     sensor\_listener\_start (this->listener);
+575 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{da/dbb/_sensor_8h_a3bd51264b2d2c9d88a28459ae55e5612_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a21d0528b4d4c95bd878d7f39f2c03f91}{\index{Sensor.\-h@{Sensor.\-h}!Humidity\-Off@{Humidity\-Off}}
+\index{Humidity\-Off@{Humidity\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Humidity\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Humidity\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a21d0528b4d4c95bd878d7f39f2c03f91}
+
+
+Sensor.\-c 파일의 1077 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1078 \{
+1079     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} *)this\_gen;
+1080     sensor\_listener\_stop (this->listener);
+1081 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{da/dbb/_sensor_8h_a21d0528b4d4c95bd878d7f39f2c03f91_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a27884ac9db17ed26581e59ee5d1ae39d}{\index{Sensor.\-h@{Sensor.\-h}!Humidity\-On@{Humidity\-On}}
+\index{Humidity\-On@{Humidity\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Humidity\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Humidity\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a27884ac9db17ed26581e59ee5d1ae39d}
+
+
+Sensor.\-c 파일의 1071 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1072 \{
+1073     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} *)this\_gen;
+1074     sensor\_listener\_start (this->listener);
+1075 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{da/dbb/_sensor_8h_a27884ac9db17ed26581e59ee5d1ae39d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a2b6a66daff2b6f6a9cc300fa0527d287}{\index{Sensor.\-h@{Sensor.\-h}!is\-Accelerometer\-Supported@{is\-Accelerometer\-Supported}}
+\index{is\-Accelerometer\-Supported@{is\-Accelerometer\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Accelerometer\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Accelerometer\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a2b6a66daff2b6f6a9cc300fa0527d287}
+
+
+Sensor.\-c 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+69 \{
+70     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+71     sensor\_is\_supported (SENSOR\_ACCELEROMETER, &supported);
+72     \textcolor{keywordflow}{return} supported;
+73 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a2b6a66daff2b6f6a9cc300fa0527d287_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a22e9689eecee23872e261891f307b0a0}{\index{Sensor.\-h@{Sensor.\-h}!is\-Gravity\-Supported@{is\-Gravity\-Supported}}
+\index{is\-Gravity\-Supported@{is\-Gravity\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Gravity\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Gravity\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Gravity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a22e9689eecee23872e261891f307b0a0}
+
+
+Sensor.\-c 파일의 153 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+154 \{
+155     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+156     sensor\_is\_supported (SENSOR\_GRAVITY, &supported);
+157     \textcolor{keywordflow}{return} supported;
+158 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{da/dbb/_sensor_8h_a22e9689eecee23872e261891f307b0a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a6ecc487a57d98c882e694edfc36b2c8a}{\index{Sensor.\-h@{Sensor.\-h}!is\-Gyroscope\-Supported@{is\-Gyroscope\-Supported}}
+\index{is\-Gyroscope\-Supported@{is\-Gyroscope\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Gyroscope\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Gyroscope\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Gyroscope}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a6ecc487a57d98c882e694edfc36b2c8a}
+
+
+Sensor.\-c 파일의 583 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+584 \{
+585     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+586     sensor\_is\_supported (SENSOR\_GYROSCOPE, &supported);
+587     \textcolor{keywordflow}{return} supported;
+588 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{da/dbb/_sensor_8h_a6ecc487a57d98c882e694edfc36b2c8a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a22264d7c177587b6428bdd9b3f2bfe9f}{\index{Sensor.\-h@{Sensor.\-h}!is\-Humidity\-Supported@{is\-Humidity\-Supported}}
+\index{is\-Humidity\-Supported@{is\-Humidity\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Humidity\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Humidity\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Humidity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a22264d7c177587b6428bdd9b3f2bfe9f}
+
+
+Sensor.\-c 파일의 1083 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1084 \{
+1085     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+1086     sensor\_is\_supported (SENSOR\_HUMIDITY, &supported);
+1087     \textcolor{keywordflow}{return} supported;
+1088 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{da/dbb/_sensor_8h_a22264d7c177587b6428bdd9b3f2bfe9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a91ed62c28cde9df2bfd3c441b8b5b37f}{\index{Sensor.\-h@{Sensor.\-h}!is\-Light\-Supported@{is\-Light\-Supported}}
+\index{is\-Light\-Supported@{is\-Light\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Light\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Light\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a91ed62c28cde9df2bfd3c441b8b5b37f}
+
+
+Sensor.\-c 파일의 668 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+669 \{
+670     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+671     sensor\_is\_supported (SENSOR\_LIGHT, &supported);
+672     \textcolor{keywordflow}{return} supported;
+673 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{da/dbb/_sensor_8h_a91ed62c28cde9df2bfd3c441b8b5b37f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a2a94bd208e37017e2ab4f1cf579abf45}{\index{Sensor.\-h@{Sensor.\-h}!is\-Linear\-Accelation\-Supported@{is\-Linear\-Accelation\-Supported}}
+\index{is\-Linear\-Accelation\-Supported@{is\-Linear\-Accelation\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Linear\-Accelation\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Linear\-Accelation\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a2a94bd208e37017e2ab4f1cf579abf45}
+
+
+Sensor.\-c 파일의 238 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+239 \{
+240     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+241     sensor\_is\_supported (SENSOR\_LINEAR\_ACCELERATION, &supported);
+242     \textcolor{keywordflow}{return} supported;
+243 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a2a94bd208e37017e2ab4f1cf579abf45_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a3c5023cd863dc994ca4da0e18237cc0e}{\index{Sensor.\-h@{Sensor.\-h}!is\-Magneto\-Meter\-Supported@{is\-Magneto\-Meter\-Supported}}
+\index{is\-Magneto\-Meter\-Supported@{is\-Magneto\-Meter\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Magneto\-Meter\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Magneto\-Meter\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a3c5023cd863dc994ca4da0e18237cc0e}
+
+
+Sensor.\-c 파일의 324 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+325 \{
+326     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+327     sensor\_is\_supported (SENSOR\_ACCELEROMETER, &supported);
+328     \textcolor{keywordflow}{return} supported;
+329 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a3c5023cd863dc994ca4da0e18237cc0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aa96ba937a81f05a243c500ff3a20c882}{\index{Sensor.\-h@{Sensor.\-h}!is\-Orientation\-Supported@{is\-Orientation\-Supported}}
+\index{is\-Orientation\-Supported@{is\-Orientation\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Orientation\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Orientation\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aa96ba937a81f05a243c500ff3a20c882}
+
+
+Sensor.\-c 파일의 497 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+498 \{
+499     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+500     sensor\_is\_supported (SENSOR\_ORIENTATION, &supported);
+501     \textcolor{keywordflow}{return} supported;
+502 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/dbb/_sensor_8h_aa96ba937a81f05a243c500ff3a20c882_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a4a982f1d712c2603cba455cf3e0a4bce}{\index{Sensor.\-h@{Sensor.\-h}!is\-Pressure\-Supported@{is\-Pressure\-Supported}}
+\index{is\-Pressure\-Supported@{is\-Pressure\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Pressure\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Pressure\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a4a982f1d712c2603cba455cf3e0a4bce}
+
+
+Sensor.\-c 파일의 833 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+834 \{
+835     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+836     sensor\_is\_supported (SENSOR\_PRESSURE, &supported);
+837     \textcolor{keywordflow}{return} supported;
+838 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{da/dbb/_sensor_8h_a4a982f1d712c2603cba455cf3e0a4bce_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_abc7f9541812695b9e33c550be306b3ea}{\index{Sensor.\-h@{Sensor.\-h}!is\-Proximity\-Supported@{is\-Proximity\-Supported}}
+\index{is\-Proximity\-Supported@{is\-Proximity\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Proximity\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Proximity\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_abc7f9541812695b9e33c550be306b3ea}
+
+
+Sensor.\-c 파일의 751 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+752 \{
+753     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+754     sensor\_is\_supported (SENSOR\_PROXIMITY, &supported);
+755     \textcolor{keywordflow}{return} supported;
+756 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/dbb/_sensor_8h_abc7f9541812695b9e33c550be306b3ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ad26fd4fc6dd7b0968a47c9773759ba99}{\index{Sensor.\-h@{Sensor.\-h}!is\-Rotation\-Vector\-Supported@{is\-Rotation\-Vector\-Supported}}
+\index{is\-Rotation\-Vector\-Supported@{is\-Rotation\-Vector\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Rotation\-Vector\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Rotation\-Vector\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ad26fd4fc6dd7b0968a47c9773759ba99}
+
+
+Sensor.\-c 파일의 411 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+412 \{
+413     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+414     sensor\_is\_supported (SENSOR\_ROTATION\_VECTOR, &supported);
+415     \textcolor{keywordflow}{return} supported;
+416 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_ad26fd4fc6dd7b0968a47c9773759ba99_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aec6c9326762b2f8f8f7ce662a03e9d5f}{\index{Sensor.\-h@{Sensor.\-h}!is\-Temperature\-Supported@{is\-Temperature\-Supported}}
+\index{is\-Temperature\-Supported@{is\-Temperature\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Temperature\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Temperature\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aec6c9326762b2f8f8f7ce662a03e9d5f}
+
+
+Sensor.\-c 파일의 1000 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1001 \{
+1002     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+1003     sensor\_is\_supported (SENSOR\_TEMPERATURE, &supported);
+1004     \textcolor{keywordflow}{return} supported;
+1005 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{da/dbb/_sensor_8h_aec6c9326762b2f8f8f7ce662a03e9d5f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_af0cc0227baf15db2ebcbccb183fdfa5b}{\index{Sensor.\-h@{Sensor.\-h}!is\-Ultra\-Violet\-Supported@{is\-Ultra\-Violet\-Supported}}
+\index{is\-Ultra\-Violet\-Supported@{is\-Ultra\-Violet\-Supported}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{is\-Ultra\-Violet\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Ultra\-Violet\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_af0cc0227baf15db2ebcbccb183fdfa5b}
+
+
+Sensor.\-c 파일의 917 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+918 \{
+919     \textcolor{keywordtype}{bool} supported = \textcolor{keyword}{false};
+920     sensor\_is\_supported (SENSOR\_ULTRAVIOLET, &supported);
+921     \textcolor{keywordflow}{return} supported;
+922 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{da/dbb/_sensor_8h_af0cc0227baf15db2ebcbccb183fdfa5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aad1fdcdf9884e0840827b0329b6b1cce}{\index{Sensor.\-h@{Sensor.\-h}!Light\-Off@{Light\-Off}}
+\index{Light\-Off@{Light\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Light\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aad1fdcdf9884e0840827b0329b6b1cce}
+
+
+Sensor.\-c 파일의 662 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+663 \{
+664     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} *)this\_gen;
+665     sensor\_listener\_stop (this->listener);
+666 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{da/dbb/_sensor_8h_aad1fdcdf9884e0840827b0329b6b1cce_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a847e9da22f2baad56de0654d984af5d1}{\index{Sensor.\-h@{Sensor.\-h}!Light\-On@{Light\-On}}
+\index{Light\-On@{Light\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Light\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Light\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Light}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a847e9da22f2baad56de0654d984af5d1}
+
+
+Sensor.\-c 파일의 656 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+657 \{
+658     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} *)this\_gen;
+659     sensor\_listener\_start (this->listener);
+660 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{da/dbb/_sensor_8h_a847e9da22f2baad56de0654d984af5d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_afafbb2277b9322dd67cdc616e5471543}{\index{Sensor.\-h@{Sensor.\-h}!Linear\-Accelation\-Off@{Linear\-Accelation\-Off}}
+\index{Linear\-Accelation\-Off@{Linear\-Accelation\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Linear\-Accelation\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Linear\-Accelation\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_afafbb2277b9322dd67cdc616e5471543}
+
+
+Sensor.\-c 파일의 232 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+233 \{
+234     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} *)this\_gen;
+235     sensor\_listener\_stop (this->listener);
+236 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dbb/_sensor_8h_afafbb2277b9322dd67cdc616e5471543_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a46a6fcd7ccfef0a1308e01454c2b473c}{\index{Sensor.\-h@{Sensor.\-h}!Linear\-Accelation\-On@{Linear\-Accelation\-On}}
+\index{Linear\-Accelation\-On@{Linear\-Accelation\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Linear\-Accelation\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Linear\-Accelation\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Linear\-Accelation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a46a6fcd7ccfef0a1308e01454c2b473c}
+
+
+Sensor.\-c 파일의 226 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+227 \{
+228     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} *)this\_gen;
+229     sensor\_listener\_start (this->listener);
+230 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dbb/_sensor_8h_a46a6fcd7ccfef0a1308e01454c2b473c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aa189af9499407c54b0814186aad32a89}{\index{Sensor.\-h@{Sensor.\-h}!Magneto\-Meter\-Off@{Magneto\-Meter\-Off}}
+\index{Magneto\-Meter\-Off@{Magneto\-Meter\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Magneto\-Meter\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Magneto\-Meter\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aa189af9499407c54b0814186aad32a89}
+
+
+Sensor.\-c 파일의 318 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+319 \{
+320     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} *)this\_gen;
+321     sensor\_listener\_stop (this->listener);
+322 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{da/dbb/_sensor_8h_aa189af9499407c54b0814186aad32a89_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a39a353a14e3db0ce85502a35c5ccffb8}{\index{Sensor.\-h@{Sensor.\-h}!Magneto\-Meter\-On@{Magneto\-Meter\-On}}
+\index{Magneto\-Meter\-On@{Magneto\-Meter\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Magneto\-Meter\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Magneto\-Meter\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Magneto\-Meter}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a39a353a14e3db0ce85502a35c5ccffb8}
+
+
+Sensor.\-c 파일의 312 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+313 \{
+314     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} *)this\_gen;
+315     sensor\_listener\_start (this->listener);
+316 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{da/dbb/_sensor_8h_a39a353a14e3db0ce85502a35c5ccffb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a06eb7622b7f72af0df8ec0a8cf59a264}{\index{Sensor.\-h@{Sensor.\-h}!New\-Accelerometer@{New\-Accelerometer}}
+\index{New\-Accelerometer@{New\-Accelerometer}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Accelerometer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accelerometer} New\-Accelerometer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a06eb7622b7f72af0df8ec0a8cf59a264}
+
+
+Sensor.\-c 파일의 7 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+8 \{
+9     \textcolor{keywordtype}{bool} supported;
+10     sensor\_is\_supported (SENSOR\_ACCELEROMETER, &supported);
+11     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+12     \{
+13         \textcolor{keywordflow}{return} NULL;
+14     \}
+15 
+16     \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_de/d7a/struct___accelerometer_extend}{AccelerometerExtend}));
+17 
+18     this->accelerometer.Off         = \hyperlink{_sensor_8c_a32486442211f1b5b2ce325bf656ba2b2}{AccelerometerOff};
+19     this->accelerometer.On          = \hyperlink{_sensor_8c_a75055c3d4e99de5ef06dddef16a3b2be}{AccelerometerOn};
+20     this->accelerometer.addCallback = \hyperlink{_sensor_8c_a433b4b99717da31f334a3bdd3637af13}{addAccelerometerCallback};
+21     this->accelerometer.getValue    = \hyperlink{_sensor_8c_a0b4861d129661a62f373681cb041176d}{getAccelerometerValue};
+22     this->accelerometer.isSupported = \hyperlink{_sensor_8c_a2b6a66daff2b6f6a9cc300fa0527d287}{isAccelerometerSupported};
+23 
+24     this->type     = SENSOR\_ACCELEROMETER;
+25     this->listener = NULL;
+26     this->sensor   = NULL;
+27 
+28     \textcolor{keywordflow}{return} &this->accelerometer;
+29 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a06eb7622b7f72af0df8ec0a8cf59a264_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a51cda1ca45f021ebf34ccb2e0506d08e}{\index{Sensor.\-h@{Sensor.\-h}!New\-Gravity@{New\-Gravity}}
+\index{New\-Gravity@{New\-Gravity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Gravity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gravity} New\-Gravity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a51cda1ca45f021ebf34ccb2e0506d08e}
+
+
+Sensor.\-c 파일의 92 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+93 \{
+94     \textcolor{keywordtype}{bool} supported;
+95     sensor\_is\_supported (SENSOR\_GRAVITY, &supported);
+96     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+97     \{
+98         \textcolor{keywordflow}{return} NULL;
+99     \}
+100 
+101     \hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_d8/d6e/struct___gravity_extend}{GravityExtend}));
+102 
+103     this->gravity.Off         = \hyperlink{_sensor_8c_a3d81ebb8299e2a04502aa300762ecbc1}{GravityOff};
+104     this->gravity.On          = \hyperlink{_sensor_8c_ab20c5c8ec881c6535fc224e305b130b3}{GravityOn};
+105     this->gravity.addCallback = \hyperlink{_sensor_8c_a1349bbe984870e9be8ba799492d80bdb}{addGravityCallback};
+106     this->gravity.getValue    = \hyperlink{_sensor_8c_a4ee54192834c7c04958013b4b07ff6ac}{getGravityValue};
+107     this->gravity.isSupported = \hyperlink{_sensor_8c_a22e9689eecee23872e261891f307b0a0}{isGravitySupported};
+108 
+109     this->type     = SENSOR\_GRAVITY;
+110     this->listener = NULL;
+111     this->sensor   = NULL;
+112 
+113     \textcolor{keywordflow}{return} &this->gravity;
+114 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{da/dbb/_sensor_8h_a51cda1ca45f021ebf34ccb2e0506d08e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a9e1a411a1d82a32b868fdd228b0a6f38}{\index{Sensor.\-h@{Sensor.\-h}!New\-Gyroscope@{New\-Gyroscope}}
+\index{New\-Gyroscope@{New\-Gyroscope}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Gyroscope}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gyroscope} New\-Gyroscope (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a9e1a411a1d82a32b868fdd228b0a6f38}
+
+
+Sensor.\-c 파일의 522 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+523 \{
+524     \textcolor{keywordtype}{bool} supported;
+525     sensor\_is\_supported (SENSOR\_GYROSCOPE, &supported);
+526     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+527     \{
+528         \textcolor{keywordflow}{return} NULL;
+529     \}
+530 
+531     \hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_d0/ddb/struct___gyroscope_extend}{GyroscopeExtend}));
+532 
+533     this->gyroscope.Off         = \hyperlink{_sensor_8c_a64e72d01f92e9cd2f11538576b9bb25a}{GyroscopeOff};
+534     this->gyroscope.On          = \hyperlink{_sensor_8c_a3bd51264b2d2c9d88a28459ae55e5612}{GyroscopeOn};
+535     this->gyroscope.addCallback = \hyperlink{_sensor_8c_a0452a7182234767d311e80a54c67360d}{addGyroscopeCallback};
+536     this->gyroscope.getValue    = \hyperlink{_sensor_8c_a7cecfd5ca0547a9c75d70ec0e0747600}{getGyroscopeValue};
+537     this->gyroscope.isSupported = \hyperlink{_sensor_8c_a6ecc487a57d98c882e694edfc36b2c8a}{isGyroscopeSupported};
+538 
+539     this->type     = SENSOR\_GYROSCOPE;
+540     this->listener = NULL;
+541     this->sensor   = NULL;
+542 
+543     \textcolor{keywordflow}{return} &this->gyroscope;
+544 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/dbb/_sensor_8h_a9e1a411a1d82a32b868fdd228b0a6f38_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ae351f13f6b62d156a35f6a7992ba2127}{\index{Sensor.\-h@{Sensor.\-h}!New\-Humidity@{New\-Humidity}}
+\index{New\-Humidity@{New\-Humidity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Humidity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Humidity} New\-Humidity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ae351f13f6b62d156a35f6a7992ba2127}
+
+
+Sensor.\-c 파일의 1022 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+1023 \{
+1024     \textcolor{keywordtype}{bool} supported;
+1025     sensor\_is\_supported (SENSOR\_HUMIDITY, &supported);
+1026     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+1027     \{
+1028         \textcolor{keywordflow}{return} NULL;
+1029     \}
+1030 
+1031     \hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_d1/de0/struct___humidity_extend}{HumidityExtend}));
+1032 
+1033     this->humidity.Off         = \hyperlink{_sensor_8c_a21d0528b4d4c95bd878d7f39f2c03f91}{HumidityOff};
+1034     this->humidity.On          = \hyperlink{_sensor_8c_a27884ac9db17ed26581e59ee5d1ae39d}{HumidityOn};
+1035     this->humidity.addCallback = \hyperlink{_sensor_8c_ad5eee5a7971b815b9507f5c4d4c73a24}{addHumidityCallback};
+1036     this->humidity.getValue    = \hyperlink{_sensor_8c_a6e1191957657b1f121d9f6d939ccff84}{getHumidityValue};
+1037     this->humidity.isSupported = \hyperlink{_sensor_8c_a22264d7c177587b6428bdd9b3f2bfe9f}{isHumiditySupported};
+1038 
+1039     this->type     = SENSOR\_HUMIDITY;
+1040     this->listener = NULL;
+1041     this->sensor   = NULL;
+1042 
+1043     \textcolor{keywordflow}{return} &this->humidity;
+1044 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{da/dbb/_sensor_8h_ae351f13f6b62d156a35f6a7992ba2127_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a0c4f6e3c48b1791bb629d35daffdcf6b}{\index{Sensor.\-h@{Sensor.\-h}!New\-Light@{New\-Light}}
+\index{New\-Light@{New\-Light}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Light}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light} New\-Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a0c4f6e3c48b1791bb629d35daffdcf6b}
+
+
+Sensor.\-c 파일의 607 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+608 \{
+609     \textcolor{keywordtype}{bool} supported;
+610     sensor\_is\_supported (SENSOR\_LIGHT, &supported);
+611     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+612     \{
+613         \textcolor{keywordflow}{return} NULL;
+614     \}
+615 
+616     \hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_d8/d26/struct___light_extend}{LightExtend}));
+617 
+618     this->light.Off         = \hyperlink{_sensor_8c_aad1fdcdf9884e0840827b0329b6b1cce}{LightOff};
+619     this->light.On          = \hyperlink{_sensor_8c_a847e9da22f2baad56de0654d984af5d1}{LightOn};
+620     this->light.addCallback = \hyperlink{_sensor_8c_aa4f6134645858f7f5d08c83f900c139e}{addLightCallback};
+621     this->light.getValue    = \hyperlink{_sensor_8c_ab434c60f52e68a2c286306c2ea3a0526}{getLightValue};
+622     this->light.isSupported = \hyperlink{_sensor_8c_a91ed62c28cde9df2bfd3c441b8b5b37f}{isLightSupported};
+623 
+624     this->type     = SENSOR\_LIGHT;
+625     this->listener = NULL;
+626     this->sensor   = NULL;
+627 
+628     \textcolor{keywordflow}{return} &this->light;
+629 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{da/dbb/_sensor_8h_a0c4f6e3c48b1791bb629d35daffdcf6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_abc0a6735c2aea4434517ced5dc52f549}{\index{Sensor.\-h@{Sensor.\-h}!New\-Linear\-Accelation@{New\-Linear\-Accelation}}
+\index{New\-Linear\-Accelation@{New\-Linear\-Accelation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Linear\-Accelation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linear\-Accelation} New\-Linear\-Accelation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_abc0a6735c2aea4434517ced5dc52f549}
+
+
+Sensor.\-c 파일의 177 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+178 \{
+179     \textcolor{keywordtype}{bool} supported;
+180     sensor\_is\_supported (SENSOR\_LINEAR\_ACCELERATION, &supported);
+181     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+182     \{
+183         \textcolor{keywordflow}{return} NULL;
+184     \}
+185 
+186     \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d4/da4/struct___linear_accelation_extend}{LinearAccelationExtend}));
+187 
+188     this->linearaccelation.Off         = \hyperlink{_sensor_8c_afafbb2277b9322dd67cdc616e5471543}{LinearAccelationOff};
+189     this->linearaccelation.On          = \hyperlink{_sensor_8c_a46a6fcd7ccfef0a1308e01454c2b473c}{LinearAccelationOn};
+190     this->linearaccelation.addCallback = \hyperlink{_sensor_8c_aa3869e70acee2232c80955b67cc505d6}{addLinearAccelationCallback};
+191     this->linearaccelation.getValue    = \hyperlink{_sensor_8c_afbb418983c529e62b36bac3f6909a603}{getLinearAccelationValue};
+192     this->linearaccelation.isSupported = \hyperlink{_sensor_8c_a2a94bd208e37017e2ab4f1cf579abf45}{isLinearAccelationSupported};
+193 
+194     this->type     = SENSOR\_LINEAR\_ACCELERATION;
+195     this->listener = NULL;
+196     this->sensor   = NULL;
+197 
+198     \textcolor{keywordflow}{return} &this->linearaccelation;
+199 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_abc0a6735c2aea4434517ced5dc52f549_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ab2bf68e0ae5cc960f29112ffff6f08ae}{\index{Sensor.\-h@{Sensor.\-h}!New\-Magneto\-Meter@{New\-Magneto\-Meter}}
+\index{New\-Magneto\-Meter@{New\-Magneto\-Meter}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Magneto\-Meter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Magneto\-Meter} New\-Magneto\-Meter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab2bf68e0ae5cc960f29112ffff6f08ae}
+
+
+Sensor.\-c 파일의 263 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+264 \{
+265     \textcolor{keywordtype}{bool} supported;
+266     sensor\_is\_supported (SENSOR\_MAGNETIC, &supported);
+267     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+268     \{
+269         \textcolor{keywordflow}{return} NULL;
+270     \}
+271 
+272     \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d7/d8e/struct___magneto_meter_extend}{MagnetoMeterExtend}));
+273 
+274     this->magnetometer.Off         = \hyperlink{_sensor_8c_aa189af9499407c54b0814186aad32a89}{MagnetoMeterOff};
+275     this->magnetometer.On          = \hyperlink{_sensor_8c_a39a353a14e3db0ce85502a35c5ccffb8}{MagnetoMeterOn};
+276     this->magnetometer.addCallback = \hyperlink{_sensor_8c_a4d84071a361004e3c7f171e489b78280}{addMagnetoMeterCallback};
+277     this->magnetometer.getValue    = \hyperlink{_sensor_8c_af8d66fbc3858ea86baaec2cc3c1d33fc}{getMagnetoMeterValue};
+278     this->magnetometer.isSupported = \hyperlink{_sensor_8c_a3c5023cd863dc994ca4da0e18237cc0e}{isMagnetoMeterSupported};
+279 
+280     this->type     = SENSOR\_MAGNETIC;
+281     this->listener = NULL;
+282     this->sensor   = NULL;
+283 
+284     \textcolor{keywordflow}{return} &this->magnetometer;
+285 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_ab2bf68e0ae5cc960f29112ffff6f08ae_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ac3560f1e6ce8f03a1c34fb6f109da572}{\index{Sensor.\-h@{Sensor.\-h}!New\-Orientation@{New\-Orientation}}
+\index{New\-Orientation@{New\-Orientation}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Orientation} New\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ac3560f1e6ce8f03a1c34fb6f109da572}
+
+
+Sensor.\-c 파일의 436 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+437 \{
+438     \textcolor{keywordtype}{bool} supported;
+439     sensor\_is\_supported (SENSOR\_ORIENTATION, &supported);
+440     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+441     \{
+442         \textcolor{keywordflow}{return} NULL;
+443     \}
+444 
+445     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend}));
+446 
+447     this->orientation.Off         = \hyperlink{_sensor_8c_ab066d53e2553663195ec202037b4c90e}{OrientationOff};
+448     this->orientation.On          = \hyperlink{_sensor_8c_ad315026a5c51a1e139e4e83ed9aa57c0}{OrientationOn};
+449     this->orientation.addCallback = \hyperlink{_sensor_8c_ab79f8a05d768ee307b1a50319d556e98}{addOrientationCallback};
+450     this->orientation.getValue    = \hyperlink{_sensor_8c_aca22031b16714ba50a646b347bf662a6}{getOrientationValue};
+451     this->orientation.isSupported = \hyperlink{_sensor_8c_aa96ba937a81f05a243c500ff3a20c882}{isOrientationSupported};
+452 
+453     this->type     = SENSOR\_ORIENTATION;
+454     this->listener = NULL;
+455     this->sensor   = NULL;
+456 
+457     \textcolor{keywordflow}{return} &this->orientation;
+458 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{da/dbb/_sensor_8h_ac3560f1e6ce8f03a1c34fb6f109da572_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a2e31d67fd20d2d4d8cf5ffcfcdfb372b}{\index{Sensor.\-h@{Sensor.\-h}!New\-Pressure@{New\-Pressure}}
+\index{New\-Pressure@{New\-Pressure}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pressure} New\-Pressure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a2e31d67fd20d2d4d8cf5ffcfcdfb372b}
+
+
+Sensor.\-c 파일의 772 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+773 \{
+774     \textcolor{keywordtype}{bool} supported;
+775     sensor\_is\_supported (SENSOR\_PRESSURE, &supported);
+776     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+777     \{
+778         \textcolor{keywordflow}{return} NULL;
+779     \}
+780 
+781     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend}));
+782 
+783     this->pressure.Off         = \hyperlink{_sensor_8c_add6c19cf32d48922624fcb270aed18ca}{PressureOff};
+784     this->pressure.On          = \hyperlink{_sensor_8c_a830d2a896c4c8dd4991123976d241c6a}{PressureOn};
+785     this->pressure.addCallback = \hyperlink{_sensor_8c_a7319e8f7a3bdf529fc3f962ab4a293bf}{addPressureCallback};
+786     this->pressure.getValue    = \hyperlink{_sensor_8c_a46345879d23125c7d5d8d47a9c5a0854}{getPressureValue};
+787     this->pressure.isSupported = \hyperlink{_sensor_8c_a4a982f1d712c2603cba455cf3e0a4bce}{isPressureSupported};
+788 
+789     this->type     = SENSOR\_PRESSURE;
+790     this->listener = NULL;
+791     this->sensor   = NULL;
+792 
+793     \textcolor{keywordflow}{return} &this->pressure;
+794 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/dbb/_sensor_8h_a2e31d67fd20d2d4d8cf5ffcfcdfb372b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a4838a670d0babf7c4e9536ac90b5ce31}{\index{Sensor.\-h@{Sensor.\-h}!New\-Proximity@{New\-Proximity}}
+\index{New\-Proximity@{New\-Proximity}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Proximity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Proximity} New\-Proximity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a4838a670d0babf7c4e9536ac90b5ce31}
+
+
+Sensor.\-c 파일의 690 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+691 \{
+692     \textcolor{keywordtype}{bool} supported;
+693     sensor\_is\_supported (SENSOR\_PROXIMITY, &supported);
+694     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+695     \{
+696         \textcolor{keywordflow}{return} NULL;
+697     \}
+698 
+699     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend}));
+700 
+701     this->proximity.Off         = \hyperlink{_sensor_8c_aaa69c014251c0c8b0af42dc206ab7654}{ProximityOff};
+702     this->proximity.On          = \hyperlink{_sensor_8c_a937d47b9ecf9519c249264f792e374e6}{ProximityOn};
+703     this->proximity.addCallback = \hyperlink{_sensor_8c_a157bb28f76420528d8d620fa9410f729}{addProximityCallback};
+704     this->proximity.getValue    = \hyperlink{_sensor_8c_ab5d031471ccaac54c82623fac97cbd38}{getProximityValue};
+705     this->proximity.isSupported = \hyperlink{_sensor_8c_abc7f9541812695b9e33c550be306b3ea}{isProximitySupported};
+706 
+707     this->type     = SENSOR\_PROXIMITY;
+708     this->listener = NULL;
+709     this->sensor   = NULL;
+710 
+711     \textcolor{keywordflow}{return} &this->proximity;
+712 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{da/dbb/_sensor_8h_a4838a670d0babf7c4e9536ac90b5ce31_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a09ad301eb5e821b4b88a1a994b5d5cc7}{\index{Sensor.\-h@{Sensor.\-h}!New\-Rotation\-Vector@{New\-Rotation\-Vector}}
+\index{New\-Rotation\-Vector@{New\-Rotation\-Vector}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Rotation\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rotation\-Vector} New\-Rotation\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a09ad301eb5e821b4b88a1a994b5d5cc7}
+
+
+Sensor.\-c 파일의 350 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+351 \{
+352     \textcolor{keywordtype}{bool} supported;
+353     sensor\_is\_supported (SENSOR\_ROTATION\_VECTOR, &supported);
+354     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+355     \{
+356         \textcolor{keywordflow}{return} NULL;
+357     \}
+358 
+359     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend}));
+360 
+361     this->rotationvector.Off         = \hyperlink{_sensor_8c_a9b47e7ff5c669403305b3e2b5dec54a7}{RotationVectorOff};
+362     this->rotationvector.On          = \hyperlink{_sensor_8c_a501763c17b7cd3e3a45dc595eee0e653}{RotationVectorOn};
+363     this->rotationvector.addCallback = \hyperlink{_sensor_8c_a21741c6fd3172336b169963acc28b074}{addRotationVectorCallback};
+364     this->rotationvector.getValue    = \hyperlink{_sensor_8c_ac36694c7e6f5b3b500268fcac7679abd}{getRotationVectorValue};
+365     this->rotationvector.isSupported = \hyperlink{_sensor_8c_ad26fd4fc6dd7b0968a47c9773759ba99}{isRotationVectorSupported};
+366 
+367     this->type     = SENSOR\_ROTATION\_VECTOR;
+368     this->listener = NULL;
+369     this->sensor   = NULL;
+370 
+371     \textcolor{keywordflow}{return} &this->rotationvector;
+372 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbb/_sensor_8h_a09ad301eb5e821b4b88a1a994b5d5cc7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ac6bbff0f149ca6c8ab9315accf6b8235}{\index{Sensor.\-h@{Sensor.\-h}!New\-Temperature@{New\-Temperature}}
+\index{New\-Temperature@{New\-Temperature}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Temperature} New\-Temperature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ac6bbff0f149ca6c8ab9315accf6b8235}
+
+
+Sensor.\-c 파일의 939 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+940 \{
+941     \textcolor{keywordtype}{bool} supported;
+942     sensor\_is\_supported (SENSOR\_TEMPERATURE, &supported);
+943     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+944     \{
+945         \textcolor{keywordflow}{return} NULL;
+946     \}
+947 
+948     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend}));
+949 
+950     this->temperature.Off         = \hyperlink{_sensor_8c_a9f5b9a0490e2f413db412c87b3c2c0c8}{TemperatureOff};
+951     this->temperature.On          = \hyperlink{_sensor_8c_a618e482f104d7eb72bd47a37586334db}{TemperatureOn};
+952     this->temperature.addCallback = \hyperlink{_sensor_8c_a9a29ee5eed846d464e1044379e0eede3}{addTemperatureCallback};
+953     this->temperature.getValue    = \hyperlink{_sensor_8c_ade596fb9c371d8a5a12e12874d22d547}{getTemperatureValue};
+954     this->temperature.isSupported = \hyperlink{_sensor_8c_aec6c9326762b2f8f8f7ce662a03e9d5f}{isTemperatureSupported};
+955 
+956     this->type     = SENSOR\_TEMPERATURE;
+957     this->listener = NULL;
+958     this->sensor   = NULL;
+959 
+960     \textcolor{keywordflow}{return} &this->temperature;
+961 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{da/dbb/_sensor_8h_ac6bbff0f149ca6c8ab9315accf6b8235_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aa1bc7209d80c10661efecad94a9a413b}{\index{Sensor.\-h@{Sensor.\-h}!New\-Ultra\-Violet@{New\-Ultra\-Violet}}
+\index{New\-Ultra\-Violet@{New\-Ultra\-Violet}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{New\-Ultra\-Violet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ultra\-Violet} New\-Ultra\-Violet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aa1bc7209d80c10661efecad94a9a413b}
+
+
+Sensor.\-c 파일의 856 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+857 \{
+858     \textcolor{keywordtype}{bool} supported;
+859     sensor\_is\_supported (SENSOR\_ULTRAVIOLET, &supported);
+860     \textcolor{keywordflow}{if} ( supported == \textcolor{keyword}{false} )
+861     \{
+862         \textcolor{keywordflow}{return} NULL;
+863     \}
+864 
+865     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend}));
+866 
+867     this->ultraviolet.Off         = \hyperlink{_sensor_8c_ae88a4f6ad9e9078a5188a603bfb8c638}{UltraVioletOff};
+868     this->ultraviolet.On          = \hyperlink{_sensor_8c_a1c2365b2cd8c611014af58c29b4cd0b4}{UltraVioletOn};
+869     this->ultraviolet.addCallback = \hyperlink{_sensor_8c_ab115bb8cdb30c9cc3171958d5fbf5342}{addUltraVioletCallback};
+870     this->ultraviolet.getValue    = \hyperlink{_sensor_8c_a5fe7dc8b14714ace15c1e61f2229a0fc}{getUltraVioletValue};
+871     this->ultraviolet.isSupported = \hyperlink{_sensor_8c_af0cc0227baf15db2ebcbccb183fdfa5b}{isUltraVioletSupported};
+872 
+873     this->type     = SENSOR\_ULTRAVIOLET;
+874     this->listener = NULL;
+875     this->sensor   = NULL;
+876 
+877     \textcolor{keywordflow}{return} &this->ultraviolet;
+878 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{da/dbb/_sensor_8h_aa1bc7209d80c10661efecad94a9a413b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ab066d53e2553663195ec202037b4c90e}{\index{Sensor.\-h@{Sensor.\-h}!Orientation\-Off@{Orientation\-Off}}
+\index{Orientation\-Off@{Orientation\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Orientation\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Orientation\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ab066d53e2553663195ec202037b4c90e}
+
+
+Sensor.\-c 파일의 491 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+492 \{
+493     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} *)this\_gen;
+494     sensor\_listener\_stop (this->listener);
+495 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{da/dbb/_sensor_8h_ab066d53e2553663195ec202037b4c90e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ad315026a5c51a1e139e4e83ed9aa57c0}{\index{Sensor.\-h@{Sensor.\-h}!Orientation\-On@{Orientation\-On}}
+\index{Orientation\-On@{Orientation\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Orientation\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Orientation\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Orientation}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ad315026a5c51a1e139e4e83ed9aa57c0}
+
+
+Sensor.\-c 파일의 485 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+486 \{
+487     \hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/d35/struct___orientation_extend}{OrientationExtend} *)this\_gen;
+488     sensor\_listener\_start (this->listener);
+489 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{da/dbb/_sensor_8h_ad315026a5c51a1e139e4e83ed9aa57c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_add6c19cf32d48922624fcb270aed18ca}{\index{Sensor.\-h@{Sensor.\-h}!Pressure\-Off@{Pressure\-Off}}
+\index{Pressure\-Off@{Pressure\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Pressure\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Pressure\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_add6c19cf32d48922624fcb270aed18ca}
+
+
+Sensor.\-c 파일의 827 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+828 \{
+829     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} *)this\_gen;
+830     sensor\_listener\_stop (this->listener);
+831 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{da/dbb/_sensor_8h_add6c19cf32d48922624fcb270aed18ca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a830d2a896c4c8dd4991123976d241c6a}{\index{Sensor.\-h@{Sensor.\-h}!Pressure\-On@{Pressure\-On}}
+\index{Pressure\-On@{Pressure\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Pressure\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Pressure\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Pressure}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a830d2a896c4c8dd4991123976d241c6a}
+
+
+Sensor.\-c 파일의 821 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+822 \{
+823     \hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d3/dcd/struct___pressure_extend}{PressureExtend} *)this\_gen;
+824     sensor\_listener\_start (this->listener);
+825 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{da/dbb/_sensor_8h_a830d2a896c4c8dd4991123976d241c6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_aaa69c014251c0c8b0af42dc206ab7654}{\index{Sensor.\-h@{Sensor.\-h}!Proximity\-Off@{Proximity\-Off}}
+\index{Proximity\-Off@{Proximity\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Proximity\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Proximity\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_aaa69c014251c0c8b0af42dc206ab7654}
+
+
+Sensor.\-c 파일의 745 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+746 \{
+747     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} *)this\_gen;
+748     sensor\_listener\_stop (this->listener);
+749 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{da/dbb/_sensor_8h_aaa69c014251c0c8b0af42dc206ab7654_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a937d47b9ecf9519c249264f792e374e6}{\index{Sensor.\-h@{Sensor.\-h}!Proximity\-On@{Proximity\-On}}
+\index{Proximity\-On@{Proximity\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Proximity\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Proximity\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Proximity}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a937d47b9ecf9519c249264f792e374e6}
+
+
+Sensor.\-c 파일의 739 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+740 \{
+741     \hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_da/d95/struct___proximity_extend}{ProximityExtend} *)this\_gen;
+742     sensor\_listener\_start (this->listener);
+743 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{da/dbb/_sensor_8h_a937d47b9ecf9519c249264f792e374e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a9b47e7ff5c669403305b3e2b5dec54a7}{\index{Sensor.\-h@{Sensor.\-h}!Rotation\-Vector\-Off@{Rotation\-Vector\-Off}}
+\index{Rotation\-Vector\-Off@{Rotation\-Vector\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Rotation\-Vector\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Rotation\-Vector\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a9b47e7ff5c669403305b3e2b5dec54a7}
+
+
+Sensor.\-c 파일의 405 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+406 \{
+407     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} *)this\_gen;
+408     sensor\_listener\_stop (this->listener);
+409 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{da/dbb/_sensor_8h_a9b47e7ff5c669403305b3e2b5dec54a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a501763c17b7cd3e3a45dc595eee0e653}{\index{Sensor.\-h@{Sensor.\-h}!Rotation\-Vector\-On@{Rotation\-Vector\-On}}
+\index{Rotation\-Vector\-On@{Rotation\-Vector\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Rotation\-Vector\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Rotation\-Vector\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Rotation\-Vector}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a501763c17b7cd3e3a45dc595eee0e653}
+
+
+Sensor.\-c 파일의 399 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+400 \{
+401     \hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d6/df2/struct___rotation_vector_extend}{RotationVectorExtend} *)this\_gen;
+402     sensor\_listener\_start (this->listener);
+403 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{da/dbb/_sensor_8h_a501763c17b7cd3e3a45dc595eee0e653_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a9f5b9a0490e2f413db412c87b3c2c0c8}{\index{Sensor.\-h@{Sensor.\-h}!Temperature\-Off@{Temperature\-Off}}
+\index{Temperature\-Off@{Temperature\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Temperature\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a9f5b9a0490e2f413db412c87b3c2c0c8}
+
+
+Sensor.\-c 파일의 994 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+995 \{
+996     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} *)this\_gen;
+997     sensor\_listener\_stop (this->listener);
+998 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{da/dbb/_sensor_8h_a9f5b9a0490e2f413db412c87b3c2c0c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a618e482f104d7eb72bd47a37586334db}{\index{Sensor.\-h@{Sensor.\-h}!Temperature\-On@{Temperature\-On}}
+\index{Temperature\-On@{Temperature\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Temperature\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Temperature\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Temperature}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a618e482f104d7eb72bd47a37586334db}
+
+
+Sensor.\-c 파일의 988 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+989 \{
+990     \hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d7/dab/struct___temperature_extend}{TemperatureExtend} *)this\_gen;
+991     sensor\_listener\_start (this->listener);
+992 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{da/dbb/_sensor_8h_a618e482f104d7eb72bd47a37586334db_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_ae88a4f6ad9e9078a5188a603bfb8c638}{\index{Sensor.\-h@{Sensor.\-h}!Ultra\-Violet\-Off@{Ultra\-Violet\-Off}}
+\index{Ultra\-Violet\-Off@{Ultra\-Violet\-Off}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Ultra\-Violet\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void Ultra\-Violet\-Off (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_ae88a4f6ad9e9078a5188a603bfb8c638}
+
+
+Sensor.\-c 파일의 911 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+912 \{
+913     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} *)this\_gen;
+914     sensor\_listener\_stop (this->listener);
+915 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{da/dbb/_sensor_8h_ae88a4f6ad9e9078a5188a603bfb8c638_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_sensor_8h_a1c2365b2cd8c611014af58c29b4cd0b4}{\index{Sensor.\-h@{Sensor.\-h}!Ultra\-Violet\-On@{Ultra\-Violet\-On}}
+\index{Ultra\-Violet\-On@{Ultra\-Violet\-On}!Sensor.h@{Sensor.\-h}}
+\subsubsection[{Ultra\-Violet\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Ultra\-Violet\-On (
+\begin{DoxyParamCaption}
+\item[{{\bf Ultra\-Violet}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_sensor_8h_a1c2365b2cd8c611014af58c29b4cd0b4}
+
+
+Sensor.\-c 파일의 905 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+906 \{
+907     \hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} * \textcolor{keyword}{this} = (\hyperlink{_sensor_8h_d0/dbb/struct___ultra_violet_extend}{UltraVioletExtend} *)this\_gen;
+908     sensor\_listener\_start (this->listener);
+909 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{da/dbb/_sensor_8h_a1c2365b2cd8c611014af58c29b4cd0b4_icgraph}
+\end{center}
+\end{figure}
+
+

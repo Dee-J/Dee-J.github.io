@@ -1,0 +1,8 @@
+<map id="NewRotationVector" name="NewRotationVector">
+<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#ad2d9f3775748175e19205eb5522e1a4a" title="생성한 RotationVector를 비활성화 시킨다. " alt="" coords="226,5,353,33"/>
+<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a8165dbff58a6c0ac7247323e9cc13fa7" title="생성한 RotationVector를 활성화 시킨다. " alt="" coords="226,57,353,85"/>
+<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#ae73ca38ee9514702b0c6058aff74165d" title="생성한 RotationVector에 callback 함수를 등록한다. " alt="" coords="198,109,380,137"/>
+<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#ac36694c7e6f5b3b500268fcac7679abd" title="활성화 되어 있는 RotationVector의 센서 값을 반환한다. " alt="" coords="209,161,370,189"/>
+<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#ad26fd4fc6dd7b0968a47c9773759ba99" title="RotationVector의 사용 가능 여부를 판단한다. " alt="" coords="199,213,379,241"/>
+<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#aaa7d40839925a7414a0a36f3176e88b9" title="생성한 RotationVector에서 callback 함수를 삭제한다. " alt="" coords="189,265,389,293"/>
+</map>

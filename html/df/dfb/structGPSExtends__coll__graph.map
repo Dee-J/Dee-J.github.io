@@ -1,0 +1,4 @@
+<map id="GPSExtends" name="GPSExtends">
+<area shape="rect" id="node2" href="$d9/dae/GPS_8h.html#d1/d4f/struct__location" title="{_location\n|+ altitude\l+ latitude\l+ longitude\l+ climb\l+ direction\l+ speed\l+ level\l+ horizontal\l+ vertical\l+ timestamp\l+ validation\l|}" alt="" coords="30,6,124,247"/>
+<area shape="rect" id="node3" href="$d5/d82/struct__gps.html" title="{_gps\n|+ isAccessible\l+ onConnect\l+ onDisconnect\l|}" alt="" coords="114,313,227,426"/>
+</map>

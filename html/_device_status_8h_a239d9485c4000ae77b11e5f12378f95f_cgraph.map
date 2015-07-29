@@ -1,0 +1,7 @@
+<map id="NewDisplay" name="NewDisplay">
+<area shape="rect" id="node2" href="$_device_status_8c.html#a87f2b7767d49dd3e159c64b75ff75908" title="DisplayLock" alt="" coords="176,5,269,33"/>
+<area shape="rect" id="node3" href="$_device_status_8c.html#a31d1cbf3823841fc843b5f6efbf22089" title="DisplayUnlock" alt="" coords="170,57,276,85"/>
+<area shape="rect" id="node4" href="$_device_status_8c.html#a683879a96e81e501d9eb5d8cf1a26dd0" title="DisplayDim" alt="" coords="178,109,267,137"/>
+<area shape="rect" id="node5" href="$_device_status_8c.html#abf038dea7a71738b751dfdd3ce88ebf9" title="getDisplayBrightLevel" alt="" coords="148,161,298,189"/>
+<area shape="rect" id="node6" href="$_device_status_8c.html#a124de52394ef0f246697c6b2a21bc15d" title="setDisplayBrightLevel" alt="" coords="148,213,297,241"/>
+</map>

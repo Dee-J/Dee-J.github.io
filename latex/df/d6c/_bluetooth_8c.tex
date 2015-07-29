@@ -1,0 +1,507 @@
+\hypertarget{_bluetooth_8c}{\section{Bluetooth.\-c 파일 참조}
+\label{_bluetooth_8c}\index{Bluetooth.\-c@{Bluetooth.\-c}}
+}
+{\ttfamily \#include \char`\"{}Commnucation/\-Bluetooth.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$app\-\_\-control.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+{\ttfamily \#include $<$glib.\-h$>$}\\*
+Bluetooth.\-c에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/deb/_bluetooth_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} \hyperlink{_bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a}{New\-Bluetooth} (void)
+\item 
+void \hyperlink{_bluetooth_8c_a643b6a392ddbcf1c02bcfeb15ca52df8}{Destroy\-Bluetooth} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen)
+\item 
+bool \hyperlink{_bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc}{is\-Bluetooth\-Accessible} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen)
+\item 
+bool \hyperlink{_bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6}{on\-Bluetooth\-Connect} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen)
+\item 
+bool \hyperlink{_bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e}{is\-Bluetooth\-Connected} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen)
+\item 
+bool \hyperlink{_bluetooth_8c_a26f809a19ded06421baab533eb8a59a6}{on\-Bluetooth\-Disconnect} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen)
+\item 
+void \hyperlink{_bluetooth_8c_a4267c8ac222d9e9b0c23f2404b6c473f}{Bluetooth\-File\-Recv} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} $\ast$recv\-Buffer)
+\item 
+void \hyperlink{_bluetooth_8c_a0859df2e1b985855ce1d3071f7ac9bd7}{Bluetooth\-File\-Send} (\hyperlink{_bluetooth_8h_aedee4f5eb0a22e2858979432e7f9825e}{Bluetooth} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} sendbuffer)
+\item 
+const char $\ast$ \hyperlink{_bluetooth_8c_a27d2daee8cbfd1a01955b71a879af863}{Bluetooth\-Error\-Check} (int err\-Code)
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\hypertarget{_bluetooth_8c_a27d2daee8cbfd1a01955b71a879af863}{\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-Error\-Check@{Bluetooth\-Error\-Check}}
+\index{Bluetooth\-Error\-Check@{Bluetooth\-Error\-Check}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Bluetooth\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a27d2daee8cbfd1a01955b71a879af863}
+
+
+Bluetooth.\-c 파일의 339 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+340 \{
+341     \textcolor{keywordflow}{switch} (errCode)
+342     \{
+343     \textcolor{keywordflow}{case} BT\_ERROR\_NONE:
+344         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NONE : Successful"};
+345 
+346     \textcolor{keywordflow}{case} BT\_ERROR\_CANCELLED:
+347         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_CANCELLED : Operation cancelled"};
+348 
+349     \textcolor{keywordflow}{case} BT\_ERROR\_INVALID\_PARAMETER:
+350         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_INVALID\_PARAMETER : Invalid parameter"};
+351 
+352     \textcolor{keywordflow}{case} BT\_ERROR\_OUT\_OF\_MEMORY:
+353         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_OUT\_OF\_MEMORY : Out of memory"};
+354 
+355     \textcolor{keywordflow}{case} BT\_ERROR\_RESOURCE\_BUSY:
+356         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_RESOURCE\_BUSY : Device or resource busy"};
+357 
+358     \textcolor{keywordflow}{case} BT\_ERROR\_TIMED\_OUT:
+359         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_TIMED\_OUT : Timeout error"};
+360 
+361     \textcolor{keywordflow}{case} BT\_ERROR\_NOW\_IN\_PROGRESS :
+362         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NOW\_IN\_PROGRESS : Operation now in progress"};
+363 
+364     \textcolor{keywordflow}{case} BT\_ERROR\_NOT\_SUPPORTED:
+365         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NOT\_SUPPORTED : Not Supported"};
+366 
+367     \textcolor{keywordflow}{case} BT\_ERROR\_PERMISSION\_DENIED:
+368         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_PERMISSION\_DENIED : Permission denied"};
+369 
+370     \textcolor{keywordflow}{case} BT\_ERROR\_QUOTA\_EXCEEDED:
+371         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_QUOTA\_EXCEEDED : Quota exceeded"};
+372 
+373     \textcolor{keywordflow}{case} BT\_ERROR\_NOT\_INITIALIZED:
+374         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NOT\_INITIALIZED : Local adapter not initialized"};
+375 
+376     \textcolor{keywordflow}{case} BT\_ERROR\_NOT\_ENABLED:
+377         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NOT\_ENABLED : Local adapter not enabled"};
+378 
+379     \textcolor{keywordflow}{case} BT\_ERROR\_ALREADY\_DONE:
+380         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_ALREADY\_DONE : Operation already done"};
+381 
+382     \textcolor{keywordflow}{case} BT\_ERROR\_OPERATION\_FAILED:
+383         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_OPERATION\_FAILED : Operation failed"};
+384 
+385     \textcolor{keywordflow}{case} BT\_ERROR\_NOT\_IN\_PROGRESS:
+386         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_NOT\_IN\_PROGRESS : Operation not in progress"};
+387 
+388     \textcolor{keywordflow}{case} BT\_ERROR\_REMOTE\_DEVICE\_NOT\_BONDED:
+389         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_REMOTE\_DEVICE\_NOT\_BONDED : Remote device not bonded"};
+390 
+391     \textcolor{keywordflow}{case} BT\_ERROR\_AUTH\_REJECTED:
+392         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_AUTH\_REJECTED : Authentication rejected"};
+393 
+394     \textcolor{keywordflow}{case} BT\_ERROR\_AUTH\_FAILED:
+395         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_AUTH\_FAILED : Authentication failed"};
+396 
+397     \textcolor{keywordflow}{case} BT\_ERROR\_REMOTE\_DEVICE\_NOT\_FOUND:
+398         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_REMOTE\_DEVICE\_NOT\_FOUND : Remote device not found"};
+399 
+400     \textcolor{keywordflow}{case} BT\_ERROR\_SERVICE\_SEARCH\_FAILED:
+401         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_SERVICE\_SEARCH\_FAILED : Service search failed"};
+402 
+403     \textcolor{keywordflow}{case} BT\_ERROR\_REMOTE\_DEVICE\_NOT\_CONNECTED:
+404         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_REMOTE\_DEVICE\_NOT\_CONNECTED : Remote device is not connected"};
+405 
+406     \textcolor{keywordflow}{case} BT\_ERROR\_AGAIN:
+407         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_AGAIN : Resource temporarily unavailable"};
+408 
+409     \textcolor{keywordflow}{case} BT\_ERROR\_SERVICE\_NOT\_FOUND:
+410         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_SERVICE\_NOT\_FOUND : Service Not Found"};
+411 
+412     \textcolor{keywordflow}{default}:
+413         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BT\_ERROR\_UNKWON"};
+414     \};
+415 \}
+\end{DoxyCode}
+\hypertarget{_bluetooth_8c_a4267c8ac222d9e9b0c23f2404b6c473f}{\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-File\-Recv@{Bluetooth\-File\-Recv}}
+\index{Bluetooth\-File\-Recv@{Bluetooth\-File\-Recv}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-File\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}void Bluetooth\-File\-Recv (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen, }
+\item[{{\bf String} $\ast$}]{recv\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a4267c8ac222d9e9b0c23f2404b6c473f}
+
+\begin{DoxyParams}[1]{매개변수}
+\mbox{\tt in}  & {\em this\-\_\-gen} & assign Bluetooth object \\
+\hline
+\mbox{\tt in}  & {\em recvfile} & N\-U\-L\-L\-A\-B\-L\-E assign filename\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+0\-:sucess -\/1\-:failed 
+\end{DoxyReturn}
+
+
+Bluetooth.\-c 파일의 163 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+164 \{
+165     \textcolor{comment}{//todo 파일만 처리 가능한 상황}
+166     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+167     \{
+168         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+169 
+170         \textcolor{keywordflow}{if} ( this->connected )
+171         \{
+172             \textcolor{keywordtype}{int} ret = bt\_opp\_server\_initialize\_by\_connection\_request (
+      \hyperlink{dit_8h_af029412212bf6a445500174d743cdd20}{DOWNLOADSFOLDERPATH}, connection\_requested\_cb\_for\_opp\_serverx, recvBuffer);
+173         \}
+174     \}
+175 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{df/d6c/_bluetooth_8c_a4267c8ac222d9e9b0c23f2404b6c473f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_a0859df2e1b985855ce1d3071f7ac9bd7}{\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-File\-Send@{Bluetooth\-File\-Send}}
+\index{Bluetooth\-File\-Send@{Bluetooth\-File\-Send}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-File\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void Bluetooth\-File\-Send (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen, }
+\item[{{\bf String}}]{sendbuffer}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a0859df2e1b985855ce1d3071f7ac9bd7}
+param\mbox{[}in\mbox{]} sendfilepath fullpath of file to send 
+
+Bluetooth.\-c 파일의 181 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+182 \{
+183     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+184     \{
+185         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+186 
+187         \textcolor{keywordflow}{if} ( this->connected )
+188         \{
+189 
+190             \textcolor{keywordtype}{int} ret = bt\_opp\_client\_initialize ();
+191             \textcolor{keywordflow}{if} ( ret != BT\_ERROR\_NONE )
+192             \{
+193                 \textcolor{keywordflow}{return};
+194             \}
+195 
+196             ret = bt\_opp\_client\_add\_file (sendbuffer);
+197 
+198             \textcolor{keywordflow}{if} ( ret != BT\_ERROR\_NONE )
+199             \{
+200                 \textcolor{keywordflow}{return};
+201             \}
+202 
+203             ret = bt\_opp\_client\_push\_files (this->remoteMACAddr, \_\_bt\_opp\_client\_push\_responded\_cbx, 
+      \_\_bt\_opp\_client\_push\_progress\_cbx, \_\_bt\_opp\_client\_push\_finished\_cbx, NULL);
+204 
+205             \textcolor{keywordflow}{if} ( ret != BT\_ERROR\_NONE )
+206             \{
+207                 \textcolor{keywordflow}{return};
+208             \}
+209 
+210             ret = bt\_opp\_client\_clear\_files ();
+211 
+212             \textcolor{keywordflow}{if} ( ret != BT\_ERROR\_NONE )
+213             \{
+214                 \textcolor{keywordflow}{return};
+215             \}
+216         \}
+217     \}
+218 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{df/d6c/_bluetooth_8c_a0859df2e1b985855ce1d3071f7ac9bd7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_a643b6a392ddbcf1c02bcfeb15ca52df8}{\index{Bluetooth.\-c@{Bluetooth.\-c}!Destroy\-Bluetooth@{Destroy\-Bluetooth}}
+\index{Destroy\-Bluetooth@{Destroy\-Bluetooth}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Destroy\-Bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Bluetooth (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a643b6a392ddbcf1c02bcfeb15ca52df8}
+
+
+Bluetooth.\-c 파일의 37 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+38 \{
+39     \textcolor{keywordflow}{if} ( NULL != this\_gen )
+40     \{
+41         bt\_opp\_server\_deinitialize ();
+42         bt\_adapter\_stop\_device\_discovery ();
+43         bt\_adapter\_unset\_state\_changed\_cb ();
+44         bt\_adapter\_unset\_device\_discovery\_state\_changed\_cb ();
+45         bt\_device\_unset\_service\_searched\_cb ();
+46         bt\_socket\_unset\_data\_received\_cb ();
+47         bt\_socket\_unset\_connection\_state\_changed\_cb ();
+48         bt\_adapter\_unset\_visibility\_duration\_changed\_cb ();
+49 
+50         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+51 
+52         \textcolor{keywordflow}{if} ( this->remoteMACAddr != NULL)
+53         \{
+54             free (this->remoteMACAddr);
+55         \}
+56         free (\textcolor{keyword}{this});
+57     \}
+58 \}
+\end{DoxyCode}
+\hypertarget{_bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc}{\index{Bluetooth.\-c@{Bluetooth.\-c}!is\-Bluetooth\-Accessible@{is\-Bluetooth\-Accessible}}
+\index{is\-Bluetooth\-Accessible@{is\-Bluetooth\-Accessible}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{is\-Bluetooth\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Bluetooth\-Accessible (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc}
+
+
+Bluetooth.\-c 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+61 \{
+62     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+63     \{
+64         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+65 
+66         \textcolor{keywordtype}{bool} ret;
+67         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.bluetooth"}, &ret);
+68 
+69         \textcolor{keywordflow}{if} ( ret )
+70         \{
+71             app\_control\_h service = NULL;
+72             app\_control\_create (&service);
+73 
+74             app\_control\_set\_operation (service, \textcolor{stringliteral}{"http://tizen.org/appcontrol/operation/edit"});
+75             app\_control\_set\_mime (service, \textcolor{stringliteral}{"application/x-bluetooth-on-off"});
+76 
+77             \textcolor{keywordtype}{int} ret = app\_control\_send\_launch\_request (service, NULL, NULL);
+78 
+79             app\_control\_destroy (service);
+80 
+81             bt\_adapter\_state\_e adapter\_state;
+82 
+83             \textcolor{keywordtype}{int} re = bt\_adapter\_get\_state (&adapter\_state);
+84 
+85             \textcolor{keywordflow}{if} ( re == BT\_ERROR\_NONE )
+86             \{
+87                 this->accessible = \textcolor{keyword}{true};
+88                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+89             \}
+90         \}
+91     \}
+92     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+93 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{df/d6c/_bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e}{\index{Bluetooth.\-c@{Bluetooth.\-c}!is\-Bluetooth\-Connected@{is\-Bluetooth\-Connected}}
+\index{is\-Bluetooth\-Connected@{is\-Bluetooth\-Connected}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{is\-Bluetooth\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Bluetooth\-Connected (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e}
+
+
+Bluetooth.\-c 파일의 122 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+123 \{
+124     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+125     \{
+126         \textcolor{keywordflow}{return} ((\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen)->connected;
+127     \}
+128     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+129 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{df/d6c/_bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a}{\index{Bluetooth.\-c@{Bluetooth.\-c}!New\-Bluetooth@{New\-Bluetooth}}
+\index{New\-Bluetooth@{New\-Bluetooth}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{New\-Bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bluetooth} New\-Bluetooth (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a}
+
+
+Bluetooth.\-c 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+20 \{
+21     \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends}));
+22 
+23     this->bluetooth.isAccessible = \hyperlink{_bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc}{isBluetoothAccessible};
+24     this->bluetooth.onConnect    = \hyperlink{_bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6}{onBluetoothConnect};
+25     this->bluetooth.isConnected  = \hyperlink{_bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e}{isBluetoothConnected};
+26     this->bluetooth.onConnect    = \hyperlink{_bluetooth_8c_a26f809a19ded06421baab533eb8a59a6}{onBluetoothDisconnect};
+27     this->bluetooth.FileRecv     = \hyperlink{_bluetooth_8c_a4267c8ac222d9e9b0c23f2404b6c473f}{BluetoothFileRecv};
+28     this->bluetooth.FileSend     = \hyperlink{_bluetooth_8c_a0859df2e1b985855ce1d3071f7ac9bd7}{BluetoothFileSend};
+29 
+30     this->connected     = \textcolor{keyword}{false};
+31     this->accessible    = \textcolor{keyword}{false};
+32     this->remoteMACAddr = NULL;
+33 
+34     \textcolor{keywordflow}{return} &this->bluetooth;
+35 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{df/d6c/_bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6}{\index{Bluetooth.\-c@{Bluetooth.\-c}!on\-Bluetooth\-Connect@{on\-Bluetooth\-Connect}}
+\index{on\-Bluetooth\-Connect@{on\-Bluetooth\-Connect}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{on\-Bluetooth\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Bluetooth\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6}
+
+
+Bluetooth.\-c 파일의 95 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+96 \{
+97     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+98     \{
+99         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+100 
+101         \textcolor{keywordflow}{if} ( this->accessible )
+102         \{
+103             \textcolor{keywordtype}{int} res = 0;
+104 
+105             res += bt\_initialize ();
+106             res += bt\_adapter\_set\_state\_changed\_cb (adapter\_state\_changed\_cbx, \textcolor{keyword}{this});
+107             res += bt\_adapter\_foreach\_bonded\_device (adapter\_bonded\_device\_cbx, \textcolor{keyword}{this});
+108             res += bt\_adapter\_start\_device\_discovery ();
+109 
+110             \textcolor{keywordflow}{if} ( res == BT\_ERROR\_NONE )
+111             \{
+112                 this->connected = \textcolor{keyword}{true};
+113                 \textcolor{keywordflow}{return} this->connected;
+114             \}
+115         \}
+116 
+117         this->connected = \textcolor{keyword}{false};
+118     \}
+119     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+120 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{df/d6c/_bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_bluetooth_8c_a26f809a19ded06421baab533eb8a59a6}{\index{Bluetooth.\-c@{Bluetooth.\-c}!on\-Bluetooth\-Disconnect@{on\-Bluetooth\-Disconnect}}
+\index{on\-Bluetooth\-Disconnect@{on\-Bluetooth\-Disconnect}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{on\-Bluetooth\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Bluetooth\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf Bluetooth}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_bluetooth_8c_a26f809a19ded06421baab533eb8a59a6}
+
+
+Bluetooth.\-c 파일의 131 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+132 \{
+133     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+134     \{
+135         \hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} * \textcolor{keyword}{this} = (\hyperlink{_bluetooth_8h_d0/d37/struct_bluetooth_extends}{BluetoothExtends} *)this\_gen;
+136 
+137         \textcolor{keywordflow}{if} ( this->accessible )
+138         \{
+139             \textcolor{keywordtype}{int} ret = 0;
+140             ret = bt\_deinitialize ();
+141 
+142             \textcolor{keywordflow}{if} ( BT\_ERROR\_NONE == ret )
+143             \{
+144                 this->connected = \textcolor{keyword}{false};
+145                 \textcolor{keywordflow}{if} ( this->remoteMACAddr != NULL)
+146                 \{
+147                     free (this->remoteMACAddr);
+148                     this->remoteMACAddr = NULL;
+149                 \}
+150                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+151             \}
+152         \}
+153     \}
+154     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+155 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{df/d6c/_bluetooth_8c_a26f809a19ded06421baab533eb8a59a6_icgraph}
+\end{center}
+\end{figure}
+
+

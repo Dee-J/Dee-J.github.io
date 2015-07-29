@@ -1,0 +1,66 @@
+\hypertarget{struct__Http}{\section{\-\_\-\-Http Struct Reference}
+\label{struct__Http}\index{\-\_\-\-Http@{\-\_\-\-Http}}
+}
+
+
+Http 모듈에 대한 구조체이다. Http 모듈은 다양한 방식으로 Http 통신을 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Http.\-h$>$}
+
+
+
+Collaboration diagram for \-\_\-\-Http\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{d8/d80/struct__Http__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct__Http_a3f21ba58588b0d2e11e7611caf3fa65c}{bool($\ast$ {\bfseries is\-Accessible} )(\hyperlink{struct__Http}{Http} this\-\_\-gen)}\label{struct__Http_a3f21ba58588b0d2e11e7611caf3fa65c}
+
+\item 
+\hypertarget{struct__Http_a952cc07a3505431bf33a7a6393a1503a}{bool($\ast$ {\bfseries on\-Connect} )(\hyperlink{struct__Http}{Http} this\-\_\-gen, String url, int port)}\label{struct__Http_a952cc07a3505431bf33a7a6393a1503a}
+
+\item 
+\hypertarget{struct__Http_ad6d1f6047ef195fe434e3d259aa0375a}{bool($\ast$ {\bfseries on\-Disconnect} )(\hyperlink{struct__Http}{Http} this\-\_\-gen)}\label{struct__Http_ad6d1f6047ef195fe434e3d259aa0375a}
+
+\item 
+\hypertarget{struct__Http_ab1e77582577b37757ed378ed3f86d298}{bool($\ast$ {\bfseries Download} )(\hyperlink{struct__Http}{Http} this\-\_\-gen, String filename)}\label{struct__Http_ab1e77582577b37757ed378ed3f86d298}
+
+\item 
+\hypertarget{struct__Http_af5fa9b3c938bda9972d5e4b9f880835b}{bool($\ast$ {\bfseries Post} )(\hyperlink{struct__Http}{Http} this\-\_\-gen, String res, String $\ast$req)}\label{struct__Http_af5fa9b3c938bda9972d5e4b9f880835b}
+
+\item 
+\hypertarget{struct__Http_ae18bf127b32304b57ce442c8282fe73a}{bool($\ast$ {\bfseries Get} )(\hyperlink{struct__Http}{Http} this\-\_\-gen, String res, String $\ast$req)}\label{struct__Http_ae18bf127b32304b57ce442c8282fe73a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Http 모듈에 대한 구조체이다. Http 모듈은 다양한 방식으로 Http 통신을 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Http의 Http 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http()} 함수를 사용해야 하며 사용이 끝났을 때 \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http()} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{https://developer.tizen.org/dev-guide/2.3.0/org.tizen.native.mobile.apireference/group__OPENSRC__CURL__FRAMEWORK.html}{\tt https\-://developer.\-tizen.\-org/dev-\/guide/2.\-3.\-0/org.\-tizen.\-native.\-mobile.\-apireference/group\-\_\-\-\_\-\-O\-P\-E\-N\-S\-R\-C\-\_\-\-\_\-\-C\-U\-R\-L\-\_\-\-\_\-\-F\-R\-A\-M\-E\-W\-O\-R\-K.\-html} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege에 \char`\"{}http\-://tizen.\-org/privilege/internet\char`\"{} 을 반드시 추가해야 한다. 
+\end{DoxyPrecond}
+
+
+Definition at line 120 of file Http.\-h.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Http_8h}{Http.\-h}\end{DoxyCompactItemize}

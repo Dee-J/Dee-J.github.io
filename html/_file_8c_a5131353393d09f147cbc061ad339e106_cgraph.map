@@ -1,0 +1,8 @@
+<map id="NewAudio" name="NewAudio">
+<area shape="rect" id="node2" href="$_file_8c.html#ae2d57c542ee2077fd42e4dc9ab3a6998" title="for use this function, caller must import &lt;metadata_extractor.h&gt; " alt="" coords="136,5,232,33"/>
+<area shape="rect" id="node3" href="$_file_8c.html#a07bff016d794342402eac0008abf3f62" title="pauseAudio" alt="" coords="138,57,230,85"/>
+<area shape="rect" id="node4" href="$_file_8c.html#a223afacb101c29984502fb9de2268a2a" title="playAudio" alt="" coords="144,109,224,137"/>
+<area shape="rect" id="node5" href="$_file_8c.html#af2d3caee7d7fb4f2b1a52b62f47b4000" title="recordAudio" alt="" coords="137,161,231,189"/>
+<area shape="rect" id="node6" href="$_file_8c.html#a593160c5700f408e45aa387e4698dff5" title="stopAudio" alt="" coords="144,213,224,241"/>
+<area shape="rect" id="node7" href="$_file_8c.html#a5f635b3dbe3c4c00d905ae668b8c2007" title="setAudioURI" alt="" coords="136,265,232,293"/>
+</map>

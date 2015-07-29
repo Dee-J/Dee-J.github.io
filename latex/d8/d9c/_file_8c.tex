@@ -1,0 +1,1468 @@
+\hypertarget{_file_8c}{\section{File.\-c 파일 참조}
+\label{_file_8c}\index{File.\-c@{File.\-c}}
+}
+{\ttfamily \#include \char`\"{}Device/\-File.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$dirent.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$glib.\-h$>$}\\*
+{\ttfamily \#include $<$tizen.\-h$>$}\\*
+{\ttfamily \#include $<$player.\-h$>$}\\*
+{\ttfamily \#include $<$Evas.\-h$>$}\\*
+{\ttfamily \#include $<$metadata\-\_\-extractor.\-h$>$}\\*
+{\ttfamily \#include $<$media\-\_\-content.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+File.\-c에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d48/_file_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_file_8h_a45c510e0fb5b6f017899effc87dbb2b1}{File} \hyperlink{_file_8c_a1f0fe23f2354710d5a4365375b7d9787}{New\-File} ()
+\item 
+void \hyperlink{_file_8c_ab44ac1360d2598918dd2c655833e10c0}{Destroy\-File} (\hyperlink{_file_8h_a45c510e0fb5b6f017899effc87dbb2b1}{File} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_ad189205626097979d619616eec687c29}{delete\-File} (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src)
+\item 
+void \hyperlink{_file_8c_aae2f7d950e3022f08c886332538ed231}{move\-File} (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} dst)
+\item 
+void \hyperlink{_file_8c_a9d83a800fb7cdb6ab6042c3b8208603e}{copy\-File} (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} dst)
+\item 
+void \hyperlink{_file_8c_a933bae8574b61534ef18829401685b5f}{search\-\_\-recur} (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} dest, G\-List $\ast$$\ast$search\-List)
+\item 
+G\-List $\ast$ \hyperlink{_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6}{search\-File} (\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} dst)
+\item 
+void \hyperlink{_file_8c_a216f1438ba1ab14dbdf022f41d7ec7d4}{delete\-Search\-List\-Element} (gpointer data)
+\item 
+void \hyperlink{_file_8c_abd3ba5be2b95658e157d698655bddc85}{delete\-Searched\-List} (G\-List $\ast$search\-List)
+\item 
+\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} \hyperlink{_file_8c_a78a40226b2a70fa8372ae14b58f2dad8}{New\-Video} ()
+\item 
+void \hyperlink{_file_8c_a23fb13c9330e924604c6d93e67e957c6}{Destroy\-Video} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a7073fc7cfe96be95f74c825568473c79}{play\-Video} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a7d6bf405559699710a43dccea8d0a4e1}{pause\-Video} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_af01f9025ee8223f530578cb9d13b090d}{stop\-Video} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a5b40295ac61cd591f16df0830662cf41}{record\-Video} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen)
+\item 
+\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} \hyperlink{_file_8c_a270efb2f74fd2361e50e9ccb7e4f8994}{get\-Video\-Info} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen, metadata\-\_\-extractor\-\_\-attr\-\_\-e element)
+\begin{DoxyCompactList}\small\item\em for use this function, caller must import $<$metadata\-\_\-extractor.\-h$>$ \end{DoxyCompactList}\item 
+void \hyperlink{_file_8c_a9c54d82410998e70be5ee58f4300c007}{set\-Video\-U\-R\-I} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen, char $\ast$uri)
+\item 
+void \hyperlink{_file_8c_aaff5acd3166a9688ec8264308e24f983}{set\-Evas\-Object} (\hyperlink{_file_8h_aabe6dc4fa995ed8e3f85097dd589ea6f}{Video} this\-\_\-gen, Evas\-\_\-\-Object $\ast$Evas\-Object)
+\item 
+\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} \hyperlink{_file_8c_a5131353393d09f147cbc061ad339e106}{New\-Audio} ()
+\item 
+void \hyperlink{_file_8c_a1c24d11e9397892d289591033dd8d174}{Destroy\-Audio} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a223afacb101c29984502fb9de2268a2a}{play\-Audio} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a07bff016d794342402eac0008abf3f62}{pause\-Audio} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a593160c5700f408e45aa387e4698dff5}{stop\-Audio} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_af2d3caee7d7fb4f2b1a52b62f47b4000}{record\-Audio} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen)
+\item 
+void \hyperlink{_file_8c_a5f635b3dbe3c4c00d905ae668b8c2007}{set\-Audio\-U\-R\-I} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen, char $\ast$uri)
+\item 
+char $\ast$ \hyperlink{_file_8c_ae2d57c542ee2077fd42e4dc9ab3a6998}{get\-Audio\-Info} (\hyperlink{_file_8h_a37d3938964971e2cb1ed957c60f7a5b9}{Audio} this\-\_\-gen, metadata\-\_\-extractor\-\_\-attr\-\_\-e metadata\-Key)
+\begin{DoxyCompactList}\small\item\em for use this function, caller must import $<$metadata\-\_\-extractor.\-h$>$ \end{DoxyCompactList}\item 
+\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} \hyperlink{_file_8c_ad17366b79a466f9119bb51eb66959ceb}{New\-Image} ()
+\item 
+void \hyperlink{_file_8c_a4dcf832a1b8f74b72f2fd59b99c53eb6}{Destroy\-Image} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\item 
+bool \hyperlink{_file_8c_a88f447cdae758babee94532d86125a51}{gallery\-\_\-media\-\_\-item\-\_\-cbx} (media\-\_\-info\-\_\-h media, void $\ast$user\-\_\-data)
+\item 
+void \hyperlink{_file_8c_a5222eaad094d10f30280a92e6262c7f3}{get\-Image\-Info} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen, \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} src)
+\item 
+\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} \hyperlink{_file_8c_aca1b404580307734c234029ee9ec785f}{get\-Image\-Burst\-Id} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\item 
+\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} \hyperlink{_file_8c_afa46334dca385b7745cc9b24125af485}{get\-Image\-Media\-Id} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\item 
+\hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} \hyperlink{_file_8c_aa257a3267f9eba5245c8827456c364d1}{get\-Image\-Date\-Taken} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\item 
+int \hyperlink{_file_8c_a265af397b45973553ffe7b24f5b294a1}{get\-Image\-Width} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\item 
+int \hyperlink{_file_8c_a234e4aeffbda89026d122582504b1eb8}{get\-Image\-Height} (\hyperlink{_file_8h_aeb62f8214ffbffd373f144739b9eca60}{Image} this\-\_\-gen)
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\hypertarget{_file_8c_a9d83a800fb7cdb6ab6042c3b8208603e}{\index{File.\-c@{File.\-c}!copy\-File@{copy\-File}}
+\index{copy\-File@{copy\-File}!File.c@{File.\-c}}
+\subsubsection[{copy\-File}]{\setlength{\rightskip}{0pt plus 5cm}void copy\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf String}}]{src, }
+\item[{{\bf String}}]{dst}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a9d83a800fb7cdb6ab6042c3b8208603e}
+
+
+File.\-c 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+59 \{
+60     \textcolor{keywordtype}{char} buff[BUFSIZ];
+61     FILE * in, * out;
+62     \textcolor{keywordtype}{size\_t}     n;
+63 
+64     in  = fopen (src, \textcolor{stringliteral}{"rb"});
+65     out = fopen (dst, \textcolor{stringliteral}{"wb"});
+66     \textcolor{keywordflow}{while} ((n = fread (buff, 1, BUFSIZ, in)) != 0)
+67     \{
+68         fwrite (buff, 1, n, out);
+69     \}
+70     fclose (in);
+71     fclose (out);
+72 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{d8/d9c/_file_8c_a9d83a800fb7cdb6ab6042c3b8208603e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_ad189205626097979d619616eec687c29}{\index{File.\-c@{File.\-c}!delete\-File@{delete\-File}}
+\index{delete\-File@{delete\-File}!File.c@{File.\-c}}
+\subsubsection[{delete\-File}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf String}}]{src}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_ad189205626097979d619616eec687c29}
+
+
+File.\-c 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+44 \{
+45 
+46     \textcolor{keywordflow}{if} ( src != NULL)
+47     \{
+48         \textcolor{keyword}{remove} (src);
+49     \}
+50 
+51 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{d8/d9c/_file_8c_ad189205626097979d619616eec687c29_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_abd3ba5be2b95658e157d698655bddc85}{\index{File.\-c@{File.\-c}!delete\-Searched\-List@{delete\-Searched\-List}}
+\index{delete\-Searched\-List@{delete\-Searched\-List}!File.c@{File.\-c}}
+\subsubsection[{delete\-Searched\-List}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-Searched\-List (
+\begin{DoxyParamCaption}
+\item[{G\-List $\ast$}]{search\-List}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_abd3ba5be2b95658e157d698655bddc85}
+
+
+File.\-c 파일의 137 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+138 \{
+139 
+140     g\_list\_free\_full (searchList, \hyperlink{_file_8c_a216f1438ba1ab14dbdf022f41d7ec7d4}{deleteSearchListElement});
+141 
+142 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d8/d9c/_file_8c_abd3ba5be2b95658e157d698655bddc85_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{d8/d9c/_file_8c_abd3ba5be2b95658e157d698655bddc85_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a216f1438ba1ab14dbdf022f41d7ec7d4}{\index{File.\-c@{File.\-c}!delete\-Search\-List\-Element@{delete\-Search\-List\-Element}}
+\index{delete\-Search\-List\-Element@{delete\-Search\-List\-Element}!File.c@{File.\-c}}
+\subsubsection[{delete\-Search\-List\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-Search\-List\-Element (
+\begin{DoxyParamCaption}
+\item[{gpointer}]{data}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a216f1438ba1ab14dbdf022f41d7ec7d4}
+
+
+File.\-c 파일의 130 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+131 \{
+132 
+133     free (data);
+134 
+135 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d9c/_file_8c_a216f1438ba1ab14dbdf022f41d7ec7d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a1c24d11e9397892d289591033dd8d174}{\index{File.\-c@{File.\-c}!Destroy\-Audio@{Destroy\-Audio}}
+\index{Destroy\-Audio@{Destroy\-Audio}!File.c@{File.\-c}}
+\subsubsection[{Destroy\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a1c24d11e9397892d289591033dd8d174}
+
+
+File.\-c 파일의 309 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+310 \{
+311 
+312     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+313     \{
+314         \textcolor{keywordflow}{return};
+315     \}
+316     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+317     \textcolor{keywordflow}{if} ( this->uri != NULL)
+318     \{
+319         free (this->uri);
+320     \}
+321 
+322     player\_error\_e res;
+323     metadata\_extractor\_destroy (this->audioMetadataHandle);
+324     res = player\_unprepare (this->player\_handle);
+325     res = player\_destroy (this->player\_handle);
+326     free (\textcolor{keyword}{this});
+327 
+328 \}
+\end{DoxyCode}
+\hypertarget{_file_8c_ab44ac1360d2598918dd2c655833e10c0}{\index{File.\-c@{File.\-c}!Destroy\-File@{Destroy\-File}}
+\index{Destroy\-File@{Destroy\-File}!File.c@{File.\-c}}
+\subsubsection[{Destroy\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf File}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_ab44ac1360d2598918dd2c655833e10c0}
+
+
+File.\-c 파일의 35 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+36 \{
+37     \textcolor{keywordflow}{if} ( NULL != this\_gen )
+38     \{
+39         free (this\_gen);
+40     \}
+41 \}
+\end{DoxyCode}
+\hypertarget{_file_8c_a4dcf832a1b8f74b72f2fd59b99c53eb6}{\index{File.\-c@{File.\-c}!Destroy\-Image@{Destroy\-Image}}
+\index{Destroy\-Image@{Destroy\-Image}!File.c@{File.\-c}}
+\subsubsection[{Destroy\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a4dcf832a1b8f74b72f2fd59b99c53eb6}
+
+
+File.\-c 파일의 427 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+428 \{
+429     \textcolor{keywordflow}{if} ( this\_gen )
+430     \{
+431         \textcolor{keywordflow}{return};
+432     \}
+433 
+434     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+435 
+436     \textcolor{keywordflow}{if} ( this->imageMetaHandle != NULL)
+437     \{
+438         image\_meta\_destroy (this->imageMetaHandle);
+439     \}
+440 
+441     \textcolor{keywordflow}{if} ( this->burst\_id )
+442     \{
+443         free (this->burst\_id);
+444     \}
+445     \textcolor{keywordflow}{if} ( this->datetaken )
+446     \{
+447         free (this->datetaken);
+448     \}
+449     \textcolor{keywordflow}{if} ( this->media\_id )
+450     \{
+451         free (this->media\_id);
+452     \}
+453     free (this\_gen);
+454 \}
+\end{DoxyCode}
+\hypertarget{_file_8c_a23fb13c9330e924604c6d93e67e957c6}{\index{File.\-c@{File.\-c}!Destroy\-Video@{Destroy\-Video}}
+\index{Destroy\-Video@{Destroy\-Video}!File.c@{File.\-c}}
+\subsubsection[{Destroy\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a23fb13c9330e924604c6d93e67e957c6}
+
+
+File.\-c 파일의 175 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+176 \{
+177 
+178     \textcolor{keywordflow}{if} ( NULL == this\_gen )
+179     \{
+180         \textcolor{keywordflow}{return};
+181     \}
+182 
+183     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+184     player\_error\_e res;
+185     res = player\_destroy (this->player\_handle);
+186 
+187     \textcolor{keywordflow}{if} ( this->uri != NULL)
+188     \{
+189         free (this->uri);
+190     \}
+191 
+192     free (\textcolor{keyword}{this});
+193 \}
+\end{DoxyCode}
+\hypertarget{_file_8c_a88f447cdae758babee94532d86125a51}{\index{File.\-c@{File.\-c}!gallery\-\_\-media\-\_\-item\-\_\-cbx@{gallery\-\_\-media\-\_\-item\-\_\-cbx}}
+\index{gallery\-\_\-media\-\_\-item\-\_\-cbx@{gallery\-\_\-media\-\_\-item\-\_\-cbx}!File.c@{File.\-c}}
+\subsubsection[{gallery\-\_\-media\-\_\-item\-\_\-cbx}]{\setlength{\rightskip}{0pt plus 5cm}bool gallery\-\_\-media\-\_\-item\-\_\-cbx (
+\begin{DoxyParamCaption}
+\item[{media\-\_\-info\-\_\-h}]{media, }
+\item[{void $\ast$}]{user\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a88f447cdae758babee94532d86125a51}
+
+
+File.\-c 파일의 456 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+457 \{
+458     media\_info\_h new\_media = NULL;
+459     media\_info\_clone (&new\_media, media);
+460 
+461     GList ** list = (GList **)user\_data;
+462     *list = g\_list\_append (*list, new\_media);
+463 
+464     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+465 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d9c/_file_8c_a88f447cdae758babee94532d86125a51_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_ae2d57c542ee2077fd42e4dc9ab3a6998}{\index{File.\-c@{File.\-c}!get\-Audio\-Info@{get\-Audio\-Info}}
+\index{get\-Audio\-Info@{get\-Audio\-Info}!File.c@{File.\-c}}
+\subsubsection[{get\-Audio\-Info}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-Audio\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen, }
+\item[{metadata\-\_\-extractor\-\_\-attr\-\_\-e}]{metadata\-Key}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_ae2d57c542ee2077fd42e4dc9ab3a6998}
+
+
+for use this function, caller must import $<$metadata\-\_\-extractor.\-h$>$ 
+
+\begin{DoxyRemark}{Remarks}
+return value must be free() 
+\end{DoxyRemark}
+
+
+File.\-c 파일의 395 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+396 \{
+397 
+398     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+399     metadata\_extractor\_error\_e error\_value;
+400 
+401     \textcolor{keywordtype}{char} * res = NULL;
+402     error\_value = metadata\_extractor\_get\_metadata (this->audioMetadataHandle, metadataKey, &res);
+403 
+404     \textcolor{keywordflow}{return} res;
+405 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d8/d9c/_file_8c_ae2d57c542ee2077fd42e4dc9ab3a6998_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_aca1b404580307734c234029ee9ec785f}{\index{File.\-c@{File.\-c}!get\-Image\-Burst\-Id@{get\-Image\-Burst\-Id}}
+\index{get\-Image\-Burst\-Id@{get\-Image\-Burst\-Id}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Burst\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String} get\-Image\-Burst\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_aca1b404580307734c234029ee9ec785f}
+
+
+File.\-c 파일의 554 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+555 \{
+556     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+557 
+558     \textcolor{keywordflow}{return} this->burst\_id;
+559 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{d8/d9c/_file_8c_aca1b404580307734c234029ee9ec785f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_aa257a3267f9eba5245c8827456c364d1}{\index{File.\-c@{File.\-c}!get\-Image\-Date\-Taken@{get\-Image\-Date\-Taken}}
+\index{get\-Image\-Date\-Taken@{get\-Image\-Date\-Taken}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Date\-Taken}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String} get\-Image\-Date\-Taken (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_aa257a3267f9eba5245c8827456c364d1}
+
+
+File.\-c 파일의 568 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+569 \{
+570     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+571     \textcolor{keywordflow}{return} this->datetaken;
+572 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d8/d9c/_file_8c_aa257a3267f9eba5245c8827456c364d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a234e4aeffbda89026d122582504b1eb8}{\index{File.\-c@{File.\-c}!get\-Image\-Height@{get\-Image\-Height}}
+\index{get\-Image\-Height@{get\-Image\-Height}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Image\-Height (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a234e4aeffbda89026d122582504b1eb8}
+
+
+File.\-c 파일의 580 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+581 \{
+582     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+583     \textcolor{keywordflow}{return} this->height;
+584 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{d8/d9c/_file_8c_a234e4aeffbda89026d122582504b1eb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a5222eaad094d10f30280a92e6262c7f3}{\index{File.\-c@{File.\-c}!get\-Image\-Info@{get\-Image\-Info}}
+\index{get\-Image\-Info@{get\-Image\-Info}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void get\-Image\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen, }
+\item[{{\bf String}}]{src}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a5222eaad094d10f30280a92e6262c7f3}
+
+
+File.\-c 파일의 470 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+471 \{
+472     media\_content\_connect ();
+473 
+474     GList * all\_item\_list = NULL; \textcolor{comment}{// Include glib.h}
+475     media\_content\_type\_e media\_type   = MEDIA\_CONTENT\_COLLATE\_DEFAULT;
+476     media\_info\_h         media\_handle = NULL;
+477 
+478     \textcolor{keywordtype}{char}                      buf[1024]    = \{\textcolor{charliteral}{'\(\backslash\)0'}\};
+479     \textcolor{keywordtype}{int}                       ret          = MEDIA\_CONTENT\_ERROR\_NONE;
+480     filter\_h                  filter       = NULL;
+481     media\_content\_collation\_e collate\_type = MEDIA\_CONTENT\_COLLATE\_NOCASE;
+482     media\_content\_order\_e     order\_type   = MEDIA\_CONTENT\_ORDER\_DESC;
+483 
+484     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+485     media\_filter\_create (&filter);
+486 
+487     \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} filterpath = calloc (strlen (src) + 3, \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+488 
+489     snprintf(filterpath, strlen (src) + 3, \textcolor{stringliteral}{"'%s'\(\backslash\)0"}, src);
+490     \textcolor{comment}{// Set the condition}
+491     snprintf(buf, 1024, \textcolor{stringliteral}{"%s = %d AND %s = %s"}, MEDIA\_TYPE, MEDIA\_CONTENT\_TYPE\_IMAGE, MEDIA\_PATH, filterpath
+      );
+492 
+493     free (filterpath);
+494     ret = media\_filter\_set\_condition (filter, buf, collate\_type);
+495     \textcolor{keywordflow}{if} ( ret != MEDIA\_CONTENT\_ERROR\_NONE )
+496     \{
+497         media\_filter\_destroy (filter);
+498 
+499         \textcolor{keywordflow}{return};
+500     \}
+501     ret = media\_filter\_set\_order (filter, order\_type, MEDIA\_DISPLAY\_NAME, collate\_type);
+502     \textcolor{keywordflow}{if} ( ret != MEDIA\_CONTENT\_ERROR\_NONE )
+503     \{
+504         media\_filter\_destroy (filter);
+505 
+506         \textcolor{keywordflow}{return};
+507     \}
+508 
+509     ret = media\_info\_foreach\_media\_from\_db (filter, \hyperlink{_file_8c_a88f447cdae758babee94532d86125a51}{gallery\_media\_item\_cbx}, &
+      all\_item\_list);
+510     \textcolor{keywordflow}{if} ( ret != MEDIA\_CONTENT\_ERROR\_NONE )
+511     \{
+512         \textcolor{keywordflow}{return};
+513     \}
+514     \textcolor{keywordflow}{else}
+515     \{
+516         media\_handle = (media\_info\_h)g\_list\_nth\_data (all\_item\_list, 0);
+517 
+518         media\_info\_get\_media\_id (media\_handle, &this->media\_id);
+519 
+520         \textcolor{keywordflow}{if} ( media\_type == MEDIA\_CONTENT\_TYPE\_IMAGE )
+521         \{
+522             image\_meta\_h image\_handle;
+523 
+524             ret = media\_info\_get\_image (media\_handle, &image\_handle);
+525             \textcolor{keywordflow}{if} ( ret != MEDIA\_CONTENT\_ERROR\_NONE )
+526             \{
+527                 \textcolor{comment}{// Error handling}
+528             \}
+529             \textcolor{keywordflow}{else}
+530             \{
+531                 image\_meta\_get\_width (image\_handle, &this->width);
+532 
+533                 image\_meta\_get\_height (image\_handle, &this->height);
+534 
+535                 \textcolor{keywordflow}{if} ( this->datetaken )
+536                 \{
+537                     free (this->datetaken);
+538                 \}
+539                 image\_meta\_get\_date\_taken (image\_handle, &this->datetaken);
+540 
+541                 \textcolor{keywordflow}{if} ( this->burst\_id )
+542                 \{
+543                     free (this->burst\_id);
+544                 \}
+545                 image\_meta\_get\_burst\_id (image\_handle, &this->burst\_id);
+546 
+547             \}
+548 
+549         \}
+550     \}
+551     media\_content\_disconnect ();
+552 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{d8/d9c/_file_8c_a5222eaad094d10f30280a92e6262c7f3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d8/d9c/_file_8c_a5222eaad094d10f30280a92e6262c7f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_afa46334dca385b7745cc9b24125af485}{\index{File.\-c@{File.\-c}!get\-Image\-Media\-Id@{get\-Image\-Media\-Id}}
+\index{get\-Image\-Media\-Id@{get\-Image\-Media\-Id}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Media\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String} get\-Image\-Media\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_afa46334dca385b7745cc9b24125af485}
+
+
+File.\-c 파일의 561 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+562 \{
+563     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+564 
+565     \textcolor{keywordflow}{return} this->media\_id;
+566 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{d8/d9c/_file_8c_afa46334dca385b7745cc9b24125af485_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a265af397b45973553ffe7b24f5b294a1}{\index{File.\-c@{File.\-c}!get\-Image\-Width@{get\-Image\-Width}}
+\index{get\-Image\-Width@{get\-Image\-Width}!File.c@{File.\-c}}
+\subsubsection[{get\-Image\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Image\-Width (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a265af397b45973553ffe7b24f5b294a1}
+
+
+File.\-c 파일의 574 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+575 \{
+576     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)this\_gen;
+577     \textcolor{keywordflow}{return} this->width;
+578 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d8/d9c/_file_8c_a265af397b45973553ffe7b24f5b294a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a270efb2f74fd2361e50e9ccb7e4f8994}{\index{File.\-c@{File.\-c}!get\-Video\-Info@{get\-Video\-Info}}
+\index{get\-Video\-Info@{get\-Video\-Info}!File.c@{File.\-c}}
+\subsubsection[{get\-Video\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String} get\-Video\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen, }
+\item[{metadata\-\_\-extractor\-\_\-attr\-\_\-e}]{element}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a270efb2f74fd2361e50e9ccb7e4f8994}
+
+
+for use this function, caller must import $<$metadata\-\_\-extractor.\-h$>$ 
+
+\begin{DoxyRemark}{Remarks}
+return value must be free() 
+\end{DoxyRemark}
+
+
+File.\-c 파일의 237 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+238 \{
+239     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+240     \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} resultInfo;
+241 
+242     metadata\_extractor\_get\_metadata (this->videoMetadataHandle, element, &resultInfo);
+243 
+244     \textcolor{keywordflow}{return} resultInfo;
+245 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d8/d9c/_file_8c_a270efb2f74fd2361e50e9ccb7e4f8994_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_aae2f7d950e3022f08c886332538ed231}{\index{File.\-c@{File.\-c}!move\-File@{move\-File}}
+\index{move\-File@{move\-File}!File.c@{File.\-c}}
+\subsubsection[{move\-File}]{\setlength{\rightskip}{0pt plus 5cm}void move\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf String}}]{src, }
+\item[{{\bf String}}]{dst}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_aae2f7d950e3022f08c886332538ed231}
+
+
+File.\-c 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+54 \{
+55     rename (src, dst);
+56 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d8/d9c/_file_8c_aae2f7d950e3022f08c886332538ed231_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a5131353393d09f147cbc061ad339e106}{\index{File.\-c@{File.\-c}!New\-Audio@{New\-Audio}}
+\index{New\-Audio@{New\-Audio}!File.c@{File.\-c}}
+\subsubsection[{New\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio} New\-Audio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a5131353393d09f147cbc061ad339e106}
+
+
+File.\-c 파일의 285 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+286 \{
+287 
+288     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends}));
+289 
+290     this->audio.getInfo = \hyperlink{_file_8c_ae2d57c542ee2077fd42e4dc9ab3a6998}{getAudioInfo};
+291     this->audio.Pause   = \hyperlink{_file_8c_a07bff016d794342402eac0008abf3f62}{pauseAudio};
+292     this->audio.Play    = \hyperlink{_file_8c_a223afacb101c29984502fb9de2268a2a}{playAudio};
+293     this->audio.Record  = \hyperlink{_file_8c_af2d3caee7d7fb4f2b1a52b62f47b4000}{recordAudio};
+294     this->audio.Stop    = \hyperlink{_file_8c_a593160c5700f408e45aa387e4698dff5}{stopAudio};
+295     this->audio.setURI  = \hyperlink{_file_8c_a5f635b3dbe3c4c00d905ae668b8c2007}{setAudioURI};
+296 
+297     this->uri                 = NULL;
+298     this->player\_handle       = NULL;
+299     this->audioMetadataHandle = NULL;
+300 
+301     player\_error\_e res;
+302 
+303     res = player\_create (&this->player\_handle);
+304 
+305     res = metadata\_extractor\_create (&this->audioMetadataHandle);
+306     \textcolor{keywordflow}{return} &this->audio;
+307 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d8/d9c/_file_8c_a5131353393d09f147cbc061ad339e106_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a1f0fe23f2354710d5a4365375b7d9787}{\index{File.\-c@{File.\-c}!New\-File@{New\-File}}
+\index{New\-File@{New\-File}!File.c@{File.\-c}}
+\subsubsection[{New\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File} New\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a1f0fe23f2354710d5a4365375b7d9787}
+
+
+File.\-c 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+24 \{
+25     \hyperlink{struct___file}{File} \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (\textcolor{keyword}{struct} \hyperlink{struct___file}{\_File}));
+26 
+27     this->Delete             = \hyperlink{_file_8c_ad189205626097979d619616eec687c29}{deleteFile};
+28     this->Copy               = \hyperlink{_file_8c_a9d83a800fb7cdb6ab6042c3b8208603e}{copyFile};
+29     this->Move               = \hyperlink{_file_8c_aae2f7d950e3022f08c886332538ed231}{moveFile};
+30     this->Search             = \hyperlink{_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6}{searchFile};
+31     this->\hyperlink{_file_8c_abd3ba5be2b95658e157d698655bddc85}{deleteSearchedList} = \hyperlink{_file_8c_abd3ba5be2b95658e157d698655bddc85}{deleteSearchedList};
+32     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+33 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d9c/_file_8c_a1f0fe23f2354710d5a4365375b7d9787_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_ad17366b79a466f9119bb51eb66959ceb}{\index{File.\-c@{File.\-c}!New\-Image@{New\-Image}}
+\index{New\-Image@{New\-Image}!File.c@{File.\-c}}
+\subsubsection[{New\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} New\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_ad17366b79a466f9119bb51eb66959ceb}
+
+
+File.\-c 파일의 407 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+408 \{
+409     \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_file_8h_dd/dec/struct___image_extends}{ImageExtends}));
+410 
+411     this->image.extractInfo = \hyperlink{_file_8c_a5222eaad094d10f30280a92e6262c7f3}{getImageInfo};
+412     this->imageMetaHandle   = NULL;
+413     this->image.getBurstId  = \hyperlink{_file_8c_aca1b404580307734c234029ee9ec785f}{getImageBurstId};
+414     this->image.getMediaId  = \hyperlink{_file_8c_afa46334dca385b7745cc9b24125af485}{getImageMediaId};
+415     this->image.getDateTaken = \hyperlink{_file_8c_aa257a3267f9eba5245c8827456c364d1}{getImageDateTaken};
+416     this->image.getWidth    = \hyperlink{_file_8c_a265af397b45973553ffe7b24f5b294a1}{getImageWidth};
+417     this->image.getHeight   = \hyperlink{_file_8c_a234e4aeffbda89026d122582504b1eb8}{getImageHeight};
+418     this->height            = -1;
+419     this->width             = -1;
+420     this->burst\_id          = NULL;
+421     this->datetaken         = NULL;
+422     this->media\_id          = NULL;
+423 
+424     \textcolor{keywordflow}{return} &this->image;
+425 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d9c/_file_8c_ad17366b79a466f9119bb51eb66959ceb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a78a40226b2a70fa8372ae14b58f2dad8}{\index{File.\-c@{File.\-c}!New\-Video@{New\-Video}}
+\index{New\-Video@{New\-Video}!File.c@{File.\-c}}
+\subsubsection[{New\-Video}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Video} New\-Video (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a78a40226b2a70fa8372ae14b58f2dad8}
+
+
+File.\-c 파일의 150 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+151 \{
+152 
+153     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends}));
+154 
+155     this->video.getInfo   = \hyperlink{_file_8c_a270efb2f74fd2361e50e9ccb7e4f8994}{getVideoInfo};
+156     this->video.Pause     = \hyperlink{_file_8c_a7d6bf405559699710a43dccea8d0a4e1}{pauseVideo};
+157     this->video.Play      = \hyperlink{_file_8c_a7073fc7cfe96be95f74c825568473c79}{playVideo};
+158     this->video.Record    = \hyperlink{_file_8c_a5b40295ac61cd591f16df0830662cf41}{recordVideo};
+159     this->video.Stop      = \hyperlink{_file_8c_af01f9025ee8223f530578cb9d13b090d}{stopVideo};
+160     this->video.setURI    = \hyperlink{_file_8c_a9c54d82410998e70be5ee58f4300c007}{setVideoURI};
+161     this->video.setObject = \hyperlink{_file_8c_aaff5acd3166a9688ec8264308e24f983}{setEvasObject};
+162 
+163     this->videoMetadataHandle = NULL;
+164     this->player\_handle       = NULL;
+165     this->uri                 = NULL;
+166     this->EvasObject          = NULL;
+167 
+168     player\_error\_e res;
+169     res = player\_create (&this->player\_handle);
+170     res = metadata\_extractor\_create (&this->videoMetadataHandle);
+171 
+172     \textcolor{keywordflow}{return} &this->video;
+173 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{d8/d9c/_file_8c_a78a40226b2a70fa8372ae14b58f2dad8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a07bff016d794342402eac0008abf3f62}{\index{File.\-c@{File.\-c}!pause\-Audio@{pause\-Audio}}
+\index{pause\-Audio@{pause\-Audio}!File.c@{File.\-c}}
+\subsubsection[{pause\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}void pause\-Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a07bff016d794342402eac0008abf3f62}
+
+
+File.\-c 파일의 343 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+344 \{
+345     player\_error\_e res;
+346 
+347     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+348     res = player\_pause (this->player\_handle);
+349 
+350 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d8/d9c/_file_8c_a07bff016d794342402eac0008abf3f62_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a7d6bf405559699710a43dccea8d0a4e1}{\index{File.\-c@{File.\-c}!pause\-Video@{pause\-Video}}
+\index{pause\-Video@{pause\-Video}!File.c@{File.\-c}}
+\subsubsection[{pause\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void pause\-Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a7d6bf405559699710a43dccea8d0a4e1}
+
+
+File.\-c 파일의 210 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+211 \{
+212     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+213     player\_error\_e res;
+214     res = player\_pause (this->player\_handle);
+215 
+216 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d8/d9c/_file_8c_a7d6bf405559699710a43dccea8d0a4e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a223afacb101c29984502fb9de2268a2a}{\index{File.\-c@{File.\-c}!play\-Audio@{play\-Audio}}
+\index{play\-Audio@{play\-Audio}!File.c@{File.\-c}}
+\subsubsection[{play\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}void play\-Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a223afacb101c29984502fb9de2268a2a}
+
+
+File.\-c 파일의 330 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+331 \{
+332     player\_error\_e res;
+333 
+334     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+335 
+336     res = player\_set\_uri (this->player\_handle, this->uri);
+337 
+338     res = player\_prepare (this->player\_handle);
+339 
+340     res = player\_start (this->player\_handle);
+341 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{d8/d9c/_file_8c_a223afacb101c29984502fb9de2268a2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a7073fc7cfe96be95f74c825568473c79}{\index{File.\-c@{File.\-c}!play\-Video@{play\-Video}}
+\index{play\-Video@{play\-Video}!File.c@{File.\-c}}
+\subsubsection[{play\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void play\-Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a7073fc7cfe96be95f74c825568473c79}
+
+
+File.\-c 파일의 195 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+196 \{
+197     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+198 
+199     player\_error\_e res;
+200     res = player\_set\_uri (this->player\_handle, this->uri);
+201     res = player\_set\_display (this->player\_handle, PLAYER\_DISPLAY\_TYPE\_EVAS, GET\_DISPLAY (this->EvasObject)
+      );
+202 
+203     res = player\_set\_display\_mode (this->player\_handle, PLAYER\_DISPLAY\_MODE\_ORIGIN\_OR\_LETTER);
+204 
+205     res = player\_prepare (this->player\_handle);
+206 
+207     res = player\_start (this->player\_handle);
+208 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{d8/d9c/_file_8c_a7073fc7cfe96be95f74c825568473c79_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_af2d3caee7d7fb4f2b1a52b62f47b4000}{\index{File.\-c@{File.\-c}!record\-Audio@{record\-Audio}}
+\index{record\-Audio@{record\-Audio}!File.c@{File.\-c}}
+\subsubsection[{record\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}void record\-Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_af2d3caee7d7fb4f2b1a52b62f47b4000}
+
+
+File.\-c 파일의 361 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+362 \{
+363 
+364     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+365 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d8/d9c/_file_8c_af2d3caee7d7fb4f2b1a52b62f47b4000_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a5b40295ac61cd591f16df0830662cf41}{\index{File.\-c@{File.\-c}!record\-Video@{record\-Video}}
+\index{record\-Video@{record\-Video}!File.c@{File.\-c}}
+\subsubsection[{record\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void record\-Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a5b40295ac61cd591f16df0830662cf41}
+
+
+File.\-c 파일의 226 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+227 \{
+228     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+229 
+230 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d8/d9c/_file_8c_a5b40295ac61cd591f16df0830662cf41_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a933bae8574b61534ef18829401685b5f}{\index{File.\-c@{File.\-c}!search\-\_\-recur@{search\-\_\-recur}}
+\index{search\-\_\-recur@{search\-\_\-recur}!File.c@{File.\-c}}
+\subsubsection[{search\-\_\-recur}]{\setlength{\rightskip}{0pt plus 5cm}void search\-\_\-recur (
+\begin{DoxyParamCaption}
+\item[{{\bf String}}]{src, }
+\item[{{\bf String}}]{dest, }
+\item[{G\-List $\ast$$\ast$}]{search\-List}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a933bae8574b61534ef18829401685b5f}
+
+
+File.\-c 파일의 75 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+76 \{
+77 
+78     DIR           * dp;
+79     \textcolor{keyword}{struct }dirent * entry;
+80     \textcolor{keyword}{struct }stat statbuf;
+81     \textcolor{keywordflow}{if} ((dp = opendir (src)) == NULL)
+82     \{
+83         \textcolor{keywordflow}{return};
+84     \}
+85 
+86     chdir (src);
+87 
+88     \textcolor{keywordflow}{while} ((entry = readdir (dp)) != NULL)
+89     \{
+90         lstat (entry->d\_name, &statbuf);
+91         \textcolor{keywordflow}{if} ( S\_ISDIR(statbuf.st\_mode))
+92         \{
+93 
+94             \textcolor{comment}{/* Found a directory, but ignore . and .. */}
+95             \textcolor{keywordflow}{if} ( strcmp (\textcolor{stringliteral}{"."}, entry->d\_name) == 0 || strcmp (\textcolor{stringliteral}{".."}, entry->d\_name) == 0 )
+96             \{
+97                 \textcolor{keywordflow}{continue};
+98             \}
+99             \textcolor{keywordflow}{if} ( strcmp (entry->d\_name, dest) == 0 )
+100             \{
+101                 \hyperlink{dit_8h_a2efe6d463d80744789f228f5dc4baa39}{String} pPath = realpath (entry->d\_name, NULL);
+102                 *searchList = g\_list\_append (*searchList, (gpointer)pPath);
+103             \}
+104 
+105             \textcolor{comment}{/* Recurse at a new indent level */}
+106             \hyperlink{_file_8c_a933bae8574b61534ef18829401685b5f}{search\_recur} (entry->d\_name, dest, searchList);
+107 
+108         \}
+109         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( strcmp (entry->d\_name, dest) == 0 )
+110         \{
+111             \textcolor{keywordtype}{char} * pPath = realpath (entry->d\_name, NULL);
+112             *searchList = g\_list\_append (*searchList, (gpointer)pPath);
+113 
+114         \}
+115     \}
+116     chdir (\textcolor{stringliteral}{".."});
+117     closedir (dp);
+118 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d8/d9c/_file_8c_a933bae8574b61534ef18829401685b5f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6}{\index{File.\-c@{File.\-c}!search\-File@{search\-File}}
+\index{search\-File@{search\-File}!File.c@{File.\-c}}
+\subsubsection[{search\-File}]{\setlength{\rightskip}{0pt plus 5cm}G\-List$\ast$ search\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf String}}]{src, }
+\item[{{\bf String}}]{dst}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6}
+
+
+File.\-c 파일의 120 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+121 \{
+122     \textcolor{comment}{//todo : working}
+123     GList * searchList = NULL;
+124     \hyperlink{_file_8c_a933bae8574b61534ef18829401685b5f}{search\_recur} (src, dst, &searchList);
+125 
+126     \textcolor{keywordflow}{return} searchList;
+127 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d8/d9c/_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d8/d9c/_file_8c_aa237f6e1a4cc51ea14e4a91540cccdb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a5f635b3dbe3c4c00d905ae668b8c2007}{\index{File.\-c@{File.\-c}!set\-Audio\-U\-R\-I@{set\-Audio\-U\-R\-I}}
+\index{set\-Audio\-U\-R\-I@{set\-Audio\-U\-R\-I}!File.c@{File.\-c}}
+\subsubsection[{set\-Audio\-U\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Audio\-U\-R\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen, }
+\item[{char $\ast$}]{uri}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a5f635b3dbe3c4c00d905ae668b8c2007}
+
+
+File.\-c 파일의 367 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+368 \{
+369 
+370     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+371     \{
+372         \textcolor{keywordflow}{return};
+373     \}
+374     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+375 
+376     \textcolor{keywordflow}{if} ( NULL == uri )
+377     \{
+378         \textcolor{keywordflow}{return};
+379     \}
+380     \textcolor{keywordflow}{if} ( NULL != this->uri )
+381     \{
+382         free (this->uri);
+383     \}
+384     this->uri = malloc (strlen (uri) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+385     strcpy (this->uri, uri);
+386     this->uri[strlen (uri)] = 0;
+387     metadata\_extractor\_set\_path (this->audioMetadataHandle, this->uri);
+388 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d8/d9c/_file_8c_a5f635b3dbe3c4c00d905ae668b8c2007_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_aaff5acd3166a9688ec8264308e24f983}{\index{File.\-c@{File.\-c}!set\-Evas\-Object@{set\-Evas\-Object}}
+\index{set\-Evas\-Object@{set\-Evas\-Object}!File.c@{File.\-c}}
+\subsubsection[{set\-Evas\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Evas\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen, }
+\item[{Evas\-\_\-\-Object $\ast$}]{Evas\-Object}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_aaff5acd3166a9688ec8264308e24f983}
+
+
+File.\-c 파일의 272 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+273 \{
+274 
+275     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+276     \{
+277         \textcolor{keywordflow}{return};
+278     \}
+279     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+280 
+281     this->EvasObject = EvasObject;
+282 
+283 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{d8/d9c/_file_8c_aaff5acd3166a9688ec8264308e24f983_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a9c54d82410998e70be5ee58f4300c007}{\index{File.\-c@{File.\-c}!set\-Video\-U\-R\-I@{set\-Video\-U\-R\-I}}
+\index{set\-Video\-U\-R\-I@{set\-Video\-U\-R\-I}!File.c@{File.\-c}}
+\subsubsection[{set\-Video\-U\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Video\-U\-R\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen, }
+\item[{char $\ast$}]{uri}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a9c54d82410998e70be5ee58f4300c007}
+
+
+File.\-c 파일의 247 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+248 \{
+249 
+250     \textcolor{keywordflow}{if} ( this\_gen == NULL)
+251     \{
+252         \textcolor{keywordflow}{return};
+253     \}
+254 
+255     \textcolor{keywordflow}{if} ( NULL == uri )
+256     \{
+257         \textcolor{keywordflow}{return};
+258     \}
+259 
+260     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+261 
+262     \textcolor{keywordflow}{if} ( NULL != this->uri )
+263     \{
+264         free (this->uri);
+265     \}
+266     this->uri = malloc (strlen (uri) + \textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char}));
+267     strcpy (this->uri, uri);
+268     this->uri[strlen (uri)] = 0;
+269     metadata\_extractor\_set\_path (this->videoMetadataHandle, this->uri);
+270 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d8/d9c/_file_8c_a9c54d82410998e70be5ee58f4300c007_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_a593160c5700f408e45aa387e4698dff5}{\index{File.\-c@{File.\-c}!stop\-Audio@{stop\-Audio}}
+\index{stop\-Audio@{stop\-Audio}!File.c@{File.\-c}}
+\subsubsection[{stop\-Audio}]{\setlength{\rightskip}{0pt plus 5cm}void stop\-Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_a593160c5700f408e45aa387e4698dff5}
+
+
+File.\-c 파일의 352 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+353 \{
+354     player\_error\_e res;
+355 
+356     \hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d9/d1c/struct___audio_extends}{AudioExtends} *)this\_gen;
+357     res = player\_stop (this->player\_handle);
+358 
+359 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{d8/d9c/_file_8c_a593160c5700f408e45aa387e4698dff5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_file_8c_af01f9025ee8223f530578cb9d13b090d}{\index{File.\-c@{File.\-c}!stop\-Video@{stop\-Video}}
+\index{stop\-Video@{stop\-Video}!File.c@{File.\-c}}
+\subsubsection[{stop\-Video}]{\setlength{\rightskip}{0pt plus 5cm}void stop\-Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{_file_8c_af01f9025ee8223f530578cb9d13b090d}
+
+
+File.\-c 파일의 218 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+219 \{
+220     \hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} * \textcolor{keyword}{this} = (\hyperlink{_file_8h_d8/d6c/struct___video_extends}{VideoExtends} *)this\_gen;
+221     player\_error\_e res;
+222     res = player\_stop (this->player\_handle);
+223 
+224 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{d8/d9c/_file_8c_af01f9025ee8223f530578cb9d13b090d_icgraph}
+\end{center}
+\end{figure}
+
+

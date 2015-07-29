@@ -1,0 +1,7 @@
+<map id="NewProximity" name="NewProximity">
+<area shape="rect" id="node2" href="$d4/d9f/_sensor_8c.html#aaa69c014251c0c8b0af42dc206ab7654" title="ProximityOff" alt="" coords="185,5,279,33"/>
+<area shape="rect" id="node3" href="$d4/d9f/_sensor_8c.html#a937d47b9ecf9519c249264f792e374e6" title="ProximityOn" alt="" coords="185,57,279,85"/>
+<area shape="rect" id="node4" href="$d4/d9f/_sensor_8c.html#a157bb28f76420528d8d620fa9410f729" title="addProximityCallback" alt="" coords="157,109,307,137"/>
+<area shape="rect" id="node5" href="$d4/d9f/_sensor_8c.html#ab5d031471ccaac54c82623fac97cbd38" title="getProximityValue" alt="" coords="168,161,296,189"/>
+<area shape="rect" id="node6" href="$d4/d9f/_sensor_8c.html#abc7f9541812695b9e33c550be306b3ea" title="isProximitySupported" alt="" coords="158,213,306,241"/>
+</map>

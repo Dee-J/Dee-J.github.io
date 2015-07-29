@@ -1,0 +1,8 @@
+<map id="NewUltraViolet" name="NewUltraViolet">
+<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a2d8ce2460afc96ba0941cde9df1b6a16" title="생성한 UltraViolet를 비활성화 시킨다. " alt="" coords="199,5,299,33"/>
+<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a56badaf0d164e52814809c98b5226672" title="생성한 UltraViolet를 활성화 시킨다. " alt="" coords="199,57,300,85"/>
+<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#afae2930e81b2c92bf3eba79679a90bc2" title="생성한 UltraViolet에 callback 함수를 등록한다. " alt="" coords="171,109,327,137"/>
+<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a5fe7dc8b14714ace15c1e61f2229a0fc" title="활성화 되어 있는 UltraViolet의 센서 값을 반환한다. " alt="" coords="182,161,316,189"/>
+<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#af0cc0227baf15db2ebcbccb183fdfa5b" title="UltraViolet의 사용 가능 여부를 판단한다. " alt="" coords="172,213,326,241"/>
+<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#aa158535d361d9f977ec2a3f108e20a9b" title="생성한 UltraViolet에서 callback 함수를 삭제한다. " alt="" coords="162,265,336,293"/>
+</map>

@@ -1,0 +1,1027 @@
+\hypertarget{Http_8c}{\section{Http.\-c File Reference}
+\label{Http_8c}\index{Http.\-c@{Http.\-c}}
+}
+
+
+H\-T\-T\-P A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Commnucation/\-Http.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$curl.\-h$>$}\\*
+{\ttfamily \#include $<$system\-\_\-info.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+Include dependency graph for Http.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d64/Http_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct__Http}{Http} \hyperlink{Http_8c_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Http 객체를 생성한다. \end{DoxyCompactList}\item 
+void \hyperlink{Http_8c_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} (\hyperlink{struct__Http}{Http} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Http 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} (\hyperlink{struct__Http}{Http} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 Http 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} (\hyperlink{struct__Http}{Http} this\-\_\-gen, String url, int port)
+\begin{DoxyCompactList}\small\item\em Http로 연결을 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} (\hyperlink{struct__Http}{Http} this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Http로의 연결을 해제하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} (\hyperlink{struct__Http}{Http} this\-\_\-gen, String filename)
+\begin{DoxyCompactList}\small\item\em Http로부터 데이터를 수신 받는다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} (\hyperlink{struct__Http}{Http} this\-\_\-gen, String req, String $\ast$res)
+\begin{DoxyCompactList}\small\item\em {\bfseries P\-O\-S\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. \end{DoxyCompactList}\item 
+bool \hyperlink{Http_8c_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} (\hyperlink{struct__Http}{Http} this\-\_\-gen, String req, String $\ast$res)
+\begin{DoxyCompactList}\small\item\em {\bfseries G\-E\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{Http\-Error\-Check} (C\-U\-R\-Lcode error\-Code)
+\begin{DoxyCompactList}\small\item\em Http A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\-T\-T\-P A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+H\-T\-T\-P A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h}{Http.\-h} 
+\end{DoxySeeAlso}
+
+
+Definition in file \hyperlink{Http_8c_source}{Http.\-c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{Http_8c_afc5917bb56ffeda1df7514c8238f0cc4}{\index{Http.\-c@{Http.\-c}!Destory\-Http@{Destory\-Http}}
+\index{Destory\-Http@{Destory\-Http}!Http.c@{Http.\-c}}
+\subsubsection[{Destory\-Http}]{\setlength{\rightskip}{0pt plus 5cm}void Destory\-Http (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_afc5917bb56ffeda1df7514c8238f0cc4}
+
+
+생성한 Http 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Http 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Http 객체를 소멸 시킨다. \par
+ Http 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 42 of file Http.\-c.
+
+
+\begin{DoxyCode}
+43 \{
+44     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+45     \{
+46         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+47 
+48         \textcolor{keywordflow}{if} ( this->url != NULL)
+49         \{
+50             free (this->url);
+51         \}
+52 
+53         free (\textcolor{keyword}{this});
+54     \}
+55 \}
+\end{DoxyCode}
+\hypertarget{Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5}{\index{Http.\-c@{Http.\-c}!Http\-Download@{Http\-Download}}
+\index{Http\-Download@{Http\-Download}!Http.c@{Http.\-c}}
+\subsubsection[{Http\-Download}]{\setlength{\rightskip}{0pt plus 5cm}bool Http\-Download (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen, }
+\item[{String}]{filename}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5}
+
+
+Http로부터 데이터를 수신 받는다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 수신 받을 Http 객체 \\
+\hline
+\mbox{\tt in}  & {\em filename} & 수신 받을 데이터 파일 이름 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Http로부터 데이터를 수신 받는다. \par
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} / \href{http://tizne.org/privileges/mediastorage}{\tt http\-://tizne.\-org/privileges/mediastorage} / \href{http://tizne.org/privileges/download}{\tt http\-://tizne.\-org/privileges/download} 
+\end{DoxyPrecond}
+
+
+Definition at line 150 of file Http.\-c.
+
+
+\begin{DoxyCode}
+151 \{
+152     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+153     \{
+154         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+155         \textcolor{keywordtype}{bool} b = \textcolor{keyword}{false};
+156         \textcolor{keywordtype}{int}         res    = 0;
+157         \textcolor{keywordflow}{if} ( this->conect )
+158         \{
+159             String path = (String)malloc (FILENAME\_MAX);
+160             strcpy(path, \textcolor{stringliteral}{"/opt/usr/media/Downloads/"});
+161             strcat(path, filename);
+162 
+163             String url = (String)malloc (FILENAME\_MAX);
+164             strcpy(url, this->url);
+165             strcat(url, \textcolor{stringliteral}{"/"});
+166             strcat(url, filename);
+167 
+168             CURL * curl = curl\_easy\_init ();
+169             \textcolor{keywordflow}{if} ( curl )
+170             \{
+171                 FILE * fp = fopen (path, \textcolor{stringliteral}{"wb"});
+172                 curl\_easy\_setopt (curl, CURLOPT\_URL, url);
+173                 curl\_easy\_setopt (curl, CURLOPT\_PORT, this->port);
+174                 curl\_easy\_setopt (curl, CURLOPT\_WRITEFUNCTION, write\_data);
+175                 curl\_easy\_setopt (curl, CURLOPT\_WRITEDATA, fp);
+176                 res = curl\_easy\_perform (curl);
+177                 b   = (res == CURLE\_OK) ? \textcolor{keyword}{true} : \textcolor{keyword}{false};
+178                 \textcolor{comment}{/* always cleanup */}
+179                 curl\_easy\_cleanup (curl);
+180                 fclose (fp);
+181             \}
+182             free (url);
+183             free (path);
+184 
+185             \textcolor{keywordflow}{if} ( res != CURLE\_OK )
+186             \{
+187                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{HttpErrorCheck} (res));
+188             \}
+189 
+190             \textcolor{keywordflow}{return} b;
+191         \}
+192         dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"not connected"});
+193         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+194 
+195     \}
+196     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+197     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+198 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d6/d77/Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d6/d77/Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{\index{Http.\-c@{Http.\-c}!Http\-Error\-Check@{Http\-Error\-Check}}
+\index{Http\-Error\-Check@{Http\-Error\-Check}!Http.c@{Http.\-c}}
+\subsubsection[{Http\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Http\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{C\-U\-R\-Lcode}]{error\-Code}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}
+
+
+Http A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em C\-U\-R\-L\-E\-\_\-\-O\-K} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-P\-R\-O\-T\-O\-C\-O\-L} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-A\-I\-L\-E\-D\-\_\-\-I\-N\-I\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-R\-L\-\_\-\-M\-A\-L\-F\-O\-R\-M\-A\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-N\-O\-T\-\_\-\-B\-U\-I\-L\-T\-\_\-\-I\-N} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-S\-O\-L\-V\-E\-\_\-\-P\-R\-O\-X\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-S\-O\-L\-V\-E\-\_\-\-H\-O\-S\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-S\-E\-R\-V\-E\-R\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-D\-E\-N\-I\-E\-D} & \-: A service was denied by the server due to lack of access -\/ when login fails this is not returned. \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-A\-C\-C\-E\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-P\-A\-S\-S\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-A\-C\-C\-E\-P\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T} & \-: Timeout occurred accepting server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-P\-A\-S\-V\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-227\-\_\-\-F\-O\-R\-M\-A\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-A\-N\-T\-\_\-\-G\-E\-T\-\_\-\-H\-O\-S\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-S\-E\-T\-\_\-\-T\-Y\-P\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-P\-A\-R\-T\-I\-A\-L\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-T\-R\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-Q\-U\-O\-T\-E\-\_\-\-E\-R\-R\-O\-R} & \-: Quote command failure \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-H\-T\-T\-P\-\_\-\-R\-E\-T\-U\-R\-N\-E\-D\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-P\-L\-O\-A\-D\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Failed upload \char`\"{}command\char`\"{} \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-A\-D\-\_\-\-E\-R\-R\-O\-R} & \-: Couldn't open/read from file \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-D\-O\-U\-T} & \-: The timeout time was reached \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-P\-O\-R\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \-: F\-T\-P P\-O\-R\-T operation failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-U\-S\-E\-\_\-\-R\-E\-S\-T} & \-: The R\-E\-S\-T command failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-R\-R\-O\-R} & R\-A\-N\-G\-E \-: Command" didn't work \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-H\-T\-T\-P\-\_\-\-P\-O\-S\-T\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-E\-R\-R\-O\-R} & \-: Wrong when connecting with S\-S\-L \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-D\-O\-W\-N\-L\-O\-A\-D\-\_\-\-R\-E\-S\-U\-M\-E} & \-: Couldn't resume download \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-I\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-A\-D\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-B\-I\-N\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-S\-E\-A\-R\-C\-H\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-A\-B\-O\-R\-T\-E\-D\-\_\-\-B\-Y\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-A\-R\-G\-U\-M\-E\-N\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-O\-O\-\_\-\-M\-A\-N\-Y\-\_\-\-R\-E\-D\-I\-R\-E\-C\-T\-S} & \-: Catch endless re-\/direct loops \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-N\-K\-N\-O\-W\-N\-\_\-\-O\-P\-T\-I\-O\-N} & \-: User specified an unknown option \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-E\-L\-N\-E\-T\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-S\-Y\-N\-T\-A\-X} & \-: Malformed telnet option \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-P\-E\-E\-R\-\_\-\-F\-A\-I\-L\-E\-D\-\_\-\-V\-E\-R\-I\-F\-I\-C\-A\-T\-I\-O\-N} & \-: Peer's certificate or finger print wasn't verified fine \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-G\-O\-T\-\_\-\-N\-O\-T\-H\-I\-N\-G} & \-: When this is a specific error \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D} & \-: S\-S\-L crypto engine not found \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-S\-E\-T\-F\-A\-I\-L\-E\-D} & \-: Can not set S\-S\-L crypto engine as default \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-E\-R\-R\-O\-R} & \-: Failed sending network data \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-C\-V\-\_\-\-E\-R\-R\-O\-R} & \-: Failure in receiving network data \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-E\-R\-T\-P\-R\-O\-B\-L\-E\-M} & \-: Problem with the local certificate \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-I\-P\-H\-E\-R} & \-: Couldn't use specified cipher \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-A\-C\-E\-R\-T} & \-: Problem with the C\-A cert \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} & \-: Unrecognized/bad encoding \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-R\-L} & \-: Invalid L\-D\-A\-P U\-R\-L \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-I\-L\-E\-S\-I\-Z\-E\-\_\-\-E\-X\-C\-E\-E\-D\-E\-D} & \-: Maximum file size exceeded \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-S\-E\-\_\-\-S\-S\-L\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Requested F\-T\-P S\-S\-L level failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-\_\-\-R\-E\-W\-I\-N\-D} & \-: Sending the data requires a rewind that failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-I\-N\-I\-T\-F\-A\-I\-L\-E\-D} & \-: Failed to initialize E\-N\-G\-I\-N\-E \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-O\-G\-I\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: User, password or similar was not accepted and we failed to login \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D} & \-: File not found on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-P\-E\-R\-M} & \-: Permission problem on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-D\-I\-S\-K\-\_\-\-F\-U\-L\-L} & \-: Out of disk space on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-I\-L\-L\-E\-G\-A\-L} & \-: Illegal T\-F\-T\-P operation \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-U\-N\-K\-N\-O\-W\-N\-I\-D} & \-: Unknown transfer I\-D \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-I\-S\-T\-S} & \-: File already exists \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-N\-O\-S\-U\-C\-H\-U\-S\-E\-R} & \-: No such user \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-N\-V\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Conversion failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-N\-V\-\_\-\-R\-E\-Q\-D} & \-: Caller must register conversion callbacks using curl\-\_\-easy\-\_\-setopt options. \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-A\-C\-E\-R\-T\-\_\-\-B\-A\-D\-F\-I\-L\-E} & \-: Could not load C\-A\-C\-E\-R\-T file, missing or wrong format \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-F\-I\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \-: Remote file not found \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-H} & \-: Error from the S\-S\-H layer, somewhat generic so the error message will be of interest when this has happened \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Failed to shut down the S\-S\-L connection \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-A\-G\-A\-I\-N} & \-: Socket is not ready for send/recv wait till it's ready and try again \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-R\-L\-\_\-\-B\-A\-D\-F\-I\-L\-E} & \-: Could not load C\-R\-L file, missing or wrong format \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-I\-S\-S\-U\-E\-R\-\_\-\-E\-R\-R\-O\-R} & \-: Issuer check failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-P\-R\-E\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \-: A P\-R\-E\-T command failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-T\-S\-P\-\_\-\-C\-S\-E\-Q\-\_\-\-E\-R\-R\-O\-R} & \-: Mismatch of R\-T\-S\-P C\-Seq numbers \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-T\-S\-P\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R} & \-: Mismatch of R\-T\-S\-P Session Ids \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-B\-A\-D\-\_\-\-F\-I\-L\-E\-\_\-\-L\-I\-S\-T} & \-: Unable to parse F\-T\-P file list \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-H\-U\-N\-K\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Chunk callback reported error \\
+\hline
+{\em C\-U\-R\-L\-\_\-\-L\-A\-S\-T} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Http A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\href{http://curl.haxx.se/libcurl/c/libcurl-errors.html}{\tt http\-://curl.\-haxx.\-se/libcurl/c/libcurl-\/errors.\-html} 
+\end{DoxySeeAlso}
+
+
+Definition at line 292 of file Http.\-c.
+
+
+\begin{DoxyCode}
+293 \{
+294     \textcolor{keywordflow}{return} curl\_easy\_strerror (errorCode);
+295 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d77/Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_a6cc920eab655ba420f68afb21e7a4466}{\index{Http.\-c@{Http.\-c}!Http\-Excute\-Get@{Http\-Excute\-Get}}
+\index{Http\-Excute\-Get@{Http\-Excute\-Get}!Http.c@{Http.\-c}}
+\subsubsection[{Http\-Excute\-Get}]{\setlength{\rightskip}{0pt plus 5cm}bool Http\-Excute\-Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen, }
+\item[{String}]{req, }
+\item[{String $\ast$}]{res}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_a6cc920eab655ba420f68afb21e7a4466}
+
+
+{\bfseries G\-E\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결된 세션의 Http 객체 \\
+\hline
+\mbox{\tt in}  & {\em req} & 요청을 하는 request buffer \\
+\hline
+\mbox{\tt in}  & {\em res} & 결과를 받을 response buffer 주소 \\
+\hline
+\mbox{\tt out}  & {\em res} & 요청에 따른 결과 값 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+{\bfseries G\-E\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. \par
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} \par
+
+\end{DoxyPrecond}
+
+
+Definition at line 237 of file Http.\-c.
+
+
+\begin{DoxyCode}
+238 \{
+239     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+240     \{
+241         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+242         \textcolor{keywordtype}{bool} b = \textcolor{keyword}{false};
+243         \textcolor{keywordflow}{if} ( this->conect )
+244         \{
+245             CURL * curl;
+246             CURLcode r;
+247 
+248             curl = curl\_easy\_init ();
+249             \textcolor{keywordflow}{if} ( curl )
+250             \{
+251                 String url = (String)malloc (FILENAME\_MAX);
+252                 strcpy(url, this->url);
+253                 strcat(url, \textcolor{stringliteral}{"/"});
+254                 strcat(url, req);
+255 
+256                 curl\_easy\_setopt (curl, CURLOPT\_URL, url);
+257                 curl\_easy\_setopt (curl, CURLOPT\_PORT, this->port);
+258                 curl\_easy\_setopt (curl, CURLOPT\_WRITEFUNCTION, write\_callback);
+259                 curl\_easy\_setopt (curl, CURLOPT\_WRITEDATA, res);
+260 
+261                 r = curl\_easy\_perform (curl);
+262                 b = (r == CURLE\_OK) ? \textcolor{keyword}{true} : \textcolor{keyword}{false};
+263                 curl\_easy\_cleanup (curl);
+264                 free (url);
+265             \}
+266             curl\_global\_cleanup ();
+267             \textcolor{keywordflow}{if} ( r != CURLE\_OK )
+268             \{
+269                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{HttpErrorCheck} (r));
+270             \}
+271         \}
+272         \textcolor{keywordflow}{return} b;
+273     \}
+274     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+275     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+276 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{d6/d77/Http_8c_a6cc920eab655ba420f68afb21e7a4466_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d6/d77/Http_8c_a6cc920eab655ba420f68afb21e7a4466_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_a85205d030fb71fe75bf32f42453d91e1}{\index{Http.\-c@{Http.\-c}!Http\-Excute\-Post@{Http\-Excute\-Post}}
+\index{Http\-Excute\-Post@{Http\-Excute\-Post}!Http.c@{Http.\-c}}
+\subsubsection[{Http\-Excute\-Post}]{\setlength{\rightskip}{0pt plus 5cm}bool Http\-Excute\-Post (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen, }
+\item[{String}]{req, }
+\item[{String $\ast$}]{res}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_a85205d030fb71fe75bf32f42453d91e1}
+
+
+{\bfseries P\-O\-S\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결된 세션의 Http 객체 \\
+\hline
+\mbox{\tt in}  & {\em req} & 요청을 하는 request buffer \\
+\hline
+\mbox{\tt in}  & {\em res} & 결과를 받을 response buffer 주소 \\
+\hline
+\mbox{\tt out}  & {\em res} & 요청에 따른 결과 값 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+{\bfseries P\-O\-S\-T} 방식을 사용하여 연결된 세션으로 {\ttfamily req와} {\ttfamily res를} 입력해서 결과를 {\ttfamily res로} 받는다. \par
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 200 of file Http.\-c.
+
+
+\begin{DoxyCode}
+201 \{
+202     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+203     \{
+204         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+205         \textcolor{keywordtype}{bool} b = \textcolor{keyword}{false};
+206 
+207         \textcolor{keywordflow}{if} ( this->conect )
+208         \{
+209             CURL * curl;
+210             CURLcode r;
+211             curl = curl\_easy\_init ();
+212             \textcolor{keywordflow}{if} ( curl )
+213             \{
+214                 curl\_easy\_setopt (curl, CURLOPT\_URL, this->url);
+215                 curl\_easy\_setopt (curl, CURLOPT\_PORT, this->port);
+216                 curl\_easy\_setopt (curl, CURLOPT\_WRITEFUNCTION, write\_callback);
+217                 curl\_easy\_setopt (curl, CURLOPT\_POSTFIELDSIZE, (\textcolor{keywordtype}{long})strlen (req));
+218                 curl\_easy\_setopt (curl, CURLOPT\_POSTFIELDS, req);
+219                 curl\_easy\_setopt (curl, CURLOPT\_WRITEDATA, res);
+220 
+221                 r = curl\_easy\_perform (curl);
+222                 b = (r == CURLE\_OK) ? \textcolor{keyword}{true} : \textcolor{keyword}{false};
+223                 curl\_easy\_cleanup (curl);
+224             \}
+225             curl\_global\_cleanup ();
+226             \textcolor{keywordflow}{if} ( r != CURLE\_OK )
+227             \{
+228                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"%s"}, \hyperlink{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{HttpErrorCheck} (r));
+229             \}
+230         \}
+231         \textcolor{keywordflow}{return} b;
+232     \}
+233     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+234     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+235 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{d6/d77/Http_8c_a85205d030fb71fe75bf32f42453d91e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d6/d77/Http_8c_a85205d030fb71fe75bf32f42453d91e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_ae4ffcb798a6704984dc63c449d3287f8}{\index{Http.\-c@{Http.\-c}!is\-Http\-Accessible@{is\-Http\-Accessible}}
+\index{is\-Http\-Accessible@{is\-Http\-Accessible}!Http.c@{Http.\-c}}
+\subsubsection[{is\-Http\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Http\-Accessible (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_ae4ffcb798a6704984dc63c449d3287f8}
+
+
+현재 Http 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 Http 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 Http 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 57 of file Http.\-c.
+
+
+\begin{DoxyCode}
+58 \{
+59     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+60     \{
+61         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+62 
+63         \textcolor{keywordtype}{bool} check1, check2;
+64 
+65         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.wifi"}, &check1);
+66         system\_info\_get\_platform\_bool (\textcolor{stringliteral}{"http://tizen.org/feature/network.telephony"}, &check2);
+67 
+68         this->access = check1 || check2;
+69         \textcolor{keywordflow}{if} ( this->access == \textcolor{keyword}{false} )
+70         \{
+71             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"cannot access internet"});
+72         \}
+73         \textcolor{keywordflow}{return} this->access;
+74     \}
+75     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+76     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+77 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{d6/d77/Http_8c_ae4ffcb798a6704984dc63c449d3287f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_a8f651c47670c3bb629ce2fe7e5d64d57}{\index{Http.\-c@{Http.\-c}!New\-Http@{New\-Http}}
+\index{New\-Http@{New\-Http}!Http.c@{Http.\-c}}
+\subsubsection[{New\-Http}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Http} New\-Http (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_a8f651c47670c3bb629ce2fe7e5d64d57}
+
+
+새로운 Http 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Http} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Http 객체를 생성한다. \par
+ Http 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 22 of file Http.\-c.
+
+
+\begin{DoxyCode}
+23 \{
+24     \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)malloc (\textcolor{keyword}{sizeof} (
+      \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends}));
+25 
+26     this->http.isAccessible = \hyperlink{Http_8c_ae4ffcb798a6704984dc63c449d3287f8}{isHttpAccessible};
+27     this->http.onConnect    = \hyperlink{Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e}{onHttpConnect};
+28     this->http.onDisconnect = \hyperlink{Http_8c_af6591be271cd58d4fe3035f5ab770891}{onHttpDisconnect};
+29     this->http.Download     = \hyperlink{Http_8c_a55342ea8d5f8480cfc94ed46ac19a8a5}{HttpDownload};
+30     this->http.Get          = \hyperlink{Http_8c_a6cc920eab655ba420f68afb21e7a4466}{HttpExcuteGet};
+31     this->http.Post         = \hyperlink{Http_8c_a85205d030fb71fe75bf32f42453d91e1}{HttpExcutePost};
+32 
+33     this->url  = NULL;
+34     this->port = 80;
+35 
+36     this->access = \textcolor{keyword}{false};
+37     this->conect = \textcolor{keyword}{false};
+38 
+39     \textcolor{keywordflow}{return} &this->http;
+40 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d77/Http_8c_a8f651c47670c3bb629ce2fe7e5d64d57_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e}{\index{Http.\-c@{Http.\-c}!on\-Http\-Connect@{on\-Http\-Connect}}
+\index{on\-Http\-Connect@{on\-Http\-Connect}!Http.c@{Http.\-c}}
+\subsubsection[{on\-Http\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Http\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen, }
+\item[{String}]{url, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e}
+
+
+Http로 연결을 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 성공 여부를 확인할 Http 객체 \\
+\hline
+\mbox{\tt in}  & {\em url} & 연결을 시도할 U\-R\-L \\
+\hline
+\mbox{\tt in}  & {\em port} & 연결을 시도할 포트 번호 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Http로 연결을 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_af6591be271cd58d4fe3035f5ab770891}{on\-Http\-Disconnect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 79 of file Http.\-c.
+
+
+\begin{DoxyCode}
+80 \{
+81     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+82     \{
+83         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+84 
+85         \textcolor{keywordflow}{if} ( this->access )
+86         \{
+87             \textcolor{keywordtype}{int} lenght = strlen (url);
+88             \textcolor{keywordflow}{if} ( this->url != NULL)
+89             \{
+90                 free (this->url);
+91             \}
+92             this->url = (String)malloc (lenght + 1);
+93             strcpy(this->url, url);
+94             this->port = port;
+95 
+96             CURL * curl;
+97             CURLcode r;
+98             curl\_global\_init (CURL\_GLOBAL\_ALL);
+99 
+100             curl = curl\_easy\_init ();
+101             \textcolor{keywordflow}{if} ( curl )
+102             \{
+103                 curl\_easy\_setopt (curl, CURLOPT\_URL, url);
+104                 curl\_easy\_setopt (curl, CURLOPT\_PORT, port);
+105 
+106                 r = curl\_easy\_perform (curl);
+107 
+108                 \textcolor{keywordflow}{if} ( r == CURLE\_OK )
+109                 \{
+110                     this->conect = \textcolor{keyword}{true};
+111                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+112                 \}
+113                 dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \hyperlink{Http_8c_af967f7f6b2f1956797dd578e3d2cdf4a}{HttpErrorCheck} (r));
+114                 \textcolor{keywordflow}{return} this->conect = \textcolor{keyword}{false};
+115             \}
+116             dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"can't make curl"});
+117             \textcolor{keywordflow}{return} this->conect = \textcolor{keyword}{false};
+118         \}
+119         dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"cannot access internet"});
+120         \textcolor{keywordflow}{return} this->conect = \textcolor{keyword}{false};
+121     \}
+122     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+123     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+124 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d6/d77/Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d6/d77/Http_8c_a1174037f2ecd0c70d1c2c4e608245e2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Http_8c_af6591be271cd58d4fe3035f5ab770891}{\index{Http.\-c@{Http.\-c}!on\-Http\-Disconnect@{on\-Http\-Disconnect}}
+\index{on\-Http\-Disconnect@{on\-Http\-Disconnect}!Http.c@{Http.\-c}}
+\subsubsection[{on\-Http\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Http\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf Http}}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}}\label{Http_8c_af6591be271cd58d4fe3035f5ab770891}
+
+
+Http로의 연결을 해제하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 해제 여부를 확인할 Http 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Http기기로 연결을 해제하며 이의 성공 여부를 반환한다. \par
+ 연결 해제에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57}{New\-Http} \par
+ \hyperlink{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4}{Destory\-Http} \par
+ \hyperlink{Http_8h_ae4ffcb798a6704984dc63c449d3287f8}{is\-Http\-Accessible} \par
+ \hyperlink{Http_8h_a1174037f2ecd0c70d1c2c4e608245e2e}{on\-Http\-Connect} \par
+ \hyperlink{Http_8h_a55342ea8d5f8480cfc94ed46ac19a8a5}{Http\-Download} \par
+ \hyperlink{Http_8h_a85205d030fb71fe75bf32f42453d91e1}{Http\-Excute\-Post} \par
+ \hyperlink{Http_8h_a6cc920eab655ba420f68afb21e7a4466}{Http\-Excute\-Get} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+privilege \-: \href{http://tizen.org/privilege/internet}{\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyPrecond}
+
+
+Definition at line 126 of file Http.\-c.
+
+
+\begin{DoxyCode}
+127 \{
+128     \textcolor{keywordflow}{if} ( this\_gen != NULL)
+129     \{
+130         \hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} * \textcolor{keyword}{this} = (\hyperlink{Http_8h_d8/de4/struct__HttpExtends}{HttpExtends} *)this\_gen;
+131 
+132         \textcolor{keywordflow}{if} ( this->access )
+133         \{
+134             \textcolor{keywordflow}{if} ( this->url != NULL)
+135             \{
+136                 free (this->url);
+137                 this->url = NULL;
+138             \}
+139 
+140             this->conect = \textcolor{keyword}{false};
+141             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+142         \}
+143         dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"can not access internet"});
+144         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+145     \}
+146     dlog\_print (DLOG\_INFO, \textcolor{stringliteral}{"DIT"}, \textcolor{stringliteral}{"NULL module"});
+147     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+148 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{d6/d77/Http_8c_af6591be271cd58d4fe3035f5ab770891_icgraph}
+\end{center}
+\end{figure}
+
+

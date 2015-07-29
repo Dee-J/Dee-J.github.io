@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['datetaken',['datetaken',['../d6/db7/File_8h.html#a077fc46f97fd76e21ef941afe99e6eaa',1,'_ImageExtends']]],
+  ['delete',['Delete',['../d6/dbc/struct__File.html#a53d84115a9c66fe30c652f908da6d3b7',1,'_File']]],
+  ['deletesearchedlist',['deleteSearchedList',['../d6/dbc/struct__File.html#a688001b808e44b036dac30773decb791',1,'_File']]],
+  ['detachcallback',['detachCallback',['../d1/dc3/struct__Accelerometer.html#ab8834da814f6f2725604e2ae47fcb133',1,'_Accelerometer::detachCallback()'],['../dc/df4/struct__Gravity.html#a645c10b66b310a50b5d7c6268bec0dfb',1,'_Gravity::detachCallback()'],['../d4/df2/struct__LinearAccelation.html#a4425cfda6e15e326b0d9c9552d4fd6b0',1,'_LinearAccelation::detachCallback()'],['../d2/d2a/struct__MagnetoMeter.html#ad6ef2f08ec21b47db86bf82874a3084f',1,'_MagnetoMeter::detachCallback()'],['../d5/d2f/struct__RotationVector.html#a44b47f3a54c4de866877b149c5b84740',1,'_RotationVector::detachCallback()'],['../d1/dba/struct__Orientation.html#a8737f251ea3f8324de25e748e1971238',1,'_Orientation::detachCallback()'],['../d3/d3f/struct__Gyroscope.html#adfac81c861cfbeb12f4deb6b57d80c64',1,'_Gyroscope::detachCallback()'],['../d7/de8/struct__Light.html#a63c8d1aa129ece24b38d44ffceb27b2d',1,'_Light::detachCallback()'],['../d4/d7d/struct__Proximity.html#a48874f9105623cfb428f2676154c65b7',1,'_Proximity::detachCallback()'],['../d0/ddc/struct__Pressure.html#aabb76e8b64fda40ddf251f07b3ea70f8',1,'_Pressure::detachCallback()'],['../d3/d94/struct__UltraViolet.html#a336753c4a50473eb7b796d3942bd3e2e',1,'_UltraViolet::detachCallback()'],['../de/dda/struct__Temperature.html#abc60e61a748d655d12ef2be68e4b58a8',1,'_Temperature::detachCallback()'],['../d6/d50/struct__Humidity.html#acce26125d60f03d01a46d69c9b7d0e83',1,'_Humidity::detachCallback()']]],
+  ['dim',['Dim',['../d8/d43/struct__Display.html#afe07206478960f03a500e7fc2b710446',1,'_Display']]],
+  ['direction',['direction',['../d9/dae/GPS_8h.html#a8da9718bd3d0396135453cbb12751a5b',1,'_location']]],
+  ['display',['display',['../d8/d92/DeviceStatus_8h.html#a850328004642ca6438cafe1bb12a6c87',1,'_DisplayExtend']]],
+  ['download',['Download',['../d0/d57/struct__Http.html#a5c2263401d4e2ad7e91fa5189b2a60e1',1,'_Http']]]
+];

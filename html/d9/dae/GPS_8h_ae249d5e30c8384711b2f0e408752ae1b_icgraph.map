@@ -1,0 +1,5 @@
+<map id="GPSErrorChecker" name="GPSErrorChecker">
+<area shape="rect" id="node2" href="$d2/dfe/GPS_8c.html#a7ccea786da98fd739ff94af37c8b629a" title="GPS로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="192,5,306,33"/>
+<area shape="rect" id="node4" href="$d2/dfe/GPS_8c.html#a8eca216e670944b8a549406a8fc8dc44" title="GPS로의 연결을 해제하며 이의 성공 여부를 반환한다. " alt="" coords="184,57,314,85"/>
+<area shape="rect" id="node3" href="$d2/dfe/GPS_8c.html#aaf1f2e8f7650a9ec24d3fedebd22e106" title="새로운 GPS 객체를 생성한다. " alt="" coords="362,31,435,59"/>
+</map>

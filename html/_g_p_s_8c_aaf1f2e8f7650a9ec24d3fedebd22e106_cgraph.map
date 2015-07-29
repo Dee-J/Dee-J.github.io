@@ -1,0 +1,6 @@
+<map id="NewGps" name="NewGps">
+<area shape="rect" id="node2" href="$_g_p_s_8c.html#a4c9fefb1b2513013e6e5c66a413e387d" title="isGPSAccessible" alt="" coords="129,5,252,33"/>
+<area shape="rect" id="node3" href="$_g_p_s_8c.html#a7ccea786da98fd739ff94af37c8b629a" title="onGPSConnect" alt="" coords="134,57,248,85"/>
+<area shape="rect" id="node4" href="$_g_p_s_8c.html#a8eca216e670944b8a549406a8fc8dc44" title="onGPSDisconnect" alt="" coords="126,109,256,137"/>
+<area shape="rect" id="node5" href="$_g_p_s_8c.html#ad567d557fd52762282c7eee89c69352c" title="GPSRecv" alt="" coords="151,161,231,189"/>
+</map>

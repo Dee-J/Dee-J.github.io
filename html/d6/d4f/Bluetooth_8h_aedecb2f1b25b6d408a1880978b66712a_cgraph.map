@@ -1,0 +1,9 @@
+<map id="NewBluetooth" name="NewBluetooth">
+<area shape="rect" id="node2" href="$d3/d1c/Bluetooth_8c.html#a00b401ae906bf1d77f232c88a14314fc" title="현재 Bluetooth 기능 지원 여부를 반환 한다. " alt="" coords="162,5,313,33"/>
+<area shape="rect" id="node4" href="$d3/d1c/Bluetooth_8c.html#a77d0c6bf9a2f45a43a3b5801dd978fb6" title="Bluetooth기기로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="166,57,308,85"/>
+<area shape="rect" id="node5" href="$d3/d1c/Bluetooth_8c.html#a4959b3be5e12c0d3e4cc317e00e4621e" title="Bluetooth기기와의 연결 상태를 확인한다. " alt="" coords="161,109,313,137"/>
+<area shape="rect" id="node6" href="$d3/d1c/Bluetooth_8c.html#a26f809a19ded06421baab533eb8a59a6" title="Bluetooth기기로 연결을 해제하며 이의 성공 여부를 반환한다. " alt="" coords="158,161,317,189"/>
+<area shape="rect" id="node7" href="$d3/d1c/Bluetooth_8c.html#a43d4d767fbb4f0a1568a453e7b6a9995" title="Bluetooth기기로 부터 데이터를 수신한다. " alt="" coords="173,213,302,241"/>
+<area shape="rect" id="node8" href="$d3/d1c/Bluetooth_8c.html#a169790dd12357103f392285063a4cfb9" title="Bluetooth기기로 데이터를 송신한다. " alt="" coords="172,265,302,293"/>
+<area shape="rect" id="node3" href="$d3/d1c/Bluetooth_8c.html#a27d2daee8cbfd1a01955b71a879af863" title="Bluetooth API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="366,161,511,189"/>
+</map>

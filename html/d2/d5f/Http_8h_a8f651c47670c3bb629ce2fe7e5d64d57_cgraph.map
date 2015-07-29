@@ -1,0 +1,9 @@
+<map id="NewHttp" name="NewHttp">
+<area shape="rect" id="node2" href="$d6/d77/Http_8c.html#ae4ffcb798a6704984dc63c449d3287f8" title="현재 Http 기능 지원 여부를 반환 한다. " alt="" coords="130,5,249,33"/>
+<area shape="rect" id="node3" href="$d6/d77/Http_8c.html#a1174037f2ecd0c70d1c2c4e608245e2e" title="Http로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="134,57,244,85"/>
+<area shape="rect" id="node5" href="$d6/d77/Http_8c.html#af6591be271cd58d4fe3035f5ab770891" title="Http로의 연결을 해제하며 이의 성공 여부를 반환한다. " alt="" coords="126,109,253,137"/>
+<area shape="rect" id="node6" href="$d6/d77/Http_8c.html#a55342ea8d5f8480cfc94ed46ac19a8a5" title="Http로부터 데이터를 수신 받는다. " alt="" coords="137,161,242,189"/>
+<area shape="rect" id="node7" href="$d6/d77/Http_8c.html#a6cc920eab655ba420f68afb21e7a4466" title="GET 방식을 사용하여 연결된 세션으로 req와 res를 입력해서 결과를 res로 받는다. " alt="" coords="135,213,243,241"/>
+<area shape="rect" id="node8" href="$d6/d77/Http_8c.html#a85205d030fb71fe75bf32f42453d91e1" title="POST 방식을 사용하여 연결된 세션으로 req와 res를 입력해서 결과를 res로 받는다. " alt="" coords="133,265,246,293"/>
+<area shape="rect" id="node4" href="$d6/d77/Http_8c.html#af967f7f6b2f1956797dd578e3d2cdf4a" title="Http API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="302,187,415,215"/>
+</map>

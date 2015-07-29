@@ -1,0 +1,9 @@
+<map id="NewNotification" name="NewNotification">
+<area shape="rect" id="node2" href="$df/d4c/_notification_8c.html#a416551611137aff7aeb70e38b2f25a0f" title="NotificationShow" alt="" coords="180,5,300,33"/>
+<area shape="rect" id="node3" href="$df/d4c/_notification_8c.html#ada4d9e68364de3069e42a124fb622d68" title="NotificationHide" alt="" coords="183,57,297,85"/>
+<area shape="rect" id="node4" href="$df/d4c/_notification_8c.html#a728b55939d41923491d4c8d32046a8b4" title="setNotificationTitle" alt="" coords="175,109,305,137"/>
+<area shape="rect" id="node5" href="$df/d4c/_notification_8c.html#a28a9e5982591ac79cd6e00e4d14dbdf1" title="setNotificationText" alt="" coords="175,161,305,189"/>
+<area shape="rect" id="node6" href="$df/d4c/_notification_8c.html#a9cd8f8ad4e7dd0f9ca3a8695c8848f31" title="setNotificationIcon" alt="" coords="175,213,305,241"/>
+<area shape="rect" id="node7" href="$df/d4c/_notification_8c.html#a6fc6432b5abd684f6519d704e46d53ae" title="setNotificationSound" alt="" coords="168,265,312,293"/>
+<area shape="rect" id="node8" href="$df/d4c/_notification_8c.html#a37fae434cef2c8c0bc672801898b99c7" title="updateNotification" alt="" coords="176,317,304,345"/>
+</map>

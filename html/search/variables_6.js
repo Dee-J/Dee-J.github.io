@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['get',['Get',['../d0/d57/struct__Http.html#a7d476aeddf2c20ee482845959c71446b',1,'_Http']]],
+  ['getboolean',['getBoolean',['../dc/d88/struct__Preference.html#a32b9944e22dd04233008ebc1afba21c8',1,'_Preference']]],
+  ['getbright',['getBright',['../d8/d43/struct__Display.html#a61cbbbd330281072786ca6289de92a3a',1,'_Display']]],
+  ['getburstid',['getBurstId',['../d3/d95/struct__Image.html#a43ccbbf065326a2647887464f16b7373',1,'_Image']]],
+  ['getdatetaken',['getDateTaken',['../d3/d95/struct__Image.html#a170cc9a88ad9e65b2d8725d1370bc946',1,'_Image']]],
+  ['getdouble',['getDouble',['../dc/d88/struct__Preference.html#a96f41840c325a881dc63177979b83b52',1,'_Preference']]],
+  ['getheight',['getHeight',['../d3/d95/struct__Image.html#a8958794ba1906035ca256305dc103399',1,'_Image']]],
+  ['getinfo',['getInfo',['../d9/d33/struct__Video.html#a28466d9896b523beacac4a1add633aa6',1,'_Video::getInfo()'],['../d3/dd0/struct__Audio.html#af557af230def744c4b3ed69d5b3c2076',1,'_Audio::getInfo()']]],
+  ['getint',['getInt',['../dc/d88/struct__Preference.html#a354ae0d851333f72a06ea51e0bcb8360',1,'_Preference']]],
+  ['getlevel',['getLevel',['../d8/da8/struct__Battery.html#a6321988705fe01fbbd13ed44645920ce',1,'_Battery']]],
+  ['getmediaid',['getMediaId',['../d3/d95/struct__Image.html#a3ebc4a1fcad891955f6bd315dbf79b87',1,'_Image']]],
+  ['getstring',['getString',['../dc/d88/struct__Preference.html#ab43532513cb470d242f06a41c90c2320',1,'_Preference']]],
+  ['getvalue',['getValue',['../d1/dc3/struct__Accelerometer.html#a8c75dfb5dbc8f9da5ea69ef2fb597185',1,'_Accelerometer::getValue()'],['../dc/df4/struct__Gravity.html#afe837cce5c4d493eb3b48a65261d000d',1,'_Gravity::getValue()'],['../d4/df2/struct__LinearAccelation.html#aaf02870c60aa510568b3376a4cd4d965',1,'_LinearAccelation::getValue()'],['../d2/d2a/struct__MagnetoMeter.html#a481059371d9d2a273df0fabe18e388a0',1,'_MagnetoMeter::getValue()'],['../d5/d2f/struct__RotationVector.html#ac37bd4354c04172e326f5c6f86580785',1,'_RotationVector::getValue()'],['../d1/dba/struct__Orientation.html#abb38457c67d18f412e911e5173d62419',1,'_Orientation::getValue()'],['../d3/d3f/struct__Gyroscope.html#a9e5519a135ce1a2b58d7e21fd2d53171',1,'_Gyroscope::getValue()'],['../d7/de8/struct__Light.html#a167b8ee698bc8f2db75089756d4d58d3',1,'_Light::getValue()'],['../d4/d7d/struct__Proximity.html#abf3276a84c1e43e8e5ff5ecb6c665ee1',1,'_Proximity::getValue()'],['../d0/ddc/struct__Pressure.html#a9739a7d1b596639f720e0fbb2dd8f064',1,'_Pressure::getValue()'],['../d3/d94/struct__UltraViolet.html#ad2f32aac4a27630b46e825c41eee7eb3',1,'_UltraViolet::getValue()'],['../de/dda/struct__Temperature.html#a660cf710a2d1e34072bd9a1ab95d368b',1,'_Temperature::getValue()'],['../d6/d50/struct__Humidity.html#ab66479293e120169b7f5be17bb6b307a',1,'_Humidity::getValue()']]],
+  ['getwidth',['getWidth',['../d3/d95/struct__Image.html#ac1af259a21d8c67dab2729dc2ca8e6ab',1,'_Image']]],
+  ['gps',['gps',['../d9/dae/GPS_8h.html#ab3ecc8b2ec37f482acf1ac0c1a3d5e4e',1,'GPSExtends']]],
+  ['gravity',['gravity',['../d5/d65/Sensor_8h.html#ae4623ab137188f79a517066e08032746',1,'_GravityExtend']]],
+  ['gyroscope',['gyroscope',['../d5/d65/Sensor_8h.html#a2836faf982e7b52971a419061d4a4ae7',1,'_GyroscopeExtend']]]
+];

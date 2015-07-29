@@ -1,0 +1,7 @@
+<map id="NewPressure" name="NewPressure">
+<area shape="rect" id="node2" href="$_sensor_8c.html#add6c19cf32d48922624fcb270aed18ca" title="PressureOff" alt="" coords="183,5,275,33"/>
+<area shape="rect" id="node3" href="$_sensor_8c.html#a830d2a896c4c8dd4991123976d241c6a" title="PressureOn" alt="" coords="183,57,276,85"/>
+<area shape="rect" id="node4" href="$_sensor_8c.html#a7319e8f7a3bdf529fc3f962ab4a293bf" title="addPressureCallback" alt="" coords="155,109,303,137"/>
+<area shape="rect" id="node5" href="$_sensor_8c.html#a46345879d23125c7d5d8d47a9c5a0854" title="getPressureValue" alt="" coords="166,161,293,189"/>
+<area shape="rect" id="node6" href="$_sensor_8c.html#a4a982f1d712c2603cba455cf3e0a4bce" title="isPressureSupported" alt="" coords="156,213,302,241"/>
+</map>
