@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['offflash',['offFlash',['../DeviceStatus_8h.html#a652cf60a29c20901662a9ec231d8ce5a',1,'offFlash(void):&#160;DeviceStatus.c'],['../DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4',1,'offFlash(void):&#160;DeviceStatus.c']]],
   ['onbluetoothconnect',['onBluetoothConnect',['../Bluetooth_8h.html#a77d0c6bf9a2f45a43a3b5801dd978fb6',1,'onBluetoothConnect(Bluetooth this_gen):&#160;Bluetooth.c'],['../Bluetooth_8c.html#a77d0c6bf9a2f45a43a3b5801dd978fb6',1,'onBluetoothConnect(Bluetooth this_gen):&#160;Bluetooth.c']]],
   ['onbluetoothdisconnect',['onBluetoothDisconnect',['../Bluetooth_8h.html#a26f809a19ded06421baab533eb8a59a6',1,'onBluetoothDisconnect(Bluetooth this_gen):&#160;Bluetooth.c'],['../Bluetooth_8c.html#a26f809a19ded06421baab533eb8a59a6',1,'onBluetoothDisconnect(Bluetooth this_gen):&#160;Bluetooth.c']]],
+  ['onflash',['onFlash',['../DeviceStatus_8h.html#a27939143d46a5f253038f0a08a781a80',1,'onFlash(void):&#160;DeviceStatus.c'],['../DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc',1,'onFlash(void):&#160;DeviceStatus.c']]],
   ['ongoingnotification_2ec',['OngoingNotification.c',['../OngoingNotification_8c.html',1,'']]],
   ['ongoingnotification_2eh',['OngoingNotification.h',['../OngoingNotification_8h.html',1,'']]],
   ['ongoingnotificationerrorcheck',['OngoingNotificationErrorCheck',['../OngoingNotification_8h.html#a62db52abc597cd1c11086014d0dc8b9f',1,'OngoingNotificationErrorCheck(int errCode):&#160;OngoingNotification.c'],['../OngoingNotification_8c.html#aed5b916273e6e49e4d20090d6ed05d32',1,'OngoingNotificationErrorCheck(int errCode):&#160;OngoingNotification.c']]],

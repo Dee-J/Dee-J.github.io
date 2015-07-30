@@ -127,6 +127,16 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Display.html">Display</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display 모듈에 대한 구조체이다. Display 모듈은 다양한 방식으로 화면을 조절 할 수 있다.  <a href="struct__Display.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structDisplayExtend"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#structDisplayExtend">DisplayExtend</a></td></tr>
+<tr class="separator:structDisplayExtend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Battery.html">Battery</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery 모듈에 대한 구조체이다. Battery 모듈은 배터리의 정보를 읽어 올 수 있다.  <a href="struct__Battery.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structBatteryExtend"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#structBatteryExtend">BatteryExtend</a></td></tr>
+<tr class="separator:structBatteryExtend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Flash.html">Flash</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash 모듈에 대한 구조체이다. Flash 모듈은 Device의 플래시를 제어 할 수 있다.  <a href="struct__Flash.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -151,6 +161,51 @@ Functions</h2></td></tr>
 <tr class="memitem:aa7490eb5833cc7775d2da420a30b94fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#aa7490eb5833cc7775d2da420a30b94fb">VibrationLong</a> (Vibration this_gen)</td></tr>
 <tr class="memdesc:aa7490eb5833cc7775d2da420a30b94fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">긴 시간만큼 device를 진동 시킨다. (<b>1.5초</b>)  <a href="#aa7490eb5833cc7775d2da420a30b94fb">More...</a><br/></td></tr>
 <tr class="separator:aa7490eb5833cc7775d2da420a30b94fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239d9485c4000ae77b11e5f12378f95f"><td class="memItemLeft" align="right" valign="top">Display&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f">NewDisplay</a> (void)</td></tr>
+<tr class="memdesc:a239d9485c4000ae77b11e5f12378f95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">새로운 Display 객체를 생성한다.  <a href="#a239d9485c4000ae77b11e5f12378f95f">More...</a><br/></td></tr>
+<tr class="separator:a239d9485c4000ae77b11e5f12378f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18ddc0342d1ca47145c759a8fa35d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#aa18ddc0342d1ca47145c759a8fa35d91">DestroyDisplay</a> (Display this_gen)</td></tr>
+<tr class="memdesc:aa18ddc0342d1ca47145c759a8fa35d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성한 Display 객체를 소멸 시킨다.  <a href="#aa18ddc0342d1ca47145c759a8fa35d91">More...</a><br/></td></tr>
+<tr class="separator:aa18ddc0342d1ca47145c759a8fa35d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45616f571bc7211e0749656b85b3baab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab">DisplayLock</a> (Display this_gen)</td></tr>
+<tr class="memdesc:a45616f571bc7211e0749656b85b3baab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device의 화면을 강제로 끈다.(잠금)  <a href="#a45616f571bc7211e0749656b85b3baab">More...</a><br/></td></tr>
+<tr class="separator:a45616f571bc7211e0749656b85b3baab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66aaebf66d63ec1555c4226f4154ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca">DisplayUnlock</a> (Display this_gen)</td></tr>
+<tr class="memdesc:a9e66aaebf66d63ec1555c4226f4154ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device의 꺼진 화면을 다시 켠다.  <a href="#a9e66aaebf66d63ec1555c4226f4154ca">More...</a><br/></td></tr>
+<tr class="separator:a9e66aaebf66d63ec1555c4226f4154ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d4bf5e52fdb81d5d8d83f8b22569b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2">DisplayDim</a> (Display this_gen)</td></tr>
+<tr class="memdesc:a35d4bf5e52fdb81d5d8d83f8b22569b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device의 화면을 어둡게 한다.  <a href="#a35d4bf5e52fdb81d5d8d83f8b22569b2">More...</a><br/></td></tr>
+<tr class="separator:a35d4bf5e52fdb81d5d8d83f8b22569b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf038dea7a71738b751dfdd3ce88ebf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9">getDisplayBrightLevel</a> (Display this_gen)</td></tr>
+<tr class="memdesc:abf038dea7a71738b751dfdd3ce88ebf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 화면의 밝기 값을 반환 한다.  <a href="#abf038dea7a71738b751dfdd3ce88ebf9">More...</a><br/></td></tr>
+<tr class="separator:abf038dea7a71738b751dfdd3ce88ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce601f6c832e1d4f587fec0a1ddaa86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86">setDisplayBrightLevel</a> (Display this_gen, int brightLevel)</td></tr>
+<tr class="memdesc:a2ce601f6c832e1d4f587fec0a1ddaa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 화면의 밝기 값을 설정 한다.  <a href="#a2ce601f6c832e1d4f587fec0a1ddaa86">More...</a><br/></td></tr>
+<tr class="separator:a2ce601f6c832e1d4f587fec0a1ddaa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe7ab1f89e01e459f94bdecce693301"><td class="memItemLeft" align="right" valign="top">Battery&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a0fe7ab1f89e01e459f94bdecce693301">NewBattery</a> (void)</td></tr>
+<tr class="memdesc:a0fe7ab1f89e01e459f94bdecce693301"><td class="mdescLeft">&#160;</td><td class="mdescRight">새로운 Battery 객체를 생성한다.  <a href="#a0fe7ab1f89e01e459f94bdecce693301">More...</a><br/></td></tr>
+<tr class="separator:a0fe7ab1f89e01e459f94bdecce693301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b69d107b6708af6900d4279eeff281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a01b69d107b6708af6900d4279eeff281">DestoryBattery</a> (Battery this_gen)</td></tr>
+<tr class="memdesc:a01b69d107b6708af6900d4279eeff281"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성한 Battery 객체를 소멸 시킨다.  <a href="#a01b69d107b6708af6900d4279eeff281">More...</a><br/></td></tr>
+<tr class="separator:a01b69d107b6708af6900d4279eeff281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983756d9f5b610b7d60c545546321b23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a983756d9f5b610b7d60c545546321b23">getBatteryRemainsPercent</a> (Battery this_gen)</td></tr>
+<tr class="memdesc:a983756d9f5b610b7d60c545546321b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 배터리의 잔량을 반환 한다.  <a href="#a983756d9f5b610b7d60c545546321b23">More...</a><br/></td></tr>
+<tr class="separator:a983756d9f5b610b7d60c545546321b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fec730c212903458752e7fe4582636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#af3fec730c212903458752e7fe4582636">isBatteryCharging</a> (Battery this_gen)</td></tr>
+<tr class="memdesc:af3fec730c212903458752e7fe4582636"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 배터리의 충전 상태 여부를 반환 한다.  <a href="#af3fec730c212903458752e7fe4582636">More...</a><br/></td></tr>
+<tr class="separator:af3fec730c212903458752e7fe4582636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503e0814548cc9f370f87a3359187bff"><td class="memItemLeft" align="right" valign="top">Flash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a503e0814548cc9f370f87a3359187bff">NewFlash</a> (void)</td></tr>
+<tr class="memdesc:a503e0814548cc9f370f87a3359187bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">새로운 Flash 객체를 생성한다.  <a href="#a503e0814548cc9f370f87a3359187bff">More...</a><br/></td></tr>
+<tr class="separator:a503e0814548cc9f370f87a3359187bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0567730f41384d32902ef2b7c4b242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a4d0567730f41384d32902ef2b7c4b242">DestoryFlash</a> (Flash this_gen)</td></tr>
+<tr class="memdesc:a4d0567730f41384d32902ef2b7c4b242"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성한 Flash 객체를 소멸 시킨다.  <a href="#a4d0567730f41384d32902ef2b7c4b242">More...</a><br/></td></tr>
+<tr class="separator:a4d0567730f41384d32902ef2b7c4b242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27939143d46a5f253038f0a08a781a80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a27939143d46a5f253038f0a08a781a80">onFlash</a> (void)</td></tr>
+<tr class="memdesc:a27939143d46a5f253038f0a08a781a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">후면 카메라의 플래시를 켠다.  <a href="#a27939143d46a5f253038f0a08a781a80">More...</a><br/></td></tr>
+<tr class="separator:a27939143d46a5f253038f0a08a781a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652cf60a29c20901662a9ec231d8ce5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DeviceStatus_8h.html#a652cf60a29c20901662a9ec231d8ce5a">offFlash</a> (void)</td></tr>
+<tr class="memdesc:a652cf60a29c20901662a9ec231d8ce5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">후면 카메라의 플래시를 끈다.  <a href="#a652cf60a29c20901662a9ec231d8ce5a">More...</a><br/></td></tr>
+<tr class="separator:a652cf60a29c20901662a9ec231d8ce5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Device Status API 를 사용하기 위해 포함해야 하는 헤더이다. </p>
@@ -191,7 +246,209 @@ vibration</td>
 
 </div>
 </div>
+<a name="structDisplayExtend" id="structDisplayExtend"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct DisplayExtend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+Collaboration diagram for DisplayExtend:</div>
+<div class="dyncontent">
+<div class="center"><img src="structDisplayExtend__coll__graph.png" border="0" usemap="#DisplayExtend_coll__map" alt="Collaboration graph"/></div>
+<map name="DisplayExtend_coll__map" id="DisplayExtend_coll__map">
+<area shape="rect" id="node2" href="struct__Display.html" title="Display 모듈에 대한 구조체이다. Display 모듈은 다양한 방식으로 화면을 조절 할 수 있다. " alt="" coords="14,6,100,151"/></map>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7447c53232b296a956e700ec1f3f2c91"></a>int</td>
+<td class="fieldname">
+brightLevel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a41376b520eec6c1d5394af491d6d69db"></a>struct <a class="el" href="struct__Display.html">_Display</a></td>
+<td class="fieldname">
+display</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad1891428021081291916d10a3d05faee"></a>display_state_e</td>
+<td class="fieldname">
+state</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structBatteryExtend" id="structBatteryExtend"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct BatteryExtend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+Collaboration diagram for BatteryExtend:</div>
+<div class="dyncontent">
+<div class="center"><img src="structBatteryExtend__coll__graph.png" border="0" usemap="#BatteryExtend_coll__map" alt="Collaboration graph"/></div>
+<map name="BatteryExtend_coll__map" id="BatteryExtend_coll__map">
+<area shape="rect" id="node2" href="struct__Battery.html" title="Battery 모듈에 대한 구조체이다. Battery 모듈은 배터리의 정보를 읽어 올 수 있다. " alt="" coords="9,6,105,103"/></map>
+</div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac39ade3785d649744eaf2d3be3ebcf02"></a>struct <a class="el" href="struct__Battery.html">_Battery</a></td>
+<td class="fieldname">
+battery</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a296ffb7b6a3efd5917ba5e7d73a07872"></a>int</td>
+<td class="fieldname">
+batteryLevel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7039f4a1ed5b5ee52949f072e28b5e34"></a>bool</td>
+<td class="fieldname">
+charging</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a01b69d107b6708af6900d4279eeff281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DestoryBattery </td>
+          <td>(</td>
+          <td class="paramtype">Battery&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성한 Battery 객체를 소멸 시킨다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>소멸시킬 Battery 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>생성한 Battery 객체를 소멸 시킨다. <br/>
+ Battery 객체를 사용한 후 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. ">NewBattery</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4d0567730f41384d32902ef2b7c4b242"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DestoryFlash </td>
+          <td>(</td>
+          <td class="paramtype">Flash&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성한 Flash 객체를 소멸 시킨다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>소멸시킬 Flash 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>생성한 Flash 객체를 소멸 시킨다. <br/>
+ Flash 객체를 사용한 후 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. ">NewFlash</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>feature</b> <br/>
+<ul>
+<li><a href="http://tizen.org/feature/led">http://tizen.org/feature/led</a> <br/>
+</li>
+<li><a href="http://tizen.org/feature/camera.back.flash">http://tizen.org/feature/camera.back.flash</a> <br/>
+</li>
+</ul>
+</dd>
+<dd>
+<b>priviledge</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/led">http://tizen.org/privilege/led</a> <br/>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa18ddc0342d1ca47145c759a8fa35d91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DestroyDisplay </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성한 Display 객체를 소멸 시킨다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>소멸시킬 Display 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>생성한 Display 객체를 소멸 시킨다. <br/>
+ Display 객체를 사용한 후 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a336e3f65421006097670aec144c07e4a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +533,553 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c_icgraph.png" border="0" usemap="#DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c_icgraph" alt=""/></div>
 <map name="DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c_icgraph" id="DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c_icgraph">
-<area shape="rect" id="node2" href="DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="222,5,341,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="229,57,334,85"/><area shape="rect" id="node5" href="DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="225,109,338,137"/><area shape="rect" id="node6" href="DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="230,161,333,189"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266" title="새로운 Vibration 객체를 생성한다. " alt="" coords="390,83,490,111"/></map>
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="252,5,372,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="259,57,365,85"/><area shape="rect" id="node5" href="DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="256,109,369,137"/><area shape="rect" id="node6" href="DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="260,161,364,189"/><area shape="rect" id="node7" href="DeviceStatus_8c.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) " alt="" coords="265,213,359,241"/><area shape="rect" id="node9" href="DeviceStatus_8c.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. " alt="" coords="259,265,365,293"/><area shape="rect" id="node10" href="DeviceStatus_8c.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. " alt="" coords="268,317,356,345"/><area shape="rect" id="node11" href="DeviceStatus_8c.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. " alt="" coords="237,369,387,397"/><area shape="rect" id="node12" href="DeviceStatus_8c.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. " alt="" coords="237,421,387,449"/><area shape="rect" id="node13" href="DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. " alt="" coords="222,473,402,501"/><area shape="rect" id="node15" href="DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. " alt="" coords="248,525,376,553"/><area shape="rect" id="node16" href="DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc" title="후면 카메라의 플래시를 켠다. " alt="" coords="278,577,346,605"/><area shape="rect" id="node18" href="DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4" title="후면 카메라의 플래시를 끈다. " alt="" coords="278,629,346,657"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266" title="새로운 Vibration 객체를 생성한다. " alt="" coords="451,83,552,111"/><area shape="rect" id="node8" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="455,317,547,345"/><area shape="rect" id="node14" href="DeviceStatus_8c.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. " alt="" coords="456,513,546,541"/><area shape="rect" id="node17" href="DeviceStatus_8c.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. " alt="" coords="461,590,542,618"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a35d4bf5e52fdb81d5d8d83f8b22569b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DisplayDim </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device의 화면을 어둡게 한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>어둡게 할 Display 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Device의 화면을 어둡게 한다. <br/>
+ 이 때의 화면 밝기는 10% 이다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) ">DisplayLock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. ">DisplayUnlock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. ">getDisplayBrightLevel</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. ">setDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_cgraph.png" border="0" usemap="#DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_cgraph" id="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="144,5,312,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_icgraph.png" border="0" usemap="#DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_icgraph" id="DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="145,5,237,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a45616f571bc7211e0749656b85b3baab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DisplayLock </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device의 화면을 강제로 끈다.(잠금) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>강제로 끌 Display 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Device의 화면을 강제로 끈다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. ">DisplayUnlock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. ">DisplayDim</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. ">getDisplayBrightLevel</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. ">setDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_cgraph.png" border="0" usemap="#DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_cgraph" id="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="147,5,314,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_icgraph.png" border="0" usemap="#DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_icgraph" id="DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="147,5,239,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e66aaebf66d63ec1555c4226f4154ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DisplayUnlock </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device의 꺼진 화면을 다시 켠다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>다시 켤 Display 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Device의 꺼진 화면을 다시 켠다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) ">DisplayLock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. ">DisplayDim</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. ">getDisplayBrightLevel</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. ">setDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_cgraph.png" border="0" usemap="#DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_cgraph" id="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="160,5,328,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_icgraph.png" border="0" usemap="#DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_icgraph" id="DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="161,5,253,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a983756d9f5b610b7d60c545546321b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getBatteryRemainsPercent </td>
+          <td>(</td>
+          <td class="paramtype">Battery&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>현재 배터리의 잔량을 반환 한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>배터리 잔량을 반환 할 Battery 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>배터리 잔량은 % 단위로 <code>0</code> ~ <code>100의</code> 값을 가진다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>현재 배터리의 잔량을 반환 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. ">NewBattery</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. ">isBatteryCharging</a> </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_cgraph.png" border="0" usemap="#DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_cgraph" id="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="235,5,402,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_icgraph.png" border="0" usemap="#DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_icgraph" id="DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. " alt="" coords="235,5,325,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abf038dea7a71738b751dfdd3ce88ebf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getDisplayBrightLevel </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>현재 화면의 밝기 값을 반환 한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>밝기 값을 반환 할 Display 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>현재 화면 밝기(%) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>현재 화면의 밝기 값을 반환 한다. <br/>
+ 밝기 값은 % 단위로 0 ~ 100의 값을 가진다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) ">DisplayLock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. ">DisplayUnlock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. ">DisplayDim</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. ">setDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_cgraph.png" border="0" usemap="#DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_cgraph" id="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="206,5,373,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_icgraph.png" border="0" usemap="#DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_icgraph" id="DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="206,5,298,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af3fec730c212903458752e7fe4582636"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isBatteryCharging </td>
+          <td>(</td>
+          <td class="paramtype">Battery&#160;</td>
+          <td class="paramname"><em>this_gen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>현재 배터리의 충전 상태 여부를 반환 한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>충전 상태 여부를 반환 할 Battery 객체 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>현재 배터리의 충전 상태 여부를 반환 한다. <br/>
+ 충전 중 이라면 <code>true</code>, 충전 중이 아니라면 <code>false를</code> 반환한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. ">NewBattery</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. ">getBatteryRemainsPercent</a> </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_cgraph.png" border="0" usemap="#DeviceStatus_8h_af3fec730c212903458752e7fe4582636_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_cgraph" id="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="182,5,349,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_icgraph.png" border="0" usemap="#DeviceStatus_8h_af3fec730c212903458752e7fe4582636_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_icgraph" id="DeviceStatus_8h_af3fec730c212903458752e7fe4582636_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. " alt="" coords="182,5,272,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fe7ab1f89e01e459f94bdecce693301"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Battery NewBattery </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>새로운 Battery 객체를 생성한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Battery</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>새로운 Battery 객체를 생성한다. <br/>
+ Battery 객체를 사용하기 전에 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a01b69d107b6708af6900d4279eeff281" title="생성한 Battery 객체를 소멸 시킨다. ">DestoryBattery</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. ">getBatteryRemainsPercent</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. ">isBatteryCharging</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>사용이 끝났을 때 <a class="el" href="DeviceStatus_8h.html#a01b69d107b6708af6900d4279eeff281" title="생성한 Battery 객체를 소멸 시킨다. ">DestoryBattery()</a> 함수를 꼭 사용해야 한다.</dd></dl>
+<div class="fragment"><div class="line">Battery <a class="code" href="DeviceStatus_8h.html#a0fe7ab1f89e01e459f94bdecce693301">NewBattery</a> (<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="DeviceStatus_8h.html#structBatteryExtend">BatteryExtend</a> * <span class="keyword">this</span> = (<a class="code" href="DeviceStatus_8h.html#structBatteryExtend">BatteryExtend</a> *)malloc (<span class="keyword">sizeof</span> (<a class="code" href="DeviceStatus_8h.html#structBatteryExtend">BatteryExtend</a>));</div>
+<div class="line"></div>
+<div class="line">    this-&gt;battery.getLevel   = <a class="code" href="DeviceStatus_8h.html#a983756d9f5b610b7d60c545546321b23">getBatteryRemainsPercent</a>;</div>
+<div class="line">    this-&gt;battery.isCharging = <a class="code" href="DeviceStatus_8h.html#af3fec730c212903458752e7fe4582636">isBatteryCharging</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> &amp;this-&gt;battery;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301_cgraph.png" border="0" usemap="#DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301_cgraph" id="DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. " alt="" coords="144,5,325,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. " alt="" coords="171,57,298,85"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="374,31,541,59"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a239d9485c4000ae77b11e5f12378f95f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Display NewDisplay </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>새로운 Display 객체를 생성한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Display</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>새로운 Display 객체를 생성한다. <br/>
+ Display 객체를 사용하기 전에 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#aa18ddc0342d1ca47145c759a8fa35d91" title="생성한 Display 객체를 소멸 시킨다. ">DestroyDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) ">DisplayLock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. ">DisplayUnlock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. ">DisplayDim</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. ">getDisplayBrightLevel</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. ">setDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>사용이 끝났을 때 <a class="el" href="DeviceStatus_8h.html#aa18ddc0342d1ca47145c759a8fa35d91" title="생성한 Display 객체를 소멸 시킨다. ">DestroyDisplay()</a> 함수를 꼭 사용해야 한다.</dd></dl>
+<div class="fragment"><div class="line">Display <a class="code" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f">NewDisplay</a> (<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="DeviceStatus_8h.html#structDisplayExtend">DisplayExtend</a> * <span class="keyword">this</span> = (<a class="code" href="DeviceStatus_8h.html#structDisplayExtend">DisplayExtend</a> *)malloc (<span class="keyword">sizeof</span> (<a class="code" href="DeviceStatus_8h.html#structDisplayExtend">DisplayExtend</a>));</div>
+<div class="line"></div>
+<div class="line">    this-&gt;display.Lock      = <a class="code" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab">DisplayLock</a>;</div>
+<div class="line">    this-&gt;display.Unlock    = <a class="code" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca">DisplayUnlock</a>;</div>
+<div class="line">    this-&gt;display.Dim       = <a class="code" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2">DisplayDim</a>;</div>
+<div class="line">    this-&gt;display.getBright = <a class="code" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9">getDisplayBrightLevel</a>;</div>
+<div class="line">    this-&gt;display.setBright = <a class="code" href="DeviceStatus_8h.html#a2ce601f6c832e1d4f587fec0a1ddaa86">setDisplayBrightLevel</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> &amp;this-&gt;display;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f_cgraph.png" border="0" usemap="#DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f_cgraph" id="DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) " alt="" coords="176,5,269,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. " alt="" coords="170,57,276,85"/><area shape="rect" id="node5" href="DeviceStatus_8c.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. " alt="" coords="178,109,267,137"/><area shape="rect" id="node6" href="DeviceStatus_8c.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. " alt="" coords="148,161,298,189"/><area shape="rect" id="node7" href="DeviceStatus_8c.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. " alt="" coords="148,213,297,241"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="347,109,514,137"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a503e0814548cc9f370f87a3359187bff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Flash NewFlash </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>새로운 Flash 객체를 생성한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Flash</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>새로운 Flash 객체를 생성한다. <br/>
+ Display 객체를 사용하기 전에 반드시 호출해야 한다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a4d0567730f41384d32902ef2b7c4b242" title="생성한 Flash 객체를 소멸 시킨다. ">DestoryFlash</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a27939143d46a5f253038f0a08a781a80" title="후면 카메라의 플래시를 켠다. ">onFlash</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a652cf60a29c20901662a9ec231d8ce5a" title="후면 카메라의 플래시를 끈다. ">offFlash</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>feature</b> <br/>
+<ul>
+<li><a href="http://tizen.org/feature/led">http://tizen.org/feature/led</a> <br/>
+</li>
+<li><a href="http://tizen.org/feature/camera.back.flash">http://tizen.org/feature/camera.back.flash</a> <br/>
+ </li>
+</ul>
+</dd>
+<dd>
+<b>priviledge</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/led">http://tizen.org/privilege/led</a> <br/>
+ </li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>사용이 끝났을 때 <a class="el" href="DeviceStatus_8h.html#a4d0567730f41384d32902ef2b7c4b242" title="생성한 Flash 객체를 소멸 시킨다. ">DestoryFlash()</a> 함수를 꼭 사용해야 한다.</dd></dl>
+<div class="fragment"><div class="line">Flash <a class="code" href="DeviceStatus_8h.html#a503e0814548cc9f370f87a3359187bff">NewFlash</a> (<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    Flash <span class="keyword">this</span> = (Flash)malloc (<span class="keyword">sizeof</span> (<span class="keyword">struct</span> <a class="code" href="struct__Flash.html">_Flash</a>));</div>
+<div class="line"></div>
+<div class="line">    this-&gt;On  = <a class="code" href="DeviceStatus_8h.html#a27939143d46a5f253038f0a08a781a80">onFlash</a>;</div>
+<div class="line">    this-&gt;Off = <a class="code" href="DeviceStatus_8h.html#a652cf60a29c20901662a9ec231d8ce5a">offFlash</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff_cgraph.png" border="0" usemap="#DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff_cgraph" id="DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc" title="후면 카메라의 플래시를 켠다. " alt="" coords="134,5,202,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4" title="후면 카메라의 플래시를 끈다. " alt="" coords="134,57,202,85"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="251,31,418,59"/></map>
 </div>
 </p>
 
@@ -343,6 +1146,219 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph.png" border="0" usemap="#DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph" alt=""/></div>
 <map name="DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph" id="DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph">
 <area shape="rect" id="node2" href="DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="155,5,274,33"/><area shape="rect" id="node4" href="DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="162,57,267,85"/><area shape="rect" id="node5" href="DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="158,109,271,137"/><area shape="rect" id="node6" href="DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="163,161,266,189"/><area shape="rect" id="node3" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="323,83,490,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a652cf60a29c20901662a9ec231d8ce5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offFlash </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>후면 카메라의 플래시를 끈다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>후면 카메라의 플래시를 끈다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. ">NewFlash</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a27939143d46a5f253038f0a08a781a80" title="후면 카메라의 플래시를 켠다. ">onFlash</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>feature</b> <br/>
+<ul>
+<li><a href="http://tizen.org/feature/led">http://tizen.org/feature/led</a> <br/>
+</li>
+<li><a href="http://tizen.org/feature/camera.back.flash">http://tizen.org/feature/camera.back.flash</a> <br/>
+</li>
+</ul>
+</dd>
+<dd>
+<b>priviledge</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/led">http://tizen.org/privilege/led</a> <br/>
+</li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_cgraph.png" border="0" usemap="#DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_cgraph" id="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="123,5,290,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_icgraph.png" border="0" usemap="#DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_icgraph" id="DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. " alt="" coords="122,5,203,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a27939143d46a5f253038f0a08a781a80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onFlash </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>후면 카메라의 플래시를 켠다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>후면 카메라의 플래시를 켠다. <br/>
+ 이 때의 밝기는 최대 밝기로 켜진다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. ">NewFlash</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a652cf60a29c20901662a9ec231d8ce5a" title="후면 카메라의 플래시를 끈다. ">offFlash</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>feature</b> <br/>
+<ul>
+<li><a href="http://tizen.org/feature/led">http://tizen.org/feature/led</a> <br/>
+</li>
+<li><a href="http://tizen.org/feature/camera.back.flash">http://tizen.org/feature/camera.back.flash</a> <br/>
+</li>
+</ul>
+</dd>
+<dd>
+<b>priviledge</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/led">http://tizen.org/privilege/led</a> <br/>
+</li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_cgraph.png" border="0" usemap="#DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_cgraph" id="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="123,5,290,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_icgraph.png" border="0" usemap="#DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_icgraph" id="DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. " alt="" coords="122,5,203,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ce601f6c832e1d4f587fec0a1ddaa86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool setDisplayBrightLevel </td>
+          <td>(</td>
+          <td class="paramtype">Display&#160;</td>
+          <td class="paramname"><em>this_gen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brightLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>현재 화면의 밝기 값을 설정 한다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this_gen</td><td>밝기 값을 설정 할 Display 객체 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">brightLevel</td><td>밝기 값 (0 ~ 100) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><br/>
+ 함수의 성공 여부를 반환한다. <br/>
+ 실패시 <code>false를</code> 반환하며 상세한 원인을 Log로 출력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>현재 화면의 밝기 값을 설정 한다. <br/>
+ brightLevel은 % 단위로 0 ~ 100의 값을 가진다. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="DeviceStatus_8h.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. ">NewDisplay</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) ">DisplayLock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. ">DisplayUnlock</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. ">DisplayDim</a> <br/>
+ <a class="el" href="DeviceStatus_8h.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. ">getDisplayBrightLevel</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>privilege</b> <br/>
+<ul>
+<li><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a> </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_cgraph.png" border="0" usemap="#DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_cgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_cgraph" id="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_cgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="203,5,370,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_icgraph.png" border="0" usemap="#DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_icgraph" alt=""/></div>
+<map name="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_icgraph" id="DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86_icgraph">
+<area shape="rect" id="node2" href="DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="203,5,295,33"/></map>
 </div>
 </p>
 

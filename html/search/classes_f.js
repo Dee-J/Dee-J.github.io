@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ultraviolet_5fdata',['UltraViolet_data',['../Sensor_8h.html#structUltraViolet__data',1,'']]],
-  ['ultravioletextend',['UltraVioletExtend',['../Sensor_8h.html#structUltraVioletExtend',1,'']]]
+  ['temperature_5fdata',['Temperature_data',['../Sensor_8h.html#structTemperature__data',1,'']]],
+  ['temperatureextend',['TemperatureExtend',['../Sensor_8h.html#structTemperatureExtend',1,'']]]
 ];

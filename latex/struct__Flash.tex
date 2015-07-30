@@ -1,0 +1,63 @@
+\section{Flash Struct Reference}
+\label{struct__Flash}\index{Flash@{Flash}}
+
+
+Flash 모듈에 대한 구조체이다. Flash 모듈은 Device의 플래시를 제어 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Device\-Status.\-h$>$}
+
+
+
+Collaboration diagram for Flash\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{struct__Flash__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries On} )(void)\label{struct__Flash_addf1c87863a37f0555e7291d286d20a8}
+
+\item 
+bool($\ast$ {\bfseries Off} )(void)\label{struct__Flash_a7b9faa62c57653e34f49dc585f28cc4d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Flash 모듈에 대한 구조체이다. Flash 모듈은 Device의 플래시를 제어 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Device Status의 Flash 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Flash()}{p.}{DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destory\-Flash()}{p.}{DeviceStatus_8h_a4d0567730f41384d32902ef2b7c4b242} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Flash(\-L\-E\-D) part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/led} \par
+
+\item {\tt http\-://tizen.\-org/feature/camera.\-back.\-flash} \par
+
+\end{DoxyItemize}
+
+{\bfseries priviledge} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/led} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Device\-Status.\-h}\end{DoxyCompactItemize}

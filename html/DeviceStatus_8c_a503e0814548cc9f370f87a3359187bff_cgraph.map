@@ -1,0 +1,5 @@
+<map id="NewFlash" name="NewFlash">
+<area shape="rect" id="node2" href="$DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc" title="후면 카메라의 플래시를 켠다. " alt="" coords="134,5,202,33"/>
+<area shape="rect" id="node4" href="$DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4" title="후면 카메라의 플래시를 끈다. " alt="" coords="134,57,202,85"/>
+<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="251,31,418,59"/>
+</map>

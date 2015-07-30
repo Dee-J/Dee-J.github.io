@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vibrationextend',['VibrationExtend',['../DeviceStatus_8h.html#structVibrationExtend',1,'']]],
-  ['videoextends',['VideoExtends',['../File_8h.html#structVideoExtends',1,'']]]
+  ['ultraviolet_5fdata',['UltraViolet_data',['../Sensor_8h.html#structUltraViolet__data',1,'']]],
+  ['ultravioletextend',['UltraVioletExtend',['../Sensor_8h.html#structUltraVioletExtend',1,'']]]
 ];

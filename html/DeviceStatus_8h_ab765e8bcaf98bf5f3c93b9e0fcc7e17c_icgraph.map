@@ -1,7 +1,19 @@
 <map id="DeviceStatusErrorCheck" name="DeviceStatusErrorCheck">
-<area shape="rect" id="node2" href="$DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="222,5,341,33"/>
-<area shape="rect" id="node4" href="$DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="229,57,334,85"/>
-<area shape="rect" id="node5" href="$DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="225,109,338,137"/>
-<area shape="rect" id="node6" href="$DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="230,161,333,189"/>
-<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266" title="새로운 Vibration 객체를 생성한다. " alt="" coords="390,83,490,111"/>
+<area shape="rect" id="node2" href="$DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="252,5,372,33"/>
+<area shape="rect" id="node4" href="$DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="259,57,365,85"/>
+<area shape="rect" id="node5" href="$DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="256,109,369,137"/>
+<area shape="rect" id="node6" href="$DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="260,161,364,189"/>
+<area shape="rect" id="node7" href="$DeviceStatus_8c.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) " alt="" coords="265,213,359,241"/>
+<area shape="rect" id="node9" href="$DeviceStatus_8c.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. " alt="" coords="259,265,365,293"/>
+<area shape="rect" id="node10" href="$DeviceStatus_8c.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. " alt="" coords="268,317,356,345"/>
+<area shape="rect" id="node11" href="$DeviceStatus_8c.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. " alt="" coords="237,369,387,397"/>
+<area shape="rect" id="node12" href="$DeviceStatus_8c.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. " alt="" coords="237,421,387,449"/>
+<area shape="rect" id="node13" href="$DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. " alt="" coords="222,473,402,501"/>
+<area shape="rect" id="node15" href="$DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. " alt="" coords="248,525,376,553"/>
+<area shape="rect" id="node16" href="$DeviceStatus_8c.html#a66766e7ced714f362745ea3c09eac6fc" title="후면 카메라의 플래시를 켠다. " alt="" coords="278,577,346,605"/>
+<area shape="rect" id="node18" href="$DeviceStatus_8c.html#a7ab736323af55d4846ceec0dd746b4a4" title="후면 카메라의 플래시를 끈다. " alt="" coords="278,629,346,657"/>
+<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266" title="새로운 Vibration 객체를 생성한다. " alt="" coords="451,83,552,111"/>
+<area shape="rect" id="node8" href="$DeviceStatus_8c.html#a239d9485c4000ae77b11e5f12378f95f" title="새로운 Display 객체를 생성한다. " alt="" coords="455,317,547,345"/>
+<area shape="rect" id="node14" href="$DeviceStatus_8c.html#a0fe7ab1f89e01e459f94bdecce693301" title="새로운 Battery 객체를 생성한다. " alt="" coords="456,513,546,541"/>
+<area shape="rect" id="node17" href="$DeviceStatus_8c.html#a503e0814548cc9f370f87a3359187bff" title="새로운 Flash 객체를 생성한다. " alt="" coords="461,590,542,618"/>
 </map>

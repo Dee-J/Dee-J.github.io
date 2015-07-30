@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['imageextends',['ImageExtends',['../File_8h.html#structImageExtends',1,'']]]
+  ['httpextends',['HttpExtends',['../Http_8h.html#structHttpExtends',1,'']]],
+  ['humidity_5fdata',['Humidity_data',['../Sensor_8h.html#structHumidity__data',1,'']]],
+  ['humidityextend',['HumidityExtend',['../Sensor_8h.html#structHumidityExtend',1,'']]]
 ];

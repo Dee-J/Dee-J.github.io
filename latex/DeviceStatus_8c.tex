@@ -13,8 +13,7 @@ Device Status A\-P\-I가 정의되어있다.
 {\ttfamily \#include $<$device/led.\-h$>$}\\*
 {\ttfamily \#include $<$device/haptic.\-h$>$}\\*
 {\ttfamily \#include $<$dlog.\-h$>$}\\*
-Include dependency graph for Device\-Status.\-c\-:
-\nopagebreak
+Include dependency graph for Device\-Status.\-c\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,51 +37,36 @@ bool {\bf Vibration\-Middle} (Vibration this\-\_\-gen)
 \begin{DoxyCompactList}\small\item\em 중간 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-5초}) \end{DoxyCompactList}\item 
 bool {\bf Vibration\-Long} (Vibration this\-\_\-gen)
 \begin{DoxyCompactList}\small\item\em 긴 시간만큼 device를 진동 시킨다. ({\bfseries 1.\-5초}) \end{DoxyCompactList}\item 
-Display {\bfseries New\-Display} (void)\label{DeviceStatus_8c_a239d9485c4000ae77b11e5f12378f95f}
-
-\item 
-void {\bfseries Destroy\-Display} (Display this\-\_\-gen)\label{DeviceStatus_8c_aa18ddc0342d1ca47145c759a8fa35d91}
-
-\item 
-bool {\bfseries Display\-Lock} (Display this\-\_\-gen)\label{DeviceStatus_8c_a45616f571bc7211e0749656b85b3baab}
-
-\item 
-bool {\bfseries Display\-Unlock} (Display this\-\_\-gen)\label{DeviceStatus_8c_a9e66aaebf66d63ec1555c4226f4154ca}
-
-\item 
-bool {\bfseries Display\-Dim} (Display this\-\_\-gen)\label{DeviceStatus_8c_a35d4bf5e52fdb81d5d8d83f8b22569b2}
-
-\item 
-int {\bfseries get\-Display\-Bright\-Level} (Display this\-\_\-gen)\label{DeviceStatus_8c_abf038dea7a71738b751dfdd3ce88ebf9}
-
-\item 
-bool {\bfseries set\-Display\-Bright\-Level} (Display this\-\_\-gen, int bright\-Level)\label{DeviceStatus_8c_a2ce601f6c832e1d4f587fec0a1ddaa86}
-
-\item 
-Battery {\bfseries New\-Battery} (void)\label{DeviceStatus_8c_a0fe7ab1f89e01e459f94bdecce693301}
-
-\item 
-void {\bfseries Destory\-Battery} (Battery this\-\_\-gen)\label{DeviceStatus_8c_a01b69d107b6708af6900d4279eeff281}
-
-\item 
-int {\bfseries get\-Battery\-Remains\-Percent} (Battery this\-\_\-gen)\label{DeviceStatus_8c_a983756d9f5b610b7d60c545546321b23}
-
-\item 
-bool {\bfseries is\-Battery\-Charging} (Battery this\-\_\-gen)\label{DeviceStatus_8c_af3fec730c212903458752e7fe4582636}
-
-\item 
-Flash {\bfseries New\-Flash} (void)\label{DeviceStatus_8c_a503e0814548cc9f370f87a3359187bff}
-
-\item 
-void {\bfseries Destory\-Flash} (Flash this\-\_\-gen)\label{DeviceStatus_8c_a4d0567730f41384d32902ef2b7c4b242}
-
-\item 
-bool {\bfseries on\-Flash} (void)\label{DeviceStatus_8c_a66766e7ced714f362745ea3c09eac6fc}
-
-\item 
-bool {\bfseries off\-Flash} (void)\label{DeviceStatus_8c_a7ab736323af55d4846ceec0dd746b4a4}
-
-\end{DoxyCompactItemize}
+Display {\bf New\-Display} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Display 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Display} (Display this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Display 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf Display\-Lock} (Display this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Device의 화면을 강제로 끈다.(잠금) \end{DoxyCompactList}\item 
+bool {\bf Display\-Unlock} (Display this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Device의 꺼진 화면을 다시 켠다. \end{DoxyCompactList}\item 
+bool {\bf Display\-Dim} (Display this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Device의 화면을 어둡게 한다. \end{DoxyCompactList}\item 
+int {\bf get\-Display\-Bright\-Level} (Display this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 화면의 밝기 값을 반환 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Display\-Bright\-Level} (Display this\-\_\-gen, int bright\-Level)
+\begin{DoxyCompactList}\small\item\em 현재 화면의 밝기 값을 설정 한다. \end{DoxyCompactList}\item 
+Battery {\bf New\-Battery} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Battery 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destory\-Battery} (Battery this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Battery 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+int {\bf get\-Battery\-Remains\-Percent} (Battery this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 배터리의 잔량을 반환 한다. \end{DoxyCompactList}\item 
+bool {\bf is\-Battery\-Charging} (Battery this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 배터리의 충전 상태 여부를 반환 한다. \end{DoxyCompactList}\item 
+Flash {\bf New\-Flash} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Flash 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destory\-Flash} (Flash this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Flash 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf on\-Flash} (void)
+\begin{DoxyCompactList}\small\item\em 후면 카메라의 플래시를 켠다. \end{DoxyCompactList}\item 
+bool {\bf off\-Flash} (void)
+\begin{DoxyCompactList}\small\item\em 후면 카메라의 플래시를 끈다. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -95,6 +79,120 @@ Device Status A\-P\-I가 정의되어있다.
 
 
 \subsection{Function Documentation}
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Destory\-Battery@{Destory\-Battery}}
+\index{Destory\-Battery@{Destory\-Battery}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Destory\-Battery}]{\setlength{\rightskip}{0pt plus 5cm}void Destory\-Battery (
+\begin{DoxyParamCaption}
+\item[{Battery}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a01b69d107b6708af6900d4279eeff281}
+
+
+생성한 Battery 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Battery 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Battery 객체를 소멸 시킨다. \par
+ Battery 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Battery}{p.}{DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301} 
+\end{DoxySeeAlso}
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Destory\-Flash@{Destory\-Flash}}
+\index{Destory\-Flash@{Destory\-Flash}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Destory\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}void Destory\-Flash (
+\begin{DoxyParamCaption}
+\item[{Flash}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a4d0567730f41384d32902ef2b7c4b242}
+
+
+생성한 Flash 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Flash 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Flash 객체를 소멸 시킨다. \par
+ Flash 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Flash}{p.}{DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/led} \par
+
+\item {\tt http\-://tizen.\-org/feature/camera.\-back.\-flash} \par
+
+\end{DoxyItemize}
+
+{\bfseries priviledge} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/led} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Destroy\-Display@{Destroy\-Display}}
+\index{Destroy\-Display@{Destroy\-Display}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Destroy\-Display}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Display (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_aa18ddc0342d1ca47145c759a8fa35d91}
+
+
+생성한 Display 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Display 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Display 객체를 소멸 시킨다. \par
+ Display 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
 \index{Device\-Status.\-c@{Device\-Status.\-c}!Destroy\-Vibration@{Destroy\-Vibration}}
 \index{Destroy\-Vibration@{Destroy\-Vibration}!DeviceStatus.c@{Device\-Status.\-c}}
 \subsubsection[{Destroy\-Vibration}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Vibration (
@@ -179,12 +277,578 @@ Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
 \end{DoxySeeAlso}
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{DeviceStatus_8c_a945d238478c332d3a5f212cd5b1f9946_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Display\-Dim@{Display\-Dim}}
+\index{Display\-Dim@{Display\-Dim}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Display\-Dim}]{\setlength{\rightskip}{0pt plus 5cm}bool Display\-Dim (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a35d4bf5e52fdb81d5d8d83f8b22569b2}
+
+
+Device의 화면을 어둡게 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 어둡게 할 Display 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Device의 화면을 어둡게 한다. \par
+ 이 때의 화면 밝기는 10\% 이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} \par
+ \doxyref{Display\-Lock}{p.}{DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab} \par
+ \doxyref{Display\-Unlock}{p.}{DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca} \par
+ \doxyref{get\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9} \par
+ \doxyref{set\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{DeviceStatus_8c_a35d4bf5e52fdb81d5d8d83f8b22569b2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{DeviceStatus_8c_a35d4bf5e52fdb81d5d8d83f8b22569b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Display\-Lock@{Display\-Lock}}
+\index{Display\-Lock@{Display\-Lock}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Display\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}bool Display\-Lock (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a45616f571bc7211e0749656b85b3baab}
+
+
+Device의 화면을 강제로 끈다.(잠금) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 강제로 끌 Display 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Device의 화면을 강제로 끈다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} \par
+ \doxyref{Display\-Unlock}{p.}{DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca} \par
+ \doxyref{Display\-Dim}{p.}{DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2} \par
+ \doxyref{get\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9} \par
+ \doxyref{set\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{DeviceStatus_8c_a45616f571bc7211e0749656b85b3baab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{DeviceStatus_8c_a45616f571bc7211e0749656b85b3baab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Display\-Unlock@{Display\-Unlock}}
+\index{Display\-Unlock@{Display\-Unlock}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Display\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}bool Display\-Unlock (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a9e66aaebf66d63ec1555c4226f4154ca}
+
+
+Device의 꺼진 화면을 다시 켠다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 다시 켤 Display 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Device의 꺼진 화면을 다시 켠다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} \par
+ \doxyref{Display\-Lock}{p.}{DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab} \par
+ \doxyref{Display\-Dim}{p.}{DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2} \par
+ \doxyref{get\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9} \par
+ \doxyref{set\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{DeviceStatus_8c_a9e66aaebf66d63ec1555c4226f4154ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{DeviceStatus_8c_a9e66aaebf66d63ec1555c4226f4154ca_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!get\-Battery\-Remains\-Percent@{get\-Battery\-Remains\-Percent}}
+\index{get\-Battery\-Remains\-Percent@{get\-Battery\-Remains\-Percent}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{get\-Battery\-Remains\-Percent}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Battery\-Remains\-Percent (
+\begin{DoxyParamCaption}
+\item[{Battery}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a983756d9f5b610b7d60c545546321b23}
+
+
+현재 배터리의 잔량을 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 배터리 잔량을 반환 할 Battery 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & 배터리 잔량은 \% 단위로 {\ttfamily 0} $\sim$ {\ttfamily 100의} 값을 가진다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 배터리의 잔량을 반환 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Battery}{p.}{DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301} \par
+ \doxyref{is\-Battery\-Charging}{p.}{DeviceStatus_8h_af3fec730c212903458752e7fe4582636} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_a983756d9f5b610b7d60c545546321b23_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{DeviceStatus_8c_a983756d9f5b610b7d60c545546321b23_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!get\-Display\-Bright\-Level@{get\-Display\-Bright\-Level}}
+\index{get\-Display\-Bright\-Level@{get\-Display\-Bright\-Level}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{get\-Display\-Bright\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Display\-Bright\-Level (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_abf038dea7a71738b751dfdd3ce88ebf9}
+
+
+현재 화면의 밝기 값을 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 밝기 값을 반환 할 Display 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & 현재 화면 밝기(\%) \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 화면의 밝기 값을 반환 한다. \par
+ 밝기 값은 \% 단위로 0 $\sim$ 100의 값을 가진다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} \par
+ \doxyref{Display\-Lock}{p.}{DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab} \par
+ \doxyref{Display\-Unlock}{p.}{DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca} \par
+ \doxyref{Display\-Dim}{p.}{DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2} \par
+ \doxyref{set\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_abf038dea7a71738b751dfdd3ce88ebf9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{DeviceStatus_8c_abf038dea7a71738b751dfdd3ce88ebf9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!is\-Battery\-Charging@{is\-Battery\-Charging}}
+\index{is\-Battery\-Charging@{is\-Battery\-Charging}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{is\-Battery\-Charging}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Battery\-Charging (
+\begin{DoxyParamCaption}
+\item[{Battery}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_af3fec730c212903458752e7fe4582636}
+
+
+현재 배터리의 충전 상태 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 충전 상태 여부를 반환 할 Battery 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 배터리의 충전 상태 여부를 반환 한다. \par
+ 충전 중 이라면 {\ttfamily true}, 충전 중이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Battery}{p.}{DeviceStatus_8h_a0fe7ab1f89e01e459f94bdecce693301} \par
+ \doxyref{get\-Battery\-Remains\-Percent}{p.}{DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{DeviceStatus_8c_af3fec730c212903458752e7fe4582636_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{DeviceStatus_8c_af3fec730c212903458752e7fe4582636_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!New\-Battery@{New\-Battery}}
+\index{New\-Battery@{New\-Battery}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{New\-Battery}]{\setlength{\rightskip}{0pt plus 5cm}Battery New\-Battery (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a0fe7ab1f89e01e459f94bdecce693301}
+
+
+새로운 Battery 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Battery} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Battery 객체를 생성한다. \par
+ Battery 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destory\-Battery}{p.}{DeviceStatus_8h_a01b69d107b6708af6900d4279eeff281} \par
+ \doxyref{get\-Battery\-Remains\-Percent}{p.}{DeviceStatus_8h_a983756d9f5b610b7d60c545546321b23} \par
+ \doxyref{is\-Battery\-Charging}{p.}{DeviceStatus_8h_af3fec730c212903458752e7fe4582636} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destory\-Battery()}{p.}{DeviceStatus_8h_a01b69d107b6708af6900d4279eeff281} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Battery NewBattery (\textcolor{keywordtype}{void})
+\{
+    BatteryExtend * \textcolor{keyword}{this} = (BatteryExtend *)malloc (\textcolor{keyword}{sizeof} (BatteryExtend));
+
+    this->battery.getLevel   = getBatteryRemainsPercent;
+    this->battery.isCharging = isBatteryCharging;
+
+    \textcolor{keywordflow}{return} &this->battery;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_a0fe7ab1f89e01e459f94bdecce693301_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!New\-Display@{New\-Display}}
+\index{New\-Display@{New\-Display}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{New\-Display}]{\setlength{\rightskip}{0pt plus 5cm}Display New\-Display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a239d9485c4000ae77b11e5f12378f95f}
+
+
+새로운 Display 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Display} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Display 객체를 생성한다. \par
+ Display 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Display}{p.}{DeviceStatus_8h_aa18ddc0342d1ca47145c759a8fa35d91} \par
+ \doxyref{Display\-Lock}{p.}{DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab} \par
+ \doxyref{Display\-Unlock}{p.}{DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca} \par
+ \doxyref{Display\-Dim}{p.}{DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2} \par
+ \doxyref{get\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9} \par
+ \doxyref{set\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_a2ce601f6c832e1d4f587fec0a1ddaa86} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Display()}{p.}{DeviceStatus_8h_aa18ddc0342d1ca47145c759a8fa35d91} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Display NewDisplay (\textcolor{keywordtype}{void})
+\{
+    DisplayExtend * \textcolor{keyword}{this} = (DisplayExtend *)malloc (\textcolor{keyword}{sizeof} (DisplayExtend));
+
+    this->display.Lock      = DisplayLock;
+    this->display.Unlock    = DisplayUnlock;
+    this->display.Dim       = DisplayDim;
+    this->display.getBright = getDisplayBrightLevel;
+    this->display.setBright = setDisplayBrightLevel;
+
+    \textcolor{keywordflow}{return} &this->display;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_a239d9485c4000ae77b11e5f12378f95f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!New\-Flash@{New\-Flash}}
+\index{New\-Flash@{New\-Flash}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{New\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}Flash New\-Flash (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a503e0814548cc9f370f87a3359187bff}
+
+
+새로운 Flash 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Flash} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Flash 객체를 생성한다. \par
+ Display 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destory\-Flash}{p.}{DeviceStatus_8h_a4d0567730f41384d32902ef2b7c4b242} \par
+ \doxyref{on\-Flash}{p.}{DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80} \par
+ \doxyref{off\-Flash}{p.}{DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/led} \par
+
+\item {\tt http\-://tizen.\-org/feature/camera.\-back.\-flash} \par
+ 
+\end{DoxyItemize}
+
+{\bfseries priviledge} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/led} \par
+ 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destory\-Flash()}{p.}{DeviceStatus_8h_a4d0567730f41384d32902ef2b7c4b242} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Flash NewFlash (\textcolor{keywordtype}{void})
+\{
+    Flash \textcolor{keyword}{this} = (Flash)malloc (\textcolor{keyword}{sizeof} (\textcolor{keyword}{struct} _Flash));
+
+    this->On  = onFlash;
+    this->Off = offFlash;
+
+    \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_a503e0814548cc9f370f87a3359187bff_cgraph}
 \end{center}
 \end{figure}
 
@@ -251,12 +915,222 @@ Vibration NewVibration (\textcolor{keywordtype}{void})
 \end{DoxyCode}
  
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{DeviceStatus_8c_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!off\-Flash@{off\-Flash}}
+\index{off\-Flash@{off\-Flash}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{off\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}bool off\-Flash (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a7ab736323af55d4846ceec0dd746b4a4}
+
+
+후면 카메라의 플래시를 끈다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+후면 카메라의 플래시를 끈다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Flash}{p.}{DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff} \par
+ \doxyref{on\-Flash}{p.}{DeviceStatus_8h_a27939143d46a5f253038f0a08a781a80} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/led} \par
+
+\item {\tt http\-://tizen.\-org/feature/camera.\-back.\-flash} \par
+
+\end{DoxyItemize}
+
+{\bfseries priviledge} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/led} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{DeviceStatus_8c_a7ab736323af55d4846ceec0dd746b4a4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{DeviceStatus_8c_a7ab736323af55d4846ceec0dd746b4a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!on\-Flash@{on\-Flash}}
+\index{on\-Flash@{on\-Flash}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{on\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Flash (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a66766e7ced714f362745ea3c09eac6fc}
+
+
+후면 카메라의 플래시를 켠다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+후면 카메라의 플래시를 켠다. \par
+ 이 때의 밝기는 최대 밝기로 켜진다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Flash}{p.}{DeviceStatus_8h_a503e0814548cc9f370f87a3359187bff} \par
+ \doxyref{off\-Flash}{p.}{DeviceStatus_8h_a652cf60a29c20901662a9ec231d8ce5a} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/led} \par
+
+\item {\tt http\-://tizen.\-org/feature/camera.\-back.\-flash} \par
+
+\end{DoxyItemize}
+
+{\bfseries priviledge} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/led} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{DeviceStatus_8c_a66766e7ced714f362745ea3c09eac6fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{DeviceStatus_8c_a66766e7ced714f362745ea3c09eac6fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-c@{Device\-Status.\-c}!set\-Display\-Bright\-Level@{set\-Display\-Bright\-Level}}
+\index{set\-Display\-Bright\-Level@{set\-Display\-Bright\-Level}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{set\-Display\-Bright\-Level}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Display\-Bright\-Level (
+\begin{DoxyParamCaption}
+\item[{Display}]{this\-\_\-gen, }
+\item[{int}]{bright\-Level}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a2ce601f6c832e1d4f587fec0a1ddaa86}
+
+
+현재 화면의 밝기 값을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 밝기 값을 설정 할 Display 객체 \\
+\hline
+\mbox{\tt in}  & {\em bright\-Level} & 밝기 값 (0 $\sim$ 100) \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 화면의 밝기 값을 설정 한다. \par
+ bright\-Level은 \% 단위로 0 $\sim$ 100의 값을 가진다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Display}{p.}{DeviceStatus_8h_a239d9485c4000ae77b11e5f12378f95f} \par
+ \doxyref{Display\-Lock}{p.}{DeviceStatus_8h_a45616f571bc7211e0749656b85b3baab} \par
+ \doxyref{Display\-Unlock}{p.}{DeviceStatus_8h_a9e66aaebf66d63ec1555c4226f4154ca} \par
+ \doxyref{Display\-Dim}{p.}{DeviceStatus_8h_a35d4bf5e52fdb81d5d8d83f8b22569b2} \par
+ \doxyref{get\-Display\-Bright\-Level}{p.}{DeviceStatus_8h_abf038dea7a71738b751dfdd3ce88ebf9} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c_a2ce601f6c832e1d4f587fec0a1ddaa86_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{DeviceStatus_8c_a2ce601f6c832e1d4f587fec0a1ddaa86_icgraph}
 \end{center}
 \end{figure}
 
@@ -308,8 +1182,7 @@ Here is the call graph for this function\-:
 \end{DoxyPrecond}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -320,8 +1193,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -373,8 +1245,7 @@ Here is the caller graph for this function\-:
 \end{DoxyPrecond}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -385,8 +1256,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -438,8 +1308,7 @@ Here is the caller graph for this function\-:
 \end{DoxyPrecond}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -450,8 +1319,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -503,8 +1371,7 @@ Here is the caller graph for this function\-:
 \end{DoxyPrecond}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -515,8 +1382,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

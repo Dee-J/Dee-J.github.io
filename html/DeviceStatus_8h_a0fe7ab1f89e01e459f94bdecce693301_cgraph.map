@@ -1,0 +1,5 @@
+<map id="NewBattery" name="NewBattery">
+<area shape="rect" id="node2" href="$DeviceStatus_8c.html#a983756d9f5b610b7d60c545546321b23" title="현재 배터리의 잔량을 반환 한다. " alt="" coords="144,5,325,33"/>
+<area shape="rect" id="node4" href="$DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636" title="현재 배터리의 충전 상태 여부를 반환 한다. " alt="" coords="171,57,298,85"/>
+<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="374,31,541,59"/>
+</map>

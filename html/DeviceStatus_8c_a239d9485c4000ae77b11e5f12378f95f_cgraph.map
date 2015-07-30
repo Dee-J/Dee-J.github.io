@@ -1,0 +1,8 @@
+<map id="NewDisplay" name="NewDisplay">
+<area shape="rect" id="node2" href="$DeviceStatus_8c.html#a45616f571bc7211e0749656b85b3baab" title="Device의 화면을 강제로 끈다.(잠금) " alt="" coords="176,5,269,33"/>
+<area shape="rect" id="node4" href="$DeviceStatus_8c.html#a9e66aaebf66d63ec1555c4226f4154ca" title="Device의 꺼진 화면을 다시 켠다. " alt="" coords="170,57,276,85"/>
+<area shape="rect" id="node5" href="$DeviceStatus_8c.html#a35d4bf5e52fdb81d5d8d83f8b22569b2" title="Device의 화면을 어둡게 한다. " alt="" coords="178,109,267,137"/>
+<area shape="rect" id="node6" href="$DeviceStatus_8c.html#abf038dea7a71738b751dfdd3ce88ebf9" title="현재 화면의 밝기 값을 반환 한다. " alt="" coords="148,161,298,189"/>
+<area shape="rect" id="node7" href="$DeviceStatus_8c.html#a2ce601f6c832e1d4f587fec0a1ddaa86" title="현재 화면의 밝기 값을 설정 한다. " alt="" coords="148,213,297,241"/>
+<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a945d238478c332d3a5f212cd5b1f9946" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="347,109,514,137"/>
+</map>

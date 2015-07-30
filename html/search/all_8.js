@@ -2,6 +2,7 @@ var searchData=
 [
   ['imageextends',['ImageExtends',['../File_8h.html#structImageExtends',1,'']]],
   ['isaccelerometersupported',['isAccelerometerSupported',['../Sensor_8h.html#a2b6a66daff2b6f6a9cc300fa0527d287',1,'isAccelerometerSupported(Accelerometer this_gen):&#160;Sensor.c'],['../Sensor_8c.html#a2b6a66daff2b6f6a9cc300fa0527d287',1,'isAccelerometerSupported(Accelerometer this_gen):&#160;Sensor.c']]],
+  ['isbatterycharging',['isBatteryCharging',['../DeviceStatus_8h.html#af3fec730c212903458752e7fe4582636',1,'isBatteryCharging(Battery this_gen):&#160;DeviceStatus.c'],['../DeviceStatus_8c.html#af3fec730c212903458752e7fe4582636',1,'isBatteryCharging(Battery this_gen):&#160;DeviceStatus.c']]],
   ['isbluetoothaccessible',['isBluetoothAccessible',['../Bluetooth_8h.html#a00b401ae906bf1d77f232c88a14314fc',1,'isBluetoothAccessible(Bluetooth this_gen):&#160;Bluetooth.c'],['../Bluetooth_8c.html#a00b401ae906bf1d77f232c88a14314fc',1,'isBluetoothAccessible(Bluetooth this_gen):&#160;Bluetooth.c']]],
   ['isbluetoothconnected',['isBluetoothConnected',['../Bluetooth_8h.html#a4959b3be5e12c0d3e4cc317e00e4621e',1,'isBluetoothConnected(Bluetooth this_gen):&#160;Bluetooth.c'],['../Bluetooth_8c.html#a4959b3be5e12c0d3e4cc317e00e4621e',1,'isBluetoothConnected(Bluetooth this_gen):&#160;Bluetooth.c']]],
   ['isgpsaccessible',['isGPSAccessible',['../GPS_8h.html#a4c9fefb1b2513013e6e5c66a413e387d',1,'isGPSAccessible(GPS this_gen):&#160;GPS.c'],['../GPS_8c.html#a4c9fefb1b2513013e6e5c66a413e387d',1,'isGPSAccessible(GPS this_gen):&#160;GPS.c']]],
