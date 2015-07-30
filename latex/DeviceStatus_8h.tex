@@ -10,14 +10,16 @@ Device Status A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.
 {\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
 {\ttfamily \#include $<$device/display.\-h$>$}\\*
 {\ttfamily \#include $<$device/haptic.\-h$>$}\\*
-Include dependency graph for Device\-Status.\-h\-:\nopagebreak
+Include dependency graph for Device\-Status.\-h\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{DeviceStatus_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -28,12 +30,28 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 struct {\bf Vibration}
-\begin{DoxyCompactList}\small\item\em Vibration 모듈에 대한 구조체이다. Vibration 모듈은 다양한 방식으로 진동을 조절 할 수 있다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Vibration 모듈에 대한 구조체이다. Vibration 모듈은 다양한 방식으로 진동을 조절 할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf Vibration\-Extend}
+\item 
+struct {\bf Display}
+\begin{DoxyCompactList}\small\item\em Display 모듈에 대한 구조체이다. Display 모듈은 다양한 방식으로 화면을 조절 할 수 있다. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 const char $\ast$ {\bf Device\-Status\-Error\-Check} (int err\-Code)
-\begin{DoxyCompactList}\small\item\em Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Vibration {\bf New\-Vibration} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Vibration 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Vibration} (Vibration this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Vibration 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf Vibration\-Custom} (Vibration this\-\_\-gen, int period)
+\begin{DoxyCompactList}\small\item\em 사용자가 정의한 시간만큼 device를 진동 시킨다. \end{DoxyCompactList}\item 
+bool {\bf Vibration\-Short} (Vibration this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 짧은 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-1초}) \end{DoxyCompactList}\item 
+bool {\bf Vibration\-Middle} (Vibration this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 중간 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-5초}) \end{DoxyCompactList}\item 
+bool {\bf Vibration\-Long} (Vibration this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 긴 시간만큼 device를 진동 시킨다. ({\bfseries 1.\-5초}) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -45,7 +63,73 @@ Device의 Vibration / Display / Battery / Flash 관련 A\-P\-I를 제공한다.
 \end{DoxySeeAlso}
 
 
+\subsection{Data Structure Documentation}
+\index{Vibration\-Extend@{Vibration\-Extend}}\label{structVibrationExtend}
+\subsubsection{struct Vibration\-Extend}
+
+
+Collaboration diagram for Vibration\-Extend\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{structVibrationExtend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+haptic\-\_\-device\-\_\-h\label{DeviceStatus_8h_a63d0de000aa0d33eac6ea67cc3730d7b}
+&
+handle&
+\\
+\hline
+
+struct {\bf \-\_\-\-Vibration}\label{DeviceStatus_8h_a166218f842ee2835fa6346df461fbfab}
+&
+vibration&
+\\
+\hline
+
+\end{DoxyFields}
+
+
 \subsection{Function Documentation}
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Destroy\-Vibration@{Destroy\-Vibration}}
+\index{Destroy\-Vibration@{Destroy\-Vibration}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Destroy\-Vibration}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Vibration (
+\begin{DoxyParamCaption}
+\item[{Vibration}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_a336e3f65421006097670aec144c07e4a}
+
+
+생성한 Vibration 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Vibration 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Vibration 객체를 소멸 시킨다. \par
+ Vibration 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Vibration}{p.}{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
 \index{Device\-Status.\-h@{Device\-Status.\-h}!Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}}
 \index{Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}!DeviceStatus.h@{Device\-Status.\-h}}
 \subsubsection[{Device\-Status\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Device\-Status\-Error\-Check (
@@ -91,3 +175,351 @@ Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
 \begin{DoxySeeAlso}{See Also}
 {\tt Tizen Native A\-P\-I Document -\/ Device Error} 
 \end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-h@{Device\-Status.\-h}!New\-Vibration@{New\-Vibration}}
+\index{New\-Vibration@{New\-Vibration}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{New\-Vibration}]{\setlength{\rightskip}{0pt plus 5cm}Vibration New\-Vibration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266}
+
+
+새로운 Vibration 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Vibration} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Vibration 객체를 생성한다. \par
+ Vibration 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Vibration}{p.}{DeviceStatus_8h_a336e3f65421006097670aec144c07e4a} \par
+ \doxyref{Vibration\-Custom}{p.}{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3} \par
+ \doxyref{Vibration\-Short}{p.}{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9} \par
+ \doxyref{Vibration\-Middle}{p.}{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6} \par
+ \doxyref{Vibration\-Long}{p.}{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Vibration()}{p.}{DeviceStatus_8h_a336e3f65421006097670aec144c07e4a} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Vibration NewVibration (\textcolor{keywordtype}{void})
+\{
+    VibrationExtend * \textcolor{keyword}{this} = (VibrationExtend *)malloc (\textcolor{keyword}{sizeof} (VibrationExtend));
+
+    this->vibration.Custom = VibrationCustom;
+    this->vibration.Short  = VibrationShort;
+    this->vibration.Middle = VibrationMiddle;
+    this->vibration.Long   = VibrationLong;
+
+   device\_haptic\_open (0, &this->handle);
+
+    \textcolor{keywordflow}{return} &this->vibration;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Vibration\-Custom@{Vibration\-Custom}}
+\index{Vibration\-Custom@{Vibration\-Custom}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Vibration\-Custom}]{\setlength{\rightskip}{0pt plus 5cm}bool Vibration\-Custom (
+\begin{DoxyParamCaption}
+\item[{Vibration}]{this\-\_\-gen, }
+\item[{int}]{period}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3}
+
+
+사용자가 정의한 시간만큼 device를 진동 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 진동 시킬 Vibration 객체 \\
+\hline
+\mbox{\tt in}  & {\em period} & 진동 시킬 시간 ({\itshape Millisecond}) \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+사용자가 정의한 {\ttfamily period} 만큼 device를 진동시킨다. \par
+ 시간 단위는 {\itshape Millisecond} 이다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Vibration}{p.}{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266} \par
+ \doxyref{Vibration\-Short}{p.}{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9} \par
+ \doxyref{Vibration\-Middle}{p.}{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6} \par
+ \doxyref{Vibration\-Long}{p.}{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Vibration\-Long@{Vibration\-Long}}
+\index{Vibration\-Long@{Vibration\-Long}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Vibration\-Long}]{\setlength{\rightskip}{0pt plus 5cm}bool Vibration\-Long (
+\begin{DoxyParamCaption}
+\item[{Vibration}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb}
+
+
+긴 시간만큼 device를 진동 시킨다. ({\bfseries 1.\-5초}) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 진동 시킬 Vibration 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+긴 시간만큼 device를 진동 시킨다. ({\bfseries 1.\-5초}) 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Vibration}{p.}{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266} \par
+ \doxyref{Vibration\-Custom}{p.}{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3} \par
+ \doxyref{Vibration\-Short}{p.}{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9} \par
+ \doxyref{Vibration\-Middle}{p.}{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Vibration\-Middle@{Vibration\-Middle}}
+\index{Vibration\-Middle@{Vibration\-Middle}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Vibration\-Middle}]{\setlength{\rightskip}{0pt plus 5cm}bool Vibration\-Middle (
+\begin{DoxyParamCaption}
+\item[{Vibration}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6}
+
+
+중간 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-5초}) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 진동 시킬 Vibration 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+중간 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-5초}) 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Vibration}{p.}{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266} \par
+ \doxyref{Vibration\-Custom}{p.}{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3} \par
+ \doxyref{Vibration\-Short}{p.}{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9} \par
+ \doxyref{Vibration\-Long}{p.}{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Vibration\-Short@{Vibration\-Short}}
+\index{Vibration\-Short@{Vibration\-Short}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Vibration\-Short}]{\setlength{\rightskip}{0pt plus 5cm}bool Vibration\-Short (
+\begin{DoxyParamCaption}
+\item[{Vibration}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9}
+
+
+짧은 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-1초}) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 진동 시킬 Vibration 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+짧은 시간만큼 device를 진동 시킨다. ({\bfseries 0.\-1초}) 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Vibration}{p.}{DeviceStatus_8h_a9c3d84ca51a859ceb9eaa0097fa14266} \par
+ \doxyref{Vibration\-Custom}{p.}{DeviceStatus_8h_ad72205770a47e2d00bb5615419665bc3} \par
+ \doxyref{Vibration\-Middle}{p.}{DeviceStatus_8h_ab12b6f187ca50d6e843c5c85c7d1e2c6} \par
+ \doxyref{Vibration\-Long}{p.}{DeviceStatus_8h_aa7490eb5833cc7775d2da420a30b94fb} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/haptic} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{DeviceStatus_8h_a2a15fa61a394c104a130de94a49f81e9_icgraph}
+\end{center}
+\end{figure}
+
+

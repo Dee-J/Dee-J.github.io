@@ -6,6 +6,7 @@ var searchData=
   ['_5faudiorecorder',['_AudioRecorder',['../struct__AudioRecorder.html',1,'']]],
   ['_5fbluetooth',['_Bluetooth',['../struct__Bluetooth.html',1,'']]],
   ['_5fcamerarecorder',['_CameraRecorder',['../struct__CameraRecorder.html',1,'']]],
+  ['_5fdisplay',['_Display',['../struct__Display.html',1,'']]],
   ['_5ffile',['_File',['../struct__File.html',1,'']]],
   ['_5fgps',['_gps',['../struct__gps.html',1,'']]],
   ['_5fgravity',['_Gravity',['../struct__Gravity.html',1,'']]],

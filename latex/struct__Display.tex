@@ -1,0 +1,63 @@
+\section{Display Struct Reference}
+\label{struct__Display}\index{Display@{Display}}
+
+
+Display 모듈에 대한 구조체이다. Display 모듈은 다양한 방식으로 화면을 조절 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Device\-Status.\-h$>$}
+
+
+
+Collaboration diagram for Display\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{struct__Display__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries Lock} )(Display this\-\_\-gen)\label{struct__Display_ae63a3abcf51257dbc7f94817504953e9}
+
+\item 
+bool($\ast$ {\bfseries Unlock} )(Display this\-\_\-gen)\label{struct__Display_a30c16960b10431b893543a04a25d282f}
+
+\item 
+bool($\ast$ {\bfseries Dim} )(Display this\-\_\-gen)\label{struct__Display_a244281b52b37bea0fc4ecc449e94892b}
+
+\item 
+int($\ast$ {\bfseries get\-Bright} )(Display this\-\_\-gen)\label{struct__Display_a4496ff482b37623f947cb8104f0d1bc3}
+
+\item 
+bool($\ast$ {\bfseries set\-Bright} )(Display this\-\_\-gen, int bright)\label{struct__Display_a8fa8f7fa9933f014e0ca2ededdc3a648}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Display 모듈에 대한 구조체이다. Display 모듈은 다양한 방식으로 화면을 조절 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Device Status의 Display 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 New\-Display() 함수를 사용해야 하며 사용이 끝났을 때 Destroy\-Display() 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Display part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/display} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Device\-Status.\-h}\end{DoxyCompactItemize}

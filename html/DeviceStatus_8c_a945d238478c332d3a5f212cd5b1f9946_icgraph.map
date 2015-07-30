@@ -1,0 +1,7 @@
+<map id="DeviceStatusErrorCheck" name="DeviceStatusErrorCheck">
+<area shape="rect" id="node2" href="$DeviceStatus_8c.html#ad72205770a47e2d00bb5615419665bc3" title="사용자가 정의한 시간만큼 device를 진동 시킨다. " alt="" coords="222,5,341,33"/>
+<area shape="rect" id="node4" href="$DeviceStatus_8c.html#a2a15fa61a394c104a130de94a49f81e9" title="짧은 시간만큼 device를 진동 시킨다. (0.1초) " alt="" coords="229,57,334,85"/>
+<area shape="rect" id="node5" href="$DeviceStatus_8c.html#ab12b6f187ca50d6e843c5c85c7d1e2c6" title="중간 시간만큼 device를 진동 시킨다. (0.5초) " alt="" coords="225,109,338,137"/>
+<area shape="rect" id="node6" href="$DeviceStatus_8c.html#aa7490eb5833cc7775d2da420a30b94fb" title="긴 시간만큼 device를 진동 시킨다. (1.5초) " alt="" coords="230,161,333,189"/>
+<area shape="rect" id="node3" href="$DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266" title="새로운 Vibration 객체를 생성한다. " alt="" coords="390,83,490,111"/>
+</map>

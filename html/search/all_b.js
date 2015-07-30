@@ -27,6 +27,7 @@ var searchData=
   ['newsocket',['NewSocket',['../Socket_8h.html#a1e1d2bbe80adb61014a4a67b3b507aae',1,'NewSocket(void):&#160;Socket.c'],['../Socket_8c.html#a1e1d2bbe80adb61014a4a67b3b507aae',1,'NewSocket(void):&#160;Socket.c']]],
   ['newtemperature',['NewTemperature',['../Sensor_8h.html#afd32f5f2a72ba185361018d8f2b450f7',1,'NewTemperature(void):&#160;Sensor.c'],['../Sensor_8c.html#afd32f5f2a72ba185361018d8f2b450f7',1,'NewTemperature(void):&#160;Sensor.c']]],
   ['newultraviolet',['NewUltraViolet',['../Sensor_8h.html#a7bd9a5544d00f631a0e617b332f0b032',1,'NewUltraViolet(void):&#160;Sensor.c'],['../Sensor_8c.html#a7bd9a5544d00f631a0e617b332f0b032',1,'NewUltraViolet(void):&#160;Sensor.c']]],
+  ['newvibration',['NewVibration',['../DeviceStatus_8h.html#a9c3d84ca51a859ceb9eaa0097fa14266',1,'NewVibration(void):&#160;DeviceStatus.c'],['../DeviceStatus_8c.html#a9c3d84ca51a859ceb9eaa0097fa14266',1,'NewVibration(void):&#160;DeviceStatus.c']]],
   ['newvideo',['NewVideo',['../File_8h.html#acc20c940b38ba0ace77f77a2992dea58',1,'NewVideo(void):&#160;File.c'],['../File_8c.html#acc20c940b38ba0ace77f77a2992dea58',1,'NewVideo(void):&#160;File.c']]],
   ['nfc_2ec',['NFC.c',['../NFC_8c.html',1,'']]],
   ['nfc_2eh',['NFC.h',['../NFC_8h.html',1,'']]],
