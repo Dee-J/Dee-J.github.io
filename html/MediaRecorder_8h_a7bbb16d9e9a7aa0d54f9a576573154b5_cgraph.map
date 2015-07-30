@@ -1,0 +1,9 @@
+<map id="NewCameraRecorder" name="NewCameraRecorder">
+<area shape="rect" id="node2" href="$MediaRecorder_8c.html#a480421009304e1dc224bbff2f5db99cd" title="녹화를 시작하기전 녹화할 Camera Recorder 객체를 초기화 한다. " alt="" coords="217,5,356,33"/>
+<area shape="rect" id="node5" href="$MediaRecorder_8c.html#a01101aa3ac27b68473f7524de5fea659" title="녹화를 시작한다. " alt="" coords="212,57,361,85"/>
+<area shape="rect" id="node6" href="$MediaRecorder_8c.html#a2e49fe625b6c1cca51ec864f5705bca6" title="녹화를 일시 정지 한다. " alt="" coords="207,109,366,137"/>
+<area shape="rect" id="node7" href="$MediaRecorder_8c.html#acd5a70402266e67816bd6d78ed434e1d" title="녹화를 종료하고 녹화 결과를 저장한다. " alt="" coords="214,161,359,189"/>
+<area shape="rect" id="node8" href="$MediaRecorder_8c.html#a5e56dfc94ae0c724c53b876dff083177" title="녹화를 취소하며 녹화 결과를 저장하지 않는다. " alt="" coords="206,213,368,241"/>
+<area shape="rect" id="node3" href="$MediaRecorder_8c.html#a8c533290335177c5b1b774774caff680" title="Camera에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="420,5,556,33"/>
+<area shape="rect" id="node4" href="$MediaRecorder_8c.html#a1ce7d2cf42186783994a698a2332219c" title="Media Recorder에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="416,109,560,137"/>
+</map>

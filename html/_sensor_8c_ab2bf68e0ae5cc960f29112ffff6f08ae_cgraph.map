@@ -1,7 +1,0 @@
-<map id="NewMagnetoMeter" name="NewMagnetoMeter">
-<area shape="rect" id="node2" href="$_sensor_8c.html#aa189af9499407c54b0814186aad32a89" title="MagnetoMeterOff" alt="" coords="215,5,340,33"/>
-<area shape="rect" id="node3" href="$_sensor_8c.html#a39a353a14e3db0ce85502a35c5ccffb8" title="MagnetoMeterOn" alt="" coords="215,57,340,85"/>
-<area shape="rect" id="node4" href="$_sensor_8c.html#a4d84071a361004e3c7f171e489b78280" title="addMagnetoMeterCallback" alt="" coords="187,109,368,137"/>
-<area shape="rect" id="node5" href="$_sensor_8c.html#af8d66fbc3858ea86baaec2cc3c1d33fc" title="getMagnetoMeterValue" alt="" coords="198,161,357,189"/>
-<area shape="rect" id="node6" href="$_sensor_8c.html#a3c5023cd863dc994ca4da0e18237cc0e" title="isMagnetoMeterSupported" alt="" coords="188,213,367,241"/>
-</map>

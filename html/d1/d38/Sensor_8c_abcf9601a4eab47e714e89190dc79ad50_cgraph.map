@@ -1,8 +1,0 @@
-<map id="NewAccelerometer" name="NewAccelerometer">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a7a1dd732d5b11dd1e38cce084c6d1b9b" title="생성한 Accelerometer를 비활성화 시킨다. " alt="" coords="224,5,349,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a81220d7e89f864a945a6804e1fe4e594" title="생성한 Accelerometer를 활성화 시킨다. " alt="" coords="224,57,349,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#a161514ceac02ff84d6bfb9e12ce1d97d" title="생성한 Accelerometer에 callback 함수를 등록한다. " alt="" coords="196,109,377,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a0b4861d129661a62f373681cb041176d" title="활성화 되어 있는 Accelerometer의 센서 값을 반환한다. " alt="" coords="207,161,366,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a2b6a66daff2b6f6a9cc300fa0527d287" title="Accelerometer의 사용 가능 여부를 판단한다. " alt="" coords="197,213,376,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a1c1a5c1948813a6e92cb7c89d29d357b" title="생성한 Accelerometer에서 callback 함수를 삭제한다. " alt="" coords="187,265,386,293"/>
-</map>

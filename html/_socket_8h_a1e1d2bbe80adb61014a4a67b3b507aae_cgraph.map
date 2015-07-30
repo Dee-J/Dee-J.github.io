@@ -1,7 +1,0 @@
-<map id="NewSocket" name="NewSocket">
-<area shape="rect" id="node2" href="$_socket_8c.html#aabc799937e9e7c40e65fb70e5856bf77" title="isSocketAccessible" alt="" coords="151,5,286,33"/>
-<area shape="rect" id="node3" href="$_socket_8c.html#aa91c538d1bd84f6ea61db070ea8f290f" title="onSocketConnect" alt="" coords="155,57,282,85"/>
-<area shape="rect" id="node4" href="$_socket_8c.html#a9ad6ab6f567f68b9d0fb508babc0e406" title="onSocketDisconnect" alt="" coords="147,109,290,137"/>
-<area shape="rect" id="node5" href="$_socket_8c.html#ac8f8449fafaf2cb32af836eacc2dcc8a" title="SocketMessageSend" alt="" coords="145,161,292,189"/>
-<area shape="rect" id="node6" href="$_socket_8c.html#a5964e35367912cf00c951d053f2aef10" title="SocketMessageRecv" alt="" coords="145,213,292,241"/>
-</map>

@@ -1,0 +1,65 @@
+\section{Light Struct Reference}
+\label{struct__Light}\index{Light@{Light}}
+
+
+Light 모듈에 대한 구조체이다. Light 모듈은 Photometer Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Light\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{struct__Light__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Light this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Light_aeec1e6f6ea47e14947dd91d66fd2f228}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Light this\-\_\-gen)\label{struct__Light_a88fda56b990b88e192a9af894fae2271}
+
+\item 
+bool($\ast$ {\bfseries On} )(Light this\-\_\-gen)\label{struct__Light_a3ad693923f47b9b9e147f084f21c3dd3}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Light this\-\_\-gen)\label{struct__Light_ac3aae8952fa68eb7f1245029157ab942}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Light this\-\_\-gen)\label{struct__Light_a14f84ae58d7bca9de3236631eb8b50a8}
+
+\item 
+{\bf Light\-\_\-data}($\ast$ {\bfseries get\-Value} )(Light this\-\_\-gen)\label{struct__Light_ac57a94e478d6c653330a780e23ca600f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Light 모듈에 대한 구조체이다. Light 모듈은 Photometer Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Light 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Light()}{p.}{Sensor_8h_acc102a67ded8d183805b270f2e350dc3} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Light()}{p.}{Sensor_8h_a8886d4cca6cda321936c1db6050f46c9} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-photometer} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

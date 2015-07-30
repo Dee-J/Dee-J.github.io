@@ -1,0 +1,73 @@
+\section{Audio\-Recorder Struct Reference}
+\label{struct__AudioRecorder}\index{Audio\-Recorder@{Audio\-Recorder}}
+
+
+Audio\-Recorder 모듈에 대한 구조체이다. Audio\-Recorder 모듈은 음원을 녹음할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Media\-Recorder.\-h$>$}
+
+
+
+Collaboration diagram for Audio\-Recorder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{struct__AudioRecorder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries Init} )(Audio\-Recorder this\-\_\-gen, const String filename)\label{struct__AudioRecorder_aeac8a703c71a8d725a801a202ce15866}
+
+\item 
+bool($\ast$ {\bfseries Start} )(Audio\-Recorder this\-\_\-gen)\label{struct__AudioRecorder_a7b0b84a744f8f11e2c128599cf22076e}
+
+\item 
+bool($\ast$ {\bfseries Pause} )(Audio\-Recorder this\-\_\-gen)\label{struct__AudioRecorder_a135f2f30efe2b658c89959426768abdc}
+
+\item 
+bool($\ast$ {\bfseries End} )(Audio\-Recorder this\-\_\-gen)\label{struct__AudioRecorder_a647e10f47215e13990cb853f40ba3c9d}
+
+\item 
+bool($\ast$ {\bfseries Cancel} )(Audio\-Recorder this\-\_\-gen)\label{struct__AudioRecorder_a2a1482c37d01197a70e5f72aa114884d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Audio\-Recorder 모듈에 대한 구조체이다. Audio\-Recorder 모듈은 음원을 녹음할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Media Recorder의 Audio\-Recorder 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Audio\-Recorder()}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Audio\-Recorder()}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Recorder part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Media\-Recorder.\-h}\end{DoxyCompactItemize}

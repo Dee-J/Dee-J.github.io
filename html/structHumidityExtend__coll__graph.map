@@ -1,0 +1,4 @@
+<map id="HumidityExtend" name="HumidityExtend">
+<area shape="rect" id="node2" href="$struct__Humidity.html" title="Humidity 모듈에 대한 구조체이다. Humidity 모듈은 Humidity Sensor를 다양한 방식으로 제어할 수 있다. " alt="" coords="5,201,128,346"/>
+<area shape="rect" id="node3" href="$Sensor_8h.html#structHumidity__data" title="{Humidity_data\n|+ percent\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="13,6,119,135"/>
+</map>

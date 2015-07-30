@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ongoingnotification_2ec',['OngoingNotification.c',['../d6/d44/OngoingNotification_8c.html',1,'']]],
-  ['ongoingnotification_2eh',['OngoingNotification.h',['../dd/dd4/OngoingNotification_8h.html',1,'']]]
+  ['nfc_2ec',['NFC.c',['../NFC_8c.html',1,'']]],
+  ['nfc_2eh',['NFC.h',['../NFC_8h.html',1,'']]],
+  ['notification_2ec',['Notification.c',['../Notification_8c.html',1,'']]],
+  ['notification_2eh',['Notification.h',['../Notification_8h.html',1,'']]]
 ];

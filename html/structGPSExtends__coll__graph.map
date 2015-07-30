@@ -1,0 +1,4 @@
+<map id="GPSExtends" name="GPSExtends">
+<area shape="rect" id="node2" href="$struct__gps.html" title="GPS 모듈에 대한 구조체이다. GPS 모듈은 다양한 방식으로 GPS를 사용할 수 있다. " alt="" coords="90,313,203,426"/>
+<area shape="rect" id="node3" href="$GPS_8h.html#structLocation" title="{Location\n|+ altitude\l+ latitude\l+ longitude\l+ climb\l+ direction\l+ speed\l+ level\l+ horizontal\l+ vertical\l+ timestamp\l+ validation\l|}" alt="" coords="6,6,100,247"/>
+</map>

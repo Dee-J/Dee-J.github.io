@@ -1,0 +1,147 @@
+\section{Device\-Status.\-c File Reference}
+\label{DeviceStatus_8c}\index{Device\-Status.\-c@{Device\-Status.\-c}}
+
+
+Device Status A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Device/\-Device\-Status.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$device/battery.\-h$>$}\\*
+{\ttfamily \#include $<$device/display.\-h$>$}\\*
+{\ttfamily \#include $<$device/led.\-h$>$}\\*
+{\ttfamily \#include $<$device/haptic.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+Include dependency graph for Device\-Status.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Device\-Status\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Vibration {\bfseries New\-Vibration} (void)\label{DeviceStatus_8c_a9c3d84ca51a859ceb9eaa0097fa14266}
+
+\item 
+void {\bfseries Destroy\-Vibration} (Vibration this\-\_\-gen)\label{DeviceStatus_8c_a336e3f65421006097670aec144c07e4a}
+
+\item 
+bool {\bfseries Vibration\-Custom} (Vibration this\-\_\-gen, int period)\label{DeviceStatus_8c_ad72205770a47e2d00bb5615419665bc3}
+
+\item 
+bool {\bfseries Vibration\-Short} (Vibration this\-\_\-gen)\label{DeviceStatus_8c_a2a15fa61a394c104a130de94a49f81e9}
+
+\item 
+bool {\bfseries Vibration\-Middle} (Vibration this\-\_\-gen)\label{DeviceStatus_8c_ab12b6f187ca50d6e843c5c85c7d1e2c6}
+
+\item 
+bool {\bfseries Vibration\-Long} (Vibration this\-\_\-gen)\label{DeviceStatus_8c_aa7490eb5833cc7775d2da420a30b94fb}
+
+\item 
+Display {\bfseries New\-Display} (void)\label{DeviceStatus_8c_a239d9485c4000ae77b11e5f12378f95f}
+
+\item 
+void {\bfseries Destroy\-Display} (Display this\-\_\-gen)\label{DeviceStatus_8c_aa18ddc0342d1ca47145c759a8fa35d91}
+
+\item 
+bool {\bfseries Display\-Lock} (Display this\-\_\-gen)\label{DeviceStatus_8c_a45616f571bc7211e0749656b85b3baab}
+
+\item 
+bool {\bfseries Display\-Unlock} (Display this\-\_\-gen)\label{DeviceStatus_8c_a9e66aaebf66d63ec1555c4226f4154ca}
+
+\item 
+bool {\bfseries Display\-Dim} (Display this\-\_\-gen)\label{DeviceStatus_8c_a35d4bf5e52fdb81d5d8d83f8b22569b2}
+
+\item 
+int {\bfseries get\-Display\-Bright\-Level} (Display this\-\_\-gen)\label{DeviceStatus_8c_abf038dea7a71738b751dfdd3ce88ebf9}
+
+\item 
+bool {\bfseries set\-Display\-Bright\-Level} (Display this\-\_\-gen, int bright\-Level)\label{DeviceStatus_8c_a2ce601f6c832e1d4f587fec0a1ddaa86}
+
+\item 
+Battery {\bfseries New\-Battery} (void)\label{DeviceStatus_8c_a0fe7ab1f89e01e459f94bdecce693301}
+
+\item 
+void {\bfseries Destory\-Battery} (Battery this\-\_\-gen)\label{DeviceStatus_8c_a01b69d107b6708af6900d4279eeff281}
+
+\item 
+int {\bfseries get\-Battery\-Remains\-Percent} (Battery this\-\_\-gen)\label{DeviceStatus_8c_a983756d9f5b610b7d60c545546321b23}
+
+\item 
+bool {\bfseries is\-Battery\-Charging} (Battery this\-\_\-gen)\label{DeviceStatus_8c_af3fec730c212903458752e7fe4582636}
+
+\item 
+Flash {\bfseries New\-Flash} (void)\label{DeviceStatus_8c_a503e0814548cc9f370f87a3359187bff}
+
+\item 
+void {\bfseries Destory\-Flash} (Flash this\-\_\-gen)\label{DeviceStatus_8c_a4d0567730f41384d32902ef2b7c4b242}
+
+\item 
+bool {\bfseries on\-Flash} (void)\label{DeviceStatus_8c_a66766e7ced714f362745ea3c09eac6fc}
+
+\item 
+bool {\bfseries off\-Flash} (void)\label{DeviceStatus_8c_a7ab736323af55d4846ceec0dd746b4a4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Device Status A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+Device Status A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Device\-Status.\-h}{p.}{DeviceStatus_8h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{Device\-Status.\-c@{Device\-Status.\-c}!Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}}
+\index{Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}!DeviceStatus.c@{Device\-Status.\-c}}
+\subsubsection[{Device\-Status\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Device\-Status\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8c_a945d238478c332d3a5f212cd5b1f9946}
+
+
+Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Operation not permitted \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-I\-N\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S} & \-: Operation already in progress \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported in this device \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} & \-: Not initialized \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 8가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Device Error} 
+\end{DoxySeeAlso}

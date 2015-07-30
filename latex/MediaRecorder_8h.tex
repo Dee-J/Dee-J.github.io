@@ -1,0 +1,1336 @@
+\section{Media\-Recorder.\-h File Reference}
+\label{MediaRecorder_8h}\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}}
+
+
+Media Media\-Recorder A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include $<$recorder.\-h$>$}\\*
+{\ttfamily \#include $<$camera.\-h$>$}\\*
+{\ttfamily \#include $<$Elementary.\-h$>$}\\*
+Include dependency graph for Media\-Recorder.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{MediaRecorder_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Audio\-Recorder}
+\begin{DoxyCompactList}\small\item\em Audio\-Recorder 모듈에 대한 구조체이다. Audio\-Recorder 모듈은 음원을 녹음할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf Audio\-Recorder\-Extends}
+\item 
+struct {\bf Camera\-Recorder}
+\begin{DoxyCompactList}\small\item\em Camera\-Recorder 모듈에 대한 구조체이다. Camera\-Recorder 모듈은 동영상을 녹화할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf Camera\-Recorder\-Extends}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries camera\-\_\-type} \{ {\bfseries C\-A\-M\-E\-R\-A\-\_\-\-B\-A\-C\-K} = 0, 
+{\bfseries C\-A\-M\-E\-R\-A\-\_\-\-F\-R\-O\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Recorder\-Error\-Check} (int result)
+\begin{DoxyCompactList}\small\item\em Media Recorder에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+const char $\ast$ {\bf Camera\-Error\-Check} (int result)
+\begin{DoxyCompactList}\small\item\em Camera에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Audio\-Recorder {\bf New\-Audio\-Recorder} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Audio\-Recorder 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Audio\-Recorder} (Audio\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Audio\-Recorder 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf audio\-Recorder\-Init} (Audio\-Recorder this\-\_\-gen, const String filename)
+\begin{DoxyCompactList}\small\item\em 녹음을 시작하기전 녹음할 Audio Recorder 객체를 초기화 한다. \end{DoxyCompactList}\item 
+bool {\bf audio\-Recorder\-Start} (Audio\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹음을 시작한다. \end{DoxyCompactList}\item 
+bool {\bf audio\-Recorder\-Pause} (Audio\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹음을 일시 정지 한다. \end{DoxyCompactList}\item 
+bool {\bf audio\-Recorder\-End} (Audio\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹음을 종료하고 녹음 결과를 저장한다. \end{DoxyCompactList}\item 
+bool {\bf audio\-Recorder\-Cancel} (Audio\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹음을 취소하며 녹음 결과를 저장하지 않는다. \end{DoxyCompactList}\item 
+Camera\-Recorder {\bf New\-Camera\-Recorder} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Camera\-Recorder 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Camera\-Recorder} (Camera\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Camera\-Recorder 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf camera\-Recorder\-Init} (Camera\-Recorder this\-\_\-gen, const String filename, camera\-\_\-type camera, Evas\-\_\-\-Object $\ast$evas\-Object)
+\begin{DoxyCompactList}\small\item\em 녹화를 시작하기전 녹화할 Camera Recorder 객체를 초기화 한다. \end{DoxyCompactList}\item 
+bool {\bf camera\-Recorder\-Start} (Camera\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹화를 시작한다. \end{DoxyCompactList}\item 
+bool {\bf camera\-Recorder\-Pause} (Camera\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹화를 일시 정지 한다. \end{DoxyCompactList}\item 
+bool {\bf camera\-Recorder\-End} (Camera\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹화를 종료하고 녹화 결과를 저장한다. \end{DoxyCompactList}\item 
+bool {\bf camera\-Recorder\-Cancel} (Camera\-Recorder this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 녹화를 취소하며 녹화 결과를 저장하지 않는다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Media Media\-Recorder A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Media Media\-Recorder의 Init / Start / Pause / End / Cancel 관련 A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Data Structure Documentation}
+\index{Audio\-Recorder\-Extends@{Audio\-Recorder\-Extends}}\label{structAudioRecorderExtends}
+\subsubsection{struct Audio\-Recorder\-Extends}
+
+
+Collaboration diagram for Audio\-Recorder\-Extends\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structAudioRecorderExtends__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+struct {\bf \-\_\-\-Audio\-Recorder}\label{MediaRecorder_8h_a6db621dfa99af22b9a1f3a649d1e13c4}
+&
+audiorecorder&
+\\
+\hline
+
+recorder\-\_\-h\label{MediaRecorder_8h_aa26ae04fd12ea75dbfbe51164087aa7a}
+&
+audiorecorderhandle&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Camera\-Recorder\-Extends@{Camera\-Recorder\-Extends}}\label{structCameraRecorderExtends}
+\subsubsection{struct Camera\-Recorder\-Extends}
+
+
+Collaboration diagram for Camera\-Recorder\-Extends\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structCameraRecorderExtends__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+camera\-\_\-h\label{MediaRecorder_8h_a726c50cc1369f844d7453fb10ca31c0f}
+&
+camerahandle&
+\\
+\hline
+
+struct {\bf \-\_\-\-Camera\-Recorder}\label{MediaRecorder_8h_a345628ad5fbaeb862a916d152a9fdfe3}
+&
+camerarecorder&
+\\
+\hline
+
+recorder\-\_\-h\label{MediaRecorder_8h_a9cb2d9772a936cf1336d903ba1593811}
+&
+camerarecorderhandle&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!audio\-Recorder\-Cancel@{audio\-Recorder\-Cancel}}
+\index{audio\-Recorder\-Cancel@{audio\-Recorder\-Cancel}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{audio\-Recorder\-Cancel}]{\setlength{\rightskip}{0pt plus 5cm}bool audio\-Recorder\-Cancel (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57}
+
+
+녹음을 취소하며 녹음 결과를 저장하지 않는다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 취소할 Audio\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹음을 취소하며 녹음 결과를 저장하지 않는다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} \par
+ \doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Init}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} \par
+ \doxyref{audio\-Recorder\-Start}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} \par
+ \doxyref{audio\-Recorder\-Pause}{p.}{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d} \par
+ \doxyref{audio\-Recorder\-End}{p.}{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!audio\-Recorder\-End@{audio\-Recorder\-End}}
+\index{audio\-Recorder\-End@{audio\-Recorder\-End}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{audio\-Recorder\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool audio\-Recorder\-End (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81}
+
+
+녹음을 종료하고 녹음 결과를 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 종료할 Audio\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹음을 종료하고 녹음 결과를 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} \par
+ \doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Init}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} \par
+ \doxyref{audio\-Recorder\-Start}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} \par
+ \doxyref{audio\-Recorder\-Pause}{p.}{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d} \par
+ \doxyref{audio\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!audio\-Recorder\-Init@{audio\-Recorder\-Init}}
+\index{audio\-Recorder\-Init@{audio\-Recorder\-Init}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{audio\-Recorder\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool audio\-Recorder\-Init (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen, }
+\item[{const String}]{filename}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e}
+
+
+녹음을 시작하기전 녹음할 Audio Recorder 객체를 초기화 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 초기화할 Audio\-Recorder 객체 \\
+\hline
+\mbox{\tt in}  & {\em filename} & 녹음한 결과를 저장할 파일 이름 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹음을 시작하기전 녹음할 Audio Recorder 객체를 초기화 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} \par
+ \doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Start}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} \par
+ \doxyref{audio\-Recorder\-Pause}{p.}{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d} \par
+ \doxyref{audio\-Recorder\-End}{p.}{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81} \par
+ \doxyref{audio\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+\doxyref{audio\-Recorder\-Start()}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} 를 통해 녹음을 시작하기 전 반드시 실행 해야 한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!audio\-Recorder\-Pause@{audio\-Recorder\-Pause}}
+\index{audio\-Recorder\-Pause@{audio\-Recorder\-Pause}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{audio\-Recorder\-Pause}]{\setlength{\rightskip}{0pt plus 5cm}bool audio\-Recorder\-Pause (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d}
+
+
+녹음을 일시 정지 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 일시 정지할 Audio\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹음을 일시 정지 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} \par
+ \doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Init}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} \par
+ \doxyref{audio\-Recorder\-Start}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} \par
+ \doxyref{audio\-Recorder\-End}{p.}{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81} \par
+ \doxyref{audio\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!audio\-Recorder\-Start@{audio\-Recorder\-Start}}
+\index{audio\-Recorder\-Start@{audio\-Recorder\-Start}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{audio\-Recorder\-Start}]{\setlength{\rightskip}{0pt plus 5cm}bool audio\-Recorder\-Start (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac}
+
+
+녹음을 시작한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 녹음할 Audio\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹음을 시작한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} \par
+ \doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Init}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} \par
+ \doxyref{audio\-Recorder\-Pause}{p.}{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d} \par
+ \doxyref{audio\-Recorder\-End}{p.}{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81} \par
+ \doxyref{audio\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+녹음을 시작하기 전 반드시 \doxyref{audio\-Recorder\-Init()}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} 함수를 실행 해야 한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!Camera\-Error\-Check@{Camera\-Error\-Check}}
+\index{Camera\-Error\-Check@{Camera\-Error\-Check}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{Camera\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Camera\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a0174ce37eb1788f3f7b39b3f839fe271}
+
+
+Camera에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-A\-T\-E} & \-: Invalid state \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E} & \-: Device error \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N} & \-: Internal error \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y} & \-: Blocked by Audio Session Manager \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by security system policy \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-B\-U\-S\-Y} & \-: The device is using another application or working on some operation \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \-: No camera device \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y\-\_\-\-B\-Y\-\_\-\-C\-A\-L\-L} & \-: Blocked by Audio Session Manager -\/ C\-A\-L\-L \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y\-\_\-\-B\-Y\-\_\-\-A\-L\-A\-R\-M} & \-: Blocked by Audio Session Manager -\/ A\-L\-A\-R\-M \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-E\-S\-D} & \-: E\-S\-D situation \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: The access to the resources can not be granted \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: The feature is not supported \\
+\hline
+{\em C\-A\-M\-E\-R\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Camera에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 15가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Camera Error} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_a0174ce37eb1788f3f7b39b3f839fe271_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!camera\-Recorder\-Cancel@{camera\-Recorder\-Cancel}}
+\index{camera\-Recorder\-Cancel@{camera\-Recorder\-Cancel}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{camera\-Recorder\-Cancel}]{\setlength{\rightskip}{0pt plus 5cm}bool camera\-Recorder\-Cancel (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177}
+
+
+녹화를 취소하며 녹화 결과를 저장하지 않는다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 취소할 Camera\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹화를 취소하며 녹화 결과를 저장하지 않는다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} \par
+ \doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Init}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} \par
+ \doxyref{camera\-Recorder\-Start}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} \par
+ \doxyref{camera\-Recorder\-Pause}{p.}{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6} \par
+ \doxyref{camera\-Recorder\-End}{p.}{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!camera\-Recorder\-End@{camera\-Recorder\-End}}
+\index{camera\-Recorder\-End@{camera\-Recorder\-End}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{camera\-Recorder\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool camera\-Recorder\-End (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d}
+
+
+녹화를 종료하고 녹화 결과를 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 종료할 Camera\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹화를 종료하고 녹화 결과를 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} \par
+ \doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Init}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} \par
+ \doxyref{camera\-Recorder\-Start}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} \par
+ \doxyref{camera\-Recorder\-Pause}{p.}{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6} \par
+ \doxyref{camera\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!camera\-Recorder\-Init@{camera\-Recorder\-Init}}
+\index{camera\-Recorder\-Init@{camera\-Recorder\-Init}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{camera\-Recorder\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool camera\-Recorder\-Init (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen, }
+\item[{const String}]{filename, }
+\item[{camera\-\_\-type}]{camera, }
+\item[{Evas\-\_\-\-Object $\ast$}]{evas\-Object}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd}
+
+
+녹화를 시작하기전 녹화할 Camera Recorder 객체를 초기화 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 초기화할 Camera\-Recorder 객체 \\
+\hline
+\mbox{\tt in}  & {\em filename} & 녹화한 결과를 저장할 파일 이름 \\
+\hline
+\mbox{\tt in}  & {\em camera} & 전 / 후방 카메라 선택 ( 후방 카메라 \-: {\ttfamily 0} / 전방 카메라 \-: {\ttfamily 1}) \\
+\hline
+\mbox{\tt in}  & {\em evas\-Object} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹화를 시작하기전 녹음할 Audio Recorder 객체를 초기화 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} \par
+ \doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Start}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} \par
+ \doxyref{camera\-Recorder\-Pause}{p.}{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6} \par
+ \doxyref{camera\-Recorder\-End}{p.}{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d} \par
+ \doxyref{camera\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+\doxyref{camera\-Recorder\-Start()}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} 를 통해 녹화를 시작하기 전 반드시 실행 해야 한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!camera\-Recorder\-Pause@{camera\-Recorder\-Pause}}
+\index{camera\-Recorder\-Pause@{camera\-Recorder\-Pause}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{camera\-Recorder\-Pause}]{\setlength{\rightskip}{0pt plus 5cm}bool camera\-Recorder\-Pause (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6}
+
+
+녹화를 일시 정지 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 일시 정지할 Camera\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹화를 일시 정지 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} \par
+ \doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Init}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} \par
+ \doxyref{camera\-Recorder\-Start}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} \par
+ \doxyref{camera\-Recorder\-End}{p.}{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d} \par
+ \doxyref{camera\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!camera\-Recorder\-Start@{camera\-Recorder\-Start}}
+\index{camera\-Recorder\-Start@{camera\-Recorder\-Start}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{camera\-Recorder\-Start}]{\setlength{\rightskip}{0pt plus 5cm}bool camera\-Recorder\-Start (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659}
+
+
+녹화를 시작한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 녹화할 Camera\-Recorder 객체 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+녹화를 시작한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} \par
+ \doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Init}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} \par
+ \doxyref{camera\-Recorder\-Pause}{p.}{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6} \par
+ \doxyref{camera\-Recorder\-End}{p.}{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d} \par
+ \doxyref{camera\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+녹화를 시작하기 전 반드시 \doxyref{camera\-Recorder\-Init()}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} 함수를 실행 해야 한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!Destroy\-Audio\-Recorder@{Destroy\-Audio\-Recorder}}
+\index{Destroy\-Audio\-Recorder@{Destroy\-Audio\-Recorder}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{Destroy\-Audio\-Recorder}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Audio\-Recorder (
+\begin{DoxyParamCaption}
+\item[{Audio\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598}
+
+
+생성한 Audio\-Recorder 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Audio\-Recorder 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Audio\-Recorder 객체를 소멸 시킨다. \par
+ Audio\-Recorder 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Audio\-Recorder}{p.}{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!Destroy\-Camera\-Recorder@{Destroy\-Camera\-Recorder}}
+\index{Destroy\-Camera\-Recorder@{Destroy\-Camera\-Recorder}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{Destroy\-Camera\-Recorder}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Camera\-Recorder (
+\begin{DoxyParamCaption}
+\item[{Camera\-Recorder}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a}
+
+
+생성한 Camera\-Recorder 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Camera\-Recorder 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Camera\-Recorder 객체를 소멸 시킨다. \par
+ Camera\-Recorder 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Camera\-Recorder}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!New\-Audio\-Recorder@{New\-Audio\-Recorder}}
+\index{New\-Audio\-Recorder@{New\-Audio\-Recorder}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{New\-Audio\-Recorder}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Recorder New\-Audio\-Recorder (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36}
+
+
+새로운 Audio\-Recorder 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Audio\-Recorder} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Audio\-Recorder 객체를 생성한다. \par
+ Audio\-Recorder 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Audio\-Recorder}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} \par
+ \doxyref{audio\-Recorder\-Init}{p.}{MediaRecorder_8h_a20ecd4e216e8601628966de573ce3f8e} \par
+ \doxyref{audio\-Recorder\-Start}{p.}{MediaRecorder_8h_ac250f3073f3020a705253a84b77455ac} \par
+ \doxyref{audio\-Recorder\-Pause}{p.}{MediaRecorder_8h_ae4f32437fdc1dfe32c6d5e2eba068c5d} \par
+ \doxyref{audio\-Recorder\-End}{p.}{MediaRecorder_8h_a53d2052ce60e89745fc46f6190d0db81} \par
+ \doxyref{audio\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a2b74f209a9be1765a5b4ac2be3840f57} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+ 
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Audio\-Recorder()}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+AudioRecorder NewAudioRecorder (\textcolor{keywordtype}{void})
+\{
+
+    AudioRecorderExtends * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (AudioRecorderExtends));
+    this->audiorecorder.Init   = audioRecorderInit;
+    this->audiorecorder.Start  = audioRecorderStart;
+    this->audiorecorder.Pause  = audioRecorderPause;
+    this->audiorecorder.End    = audioRecorderEnd;
+    this->audiorecorder.Cancel = audioRecorderCancel;
+
+    this->audiorecorderhandle = NULL;
+
+    \textcolor{keywordflow}{return} &this->audiorecorder;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_af96b985470296cf59ff534f9035dad36_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!New\-Camera\-Recorder@{New\-Camera\-Recorder}}
+\index{New\-Camera\-Recorder@{New\-Camera\-Recorder}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{New\-Camera\-Recorder}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-Recorder New\-Camera\-Recorder (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5}
+
+
+새로운 Camera\-Recorder 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Camera\-Recorder} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Camera\-Recorder 객체를 생성한다. \par
+ Camera\-Recorder 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Camera\-Recorder}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} \par
+ \doxyref{camera\-Recorder\-Init}{p.}{MediaRecorder_8h_a480421009304e1dc224bbff2f5db99cd} \par
+ \doxyref{camera\-Recorder\-Start}{p.}{MediaRecorder_8h_a01101aa3ac27b68473f7524de5fea659} \par
+ \doxyref{camera\-Recorder\-Pause}{p.}{MediaRecorder_8h_a2e49fe625b6c1cca51ec864f5705bca6} \par
+ \doxyref{camera\-Recorder\-End}{p.}{MediaRecorder_8h_acd5a70402266e67816bd6d78ed434e1d} \par
+ \doxyref{camera\-Recorder\-Cancel}{p.}{MediaRecorder_8h_a5e56dfc94ae0c724c53b876dff083177} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+ 
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Camera\-Recorder()}{p.}{MediaRecorder_8h_ae43eb591c4081fbd0e1515fe39262f6a} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+CameraRecorder NewCameraRecorder (\textcolor{keywordtype}{void})
+\{
+
+    CameraRecorderExtends * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (CameraRecorderExtends));
+    this->camerarecorder.Init   = cameraRecorderInit;
+    this->camerarecorder.Start  = cameraRecorderStart;
+    this->camerarecorder.Pause  = cameraRecorderPause;
+    this->camerarecorder.End    = cameraRecorderEnd;
+    this->camerarecorder.Cancel = cameraRecorderCancel;
+
+    this->camerarecorderhandle = NULL;
+    this->camerahandle         = NULL;
+
+    \textcolor{keywordflow}{return} &this->camerarecorder;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Media\-Recorder.\-h@{Media\-Recorder.\-h}!Recorder\-Error\-Check@{Recorder\-Error\-Check}}
+\index{Recorder\-Error\-Check@{Recorder\-Error\-Check}!MediaRecorder.h@{Media\-Recorder.\-h}}
+\subsubsection[{Recorder\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Recorder\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{MediaRecorder_8h_a4aeb030d78dbb6c6bed6f0cdcb815980}
+
+
+Media Recorder에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-A\-T\-E} & \-: Invalid state \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E} & \-: Device error \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N} & \-: Internal error \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y} & \-: Blocked by Audio Session Manager \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by security system policy \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y\-\_\-\-B\-Y\-\_\-\-C\-A\-L\-L} & \-: Blocked by Audio Session Manager -\/ C\-A\-L\-L \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-O\-U\-N\-D\-\_\-\-P\-O\-L\-I\-C\-Y\-\_\-\-B\-Y\-\_\-\-A\-L\-A\-R\-M} & \-: Blocked by Audio Session Manager -\/ A\-L\-A\-R\-M \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-E\-S\-D} & \-: E\-S\-D situation \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-S\-T\-O\-R\-A\-G\-E} & \-: Out of storage \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: The access to the resources can not be granted \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: The feature is not supported \\
+\hline
+{\em R\-E\-C\-O\-R\-D\-E\-R\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Media Recorder에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 15가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Recorder Error} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MediaRecorder_8h_a4aeb030d78dbb6c6bed6f0cdcb815980_icgraph}
+\end{center}
+\end{figure}
+
+

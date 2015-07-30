@@ -1,0 +1,66 @@
+\section{Audio Struct Reference}
+\label{struct__Audio}\index{Audio@{Audio}}
+
+
+Audio 모듈에 대한 구조체이다. Audio 모듈은 다양한 방식으로 음악 파일을 제어 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$File.\-h$>$}
+
+
+
+Collaboration diagram for Audio\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{struct__Audio__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries Play} )(Audio this\-\_\-gen)\label{struct__Audio_a2533056bdf8c73f787288908969451b6}
+
+\item 
+bool($\ast$ {\bfseries Pause} )(Audio this\-\_\-gen)\label{struct__Audio_a3f1043412c68fde6976ad12c4e04b562}
+
+\item 
+bool($\ast$ {\bfseries Stop} )(Audio this\-\_\-gen)\label{struct__Audio_a656614b835148875d471eb83d6c92d92}
+
+\item 
+String($\ast$ {\bfseries get\-Info} )(Audio this\-\_\-gen, metadata\-\_\-extractor\-\_\-attr\-\_\-e metadata\-Key)\label{struct__Audio_ace021bdc3095855893529b4a41e9668f}
+
+\item 
+bool($\ast$ {\bfseries set\-U\-R\-I} )(Audio this\-\_\-gen, String uri)\label{struct__Audio_a88de7890a374c4fe254bca82bd996395}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Audio 모듈에 대한 구조체이다. Audio 모듈은 다양한 방식으로 음악 파일을 제어 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+File의 Audio 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Audio()}{p.}{File_8h_abe7f8cf85bbeefba4700f61bc5877322} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Audio()}{p.}{File_8h_a1c24d11e9397892d289591033dd8d174} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Audio part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf File.\-h}\end{DoxyCompactItemize}

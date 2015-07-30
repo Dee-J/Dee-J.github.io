@@ -1,4 +1,0 @@
-<map id="_TemperatureExtend" name="_TemperatureExtend">
-<area shape="rect" id="node2" href="$de/dda/struct__Temperature.html" title="Temperature 모듈에 대한 구조체이다. Temperature 모듈은 Temperature Sensor를 다양한 방식으로 제어할 수 있다. " alt="" coords="15,201,139,346"/>
-<area shape="rect" id="node3" href="$d5/d65/Sensor_8h.html#d7/d14/struct__Temperature__data" title="{_Temperature_data\n|+ celsius\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="9,6,145,135"/>
-</map>

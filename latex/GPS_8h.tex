@@ -1,0 +1,619 @@
+\section{G\-P\-S.\-h File Reference}
+\label{GPS_8h}\index{G\-P\-S.\-h@{G\-P\-S.\-h}}
+
+
+G\-P\-S A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include $<$locations.\-h$>$}\\*
+Include dependency graph for G\-P\-S.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{GPS_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{GPS_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Location}
+\item 
+struct {\bf G\-P\-S}
+\begin{DoxyCompactList}\small\item\em G\-P\-S 모듈에 대한 구조체이다. G\-P\-S 모듈은 다양한 방식으로 G\-P\-S를 사용할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf G\-P\-S\-Extends}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf G\-P\-S\-Error\-Checker} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+G\-P\-S {\bf New\-Gps} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 G\-P\-S 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Gps} (G\-P\-S this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 G\-P\-S 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf is\-G\-P\-S\-Accessible} (G\-P\-S this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 G\-P\-S 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool {\bf on\-G\-P\-S\-Connect} (G\-P\-S this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf on\-G\-P\-S\-Disconnect} (G\-P\-S this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+{\bf Location} {\bf G\-P\-S\-Recv} (G\-P\-S this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em G\-P\-S로 부터 위치 정보를 수신한다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\-P\-S A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+G\-P\-S의 is\-Accessible / on\-Connect / on\-Disconnect / Recv A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Data Structure Documentation}
+\index{Location@{Location}}\label{structLocation}
+\subsubsection{struct Location}
+
+
+Collaboration diagram for Location\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{structLocation__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+double\label{GPS_8h_a63e8622092a9e9e57b05feeb455156d1}
+&
+altitude&
+\\
+\hline
+
+double\label{GPS_8h_a9695d14d0f84614176fbb5bb1a4fc330}
+&
+climb&
+\\
+\hline
+
+double\label{GPS_8h_a37996bc58cf479c57bc69df9a321cdce}
+&
+direction&
+\\
+\hline
+
+double\label{GPS_8h_aa825a3139b4af389fbbf046230e13513}
+&
+horizontal&
+\\
+\hline
+
+double\label{GPS_8h_aa7fa1116e7a00501032a724156ec946a}
+&
+latitude&
+\\
+\hline
+
+location\-\_\-accuracy\-\_\-level\-\_\-e\label{GPS_8h_aad5c01cc48a4f114cfa58c6577a2c0b9}
+&
+level&
+\\
+\hline
+
+double\label{GPS_8h_a1863cdc6296ff1cb37f4f4cf2d6ada6e}
+&
+longitude&
+\\
+\hline
+
+double\label{GPS_8h_afcb6178ec10e610e764eda6c9f214424}
+&
+speed&
+\\
+\hline
+
+time\-\_\-t\label{GPS_8h_a7ea7fb9fa3ec6fbcd2edc29d5e326726}
+&
+timestamp&
+\\
+\hline
+
+bool\label{GPS_8h_a34f264a79e761f29c6d5c398bcaaa00e}
+&
+validation&
+\\
+\hline
+
+double\label{GPS_8h_abb6f6461f817837bf357cead739e45cc}
+&
+vertical&
+\\
+\hline
+
+\end{DoxyFields}
+\index{G\-P\-S\-Extends@{G\-P\-S\-Extends}}\label{structGPSExtends}
+\subsubsection{struct G\-P\-S\-Extends}
+
+
+Collaboration diagram for G\-P\-S\-Extends\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{structGPSExtends__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+bool\label{GPS_8h_a100e1cad3432b6430f9e617c562a771d}
+&
+access&
+\\
+\hline
+
+bool\label{GPS_8h_aaa899e96d674affb7c8566cbf0064876}
+&
+connect&
+\\
+\hline
+
+struct {\bf \-\_\-gps}\label{GPS_8h_a3104ebe071c6faeb09e5bec08008ccf1}
+&
+gps&
+\\
+\hline
+
+{\bf Location}\label{GPS_8h_af846e1fbb68747cfbcd39fba3e1cc39a}
+&
+location&
+\\
+\hline
+
+location\-\_\-manager\-\_\-h\label{GPS_8h_ac711550fe701c89fd68787a9fbff6eb3}
+&
+manager&
+\\
+\hline
+
+location\-\_\-service\-\_\-state\-\_\-e\label{GPS_8h_afb3826794b21a68540785e1b6ea55337}
+&
+state&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!Destroy\-Gps@{Destroy\-Gps}}
+\index{Destroy\-Gps@{Destroy\-Gps}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{Destroy\-Gps}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Gps (
+\begin{DoxyParamCaption}
+\item[{G\-P\-S}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b}
+
+
+생성한 G\-P\-S 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 G\-P\-S 객체를 소멸 시킨다. \par
+ G\-P\-S 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Gps}{p.}{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!G\-P\-S\-Error\-Checker@{G\-P\-S\-Error\-Checker}}
+\index{G\-P\-S\-Error\-Checker@{G\-P\-S\-Error\-Checker}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{G\-P\-S\-Error\-Checker}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ G\-P\-S\-Error\-Checker (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_ae249d5e30c8384711b2f0e408752ae1b}
+
+
+G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-C\-C\-E\-S\-S\-I\-B\-I\-L\-I\-T\-Y\-\_\-\-N\-O\-T\-\_\-\-A\-L\-L\-O\-W\-E\-D} & \-: Permission denied \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-C\-O\-R\-R\-E\-C\-T\-\_\-\-M\-E\-T\-H\-O\-D} & \-: \doxyref{Location}{p.}{GPS_8h_structLocation} manager contains incorrect method for a given call \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-E\-T\-W\-O\-R\-K\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Network unavailable \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E} & \-: \doxyref{Location}{p.}{GPS_8h_structLocation} service is not available \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-G\-P\-S\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-O\-F\-F} & \-: G\-P\-S/\-W\-P\-S setting is not enabled \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by security system policy \\
+\hline
+{\em L\-O\-C\-A\-T\-I\-O\-N\-S\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-W\-O\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 11가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ G\-P\-S part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GPS_8h_ae249d5e30c8384711b2f0e408752ae1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!G\-P\-S\-Recv@{G\-P\-S\-Recv}}
+\index{G\-P\-S\-Recv@{G\-P\-S\-Recv}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{G\-P\-S\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location} G\-P\-S\-Recv (
+\begin{DoxyParamCaption}
+\item[{G\-P\-S}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_ad567d557fd52762282c7eee89c69352c}
+
+
+G\-P\-S로 부터 위치 정보를 수신한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 수신할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로 부터 위치 정보를 수신한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Gps}{p.}{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106} \par
+ \doxyref{Destroy\-Gps}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} \par
+ \doxyref{is\-G\-P\-S\-Accessible}{p.}{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d} \par
+ \doxyref{on\-G\-P\-S\-Connect}{p.}{GPS_8h_a7ccea786da98fd739ff94af37c8b629a} \par
+ \doxyref{on\-G\-P\-S\-Disconnect}{p.}{GPS_8h_a8eca216e670944b8a549406a8fc8dc44} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{GPS_8h_ad567d557fd52762282c7eee89c69352c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!is\-G\-P\-S\-Accessible@{is\-G\-P\-S\-Accessible}}
+\index{is\-G\-P\-S\-Accessible@{is\-G\-P\-S\-Accessible}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{is\-G\-P\-S\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-G\-P\-S\-Accessible (
+\begin{DoxyParamCaption}
+\item[{G\-P\-S}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d}
+
+
+현재 G\-P\-S 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 G\-P\-S 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Gps}{p.}{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106} \par
+ \doxyref{Destroy\-Gps}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} \par
+ \doxyref{on\-G\-P\-S\-Connect}{p.}{GPS_8h_a7ccea786da98fd739ff94af37c8b629a} \par
+ \doxyref{on\-G\-P\-S\-Disconnect}{p.}{GPS_8h_a8eca216e670944b8a549406a8fc8dc44} \par
+ \doxyref{G\-P\-S\-Recv}{p.}{GPS_8h_ad567d557fd52762282c7eee89c69352c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!New\-Gps@{New\-Gps}}
+\index{New\-Gps@{New\-Gps}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{New\-Gps}]{\setlength{\rightskip}{0pt plus 5cm}G\-P\-S New\-Gps (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106}
+
+
+새로운 G\-P\-S 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em G\-P\-S} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 G\-P\-S 객체를 생성한다. \par
+ G\-P\-S 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Gps}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} \par
+ \doxyref{is\-G\-P\-S\-Accessible}{p.}{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d} \par
+ \doxyref{on\-G\-P\-S\-Connect}{p.}{GPS_8h_a7ccea786da98fd739ff94af37c8b629a} \par
+ \doxyref{on\-G\-P\-S\-Disconnect}{p.}{GPS_8h_a8eca216e670944b8a549406a8fc8dc44} \par
+ \doxyref{G\-P\-S\-Recv}{p.}{GPS_8h_ad567d557fd52762282c7eee89c69352c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Gps()}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+GPS NewGps (\textcolor{keywordtype}{void})
+\{
+    GPSExtends * \textcolor{keyword}{this} = (GPSExtends *)malloc (\textcolor{keyword}{sizeof} (GPSExtends));
+
+    this->gps.isAccessible = isGPSAccessible;
+    this->gps.onConnect    = onGPSConnect;
+    this->gps.onDisconnect = onGPSDisconnect;
+    this->gps.Recv         = GPSRecv;
+
+    location\_manager\_create (LOCATIONS\_METHOD\_GPS, &this->manager);
+
+    this->state = LOCATIONS\_SERVICE\_DISABLED;
+
+    Location location = \{0,\};
+    this->location = location;
+    this->access   = \textcolor{keyword}{false};
+    this->connect  = \textcolor{keyword}{false};
+
+    \textcolor{keywordflow}{return} &this->gps;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!on\-G\-P\-S\-Connect@{on\-G\-P\-S\-Connect}}
+\index{on\-G\-P\-S\-Connect@{on\-G\-P\-S\-Connect}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{on\-G\-P\-S\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-G\-P\-S\-Connect (
+\begin{DoxyParamCaption}
+\item[{G\-P\-S}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_a7ccea786da98fd739ff94af37c8b629a}
+
+
+G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 성공 여부를 확인할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로 연결을 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Gps}{p.}{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106} \par
+ \doxyref{Destroy\-Gps}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} \par
+ \doxyref{is\-G\-P\-S\-Accessible}{p.}{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d} \par
+ \doxyref{on\-G\-P\-S\-Disconnect}{p.}{GPS_8h_a8eca216e670944b8a549406a8fc8dc44} \par
+ \doxyref{G\-P\-S\-Recv}{p.}{GPS_8h_ad567d557fd52762282c7eee89c69352c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{GPS_8h_a7ccea786da98fd739ff94af37c8b629a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{GPS_8h_a7ccea786da98fd739ff94af37c8b629a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{G\-P\-S.\-h@{G\-P\-S.\-h}!on\-G\-P\-S\-Disconnect@{on\-G\-P\-S\-Disconnect}}
+\index{on\-G\-P\-S\-Disconnect@{on\-G\-P\-S\-Disconnect}!GPS.h@{G\-P\-S.\-h}}
+\subsubsection[{on\-G\-P\-S\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-G\-P\-S\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{G\-P\-S}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{GPS_8h_a8eca216e670944b8a549406a8fc8dc44}
+
+
+G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 해제 여부를 확인할 G\-P\-S 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+G\-P\-S로의 연결을 해제하며 이의 성공 여부를 반환한다. \par
+ 연결 해제에 성공하면 @ true, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Gps}{p.}{GPS_8h_aaf1f2e8f7650a9ec24d3fedebd22e106} \par
+ \doxyref{Destroy\-Gps}{p.}{GPS_8h_a2c75d277f0c7f390ccc06701aa27660b} \par
+ \doxyref{is\-G\-P\-S\-Accessible}{p.}{GPS_8h_a4c9fefb1b2513013e6e5c66a413e387d} \par
+ \doxyref{on\-G\-P\-S\-Connect}{p.}{GPS_8h_a7ccea786da98fd739ff94af37c8b629a} \par
+ \doxyref{G\-P\-S\-Recv}{p.}{GPS_8h_ad567d557fd52762282c7eee89c69352c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/location} \par
+
+\item {\tt http\-://tizen.\-org/feature/location.\-gps} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{GPS_8h_a8eca216e670944b8a549406a8fc8dc44_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{GPS_8h_a8eca216e670944b8a549406a8fc8dc44_icgraph}
+\end{center}
+\end{figure}
+
+

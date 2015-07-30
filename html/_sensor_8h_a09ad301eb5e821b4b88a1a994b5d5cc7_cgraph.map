@@ -1,7 +1,0 @@
-<map id="NewRotationVector" name="NewRotationVector">
-<area shape="rect" id="node2" href="$_sensor_8c.html#a9b47e7ff5c669403305b3e2b5dec54a7" title="RotationVectorOff" alt="" coords="218,5,345,33"/>
-<area shape="rect" id="node3" href="$_sensor_8c.html#a501763c17b7cd3e3a45dc595eee0e653" title="RotationVectorOn" alt="" coords="218,57,345,85"/>
-<area shape="rect" id="node4" href="$_sensor_8c.html#a21741c6fd3172336b169963acc28b074" title="addRotationVectorCallback" alt="" coords="190,109,372,137"/>
-<area shape="rect" id="node5" href="$_sensor_8c.html#ac36694c7e6f5b3b500268fcac7679abd" title="getRotationVectorValue" alt="" coords="201,161,362,189"/>
-<area shape="rect" id="node6" href="$_sensor_8c.html#ad26fd4fc6dd7b0968a47c9773759ba99" title="isRotationVectorSupported" alt="" coords="191,213,371,241"/>
-</map>

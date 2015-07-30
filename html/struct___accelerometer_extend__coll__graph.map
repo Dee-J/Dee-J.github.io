@@ -1,4 +1,0 @@
-<map id="_AccelerometerExtend" name="_AccelerometerExtend">
-<area shape="rect" id="node2" href="$struct___accelerometer.html" title="{_Accelerometer\n|+ addCallback\l+ On\l+ Off\l+ isSupported\l|}" alt="" coords="25,233,140,362"/>
-<area shape="rect" id="node3" href="$_sensor_8h.html#struct__3d__data" title="{_3d_data\n|+ x\l+ y\l+ z\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="30,6,135,167"/>
-</map>

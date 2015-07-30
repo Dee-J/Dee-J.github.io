@@ -1,8 +1,0 @@
-<map id="NewGyroscope" name="NewGyroscope">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a64e72d01f92e9cd2f11538576b9bb25a" title="GyroscopeOff" alt="" coords="203,5,306,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a3bd51264b2d2c9d88a28459ae55e5612" title="GyroscopeOn" alt="" coords="203,57,306,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#a0452a7182234767d311e80a54c67360d" title="addGyroscopeCallback" alt="" coords="175,109,334,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a7cecfd5ca0547a9c75d70ec0e0747600" title="getGyroscopeValue" alt="" coords="186,161,323,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a6ecc487a57d98c882e694edfc36b2c8a" title="isGyroscopeSupported" alt="" coords="176,213,333,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a8e63eda49d9758c1e75201fc0a24479e" title="detachGyroscopeCallback" alt="" coords="166,265,343,293"/>
-</map>

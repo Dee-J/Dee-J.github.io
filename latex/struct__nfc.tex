@@ -1,70 +1,61 @@
-\hypertarget{struct__nfc}{\section{\-\_\-nfc 구조체 참조}
-\label{struct__nfc}\index{\-\_\-nfc@{\-\_\-nfc}}
-}
+\section{N\-F\-C Struct Reference}
+\label{struct__NFC}\index{N\-F\-C@{N\-F\-C}}
+
+
+N\-F\-C모듈에 대한 구조체이다.  
+
+
 
 
 {\ttfamily \#include $<$N\-F\-C.\-h$>$}
 
-\subsection*{데이타 필드}
+
+
+Collaboration diagram for N\-F\-C\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{struct__NFC__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-bool($\ast$ \hyperlink{struct__nfc_ac1c45ebcef1f0a82a2bc140a9a2d572b}{is\-Accessible} )(\hyperlink{namespace_3global_scope_4_struct_n_f_c}{N\-F\-C} this\-\_\-gen)
+bool($\ast$ {\bfseries is\-Accessible} )(N\-F\-C this\-\_\-gen)\label{struct__NFC_acfd65402336104b99d977a480cc32bc4}
+
 \item 
-bool($\ast$ \hyperlink{struct__nfc_a070219e871b65c63119b2b9fcf2f7e40}{on\-Connect} )(\hyperlink{namespace_3global_scope_4_struct_n_f_c}{N\-F\-C} this\-\_\-gen)
+bool($\ast$ {\bfseries on\-Connect} )(N\-F\-C this\-\_\-gen)\label{struct__NFC_a641d42a3e1952b5e20148242df62adcf}
+
 \item 
-bool($\ast$ \hyperlink{struct__nfc_a3c638b599b78d063fd8472ea015597e0}{on\-Disconnect} )(\hyperlink{namespace_3global_scope_4_struct_n_f_c}{N\-F\-C} this\-\_\-gen)
+bool($\ast$ {\bfseries on\-Disconnect} )(N\-F\-C this\-\_\-gen)\label{struct__NFC_a2907896a1603e5c378ecd4144cdc6cff}
+
 \item 
-void($\ast$ \hyperlink{struct__nfc_aca64adb6ba471126be23b84178dbd887}{Send} )(\hyperlink{namespace_3global_scope_4_struct_n_f_c}{N\-F\-C} this\-\_\-gen, \hyperlink{_n_f_c_8h_struct_n_d_e_f}{N\-D\-E\-F} message)
+bool($\ast$ {\bfseries Send} )(N\-F\-C this\-\_\-gen, {\bf N\-D\-E\-F} message)\label{struct__NFC_a1041469abeb623b05484132cfa873d7e}
+
 \item 
-\hyperlink{_n_f_c_8h_struct_n_d_e_f}{N\-D\-E\-F}($\ast$ \hyperlink{struct__nfc_a2c24741e6d306b941e4b30559e5b7a52}{Recv} )(\hyperlink{namespace_3global_scope_4_struct_n_f_c}{N\-F\-C} this\-\_\-gen)
+{\bf N\-D\-E\-F}($\ast$ {\bfseries Recv} )(N\-F\-C this\-\_\-gen)\label{struct__NFC_a46fb96abf8e9ca5fea21c31f58232b61}
+
 \end{DoxyCompactItemize}
 
 
-\subsection{상세한 설명}
+\subsection{Detailed Description}
+N\-F\-C모듈에 대한 구조체이다. 
+
+\begin{DoxyNote}{Note}
+N\-F\-C모듈에 대한 구조체이다. 구조체를 사용하기전에 \doxyref{New\-N\-F\-C()}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} 함수를 사용 해야 하며 사용이 끝났을 때 \doxyref{Destroy\-N\-F\-C()}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}함수를 꼭 사용해야한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ N\-F\-C part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries features} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
 
 
-N\-F\-C.\-h 파일의 33 번째 라인에서 정의되었습니다.
-
-
-
-\subsection{필드 문서화}
-\hypertarget{struct__nfc_ac1c45ebcef1f0a82a2bc140a9a2d572b}{\index{\-\_\-nfc@{\-\_\-nfc}!is\-Accessible@{is\-Accessible}}
-\index{is\-Accessible@{is\-Accessible}!_nfc@{\-\_\-nfc}}
-\subsubsection[{is\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$  is\-Accessible)({\bf N\-F\-C} this\-\_\-gen)}}\label{struct__nfc_ac1c45ebcef1f0a82a2bc140a9a2d572b}
-
-
-N\-F\-C.\-h 파일의 35 번째 라인에서 정의되었습니다.
-
-\hypertarget{struct__nfc_a070219e871b65c63119b2b9fcf2f7e40}{\index{\-\_\-nfc@{\-\_\-nfc}!on\-Connect@{on\-Connect}}
-\index{on\-Connect@{on\-Connect}!_nfc@{\-\_\-nfc}}
-\subsubsection[{on\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$  on\-Connect)({\bf N\-F\-C} this\-\_\-gen)}}\label{struct__nfc_a070219e871b65c63119b2b9fcf2f7e40}
-
-
-N\-F\-C.\-h 파일의 37 번째 라인에서 정의되었습니다.
-
-\hypertarget{struct__nfc_a3c638b599b78d063fd8472ea015597e0}{\index{\-\_\-nfc@{\-\_\-nfc}!on\-Disconnect@{on\-Disconnect}}
-\index{on\-Disconnect@{on\-Disconnect}!_nfc@{\-\_\-nfc}}
-\subsubsection[{on\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$  on\-Disconnect)({\bf N\-F\-C} this\-\_\-gen)}}\label{struct__nfc_a3c638b599b78d063fd8472ea015597e0}
-
-
-N\-F\-C.\-h 파일의 39 번째 라인에서 정의되었습니다.
-
-\hypertarget{struct__nfc_a2c24741e6d306b941e4b30559e5b7a52}{\index{\-\_\-nfc@{\-\_\-nfc}!Recv@{Recv}}
-\index{Recv@{Recv}!_nfc@{\-\_\-nfc}}
-\subsubsection[{Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-D\-E\-F}($\ast$  Recv)({\bf N\-F\-C} this\-\_\-gen)}}\label{struct__nfc_a2c24741e6d306b941e4b30559e5b7a52}
-
-
-N\-F\-C.\-h 파일의 43 번째 라인에서 정의되었습니다.
-
-\hypertarget{struct__nfc_aca64adb6ba471126be23b84178dbd887}{\index{\-\_\-nfc@{\-\_\-nfc}!Send@{Send}}
-\index{Send@{Send}!_nfc@{\-\_\-nfc}}
-\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$  Send)({\bf N\-F\-C} this\-\_\-gen, {\bf N\-D\-E\-F} message)}}\label{struct__nfc_aca64adb6ba471126be23b84178dbd887}
-
-
-N\-F\-C.\-h 파일의 41 번째 라인에서 정의되었습니다.
-
-
-
-이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\-:\begin{DoxyCompactItemize}
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{_n_f_c_8h}{N\-F\-C.\-h}\end{DoxyCompactItemize}
+{\bf N\-F\-C.\-h}\end{DoxyCompactItemize}

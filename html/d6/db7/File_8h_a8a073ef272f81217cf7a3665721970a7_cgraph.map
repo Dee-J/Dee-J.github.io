@@ -1,8 +1,0 @@
-<map id="NewImage" name="NewImage">
-<area shape="rect" id="node2" href="$d7/d37/File_8c.html#af7dd899952c77e657f91773385731898" title="사진 파일의 meta data를 가져온다. " alt="" coords="160,5,259,33"/>
-<area shape="rect" id="node3" href="$d7/d37/File_8c.html#aca1b404580307734c234029ee9ec785f" title="사진 파일의 meta data 중 Burst Id를 가져온다. " alt="" coords="150,57,269,85"/>
-<area shape="rect" id="node4" href="$d7/d37/File_8c.html#afa46334dca385b7745cc9b24125af485" title="사진 파일의 meta data 중 Media Id를 가져온다. " alt="" coords="147,109,272,137"/>
-<area shape="rect" id="node5" href="$d7/d37/File_8c.html#aa257a3267f9eba5245c8827456c364d1" title="사진 파일의 meta data 중 찍은 날짜 정보를 가져온다. " alt="" coords="139,161,280,189"/>
-<area shape="rect" id="node6" href="$d7/d37/File_8c.html#a265af397b45973553ffe7b24f5b294a1" title="사진 파일의 meta data 중 찍은 width 정보를 가져온다. " alt="" coords="154,213,265,241"/>
-<area shape="rect" id="node7" href="$d7/d37/File_8c.html#a234e4aeffbda89026d122582504b1eb8" title="사진 파일의 meta data 중 찍은 height 정보를 가져온다. " alt="" coords="152,265,267,293"/>
-</map>

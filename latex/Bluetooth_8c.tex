@@ -1,0 +1,651 @@
+\section{Bluetooth.\-c File Reference}
+\label{Bluetooth_8c}\index{Bluetooth.\-c@{Bluetooth.\-c}}
+
+
+Bluetooth A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Commnucation/\-Bluetooth.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$system\-\_\-info.\-h$>$}\\*
+{\ttfamily \#include $<$app\-\_\-control.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+{\ttfamily \#include $<$glib.\-h$>$}\\*
+Include dependency graph for Bluetooth.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Bluetooth_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bluetooth {\bf New\-Bluetooth} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Bluetooth 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Bluetooth} (Bluetooth this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Bluetooth 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf is\-Bluetooth\-Accessible} (Bluetooth this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 Bluetooth 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool {\bf on\-Bluetooth\-Connect} (Bluetooth this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Bluetooth기기로 연결을 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf is\-Bluetooth\-Connected} (Bluetooth this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Bluetooth기기와의 연결 상태를 확인한다. \end{DoxyCompactList}\item 
+bool {\bf on\-Bluetooth\-Disconnect} (Bluetooth this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Bluetooth기기로 연결을 해제하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf Bluetooth\-File\-Recv} (Bluetooth this\-\_\-gen, String $\ast$recv\-Buffer)
+\begin{DoxyCompactList}\small\item\em Bluetooth기기로 부터 데이터를 수신한다. \end{DoxyCompactList}\item 
+bool {\bf Bluetooth\-File\-Send} (Bluetooth this\-\_\-gen, String sendbuffer)
+\begin{DoxyCompactList}\small\item\em Bluetooth기기로 데이터를 송신한다. \end{DoxyCompactList}\item 
+const char $\ast$ {\bf Bluetooth\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Bluetooth A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bluetooth A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+Bluetooth A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Bluetooth.\-h}{p.}{Bluetooth_8h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-Error\-Check@{Bluetooth\-Error\-Check}}
+\index{Bluetooth\-Error\-Check@{Bluetooth\-Error\-Check}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Bluetooth\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a27d2daee8cbfd1a01955b71a879af863}
+
+
+Bluetooth A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-A\-N\-C\-E\-L\-L\-E\-D} & \-: Operation cancelled \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-S\-O\-U\-R\-C\-E\-\_\-\-B\-U\-S\-Y} & \-: Device or resource busy \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T} & \-: Timeout error \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-W\-\_\-\-I\-N\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S} & \-: Operation now in progress \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not Supported \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-Q\-U\-O\-T\-A\-\_\-\-E\-X\-C\-E\-E\-D\-E\-D} & \-: Quota exceeded \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} & \-: Local adapter not initialized \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D} & \-: Local adapter not enabled \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-D\-O\-N\-E} & \-: Operation already done \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Operation failed \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S} & \-: Operation not in progress \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-B\-O\-N\-D\-E\-D} & \-: Remote device not bonded \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-U\-T\-H\-\_\-\-R\-E\-J\-E\-C\-T\-E\-D} & \-: Authentication rejected \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-U\-T\-H\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Authentication failed \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \-: Remote device not found \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-S\-E\-A\-R\-C\-H\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Service search failed \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D} & \-: Remote device is not connected \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-G\-A\-I\-N} & \-: Resource temporarily unavailable \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \-: Service Not Found \\
+\hline
+{\em B\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-W\-O\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 24가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Bluetooth part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Bluetooth_8c_a27d2daee8cbfd1a01955b71a879af863_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-File\-Recv@{Bluetooth\-File\-Recv}}
+\index{Bluetooth\-File\-Recv@{Bluetooth\-File\-Recv}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-File\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}bool Bluetooth\-File\-Recv (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen, }
+\item[{String $\ast$}]{recv\-Buffer}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a43d4d767fbb4f0a1568a453e7b6a9995}
+
+
+Bluetooth기기로 부터 데이터를 수신한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 수신할 Bluetooth 객체 \\
+\hline
+\mbox{\tt in}  & {\em recv\-Buffer} & 수신할 데이터 주소 \\
+\hline
+\mbox{\tt out}  & {\em recv\-Buffer} & 수신한 데이터 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth기기로 부터 데이터를 수신한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{Bluetooth_8c_a43d4d767fbb4f0a1568a453e7b6a9995_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Bluetooth_8c_a43d4d767fbb4f0a1568a453e7b6a9995_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!Bluetooth\-File\-Send@{Bluetooth\-File\-Send}}
+\index{Bluetooth\-File\-Send@{Bluetooth\-File\-Send}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Bluetooth\-File\-Send}]{\setlength{\rightskip}{0pt plus 5cm}bool Bluetooth\-File\-Send (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen, }
+\item[{String}]{sendbuffer}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a169790dd12357103f392285063a4cfb9}
+
+
+Bluetooth기기로 데이터를 송신한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 송신할 Bluetooth 객체 \\
+\hline
+\mbox{\tt in}  & {\em sendbuffer} & 송신할 파일 path \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth기기로 데이터를 송신한다. \par
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{Bluetooth_8c_a169790dd12357103f392285063a4cfb9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Bluetooth_8c_a169790dd12357103f392285063a4cfb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!Destroy\-Bluetooth@{Destroy\-Bluetooth}}
+\index{Destroy\-Bluetooth@{Destroy\-Bluetooth}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{Destroy\-Bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Bluetooth (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a643b6a392ddbcf1c02bcfeb15ca52df8}
+
+
+생성한 Bluetooth 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Bluetooth 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Bluetooth 객체를 소멸 시킨다. \par
+ Bluetooth 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Bluetooth.\-c@{Bluetooth.\-c}!is\-Bluetooth\-Accessible@{is\-Bluetooth\-Accessible}}
+\index{is\-Bluetooth\-Accessible@{is\-Bluetooth\-Accessible}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{is\-Bluetooth\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Bluetooth\-Accessible (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc}
+
+
+현재 Bluetooth 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 Bluetooth 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 Bluetooth 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{Bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{Bluetooth_8c_a00b401ae906bf1d77f232c88a14314fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!is\-Bluetooth\-Connected@{is\-Bluetooth\-Connected}}
+\index{is\-Bluetooth\-Connected@{is\-Bluetooth\-Connected}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{is\-Bluetooth\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Bluetooth\-Connected (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e}
+
+
+Bluetooth기기와의 연결 상태를 확인한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 상태를 확인할 Bluetooth 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth기기와의 연결 상태를 확인한다. \par
+ 연결되어 있다면 {\ttfamily true}, 연결되어 있지 않다면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{Bluetooth_8c_a4959b3be5e12c0d3e4cc317e00e4621e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!New\-Bluetooth@{New\-Bluetooth}}
+\index{New\-Bluetooth@{New\-Bluetooth}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{New\-Bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}Bluetooth New\-Bluetooth (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a}
+
+
+새로운 Bluetooth 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Bluetooth} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Bluetooth 객체를 생성한다. \par
+ Bluetooth 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Bluetooth()}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Bluetooth NewBluetooth (\textcolor{keywordtype}{void})
+\{
+    BluetoothExtends * \textcolor{keyword}{this} = malloc (\textcolor{keyword}{sizeof} (BluetoothExtends));
+    this->bluetooth.isAccessible = isBluetoothAccessible;
+    this->bluetooth.onConnect    = onBluetoothConnect;
+    this->bluetooth.isConnected  = isBluetoothConnected;
+    this->bluetooth.onDisconnect = onBluetoothDisconnect;
+    this->bluetooth.FileRecv     = BluetoothFileRecv;
+    this->bluetooth.FileSend     = BluetoothFileSend;
+
+    this->connected     = \textcolor{keyword}{false};
+    this->accessible    = \textcolor{keyword}{false};
+    this->remoteMACAddr = NULL;
+
+    \textcolor{keywordflow}{return} &this->bluetooth;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Bluetooth_8c_aedecb2f1b25b6d408a1880978b66712a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!on\-Bluetooth\-Connect@{on\-Bluetooth\-Connect}}
+\index{on\-Bluetooth\-Connect@{on\-Bluetooth\-Connect}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{on\-Bluetooth\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Bluetooth\-Connect (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6}
+
+
+Bluetooth기기로 연결을 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 성공 여부를 확인할 Bluetooth 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth기기로 연결을 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{on\-Bluetooth\-Disconnect}{p.}{Bluetooth_8h_a26f809a19ded06421baab533eb8a59a6} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{Bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{Bluetooth_8c_a77d0c6bf9a2f45a43a3b5801dd978fb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bluetooth.\-c@{Bluetooth.\-c}!on\-Bluetooth\-Disconnect@{on\-Bluetooth\-Disconnect}}
+\index{on\-Bluetooth\-Disconnect@{on\-Bluetooth\-Disconnect}!Bluetooth.c@{Bluetooth.\-c}}
+\subsubsection[{on\-Bluetooth\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Bluetooth\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{Bluetooth}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Bluetooth_8c_a26f809a19ded06421baab533eb8a59a6}
+
+
+Bluetooth기기로 연결을 해제하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 해제 여부를 확인할 Bluetooth 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Bluetooth기기로 연결을 해제하며 이의 성공 여부를 반환한다. \par
+ 연결 해제에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Bluetooth}{p.}{Bluetooth_8h_aedecb2f1b25b6d408a1880978b66712a} \par
+ \doxyref{Destroy\-Bluetooth}{p.}{Bluetooth_8h_a643b6a392ddbcf1c02bcfeb15ca52df8} \par
+ \doxyref{is\-Bluetooth\-Accessible}{p.}{Bluetooth_8h_a00b401ae906bf1d77f232c88a14314fc} \par
+ \doxyref{on\-Bluetooth\-Connect}{p.}{Bluetooth_8h_a77d0c6bf9a2f45a43a3b5801dd978fb6} \par
+ \doxyref{is\-Bluetooth\-Connected}{p.}{Bluetooth_8h_a4959b3be5e12c0d3e4cc317e00e4621e} \par
+ \doxyref{Bluetooth\-File\-Send}{p.}{Bluetooth_8h_a169790dd12357103f392285063a4cfb9} \par
+ \doxyref{Bluetooth\-File\-Recv}{p.}{Bluetooth_8h_a43d4d767fbb4f0a1568a453e7b6a9995} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-bluetooth} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{Bluetooth_8c_a26f809a19ded06421baab533eb8a59a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{Bluetooth_8c_a26f809a19ded06421baab533eb8a59a6_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,9 +1,0 @@
-<map id="NewVideo" name="NewVideo">
-<area shape="rect" id="node2" href="$d7/d37/File_8c.html#a270efb2f74fd2361e50e9ccb7e4f8994" title="for use this function, caller must import &lt;metadata_extractor.h&gt; " alt="" coords="141,5,237,33"/>
-<area shape="rect" id="node3" href="$d7/d37/File_8c.html#a7d6bf405559699710a43dccea8d0a4e1" title="pauseVideo" alt="" coords="144,57,235,85"/>
-<area shape="rect" id="node4" href="$d7/d37/File_8c.html#a7073fc7cfe96be95f74c825568473c79" title="playVideo" alt="" coords="150,109,229,137"/>
-<area shape="rect" id="node5" href="$d7/d37/File_8c.html#a5b40295ac61cd591f16df0830662cf41" title="recordVideo" alt="" coords="143,161,236,189"/>
-<area shape="rect" id="node6" href="$d7/d37/File_8c.html#af01f9025ee8223f530578cb9d13b090d" title="stopVideo" alt="" coords="149,213,230,241"/>
-<area shape="rect" id="node7" href="$d7/d37/File_8c.html#a9c54d82410998e70be5ee58f4300c007" title="setVideoURI" alt="" coords="141,265,237,293"/>
-<area shape="rect" id="node8" href="$d7/d37/File_8c.html#aaff5acd3166a9688ec8264308e24f983" title="setEvasObject" alt="" coords="136,317,243,345"/>
-</map>

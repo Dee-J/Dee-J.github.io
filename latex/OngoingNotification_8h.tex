@@ -1,0 +1,890 @@
+\section{Ongoing\-Notification.\-h File Reference}
+\label{OngoingNotification_8h}\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}}
+
+
+Ongoing Notification A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$notification.\-h$>$}\\*
+Include dependency graph for Ongoing\-Notification.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{OngoingNotification_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{OngoingNotification_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Ongoing\-Notification}
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 모듈에 대한 구조체이다. Ongoing\-Notification 모듈은 다양한 방식으로 알림을 설정 할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf Ongoing\-Notification\-Extend}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Ongoing\-Notification\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Ongoing Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Ongoing\-Notification {\bf New\-Ongoing\-Notification} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Ongoing\-Notification 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Ongoing\-Notification} (Ongoing\-Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Ongoing\-Notification 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf Ongoing\-Notification\-Show} (Ongoing\-Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Ongoing\-Notification을 Notification 바에 등록한다. \end{DoxyCompactList}\item 
+bool {\bf Ongoing\-Notification\-Hide} (Ongoing\-Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Notification 바에 등록되어 있는 Ongoing\-Notification을 삭제한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Ongoing\-Notification\-Title} (Ongoing\-Notification this\-\_\-gen, String title)
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 객체의 title을 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Ongoing\-Notification\-Text} (Ongoing\-Notification this\-\_\-gen, String text)
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 객체의 text를 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Ongoing\-Notification\-Icon} (Ongoing\-Notification this\-\_\-gen, String image\-Path)
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 객체의 아이콘 이미지를 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Ongoing\-Notification\-Sound} (Ongoing\-Notification this\-\_\-gen, String sound\-Path)
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 객체의 알림음을 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Ongoing\-Notification\-Progress} (Ongoing\-Notification this\-\_\-gen, double progress)
+\begin{DoxyCompactList}\small\item\em Ongoing\-Notification 객체의 진행률을 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf update\-Ongoing\-Notification} (Ongoing\-Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 새로 설정한 Ongoing\-Notification 객체의 정보들을 새로 적용 한다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ongoing Notification A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Ongoing Notification의 Show / Hide / set\-Title / set\-Text / set\-Icon / set\-Sound / set\-Progress / update Notification A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Data Structure Documentation}
+\index{Ongoing\-Notification\-Extend@{Ongoing\-Notification\-Extend}}\label{structOngoingNotificationExtend}
+\subsubsection{struct Ongoing\-Notification\-Extend}
+
+
+Collaboration diagram for Ongoing\-Notification\-Extend\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{structOngoingNotificationExtend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+String\label{OngoingNotification_8h_ab9b938e5bf688cfa771f2a160586a441}
+&
+image\-Path&
+\\
+\hline
+
+struct {\bf \-\_\-\-Ongoing\-Notification}\label{OngoingNotification_8h_ade33214f57c4ac4920a996b1e0335a22}
+&
+Ongoingnotification&
+\\
+\hline
+
+notification\-\_\-h\label{OngoingNotification_8h_a3f1490bbf658d50cace284573a76a805}
+&
+ongoingnotification\-\_\-handle&
+\\
+\hline
+
+String\label{OngoingNotification_8h_a6b7598fd72d84c57272adaaa57d2be30}
+&
+sound\-Path&
+\\
+\hline
+
+String\label{OngoingNotification_8h_ada80e826c02f82f33d4f356c34ba16ea}
+&
+text&
+\\
+\hline
+
+String\label{OngoingNotification_8h_afae53badf9421ff37ea446299d6fc48b}
+&
+title&
+\\
+\hline
+
+bool\label{OngoingNotification_8h_ab4c1c650129c5ccddc1c152076e9626a}
+&
+visible&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!Destroy\-Ongoing\-Notification@{Destroy\-Ongoing\-Notification}}
+\index{Destroy\-Ongoing\-Notification@{Destroy\-Ongoing\-Notification}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{Destroy\-Ongoing\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Ongoing\-Notification (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5}
+
+
+생성한 Ongoing\-Notification 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Ongoing\-Notification 객체를 소멸 시킨다. \par
+ Ongoing\-Notification 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!New\-Ongoing\-Notification@{New\-Ongoing\-Notification}}
+\index{New\-Ongoing\-Notification@{New\-Ongoing\-Notification}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{New\-Ongoing\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}Ongoing\-Notification New\-Ongoing\-Notification (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3}
+
+
+새로운 Ongoing\-Notification 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Ongoing\-Notification} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Ongoing\-Notification 객체를 생성한다. \par
+ Ongoing\-Notification 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+OngoingNotification NewOngoingNotification (\textcolor{keywordtype}{void})
+\{
+    OngoingNotificationExtend * \textcolor{keyword}{this};
+
+    \textcolor{keyword}{this} = (OngoingNotificationExtend *)malloc (\textcolor{keyword}{sizeof} (
+      OngoingNotificationExtend));
+
+    this->Ongoingnotification.Show        = OngoingNotificationShow;
+    this->Ongoingnotification.Hide        = OngoingNotificationHide;
+    this->Ongoingnotification.setTitle    = setOngoingNotificationTitle;
+    this->Ongoingnotification.setText     = setOngoingNotificationText;
+    this->Ongoingnotification.setIcon     = setOngoingNotificationIcon;
+    this->Ongoingnotification.setSound    = setOngoingNotificationSound;
+    this->Ongoingnotification.setProgress = setOngoingNotificationProgress;
+    this->Ongoingnotification.update      = updateOngoingNotification;
+
+    this->ongoingnotification\_handle = notification\_create (NOTIFICATION\_TYPE\_ONGOING);
+    this->title                      = NULL;
+    this->text                       = NULL;
+    this->imagePath                  = NULL;
+    this->soundPath                  = NULL;
+    this->visible                    = \textcolor{keyword}{false};
+
+    notification\_set\_display\_applist (this->ongoingnotification\_handle, 
+      NOTIFICATION\_DISPLAY\_APP\_NOTIFICATION\_TRAY | NOTIFICATION\_DISPLAY\_APP\_TICKER);
+
+    \textcolor{keywordflow}{return} &this->Ongoingnotification;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!Ongoing\-Notification\-Error\-Check@{Ongoing\-Notification\-Error\-Check}}
+\index{Ongoing\-Notification\-Error\-Check@{Ongoing\-Notification\-Error\-Check}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{Ongoing\-Notification\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Ongoing\-Notification\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a62db52abc597cd1c11086014d0dc8b9f}
+
+
+Ongoing Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Success \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-O\-\_\-\-E\-R\-R\-O\-R} & \-: I/\-O error \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B} & \-: Error from D\-B query \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Already exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B\-U\-S} & \-: Error from D\-Bus \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Not exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-R\-E\-A\-D\-Y} & \-: No response from notification service \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 11가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Notification part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a62db52abc597cd1c11086014d0dc8b9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!Ongoing\-Notification\-Hide@{Ongoing\-Notification\-Hide}}
+\index{Ongoing\-Notification\-Hide@{Ongoing\-Notification\-Hide}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{Ongoing\-Notification\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}bool Ongoing\-Notification\-Hide (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e}
+
+
+Notification 바에 등록되어 있는 Ongoing\-Notification을 삭제한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에서 삭제할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+\doxyref{Ongoing\-Notification\-Show()}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a}를 통해 Notification 바에 등록 되어 있는 Ongoing\-Notification을 삭제한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!Ongoing\-Notification\-Show@{Ongoing\-Notification\-Show}}
+\index{Ongoing\-Notification\-Show@{Ongoing\-Notification\-Show}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{Ongoing\-Notification\-Show}]{\setlength{\rightskip}{0pt plus 5cm}bool Ongoing\-Notification\-Show (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a}
+
+
+생성한 Ongoing\-Notification을 Notification 바에 등록한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에 등록할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Ongoing\-Notification을 Notification 바에 등록한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+이제 막 생성한 Ongoing\-Notification은 Icon과 Sound 값에 기본 값이 설정되어 있지만 Title과 Text는 기본 값이 없기 때문에 \par
+ 사용하기 전에 \doxyref{set\-Ongoing\-Notification\-Title()}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} 과 \doxyref{set\-Ongoing\-Notification\-Text()}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} 을 통해 설정을 미리 해야한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!set\-Ongoing\-Notification\-Icon@{set\-Ongoing\-Notification\-Icon}}
+\index{set\-Ongoing\-Notification\-Icon@{set\-Ongoing\-Notification\-Icon}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{set\-Ongoing\-Notification\-Icon}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Ongoing\-Notification\-Icon (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen, }
+\item[{String}]{image\-Path}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783}
+
+
+Ongoing\-Notification 객체의 아이콘 이미지를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & image를 설정할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em image\-Path} & Ongoing\-Notification의 image 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing\-Notification 객체의 아이콘 이미지를 설정 한다. \par
+ 기본으로 설정된 값은 tizen logo이다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification이라면 \doxyref{update\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!set\-Ongoing\-Notification\-Progress@{set\-Ongoing\-Notification\-Progress}}
+\index{set\-Ongoing\-Notification\-Progress@{set\-Ongoing\-Notification\-Progress}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{set\-Ongoing\-Notification\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Ongoing\-Notification\-Progress (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen, }
+\item[{double}]{progress}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c}
+
+
+Ongoing\-Notification 객체의 진행률을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 진행률을 설정할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em progress} & Ongoing\-Notification의 진행률 (0.\-0 $\sim$ 1.\-0) \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing\-Notification 객체의 진행률을 설정 한다.\par
+ {\itshape progress은} {\itshape 0.\-0} $\sim$ {\itshape 1.\-0의} 값을 가진다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification이라면 \doxyref{update\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!set\-Ongoing\-Notification\-Sound@{set\-Ongoing\-Notification\-Sound}}
+\index{set\-Ongoing\-Notification\-Sound@{set\-Ongoing\-Notification\-Sound}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{set\-Ongoing\-Notification\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Ongoing\-Notification\-Sound (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen, }
+\item[{String}]{sound\-Path}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808}
+
+
+Ongoing\-Notification 객체의 알림음을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 알림음을 설정할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em sound\-Path} & Ongoing\-Notification의 sound 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing\-Notification 객체의 알림음을 설정 한다.\par
+ 기본으로 설정된 값은 tizen 알림 기본음이다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification이라면 \doxyref{update\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!set\-Ongoing\-Notification\-Text@{set\-Ongoing\-Notification\-Text}}
+\index{set\-Ongoing\-Notification\-Text@{set\-Ongoing\-Notification\-Text}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{set\-Ongoing\-Notification\-Text}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Ongoing\-Notification\-Text (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen, }
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d}
+
+
+Ongoing\-Notification 객체의 text를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & text를 설정할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em text} & Ongoing\-Notification의 text \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing\-Notification 객체의 {\itshape text을} 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification이라면 \doxyref{update\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!set\-Ongoing\-Notification\-Title@{set\-Ongoing\-Notification\-Title}}
+\index{set\-Ongoing\-Notification\-Title@{set\-Ongoing\-Notification\-Title}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{set\-Ongoing\-Notification\-Title}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Ongoing\-Notification\-Title (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen, }
+\item[{String}]{title}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691}
+
+
+Ongoing\-Notification 객체의 title을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & title을 설정할 Ongoing\-Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em title} & Ongoing\-Notification의 title \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ongoing\-Notification 객체의 {\itshape title을} 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification이라면 \doxyref{update\-Ongoing\-Notification()}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} \par
+ \doxyref{update\-Ongoing\-Notification}{p.}{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ongoing\-Notification.\-h@{Ongoing\-Notification.\-h}!update\-Ongoing\-Notification@{update\-Ongoing\-Notification}}
+\index{update\-Ongoing\-Notification@{update\-Ongoing\-Notification}!OngoingNotification.h@{Ongoing\-Notification.\-h}}
+\subsubsection[{update\-Ongoing\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}bool update\-Ongoing\-Notification (
+\begin{DoxyParamCaption}
+\item[{Ongoing\-Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2}
+
+
+새로 설정한 Ongoing\-Notification 객체의 정보들을 새로 적용 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 정보를 새로 적용 할 Ongoing\-Notsification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로 설정한 Ongoing\-Notification 객체의 정보들을 새로 적용 한다. \par
+ 현재 Notification 바에 등록되어 있는 Ongoing\-Notification의 정보를 갱신할 때 사용한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a87a80dfbcb3f8f9bde6cfbd468dc2da3} \par
+ \doxyref{Destroy\-Ongoing\-Notification}{p.}{OngoingNotification_8h_a4368aefd18207753cebec1fffc8f5fc5} \par
+ \doxyref{Ongoing\-Notification\-Show}{p.}{OngoingNotification_8h_ad38a30037924c292371a65a42af2c39a} \par
+ \doxyref{Ongoing\-Notification\-Hide}{p.}{OngoingNotification_8h_af8d8205fd6c5b1dab441a02736e2e54e} \par
+ \doxyref{set\-Ongoing\-Notification\-Title}{p.}{OngoingNotification_8h_a9d4ff7a7377bfe70fe2ea0a1466dc691} \par
+ \doxyref{set\-Ongoing\-Notification\-Text}{p.}{OngoingNotification_8h_a6ac4637c115eeaa51bbdd74fb60ac97d} \par
+ \doxyref{set\-Ongoing\-Notification\-Icon}{p.}{OngoingNotification_8h_ab571329d89eaed33e1c69b97c7271783} \par
+ \doxyref{set\-Ongoing\-Notification\-Sound}{p.}{OngoingNotification_8h_a0abbf9cce913eb90b53f0261accf0808} \par
+ \doxyref{set\-Ongoing\-Notification\-Progress}{p.}{OngoingNotification_8h_a092eb3115bdd6436e81399f8cac68c8c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OngoingNotification_8h_aad4267c82016486cbc92ef47c49345f2_icgraph}
+\end{center}
+\end{figure}
+
+

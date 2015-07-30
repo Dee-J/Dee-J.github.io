@@ -1,0 +1,65 @@
+\section{Gravity Struct Reference}
+\label{struct__Gravity}\index{Gravity@{Gravity}}
+
+
+Gravity 모듈에 대한 구조체이다. Gravity 모듈은 Gravity Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Gravity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{struct__Gravity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Gravity this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Gravity_a138736bfc3d4fff133c938b173031b02}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Gravity this\-\_\-gen)\label{struct__Gravity_a99ff1e248087163600fd61db54f91cb2}
+
+\item 
+bool($\ast$ {\bfseries On} )(Gravity this\-\_\-gen)\label{struct__Gravity_ad36fdb2df66c142cc6ed7b97ca6fff87}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Gravity this\-\_\-gen)\label{struct__Gravity_a8515dc119b3228a1feffd287134eef7e}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Gravity this\-\_\-gen)\label{struct__Gravity_a500b049aa54b528ae9ee1a68e49f3b22}
+
+\item 
+Gravity\-\_\-data($\ast$ {\bfseries get\-Value} )(Gravity this\-\_\-gen)\label{struct__Gravity_a1fb6f67d7ba292e2a5247862d34aeca6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gravity 모듈에 대한 구조체이다. Gravity 모듈은 Gravity Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Gravity 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Gravity()}{p.}{Sensor_8h_a300e5404c843b1366edef9183be709c6} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Gravity()}{p.}{Sensor_8h_a4ac22619e930846038a60e69536844db} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-gravity} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

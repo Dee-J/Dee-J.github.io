@@ -1,8 +1,0 @@
-<map id="NewVideo" name="NewVideo">
-<area shape="rect" id="node2" href="$d7/d37/File_8c.html#a270efb2f74fd2361e50e9ccb7e4f8994" title="동영상 파일의 meta data를 가져온다. " alt="" coords="141,5,237,33"/>
-<area shape="rect" id="node3" href="$d7/d37/File_8c.html#ac568966befd40f1d2e7f080b3aca0717" title="동영상 파일을 일시 정지한다. " alt="" coords="144,57,235,85"/>
-<area shape="rect" id="node4" href="$d7/d37/File_8c.html#aa70284ae5629bf47a30e459a135b29aa" title="동영상 파일을 재생한다. " alt="" coords="150,109,229,137"/>
-<area shape="rect" id="node5" href="$d7/d37/File_8c.html#ab57d27142876dd1b5fddd6706bd5a347" title="동영상 파일을 정지한다. " alt="" coords="149,161,230,189"/>
-<area shape="rect" id="node6" href="$d7/d37/File_8c.html#a756ca1c9b956a0c7b31a6766181ec984" title="생성한 Video 객체의 URI를 설정한다. " alt="" coords="141,213,237,241"/>
-<area shape="rect" id="node7" href="$d7/d37/File_8c.html#a05a56c60272231716de567f48925fd59" title="생성한 Video 객체의 Evas Object를 설정한다. " alt="" coords="136,265,243,293"/>
-</map>

@@ -1,0 +1,65 @@
+\section{Http Struct Reference}
+\label{struct__Http}\index{Http@{Http}}
+
+
+Http 모듈에 대한 구조체이다. Http 모듈은 다양한 방식으로 Http 통신을 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Http.\-h$>$}
+
+
+
+Collaboration diagram for Http\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{struct__Http__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries is\-Accessible} )(Http this\-\_\-gen)\label{struct__Http_afb1e0b8b3c7ebc71f9894259d07fee2f}
+
+\item 
+bool($\ast$ {\bfseries on\-Connect} )(Http this\-\_\-gen, String url, int port)\label{struct__Http_aa0c8410070e9cd7047fb3bb1c45a3608}
+
+\item 
+bool($\ast$ {\bfseries on\-Disconnect} )(Http this\-\_\-gen)\label{struct__Http_a1596826408cacf00d39de42c68883b04}
+
+\item 
+bool($\ast$ {\bfseries Download} )(Http this\-\_\-gen, String filename)\label{struct__Http_a7a82a15be7ced6f98b9c739af9f9726a}
+
+\item 
+bool($\ast$ {\bfseries Post} )(Http this\-\_\-gen, String res, String $\ast$req)\label{struct__Http_ae94b36e2c57ae67e25f1234af11d9610}
+
+\item 
+bool($\ast$ {\bfseries Get} )(Http this\-\_\-gen, String res, String $\ast$req)\label{struct__Http_a46adc2989ddde092abac28931d164bd1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Http 모듈에 대한 구조체이다. Http 모듈은 다양한 방식으로 Http 통신을 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Http의 Http 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Http()}{p.}{Http_8h_a8f651c47670c3bb629ce2fe7e5d64d57} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destory\-Http()}{p.}{Http_8h_afc5917bb56ffeda1df7514c8238f0cc4} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ H\-T\-T\-P part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Http.\-h}\end{DoxyCompactItemize}

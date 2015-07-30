@@ -1,0 +1,9 @@
+<map id="NewLinearAccelation" name="NewLinearAccelation">
+<area shape="rect" id="node2" href="$Sensor_8c.html#a5b3473d0d3247932e8cac376b38846b0" title="생성한 LinearAccelation를 비활성화 시킨다. " alt="" coords="237,5,374,33"/>
+<area shape="rect" id="node3" href="$Sensor_8c.html#a1cde29cb2fddaa5c2ef65340246214c6" title="생성한 LinearAccelation를 활성화 시킨다. " alt="" coords="236,57,374,85"/>
+<area shape="rect" id="node4" href="$Sensor_8c.html#ad0716b742bd30b552984160865b81aa6" title="생성한 LinearAccelation에 callback 함수를 등록한다. " alt="" coords="209,109,402,137"/>
+<area shape="rect" id="node6" href="$Sensor_8c.html#afbb418983c529e62b36bac3f6909a603" title="활성화 되어 있는 LinearAccelation의 센서 값을 반환한다. " alt="" coords="220,161,391,189"/>
+<area shape="rect" id="node7" href="$Sensor_8c.html#a2a94bd208e37017e2ab4f1cf579abf45" title="LinearAccelation의 사용 가능 여부를 판단한다. " alt="" coords="210,213,401,241"/>
+<area shape="rect" id="node8" href="$Sensor_8c.html#aad70bf2d0349114483351d0d1414a5c7" title="생성한 LinearAccelation에서 callback 함수를 삭제한다. " alt="" coords="200,265,411,293"/>
+<area shape="rect" id="node5" href="$Sensor_8c.html#a566cf5c5efdb6cb13b9548e0303538af" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="458,187,590,215"/>
+</map>

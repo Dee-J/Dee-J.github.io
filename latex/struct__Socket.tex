@@ -1,0 +1,62 @@
+\section{Socket Struct Reference}
+\label{struct__Socket}\index{Socket@{Socket}}
+
+
+Socket 모듈에 대한 구조체이다. Socket 모듈은 다양한 방식으로 Socket 통신을 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Socket.\-h$>$}
+
+
+
+Collaboration diagram for Socket\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{struct__Socket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries is\-Accessible} )(Socket this\-\_\-gen)\label{struct__Socket_ad4fe5e4e28f39180d8fe7e3fba9a1500}
+
+\item 
+bool($\ast$ {\bfseries on\-Connect} )(Socket this\-\_\-gen, String url, int port)\label{struct__Socket_aff2e54781fdd8d197c2eab035c32f309}
+
+\item 
+bool($\ast$ {\bfseries on\-Disconnect} )(Socket this\-\_\-gen)\label{struct__Socket_aed19956aa5326ac658b93c41e4a2f2e3}
+
+\item 
+bool($\ast$ {\bfseries Send} )(Socket this\-\_\-gen, String msg)\label{struct__Socket_a305bd4bc5e03c6de0586b2272fbc5982}
+
+\item 
+bool($\ast$ {\bfseries Recv} )(Socket this\-\_\-gen, String $\ast$msg)\label{struct__Socket_ad30b5d10747a9de59cfdf097447e2a65}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Socket 모듈에 대한 구조체이다. Socket 모듈은 다양한 방식으로 Socket 통신을 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Socket의 Socket 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Socket()}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destory\-Socket()}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ C\-U\-R\-L part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Socket.\-h}\end{DoxyCompactItemize}

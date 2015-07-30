@@ -1,0 +1,10 @@
+<map id="NotificationErrorCheck" name="NotificationErrorCheck">
+<area shape="rect" id="node2" href="$Notification_8c.html#a923c898b974f6e556e8a50cfb5e62fd9" title="생성한 Notification을 Notification 바에 등록한다. " alt="" coords="220,5,340,33"/>
+<area shape="rect" id="node4" href="$Notification_8c.html#a794983d0273383c1a035ef5cfc43d4c1" title="Notification 바에 등록되어 있는 Notification을 삭제한다. " alt="" coords="223,57,337,85"/>
+<area shape="rect" id="node5" href="$Notification_8c.html#a835bde3b937fae6a72adacf87502ab5e" title="Notification 객체의 title을 설정 한다. " alt="" coords="215,109,345,137"/>
+<area shape="rect" id="node6" href="$Notification_8c.html#a46b9e58ccdafdfc68870055f63976d8b" title="Notification 객체의 text를 설정 한다. " alt="" coords="215,161,345,189"/>
+<area shape="rect" id="node7" href="$Notification_8c.html#a1eedf20663a58e41027151e6eb1b21a1" title="Notification 객체의 아이콘 이미지를 설정 한다. " alt="" coords="215,213,345,241"/>
+<area shape="rect" id="node8" href="$Notification_8c.html#a521d477948d0adfc2c2daf20b80095af" title="Notification 객체의 알림음을 설정 한다. " alt="" coords="208,265,352,293"/>
+<area shape="rect" id="node9" href="$Notification_8c.html#a0460ad83205311ebfd590002c853d65d" title="새로 설정한 Notification 객체의 정보들을 새로 적용 한다. " alt="" coords="216,317,344,345"/>
+<area shape="rect" id="node3" href="$Notification_8c.html#a404347c07b739823c244d09934047898" title="새로운 Notification 객체를 생성한다. " alt="" coords="400,161,514,189"/>
+</map>

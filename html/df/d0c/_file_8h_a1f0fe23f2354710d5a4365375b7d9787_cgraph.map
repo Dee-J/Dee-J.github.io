@@ -1,9 +1,0 @@
-<map id="NewFile" name="NewFile">
-<area shape="rect" id="node2" href="$d8/d9c/_file_8c.html#ad189205626097979d619616eec687c29" title="deleteFile" alt="" coords="151,5,230,33"/>
-<area shape="rect" id="node3" href="$d8/d9c/_file_8c.html#a9d83a800fb7cdb6ab6042c3b8208603e" title="copyFile" alt="" coords="155,57,226,85"/>
-<area shape="rect" id="node4" href="$d8/d9c/_file_8c.html#aae2f7d950e3022f08c886332538ed231" title="moveFile" alt="" coords="153,109,228,137"/>
-<area shape="rect" id="node5" href="$d8/d9c/_file_8c.html#aa237f6e1a4cc51ea14e4a91540cccdb6" title="searchFile" alt="" coords="149,161,232,189"/>
-<area shape="rect" id="node7" href="$d8/d9c/_file_8c.html#abd3ba5be2b95658e157d698655bddc85" title="deleteSearchedList" alt="" coords="123,213,258,241"/>
-<area shape="rect" id="node6" href="$d8/d9c/_file_8c.html#a933bae8574b61534ef18829401685b5f" title="search_recur" alt="" coords="342,161,442,189"/>
-<area shape="rect" id="node8" href="$d8/d9c/_file_8c.html#a216f1438ba1ab14dbdf022f41d7ec7d4" title="deleteSearchListElement" alt="" coords="307,213,477,241"/>
-</map>

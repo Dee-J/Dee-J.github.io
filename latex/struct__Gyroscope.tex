@@ -1,0 +1,65 @@
+\section{Gyroscope Struct Reference}
+\label{struct__Gyroscope}\index{Gyroscope@{Gyroscope}}
+
+
+Gyroscope 모듈에 대한 구조체이다. Gyroscope 모듈은 Gyroscope Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Gyroscope\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{struct__Gyroscope__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Gyroscope this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Gyroscope_a75f50cc1a573adf803bdd6a97bbcfb5d}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Gyroscope this\-\_\-gen)\label{struct__Gyroscope_a19c6ea869a86b150d1ae73df2ba8974d}
+
+\item 
+bool($\ast$ {\bfseries On} )(Gyroscope this\-\_\-gen)\label{struct__Gyroscope_ab857c39e29dad34d775213375513718c}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Gyroscope this\-\_\-gen)\label{struct__Gyroscope_a4035ca858944969a95eb373dc3ec16d5}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Gyroscope this\-\_\-gen)\label{struct__Gyroscope_ae1adbc4c0ee75fccd59e50526bf531b2}
+
+\item 
+Gyroscope\-\_\-data($\ast$ {\bfseries get\-Value} )(Gyroscope this\-\_\-gen)\label{struct__Gyroscope_ae9e8ebf28a55563d2552b212c01ae20b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gyroscope 모듈에 대한 구조체이다. Gyroscope 모듈은 Gyroscope Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Gyroscope 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Gyroscope()}{p.}{Sensor_8h_aad893caaae4e3153286926b76443bcf2} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Gyroscope()}{p.}{Sensor_8h_a33c4827cef482ac97b726c6afd4f2c02} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-gyroscope} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

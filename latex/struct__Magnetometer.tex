@@ -1,0 +1,65 @@
+\section{Magnetometer Struct Reference}
+\label{struct__Magnetometer}\index{Magnetometer@{Magnetometer}}
+
+
+Magnetometer 모듈에 대한 구조체이다. Magnetometer 모듈은 Magnetometer Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Magnetometer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{struct__Magnetometer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Magnetometer this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Magnetometer_a104455e7640fb733a2e62d1797f318de}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Magnetometer this\-\_\-gen)\label{struct__Magnetometer_a5daeb31fa5b8c643def0db7851cc1bb1}
+
+\item 
+bool($\ast$ {\bfseries On} )(Magnetometer this\-\_\-gen)\label{struct__Magnetometer_ac18ea02bcd00017d3cc3dc98f23a5073}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Magnetometer this\-\_\-gen)\label{struct__Magnetometer_a1c213d88c43e6c710397d26f6b1729b0}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Magnetometer this\-\_\-gen)\label{struct__Magnetometer_a9fc14f862a856bba2bb029e9be10fd25}
+
+\item 
+Magnetometer\-\_\-data($\ast$ {\bfseries get\-Value} )(Magnetometer this\-\_\-gen)\label{struct__Magnetometer_a2ba294229e37e445230e9679d81cc7f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Magnetometer 모듈에 대한 구조체이다. Magnetometer 모듈은 Magnetometer Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Magnetometer 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Magnetometer()}{p.}{Sensor_8h_ac0cc761c2c9b3872743da478e9c8b03a} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Magnetometer()}{p.}{Sensor_8h_ade729513094ff7a9a2600b5389e346ac} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-magnetometer} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

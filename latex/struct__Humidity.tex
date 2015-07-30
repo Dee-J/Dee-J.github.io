@@ -1,0 +1,65 @@
+\section{Humidity Struct Reference}
+\label{struct__Humidity}\index{Humidity@{Humidity}}
+
+
+Humidity 모듈에 대한 구조체이다. Humidity 모듈은 Humidity Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Humidity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{struct__Humidity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Humidity this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Humidity_af1d008b9776727510a8e3354ba12317e}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Humidity this\-\_\-gen)\label{struct__Humidity_ab2701b4bb74a57d6497a06226f230905}
+
+\item 
+bool($\ast$ {\bfseries On} )(Humidity this\-\_\-gen)\label{struct__Humidity_a7d9c26f0a7c3fce06707e958a371b479}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Humidity this\-\_\-gen)\label{struct__Humidity_a6eb5807970f5cfe1a7309828fd58de7f}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Humidity this\-\_\-gen)\label{struct__Humidity_ac75961bb0527a8989d5789a089a79906}
+
+\item 
+{\bf Humidity\-\_\-data}($\ast$ {\bfseries get\-Value} )(Humidity this\-\_\-gen)\label{struct__Humidity_adb323ffcee7e16a77d6da754480580b2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Humidity 모듈에 대한 구조체이다. Humidity 모듈은 Humidity Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Humidity 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Humidity()}{p.}{Sensor_8h_a65b86637b5f2ab7028100fd63b25a6cb} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Humidity()}{p.}{Sensor_8h_a229737618125919dd35eac6ef10906dc} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-humidity} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

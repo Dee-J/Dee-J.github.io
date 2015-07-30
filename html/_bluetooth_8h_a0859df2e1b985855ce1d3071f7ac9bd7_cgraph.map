@@ -1,5 +1,0 @@
-<map id="BluetoothFileSend" name="BluetoothFileSend">
-<area shape="rect" id="node2" href="$_bluetooth_8c.html#a5bc928d2c4cb657436d604b21605608c" title="__bt_opp_client_push\l_responded_cbx" alt="" coords="184,5,336,49"/>
-<area shape="rect" id="node3" href="$_bluetooth_8c.html#a8fecc117d0346011d7625d057a3d5395" title="__bt_opp_client_push\l_progress_cbx" alt="" coords="184,73,336,117"/>
-<area shape="rect" id="node4" href="$_bluetooth_8c.html#a3130ddf73567911812c1c17679c4a4e2" title="__bt_opp_client_push\l_finished_cbx" alt="" coords="184,141,336,185"/>
-</map>

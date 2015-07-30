@@ -1,0 +1,75 @@
+\section{Camera\-Recorder Struct Reference}
+\label{struct__CameraRecorder}\index{Camera\-Recorder@{Camera\-Recorder}}
+
+
+Camera\-Recorder 모듈에 대한 구조체이다. Camera\-Recorder 모듈은 동영상을 녹화할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Media\-Recorder.\-h$>$}
+
+
+
+Collaboration diagram for Camera\-Recorder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{struct__CameraRecorder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries Init} )(Camera\-Recorder this\-\_\-gen, const String filename, camera\-\_\-type camera, Evas\-\_\-\-Object $\ast$evas\-Object)\label{struct__CameraRecorder_a96d7c4905492495101ed5438530c2543}
+
+\item 
+bool($\ast$ {\bfseries Start} )(Camera\-Recorder this\-\_\-gen)\label{struct__CameraRecorder_aa5d3fc3bf8c7fafac1cdb2f531fe8d24}
+
+\item 
+bool($\ast$ {\bfseries Pause} )(Camera\-Recorder this\-\_\-gen)\label{struct__CameraRecorder_a6ca0baf56971d59353e4c9ee48848b02}
+
+\item 
+bool($\ast$ {\bfseries End} )(Camera\-Recorder this\-\_\-gen)\label{struct__CameraRecorder_a5529a506cfd2c835306085d0fa8e6d3c}
+
+\item 
+bool($\ast$ {\bfseries Cancel} )(Camera\-Recorder this\-\_\-gen)\label{struct__CameraRecorder_adc473d693f9aa9c57ecdd7aeacf110b2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Camera\-Recorder 모듈에 대한 구조체이다. Camera\-Recorder 모듈은 동영상을 녹화할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Media Recorder의 Camera\-Recorder 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Camera\-Recorder()}{p.}{MediaRecorder_8h_a7bbb16d9e9a7aa0d54f9a576573154b5} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Audio\-Recorder()}{p.}{MediaRecorder_8h_a97f3afce2235e4208952b52f9087c598} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Recorder part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/recorder} \par
+
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} \par
+
+\end{DoxyItemize}
+
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/camera} \par
+
+\item {\tt http\-://tizen.\-org/feature/microphone} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Media\-Recorder.\-h}\end{DoxyCompactItemize}

@@ -1,5 +1,0 @@
-<map id="BluetoothFileRecv" name="BluetoothFileRecv">
-<area shape="rect" id="node2" href="$_bluetooth_8c.html#ab645659c2db5f4c8b789ef12d863fd88" title="connection_requested\l_cb_for_opp_serverx" alt="" coords="184,39,336,83"/>
-<area shape="rect" id="node3" href="$_bluetooth_8c.html#a355b94d34c8d1fa8b2393435d88a960d" title="bt_opp_server_transfer\l_progress_cb_for_oppx" alt="" coords="385,5,546,49"/>
-<area shape="rect" id="node4" href="$_bluetooth_8c.html#abc077f3672d1b0f2ff5ed416c1599841" title="bt_opp_server_transfer\l_finished_cb_for_oppx" alt="" coords="386,73,545,117"/>
-</map>

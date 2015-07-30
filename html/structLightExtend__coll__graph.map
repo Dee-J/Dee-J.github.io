@@ -1,0 +1,4 @@
+<map id="LightExtend" name="LightExtend">
+<area shape="rect" id="node2" href="$struct__Light.html" title="Light 모듈에 대한 구조체이다. Light 모듈은 Photometer Sensor를 다양한 방식으로 제어할 수 있다. " alt="" coords="5,201,128,346"/>
+<area shape="rect" id="node3" href="$Sensor_8h.html#structLight__data" title="{Light_data\n|+ level\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="14,6,119,135"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="NewAudioRecorder" name="NewAudioRecorder">
+<area shape="rect" id="node2" href="$MediaRecorder_8c.html#a20ecd4e216e8601628966de573ce3f8e" title="녹음을 시작하기전 녹음할 Audio Recorder 객체를 초기화 한다. " alt="" coords="205,5,331,33"/>
+<area shape="rect" id="node4" href="$MediaRecorder_8c.html#ac250f3073f3020a705253a84b77455ac" title="녹음을 시작한다. " alt="" coords="200,57,336,85"/>
+<area shape="rect" id="node5" href="$MediaRecorder_8c.html#ae4f32437fdc1dfe32c6d5e2eba068c5d" title="녹음을 일시 정지 한다. " alt="" coords="195,109,341,137"/>
+<area shape="rect" id="node6" href="$MediaRecorder_8c.html#a53d2052ce60e89745fc46f6190d0db81" title="녹음을 종료하고 녹음 결과를 저장한다. " alt="" coords="202,161,334,189"/>
+<area shape="rect" id="node7" href="$MediaRecorder_8c.html#a2b74f209a9be1765a5b4ac2be3840f57" title="녹음을 취소하며 녹음 결과를 저장하지 않는다. " alt="" coords="193,213,343,241"/>
+<area shape="rect" id="node3" href="$MediaRecorder_8c.html#a1ce7d2cf42186783994a698a2332219c" title="Media Recorder에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="392,109,536,137"/>
+</map>

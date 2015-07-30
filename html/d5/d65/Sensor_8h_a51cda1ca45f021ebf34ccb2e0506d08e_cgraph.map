@@ -1,8 +1,0 @@
-<map id="NewGravity" name="NewGravity">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a3d81ebb8299e2a04502aa300762ecbc1" title="GravityOff" alt="" coords="181,5,262,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#ab20c5c8ec881c6535fc224e305b130b3" title="GravityOn" alt="" coords="181,57,262,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#a1349bbe984870e9be8ba799492d80bdb" title="addGravityCallback" alt="" coords="153,109,290,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a4ee54192834c7c04958013b4b07ff6ac" title="getGravityValue" alt="" coords="164,161,279,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a22e9689eecee23872e261891f307b0a0" title="isGravitySupported" alt="" coords="154,213,289,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a1de0c109adebb2cf6a8bbe498f0ffbee" title="detachGravityCallback" alt="" coords="144,265,299,293"/>
-</map>

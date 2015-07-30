@@ -1,0 +1,64 @@
+\section{File Struct Reference}
+\label{struct__File}\index{File@{File}}
+
+
+File 모듈에 대한 구조체이다. File 모듈은 다양한 방식으로 파일을 제어 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$File.\-h$>$}
+
+
+
+Collaboration diagram for File\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{struct__File__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries Delete} )(String src)\label{struct__File_adf274a397a0985b8a8675c15efc8829a}
+
+\item 
+bool($\ast$ {\bfseries Copy} )(String src, String dst)\label{struct__File_a2f79e552b30735dabf7cc0e7f0b88b6c}
+
+\item 
+bool($\ast$ {\bfseries Move} )(String src, String dst)\label{struct__File_a1a27af6781f09718e0f9b9802ef3d9e5}
+
+\item 
+G\-List $\ast$($\ast$ {\bfseries Search} )(String src, String dst)\label{struct__File_a53ec46e614def6722aa115461f377ec1}
+
+\item 
+void($\ast$ {\bfseries delete\-Searched\-List} )(G\-List $\ast$searched\-List)\label{struct__File_a99be93124b91f4c2c66704e6b49dc6ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File 모듈에 대한 구조체이다. File 모듈은 다양한 방식으로 파일을 제어 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+File의 File 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-File()}{p.}{File_8h_a9dc7e152baf123500677519b3d311532} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-File()}{p.}{File_8h_ab44ac1360d2598918dd2c655833e10c0} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ File part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/mediastorage} \par
+
+\item {\tt http\-://tizen.\-org/privilege/externalstorage} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf File.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+<map id="PlayerErrorCheck" name="PlayerErrorCheck">
+<area shape="rect" id="node2" href="$File_8c.html#aa70284ae5629bf47a30e459a135b29aa" title="동영상 파일을 재생한다. " alt="" coords="195,5,274,33"/>
+<area shape="rect" id="node4" href="$File_8c.html#ac568966befd40f1d2e7f080b3aca0717" title="동영상 파일을 일시 정지한다. " alt="" coords="189,57,280,85"/>
+<area shape="rect" id="node5" href="$File_8c.html#ab57d27142876dd1b5fddd6706bd5a347" title="동영상 파일을 정지한다. " alt="" coords="194,109,275,137"/>
+<area shape="rect" id="node6" href="$File_8c.html#a270efb2f74fd2361e50e9ccb7e4f8994" title="동영상 파일의 meta data를 가져온다. " alt="" coords="187,161,283,189"/>
+<area shape="rect" id="node7" href="$File_8c.html#a756ca1c9b956a0c7b31a6766181ec984" title="생성한 Video 객체의 URI를 설정한다. " alt="" coords="187,213,283,241"/>
+<area shape="rect" id="node8" href="$File_8c.html#a05a56c60272231716de567f48925fd59" title="생성한 Video 객체의 Evas Object를 설정한다. " alt="" coords="181,265,288,293"/>
+<area shape="rect" id="node9" href="$File_8c.html#a05d8028494e17474e3a40fbbd16255af" title="음악 파일을 재생한다. " alt="" coords="195,317,275,345"/>
+<area shape="rect" id="node11" href="$File_8c.html#a590735dcb945de607b535b3dd459bff8" title="음악 파일을 일시 정지한다. " alt="" coords="189,369,281,397"/>
+<area shape="rect" id="node12" href="$File_8c.html#ab9513344a0f0e1b777159e36cc30c2f0" title="동영상 파일을 정지한다. " alt="" coords="194,421,275,449"/>
+<area shape="rect" id="node13" href="$File_8c.html#ae05ed13da39c10e526f86acd1c45f8da" title="생성한 Audio 객체의 URI를 설정한다. " alt="" coords="187,473,283,501"/>
+<area shape="rect" id="node3" href="$File_8c.html#acc20c940b38ba0ace77f77a2992dea58" title="새로운 Video 객체를 생성한다. " alt="" coords="336,135,418,163"/>
+<area shape="rect" id="node10" href="$File_8c.html#a5131353393d09f147cbc061ad339e106" title="새로운 Audio 객체를 생성한다. " alt="" coords="336,395,418,423"/>
+</map>

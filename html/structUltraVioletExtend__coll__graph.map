@@ -1,0 +1,4 @@
+<map id="UltraVioletExtend" name="UltraVioletExtend">
+<area shape="rect" id="node2" href="$struct__UltraViolet.html" title="UltraViolet 모듈에 대한 구조체이다. UltraViolet 모듈은 UltraViolet Sensor를 다양한 방식으로 제어할 수 있다. " alt="" coords="5,201,128,346"/>
+<area shape="rect" id="node3" href="$Sensor_8h.html#structUltraViolet__data" title="{UltraViolet_data\n|+ uvindex\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="9,6,124,135"/>
+</map>

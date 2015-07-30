@@ -1,4 +1,0 @@
-<map id="_HumidityExtend" name="_HumidityExtend">
-<area shape="rect" id="node2" href="$d4/da3/struct___humidity.html" title="{_Humidity\n|+ addCallback\l+ On\l+ Off\l+ isSupported\l|}" alt="" coords="12,201,117,330"/>
-<area shape="rect" id="node3" href="$da/dbb/_sensor_8h.html#df/de3/struct___humidity__data" title="{_Humidity_data\n|+ percent\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="8,6,121,135"/>
-</map>

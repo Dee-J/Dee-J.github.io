@@ -1,0 +1,93 @@
+\section{Device\-Status.\-h File Reference}
+\label{DeviceStatus_8h}\index{Device\-Status.\-h@{Device\-Status.\-h}}
+
+
+Device Status A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$device/display.\-h$>$}\\*
+{\ttfamily \#include $<$device/haptic.\-h$>$}\\*
+Include dependency graph for Device\-Status.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceStatus_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{DeviceStatus_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Vibration}
+\begin{DoxyCompactList}\small\item\em Vibration 모듈에 대한 구조체이다. Vibration 모듈은 다양한 방식으로 진동을 조절 할 수 있다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Device\-Status\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Device Status A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Device의 Vibration / Display / Battery / Flash 관련 A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{Device\-Status.\-h@{Device\-Status.\-h}!Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}}
+\index{Device\-Status\-Error\-Check@{Device\-Status\-Error\-Check}!DeviceStatus.h@{Device\-Status.\-h}}
+\subsubsection[{Device\-Status\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Device\-Status\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{DeviceStatus_8h_ab765e8bcaf98bf5f3c93b9e0fcc7e17c}
+
+
+Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Operation not permitted \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-I\-N\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S} & \-: Operation already in progress \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported in this device \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} & \-: Not initialized \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Device Status A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 8가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Device Error} 
+\end{DoxySeeAlso}

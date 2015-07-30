@@ -1,0 +1,65 @@
+\section{Temperature Struct Reference}
+\label{struct__Temperature}\index{Temperature@{Temperature}}
+
+
+Temperature 모듈에 대한 구조체이다. Temperature 모듈은 Temperature Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Temperature\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{struct__Temperature__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Temperature this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Temperature_ae42650b42a974f34ab33f3cf50741f7a}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Temperature this\-\_\-gen)\label{struct__Temperature_a1528ad56ee1074d3a450dd26539cc2c5}
+
+\item 
+bool($\ast$ {\bfseries On} )(Temperature this\-\_\-gen)\label{struct__Temperature_a1e4f2d11cf25d437b746cc165dd1ff7b}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Temperature this\-\_\-gen)\label{struct__Temperature_a6941ec5e6f840402b39f3dbdd12396e6}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Temperature this\-\_\-gen)\label{struct__Temperature_a956fc3dcba797854840a1075fed89a92}
+
+\item 
+{\bf Temperature\-\_\-data}($\ast$ {\bfseries get\-Value} )(Temperature this\-\_\-gen)\label{struct__Temperature_ab2698eb90ec24a33a4c7675fd0ff7665}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Temperature 모듈에 대한 구조체이다. Temperature 모듈은 Temperature Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Temperature 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Temperature()}{p.}{Sensor_8h_afd32f5f2a72ba185361018d8f2b450f7} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Temperature()}{p.}{Sensor_8h_a31db7bd04fb88393523fe985fe007023} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-temperature} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

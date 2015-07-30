@@ -1,6 +1,0 @@
-<map id="NewVibration" name="NewVibration">
-<area shape="rect" id="node2" href="$d2/d8c/_device_status_8c.html#a12b27c8b15cf2fc480ed507b736f904e" title="VibrationCustom" alt="" coords="155,5,274,33"/>
-<area shape="rect" id="node3" href="$d2/d8c/_device_status_8c.html#abc95c6f53d6267b0f00edc164bd669a1" title="VibrationShort" alt="" coords="162,57,267,85"/>
-<area shape="rect" id="node4" href="$d2/d8c/_device_status_8c.html#a17681efad217ed59c00e73c38a3ace65" title="VibrationMiddle" alt="" coords="158,109,271,137"/>
-<area shape="rect" id="node5" href="$d2/d8c/_device_status_8c.html#adc4527fcf98d260c039c14ed26afa96f" title="VibrationLong" alt="" coords="163,161,266,189"/>
-</map>

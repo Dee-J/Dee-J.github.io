@@ -1,0 +1,65 @@
+\section{Proximity Struct Reference}
+\label{struct__Proximity}\index{Proximity@{Proximity}}
+
+
+Proximity 모듈에 대한 구조체이다. Proximity 모듈은 Proximity Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Proximity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{struct__Proximity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Proximity this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Proximity_a81c3b56b3dbddb04a6aa4fa4b66cd50b}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Proximity this\-\_\-gen)\label{struct__Proximity_a6df8563034b890cb627ec8fa32126802}
+
+\item 
+bool($\ast$ {\bfseries On} )(Proximity this\-\_\-gen)\label{struct__Proximity_a43d16a417a55f2f08e24c4503acd31f8}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Proximity this\-\_\-gen)\label{struct__Proximity_a3677d0222d84e20849cc0b2d8d2f2f3c}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Proximity this\-\_\-gen)\label{struct__Proximity_a4bd4a49efc91e70c3d2f15044ba6de09}
+
+\item 
+{\bf Proximity\-\_\-data}($\ast$ {\bfseries get\-Value} )(Proximity this\-\_\-gen)\label{struct__Proximity_a328f4aace2ce05880bea0270b1680fd7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Proximity 모듈에 대한 구조체이다. Proximity 모듈은 Proximity Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Proximity 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Proximity()}{p.}{Sensor_8h_adb707c0710a6913565dda16b69559940} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Proximity()}{p.}{Sensor_8h_a826d9c3073df9e3332c8f6110bb3f991} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-proximity} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

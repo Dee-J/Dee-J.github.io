@@ -1,8 +1,0 @@
-<map id="NewGravity" name="NewGravity">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#ae80b0e1c4dd688ef2f3d76549347a615" title="생성한 Gravity를 비활성화 시킨다. " alt="" coords="181,5,262,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#ac56e9a0e948b9a5334a74ac7916caea6" title="생성한 Gravity를 활성화 시킨다. " alt="" coords="181,57,262,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#ae27c39d046a1bb6ee991b5c6b9879196" title="생성한 Gravity에 callback 함수를 등록한다. " alt="" coords="153,109,290,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a4ee54192834c7c04958013b4b07ff6ac" title="활성화 되어 있는 Gravity의 센서 값을 반환한다. " alt="" coords="164,161,279,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a22e9689eecee23872e261891f307b0a0" title="Gravity의 사용 가능 여부를 판단한다. " alt="" coords="154,213,289,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a918b071f18933ee389c39da955e62c23" title="생성한 Gravity에서 callback 함수를 삭제한다. " alt="" coords="144,265,299,293"/>
-</map>

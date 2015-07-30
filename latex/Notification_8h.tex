@@ -1,0 +1,801 @@
+\section{Notification.\-h File Reference}
+\label{Notification_8h}\index{Notification.\-h@{Notification.\-h}}
+
+
+Notification A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$notification.\-h$>$}\\*
+Include dependency graph for Notification.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{Notification_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{Notification_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Notification}
+\begin{DoxyCompactList}\small\item\em Notification 모듈에 대한 구조체이다. Notification 모듈은 다양한 방식으로 알림을 설정 할 수 있다. \end{DoxyCompactList}\item 
+struct {\bf Notification\-Extend}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Notification\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Notification {\bf New\-Notification} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Notification 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Notification} (Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Notification 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf Notification\-Show} (Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Notification을 Notification 바에 등록한다. \end{DoxyCompactList}\item 
+bool {\bf Notification\-Hide} (Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em Notification 바에 등록되어 있는 Notification을 삭제한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Notification\-Title} (Notification this\-\_\-gen, String title)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 title을 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Notification\-Text} (Notification this\-\_\-gen, String text)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 text를 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Notification\-Icon} (Notification this\-\_\-gen, String image\-Path)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 아이콘 이미지를 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Notification\-Sound} (Notification this\-\_\-gen, String sound\-Path)
+\begin{DoxyCompactList}\small\item\em Notification 객체의 알림음을 설정 한다. \end{DoxyCompactList}\item 
+bool {\bf update\-Notification} (Notification this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 새로 설정한 Notification 객체의 정보들을 새로 적용 한다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Notification A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Notification의 Show / Hide / set\-Title / set\-Text / set\-Icon / set\-Sound / update Notification A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Data Structure Documentation}
+\index{Notification\-Extend@{Notification\-Extend}}\label{structNotificationExtend}
+\subsubsection{struct Notification\-Extend}
+
+
+Collaboration diagram for Notification\-Extend\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structNotificationExtend__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+String\label{Notification_8h_a368dd7698e55dd12d0a9267d893956b3}
+&
+image\-Path&
+\\
+\hline
+
+struct {\bf \-\_\-\-Notification}\label{Notification_8h_a38e1711f7cd3c2fc167631b5873b9c5d}
+&
+notification&
+\\
+\hline
+
+notification\-\_\-h\label{Notification_8h_a7bb9c3039ee72189f0c737cff2537562}
+&
+notification\-\_\-handle&
+\\
+\hline
+
+String\label{Notification_8h_a200f522707abb1e267f3fe578e053352}
+&
+sound\-Path&
+\\
+\hline
+
+String\label{Notification_8h_a76e3cba8846b22804a1961aceefab4b6}
+&
+text&
+\\
+\hline
+
+String\label{Notification_8h_ac61e7d484abd16f74fc77973039744ae}
+&
+title&
+\\
+\hline
+
+bool\label{Notification_8h_a231f865350a68814f893279825b0f0f8}
+&
+visible&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\index{Notification.\-h@{Notification.\-h}!Destroy\-Notification@{Destroy\-Notification}}
+\index{Destroy\-Notification@{Destroy\-Notification}!Notification.h@{Notification.\-h}}
+\subsubsection[{Destroy\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Notification (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a940d91a8e15dc9c5fd098c134842a326}
+
+
+생성한 Notification 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Notification 객체를 소멸 시킨다. \par
+ Notification 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Notification.\-h@{Notification.\-h}!New\-Notification@{New\-Notification}}
+\index{New\-Notification@{New\-Notification}!Notification.h@{Notification.\-h}}
+\subsubsection[{New\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}Notification New\-Notification (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a404347c07b739823c244d09934047898}
+
+
+새로운 Notification 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Notification} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Notification 객체를 생성한다. \par
+ Notification 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Notification()}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Notification NewNotification (\textcolor{keywordtype}{void})
+\{
+    NotificationExtend * \textcolor{keyword}{this};
+
+    \textcolor{keyword}{this} = (NotificationExtend *)malloc (\textcolor{keyword}{sizeof} (NotificationExtend));
+
+    this->notification.Show     = NotificationShow;
+    this->notification.Hide     = NotificationHide;
+    this->notification.setTitle = setNotificationTitle;
+    this->notification.setText  = setNotificationText;
+    this->notification.setIcon  = setNotificationIcon;
+    this->notification.setSound = setNotificationSound;
+    this->notification.update   = updateNotification;
+
+    this->notification\_handle = notification\_create (NOTIFICATION\_TYPE\_NOTI);
+    this->title               = NULL;
+    this->text                = NULL;
+    this->imagePath           = NULL;
+    this->soundPath           = NULL;
+    this->visible             = \textcolor{keyword}{false};
+
+    \textcolor{keywordflow}{return} &this->notification;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Notification_8h_a404347c07b739823c244d09934047898_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!Notification\-Error\-Check@{Notification\-Error\-Check}}
+\index{Notification\-Error\-Check@{Notification\-Error\-Check}!Notification.h@{Notification.\-h}}
+\subsubsection[{Notification\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Notification\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a5b5d876ea57f23186a98c5d4547fbb6a}
+
+
+Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Success \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-O\-\_\-\-E\-R\-R\-O\-R} & \-: I/\-O error \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Permission denied \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B} & \-: Error from D\-B query \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Already exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-R\-O\-M\-\_\-\-D\-B\-U\-S} & \-: Error from D\-Bus \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-E\-X\-I\-S\-T\-\_\-\-I\-D} & \-: Not exist private I\-D \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-R\-E\-A\-D\-Y} & \-: No response from notification service \\
+\hline
+{\em N\-O\-T\-I\-F\-I\-C\-A\-T\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 11가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Notification part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Notification_8h_a5b5d876ea57f23186a98c5d4547fbb6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!Notification\-Hide@{Notification\-Hide}}
+\index{Notification\-Hide@{Notification\-Hide}!Notification.h@{Notification.\-h}}
+\subsubsection[{Notification\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}bool Notification\-Hide (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1}
+
+
+Notification 바에 등록되어 있는 Notification을 삭제한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에서 삭제할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+\doxyref{Notification\-Show()}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}를 통해 Notification 바에 등록 되어 있는 Notification을 삭제한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!Notification\-Show@{Notification\-Show}}
+\index{Notification\-Show@{Notification\-Show}!Notification.h@{Notification.\-h}}
+\subsubsection[{Notification\-Show}]{\setlength{\rightskip}{0pt plus 5cm}bool Notification\-Show (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9}
+
+
+생성한 Notification을 Notification 바에 등록한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & Notification 바에 등록할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Notification을 Notification 바에 등록한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+이제 막 생성한 Notification은 Icon과 Sound 값에 기본 값이 설정되어 있지만 Title과 Text는 기본 값이 없기 때문에 \par
+ 사용하기 전에 \doxyref{set\-Notification\-Title()}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} 과 \doxyref{set\-Notification\-Text()}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} 을 통해 설정을 미리 해야한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!set\-Notification\-Icon@{set\-Notification\-Icon}}
+\index{set\-Notification\-Icon@{set\-Notification\-Icon}!Notification.h@{Notification.\-h}}
+\subsubsection[{set\-Notification\-Icon}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Icon (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen, }
+\item[{String}]{image\-Path}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1}
+
+
+Notification 객체의 아이콘 이미지를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & image를 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em image\-Path} & Notification의 image 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 아이콘 이미지를 설정 한다. \par
+ 기본으로 설정된 값은 tizen logo이다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \doxyref{update\-Notification()}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!set\-Notification\-Sound@{set\-Notification\-Sound}}
+\index{set\-Notification\-Sound@{set\-Notification\-Sound}!Notification.h@{Notification.\-h}}
+\subsubsection[{set\-Notification\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Sound (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen, }
+\item[{String}]{sound\-Path}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a521d477948d0adfc2c2daf20b80095af}
+
+
+Notification 객체의 알림음을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 알림음을 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em sound\-Path} & Notification의 sound 파일 경로 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 알림음을 설정 한다.\par
+ 기본으로 설정된 값은 tizen 알림 기본음이다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \doxyref{update\-Notification()}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{Notification_8h_a521d477948d0adfc2c2daf20b80095af_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{Notification_8h_a521d477948d0adfc2c2daf20b80095af_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!set\-Notification\-Text@{set\-Notification\-Text}}
+\index{set\-Notification\-Text@{set\-Notification\-Text}!Notification.h@{Notification.\-h}}
+\subsubsection[{set\-Notification\-Text}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Text (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen, }
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b}
+
+
+Notification 객체의 text를 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & text를 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em text} & Notification의 text \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 {\itshape text을} 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \doxyref{update\-Notification()}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!set\-Notification\-Title@{set\-Notification\-Title}}
+\index{set\-Notification\-Title@{set\-Notification\-Title}!Notification.h@{Notification.\-h}}
+\subsubsection[{set\-Notification\-Title}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Notification\-Title (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen, }
+\item[{String}]{title}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a835bde3b937fae6a72adacf87502ab5e}
+
+
+Notification 객체의 title을 설정 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & title을 설정할 Notification 객체 \\
+\hline
+\mbox{\tt in}  & {\em title} & Notification의 title \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Notification 객체의 {\itshape title을} 설정 한다. \par
+ 기본으로 설정된 값은 없다. \par
+ 현재 Notification 바에 등록되어 있는 Notification이라면 \doxyref{update\-Notification()}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d}를 통해 업데이트 해야 적용된다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} \par
+ \doxyref{update\-Notification}{p.}{Notification_8h_a0460ad83205311ebfd590002c853d65d} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{Notification_8h_a835bde3b937fae6a72adacf87502ab5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{Notification_8h_a835bde3b937fae6a72adacf87502ab5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Notification.\-h@{Notification.\-h}!update\-Notification@{update\-Notification}}
+\index{update\-Notification@{update\-Notification}!Notification.h@{Notification.\-h}}
+\subsubsection[{update\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}bool update\-Notification (
+\begin{DoxyParamCaption}
+\item[{Notification}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Notification_8h_a0460ad83205311ebfd590002c853d65d}
+
+
+새로 설정한 Notification 객체의 정보들을 새로 적용 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 정보를 새로 적용 할 Notification 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로 설정한 Notification 객체의 정보들을 새로 적용 한다. \par
+ 현재 Notification 바에 등록되어 있는 Notification의 정보를 갱신할 때 사용한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Notification}{p.}{Notification_8h_a404347c07b739823c244d09934047898} \par
+ \doxyref{Destroy\-Notification}{p.}{Notification_8h_a940d91a8e15dc9c5fd098c134842a326} \par
+ \doxyref{Notification\-Show}{p.}{Notification_8h_a923c898b974f6e556e8a50cfb5e62fd9} \par
+ \doxyref{Notification\-Hide}{p.}{Notification_8h_a794983d0273383c1a035ef5cfc43d4c1} \par
+ \doxyref{set\-Notification\-Title}{p.}{Notification_8h_a835bde3b937fae6a72adacf87502ab5e} \par
+ \doxyref{set\-Notification\-Text}{p.}{Notification_8h_a46b9e58ccdafdfc68870055f63976d8b} \par
+ \doxyref{set\-Notification\-Icon}{p.}{Notification_8h_a1eedf20663a58e41027151e6eb1b21a1} \par
+ \doxyref{set\-Notification\-Sound}{p.}{Notification_8h_a521d477948d0adfc2c2daf20b80095af} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/notification} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{Notification_8h_a0460ad83205311ebfd590002c853d65d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{Notification_8h_a0460ad83205311ebfd590002c853d65d_icgraph}
+\end{center}
+\end{figure}
+
+

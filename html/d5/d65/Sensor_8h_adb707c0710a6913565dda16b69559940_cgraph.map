@@ -1,8 +1,0 @@
-<map id="NewProximity" name="NewProximity">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#ac9e12406cf3770554e579dcb3a4454ad" title="생성한 Proximity를 비활성화 시킨다. " alt="" coords="194,5,288,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a35dbe4a72a8270ee7486a5155da972b5" title="생성한 Proximity를 활성화 시킨다. " alt="" coords="194,57,288,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#aef1708f5893bf86ccf197cebb073e07e" title="생성한 Proximity에 callback 함수를 등록한다. " alt="" coords="167,109,316,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#ab5d031471ccaac54c82623fac97cbd38" title="활성화 되어 있는 Proximity의 센서 값을 반환한다. " alt="" coords="177,161,305,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#abc7f9541812695b9e33c550be306b3ea" title="Proximity의 사용 가능 여부를 판단한다. " alt="" coords="168,213,315,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#ab7fb4cad537c21fa25ffe4354b15afc7" title="생성한 Proximity에서 callback 함수를 삭제한다. " alt="" coords="158,265,325,293"/>
-</map>

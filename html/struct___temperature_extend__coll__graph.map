@@ -1,4 +1,0 @@
-<map id="_TemperatureExtend" name="_TemperatureExtend">
-<area shape="rect" id="node2" href="$struct___temperature.html" title="{_Temperature\n|+ addCallback\l+ On\l+ Off\l+ isSupported\l|}" alt="" coords="24,201,129,330"/>
-<area shape="rect" id="node3" href="$_sensor_8h.html#struct___temperature__data" title="{_Temperature_data\n|+ celsius\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="9,6,145,135"/>
-</map>

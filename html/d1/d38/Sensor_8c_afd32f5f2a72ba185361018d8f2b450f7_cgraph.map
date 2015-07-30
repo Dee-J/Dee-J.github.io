@@ -1,8 +1,0 @@
-<map id="NewTemperature" name="NewTemperature">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a56de09c27b1540ea2d7a0d8674f6e03e" title="생성한 Temperature를 비활성화 시킨다. " alt="" coords="214,5,328,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a6ee8dbfe06eae97e6bf4c15612302a9e" title="생성한 Temperature를 활성화 시킨다. " alt="" coords="214,57,328,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#a384067870110b9c3977668862a1e7d29" title="생성한 Temperature에 callback 함수를 등록한다. " alt="" coords="186,109,355,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#ade596fb9c371d8a5a12e12874d22d547" title="활성화 되어 있는 Temperature의 센서 값을 반환한다. " alt="" coords="197,161,345,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#aec6c9326762b2f8f8f7ce662a03e9d5f" title="Temperature의 사용 가능 여부를 판단한다. " alt="" coords="187,213,354,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a51581bfa99fb51263950197b8c51ae76" title="생성한 Temperature에서 callback 함수를 삭제한다. " alt="" coords="177,265,364,293"/>
-</map>

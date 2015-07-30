@@ -1,8 +1,0 @@
-<map id="NewBluetooth" name="NewBluetooth">
-<area shape="rect" id="node2" href="$_bluetooth_8c.html#a00b401ae906bf1d77f232c88a14314fc" title="isBluetoothAccessible" alt="" coords="162,5,313,33"/>
-<area shape="rect" id="node3" href="$_bluetooth_8c.html#a77d0c6bf9a2f45a43a3b5801dd978fb6" title="onBluetoothConnect" alt="" coords="166,57,308,85"/>
-<area shape="rect" id="node4" href="$_bluetooth_8c.html#a4959b3be5e12c0d3e4cc317e00e4621e" title="isBluetoothConnected" alt="" coords="161,109,313,137"/>
-<area shape="rect" id="node5" href="$_bluetooth_8c.html#a26f809a19ded06421baab533eb8a59a6" title="onBluetoothDisconnect" alt="" coords="158,161,317,189"/>
-<area shape="rect" id="node6" href="$_bluetooth_8c.html#a4267c8ac222d9e9b0c23f2404b6c473f" title="BluetoothFileRecv" alt="" coords="173,213,302,241"/>
-<area shape="rect" id="node7" href="$_bluetooth_8c.html#a0859df2e1b985855ce1d3071f7ac9bd7" title="BluetoothFileSend" alt="" coords="172,265,302,293"/>
-</map>

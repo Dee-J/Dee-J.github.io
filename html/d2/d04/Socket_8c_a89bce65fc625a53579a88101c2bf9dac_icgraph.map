@@ -1,6 +1,0 @@
-<map id="SocketErrorCheck" name="SocketErrorCheck">
-<area shape="rect" id="node2" href="$d2/d04/Socket_8c.html#aa91c538d1bd84f6ea61db070ea8f290f" title="TCP/UDP 로 연결을 시도하며 이의 성공 여부를 반환한다. " alt="" coords="195,5,322,33"/>
-<area shape="rect" id="node4" href="$d2/d04/Socket_8c.html#ac8f8449fafaf2cb32af836eacc2dcc8a" title="TCP/UDP 연결로 데이터를 송신하며 이의 성공 여부를 반환한다. " alt="" coords="185,57,332,85"/>
-<area shape="rect" id="node5" href="$d2/d04/Socket_8c.html#a0142d2cfc1e9fe892cad2f9d2bf19f09" title="TCP/UDP 연결로 데이터를 수신하며 이의 성공 여부를 반환한다. " alt="" coords="185,109,332,137"/>
-<area shape="rect" id="node3" href="$d2/d04/Socket_8c.html#a1e1d2bbe80adb61014a4a67b3b507aae" title="새로운 Socket 객체를 생성한다. " alt="" coords="382,57,471,85"/>
-</map>

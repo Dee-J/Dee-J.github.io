@@ -1,0 +1,4 @@
+<map id="ProximityExtend" name="ProximityExtend">
+<area shape="rect" id="node2" href="$struct__Proximity.html" title="Proximity 모듈에 대한 구조체이다. Proximity 모듈은 Proximity Sensor를 다양한 방식으로 제어할 수 있다. " alt="" coords="5,201,128,346"/>
+<area shape="rect" id="node3" href="$Sensor_8h.html#structProximity__data" title="{Proximity_data\n|+ proximity\l+ value_count\l+ accuracy\l+ timestamp\l|}" alt="" coords="12,6,121,135"/>
+</map>

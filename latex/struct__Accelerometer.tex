@@ -1,0 +1,65 @@
+\section{Accelerometer Struct Reference}
+\label{struct__Accelerometer}\index{Accelerometer@{Accelerometer}}
+
+
+Accelerometer 모듈에 대한 구조체이다. Accelerometer 모듈은 Accelerometer Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Accelerometer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{struct__Accelerometer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Accelerometer this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__Accelerometer_a698f44e3e9ee03357a8eb702b86bc58e}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Accelerometer this\-\_\-gen)\label{struct__Accelerometer_ac2fcd5e551114878945049661741cd00}
+
+\item 
+bool($\ast$ {\bfseries On} )(Accelerometer this\-\_\-gen)\label{struct__Accelerometer_aaf7f343d618bb72c31a743bcc0a3f32a}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Accelerometer this\-\_\-gen)\label{struct__Accelerometer_a559dfd84d5e514e43e97c0fb38493311}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Accelerometer this\-\_\-gen)\label{struct__Accelerometer_aa8b57e056316fd98988f925389288a6f}
+
+\item 
+Accelerometer\-\_\-data($\ast$ {\bfseries get\-Value} )(Accelerometer this\-\_\-gen)\label{struct__Accelerometer_a3d225101c12df38dcd6d4e645b97482a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Accelerometer 모듈에 대한 구조체이다. Accelerometer 모듈은 Accelerometer Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Accelerometer 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Accelerometer()}{p.}{Sensor_8h_abcf9601a4eab47e714e89190dc79ad50} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Accelerometer()}{p.}{Sensor_8h_a275aeca9a471074bf414e5e9b817c8c1} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-accelerometer} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

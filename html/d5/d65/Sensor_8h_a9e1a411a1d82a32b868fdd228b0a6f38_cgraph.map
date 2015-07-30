@@ -1,8 +1,0 @@
-<map id="NewGyroscope" name="NewGyroscope">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#a64e72d01f92e9cd2f11538576b9bb25a" title="생성한 Gyroscope를 비활성화 시킨다. " alt="" coords="203,5,306,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a3bd51264b2d2c9d88a28459ae55e5612" title="생성한 Gyroscope를 활성화 시킨다. " alt="" coords="203,57,306,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#a0452a7182234767d311e80a54c67360d" title="생성한 Gyroscope에 callback 함수를 등록한다. " alt="" coords="175,109,334,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a7cecfd5ca0547a9c75d70ec0e0747600" title="활성화 되어 있는 Gyroscope의 센서 값을 반환한다. " alt="" coords="186,161,323,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#a6ecc487a57d98c882e694edfc36b2c8a" title="Gyroscope의 사용 가능 여부를 판단한다. " alt="" coords="176,213,333,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#a8e63eda49d9758c1e75201fc0a24479e" title="생성한 Gyroscope에서 callback 함수를 삭제한다. " alt="" coords="166,265,343,293"/>
-</map>

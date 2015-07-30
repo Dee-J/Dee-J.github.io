@@ -1,0 +1,716 @@
+\section{N\-F\-C.\-h File Reference}
+\label{NFC_8h}\index{N\-F\-C.\-h@{N\-F\-C.\-h}}
+
+
+N\-F\-C A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+Include dependency graph for N\-F\-C.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{NFC_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{NFC_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf N\-D\-E\-F}
+\begin{DoxyCompactList}\small\item\em N\-F\-C통신에 필요한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} (N\-F\-C Data Exchange Format)에 대한 구조체이다. \end{DoxyCompactList}\item 
+struct {\bf N\-F\-C}
+\begin{DoxyCompactList}\small\item\em N\-F\-C모듈에 대한 구조체이다. \end{DoxyCompactList}\item 
+struct {\bf N\-F\-C\-Extends}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf N\-F\-C\-Error\-Checker} (int errorcode)
+\begin{DoxyCompactList}\small\item\em N\-F\-C\-Error\-Checker A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+{\bf N\-D\-E\-F} {\bf Create\-N\-D\-E\-F} (String tag, String msg)
+\begin{DoxyCompactList}\small\item\em 새로운 Bluetooth 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Delete\-N\-D\-E\-F} ({\bf N\-D\-E\-F} $\ast$ndef)
+\begin{DoxyCompactList}\small\item\em 생성한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+N\-F\-C {\bf New\-N\-F\-C} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 N\-F\-C 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-N\-F\-C} (N\-F\-C this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 N\-F\-C 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf is\-N\-F\-C\-Accessible} (N\-F\-C this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 현재 N\-F\-C 기능 지원 여부를 반환 한다. \end{DoxyCompactList}\item 
+bool {\bf on\-N\-F\-C\-Connect} (N\-F\-C this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf on\-N\-F\-C\-Disconnect} (N\-F\-C this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf N\-F\-C\-Send} (N\-F\-C this\-\_\-gen, {\bf N\-D\-E\-F} message)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. \end{DoxyCompactList}\item 
+{\bf N\-D\-E\-F} {\bf N\-F\-C\-Recv} (N\-F\-C this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+N\-F\-C A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+N\-F\-C의 Create\-N\-D\-E\-F / Delete\-N\-D\-E\-F / is\-Accessible / on\-Connect / is\-Connected / on\-Disconnect / Send / Recv A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Data Structure Documentation}
+\index{N\-D\-E\-F@{N\-D\-E\-F}}\label{structNDEF}
+\subsubsection{struct N\-D\-E\-F}
+N\-F\-C통신에 필요한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} (N\-F\-C Data Exchange Format)에 대한 구조체이다. 
+
+\begin{DoxyNote}{Note}
+N\-F\-C통신에 필요한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} (N\-F\-C Data Exchange Format)에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{Create\-N\-D\-E\-F()}{p.}{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Delete\-N\-D\-E\-F()}{p.}{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ N\-D\-E\-F part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Collaboration diagram for N\-D\-E\-F\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=122pt]{structNDEF__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+String\label{NFC_8h_aedd0c27f12ca3b792369ea41d2e31424}
+&
+msg&
+\\
+\hline
+
+String\label{NFC_8h_af45efedd4bbe2a7049028806f82c6249}
+&
+tag&
+\\
+\hline
+
+\end{DoxyFields}
+\index{N\-F\-C\-Extends@{N\-F\-C\-Extends}}\label{structNFCExtends}
+\subsubsection{struct N\-F\-C\-Extends}
+
+
+Collaboration diagram for N\-F\-C\-Extends\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{structNFCExtends__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Data Fields}
+bool\label{NFC_8h_aaf16491c4fd96d422afa6a366cb16e63}
+&
+access&
+\\
+\hline
+
+{\bf N\-D\-E\-F}\label{NFC_8h_a7694a42bbcafbb86fca7ce968ab30073}
+&
+ndef\-Message&
+\\
+\hline
+
+struct {\bf \-\_\-\-N\-F\-C}\label{NFC_8h_aed664db6d799a193053b271db29c18e2}
+&
+nfc&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Create\-N\-D\-E\-F@{Create\-N\-D\-E\-F}}
+\index{Create\-N\-D\-E\-F@{Create\-N\-D\-E\-F}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Create\-N\-D\-E\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-D\-E\-F} Create\-N\-D\-E\-F (
+\begin{DoxyParamCaption}
+\item[{String}]{tag, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81}
+
+
+새로운 Bluetooth 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tag} & N\-D\-E\-F에 저장 할 태그 \\
+\hline
+\mbox{\tt in}  & {\em msg} & N\-D\-E\-F에 저장 할 메세지 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF}} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 생성한다. \par
+ \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Delete\-N\-D\-E\-F}{p.}{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Delete\-N\-D\-E\-F()}{p.}{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b} 함수를 꼭 사용해야 한다. 
+\end{DoxyWarning}
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Delete\-N\-D\-E\-F@{Delete\-N\-D\-E\-F}}
+\index{Delete\-N\-D\-E\-F@{Delete\-N\-D\-E\-F}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Delete\-N\-D\-E\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Delete\-N\-D\-E\-F (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-D\-E\-F} $\ast$}]{ndef}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_ac7b8ed054a4665a5812ce95f5c4ec80b}
+
+
+생성한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ndef} & 소멸시킬 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 소멸 시킨다. \par
+ \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Create\-N\-D\-E\-F}{p.}{NFC_8h_a34d5da2bbb95a1a046f787f4d62d4c81} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} \par
+
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!Destroy\-N\-F\-C@{Destroy\-N\-F\-C}}
+\index{Destroy\-N\-F\-C@{Destroy\-N\-F\-C}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{Destroy\-N\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-N\-F\-C (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}
+
+
+생성한 N\-F\-C 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 N\-F\-C 객체를 소멸 시킨다. \par
+ N\-F\-C 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!is\-N\-F\-C\-Accessible@{is\-N\-F\-C\-Accessible}}
+\index{is\-N\-F\-C\-Accessible@{is\-N\-F\-C\-Accessible}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{is\-N\-F\-C\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-N\-F\-C\-Accessible (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605}
+
+
+현재 N\-F\-C 기능 지원 여부를 반환 한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 사용 가능 여부를 반환 할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+현재 N\-F\-C 기능 지원 여부를 반환 한다. \par
+ 지원 가능 이라면 {\ttfamily true}, 지원 가능이 아니라면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} \par
+ \doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{on\-N\-F\-C\-Connect}{p.}{NFC_8h_ace29c66a88baa5247a996d2f324532ff} \par
+ \doxyref{on\-N\-F\-C\-Disconnect}{p.}{NFC_8h_a967e0ea57b1755212f3793e2b6133f46} \par
+ \doxyref{N\-F\-C\-Send}{p.}{NFC_8h_a391630c994207503df21aa33b58bcb1a} \par
+ \doxyref{N\-F\-C\-Recv}{p.}{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!New\-N\-F\-C@{New\-N\-F\-C}}
+\index{New\-N\-F\-C@{New\-N\-F\-C}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{New\-N\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}N\-F\-C New\-N\-F\-C (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c}
+
+
+새로운 N\-F\-C 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-F\-C} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 N\-F\-C 객체를 생성한다. \par
+ N\-F\-C 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{is\-N\-F\-C\-Accessible}{p.}{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605} \par
+ \doxyref{on\-N\-F\-C\-Connect}{p.}{NFC_8h_ace29c66a88baa5247a996d2f324532ff} \par
+ \doxyref{on\-N\-F\-C\-Disconnect}{p.}{NFC_8h_a967e0ea57b1755212f3793e2b6133f46} \par
+ \doxyref{N\-F\-C\-Send}{p.}{NFC_8h_a391630c994207503df21aa33b58bcb1a} \par
+ \doxyref{N\-F\-C\-Recv}{p.}{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-N\-F\-C()}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe}함수를 꼭 사용해야한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+NFC NewNFC (\textcolor{keywordtype}{void})
+\{
+    NFCExtends * \textcolor{keyword}{this} = (NFCExtends *)malloc (\textcolor{keyword}{sizeof} (NFCExtends));
+
+    this->nfc.isAccessible = isNFCAccessible;
+    this->nfc.onConnect    = onNFCConnect;
+    this->nfc.onDisconnect = onNFCDisconnect;
+    this->nfc.Send         = NFCSend;
+    this->nfc.Recv         = NFCRecv;
+
+    \textcolor{keywordflow}{return} &this->nfc;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Error\-Checker@{N\-F\-C\-Error\-Checker}}
+\index{N\-F\-C\-Error\-Checker@{N\-F\-C\-Error\-Checker}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Error\-Checker}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ N\-F\-C\-Error\-Checker (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a809ed6979169650ef43f0782d2e37720}
+
+
+N\-F\-C\-Error\-Checker A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Operation failed \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-N\-D\-E\-F\-\_\-\-M\-E\-S\-S\-A\-G\-E} & \-: Invalid \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} message \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-C\-O\-R\-D\-\_\-\-T\-Y\-P\-E} & \-: Invalid record type \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T} & \-: Timeout error, no answer \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-B\-U\-S\-Y} & \-: Previous operation is not finished still busy \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-D\-E\-V\-I\-C\-E} & \-: No device \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: N\-F\-C is not activated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Not supported \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: Already activated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-D\-E\-A\-C\-T\-I\-V\-A\-T\-E\-D} & \-: Already deactivated \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-A\-D\-\_\-\-O\-N\-L\-Y\-\_\-\-N\-D\-E\-F} & \-: Read only tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-S\-P\-A\-C\-E\-\_\-\-O\-N\-\_\-\-N\-D\-E\-F} & \-: No enough space on tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-N\-D\-E\-F\-\_\-\-M\-E\-S\-S\-A\-G\-E} & \-: No \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} Message on Tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-N\-D\-E\-F\-\_\-\-F\-O\-R\-M\-A\-T} & \-: Not \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} format Tag \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y\-\_\-\-R\-E\-S\-T\-R\-I\-C\-T\-E\-D} & \-: Restricted by access control \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-P\-E\-R\-M\-I\-S\-S\-I\-O\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: Restricted by Smack \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-L\-L\-E\-G\-A\-L\-\_\-\-S\-T\-A\-T\-E} & \-: The state is wrong \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} & \-: N\-F\-C is not initialized \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-A\-G\-\_\-\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D} & \-: Tag is not supported \\
+\hline
+{\em N\-F\-C\-\_\-\-E\-R\-R\-O\-R\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 23가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ N\-F\-C part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NFC_8h_a809ed6979169650ef43f0782d2e37720_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Recv@{N\-F\-C\-Recv}}
+\index{N\-F\-C\-Recv@{N\-F\-C\-Recv}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-D\-E\-F} N\-F\-C\-Recv (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c}
+
+
+N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & N\-D\-E\-F를 읽어 올 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF}} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치에서 N\-D\-E\-F를 읽어온다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} \par
+ \doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{is\-N\-F\-C\-Accessible}{p.}{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605} \par
+ \doxyref{on\-N\-F\-C\-Connect}{p.}{NFC_8h_ace29c66a88baa5247a996d2f324532ff} \par
+ \doxyref{on\-N\-F\-C\-Disconnect}{p.}{NFC_8h_a967e0ea57b1755212f3793e2b6133f46} \par
+ \doxyref{N\-F\-C\-Send}{p.}{NFC_8h_a391630c994207503df21aa33b58bcb1a} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!N\-F\-C\-Send@{N\-F\-C\-Send}}
+\index{N\-F\-C\-Send@{N\-F\-C\-Send}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{N\-F\-C\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void N\-F\-C\-Send (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen, }
+\item[{{\bf N\-D\-E\-F}}]{message}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a391630c994207503df21aa33b58bcb1a}
+
+
+N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & N\-D\-E\-F를 기록할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt in}  & {\em message} & 기록할 \doxyref{N\-D\-E\-F}{p.}{NFC_8h_structNDEF} \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치에 생성한 N\-D\-E\-F를 기록한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} \par
+ \doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{is\-N\-F\-C\-Accessible}{p.}{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605} \par
+ \doxyref{on\-N\-F\-C\-Connect}{p.}{NFC_8h_ace29c66a88baa5247a996d2f324532ff} \par
+ \doxyref{on\-N\-F\-C\-Disconnect}{p.}{NFC_8h_a967e0ea57b1755212f3793e2b6133f46} \par
+ \doxyref{N\-F\-C\-Recv}{p.}{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{NFC_8h_a391630c994207503df21aa33b58bcb1a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{NFC_8h_a391630c994207503df21aa33b58bcb1a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!on\-N\-F\-C\-Connect@{on\-N\-F\-C\-Connect}}
+\index{on\-N\-F\-C\-Connect@{on\-N\-F\-C\-Connect}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{on\-N\-F\-C\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-N\-F\-C\-Connect (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_ace29c66a88baa5247a996d2f324532ff}
+
+
+N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 활성화 성공 여부를 확인할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치 활성화를 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} \par
+ \doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{is\-N\-F\-C\-Accessible}{p.}{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605} \par
+ \doxyref{on\-N\-F\-C\-Disconnect}{p.}{NFC_8h_a967e0ea57b1755212f3793e2b6133f46} \par
+ \doxyref{N\-F\-C\-Send}{p.}{NFC_8h_a391630c994207503df21aa33b58bcb1a} \par
+ \doxyref{N\-F\-C\-Recv}{p.}{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{NFC_8h_ace29c66a88baa5247a996d2f324532ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{N\-F\-C.\-h@{N\-F\-C.\-h}!on\-N\-F\-C\-Disconnect@{on\-N\-F\-C\-Disconnect}}
+\index{on\-N\-F\-C\-Disconnect@{on\-N\-F\-C\-Disconnect}!NFC.h@{N\-F\-C.\-h}}
+\subsubsection[{on\-N\-F\-C\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-N\-F\-C\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{N\-F\-C}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{NFC_8h_a967e0ea57b1755212f3793e2b6133f46}
+
+
+N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 비활성화 성공 여부를 확인할 N\-F\-C 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+N\-F\-C 장치 비활성화를 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-N\-F\-C}{p.}{NFC_8h_a03b543f63bf7d41bb184db9209d5cc9c} \par
+ \doxyref{Destroy\-N\-F\-C}{p.}{NFC_8h_a1e5dc8f957d33cd59f30e03f113d63fe} \par
+ \doxyref{is\-N\-F\-C\-Accessible}{p.}{NFC_8h_af4d6a3d2d34a4e040db1c9558d3a6605} \par
+ \doxyref{on\-N\-F\-C\-Connect}{p.}{NFC_8h_ace29c66a88baa5247a996d2f324532ff} \par
+ \doxyref{N\-F\-C\-Send}{p.}{NFC_8h_a391630c994207503df21aa33b58bcb1a} \par
+ \doxyref{N\-F\-C\-Recv}{p.}{NFC_8h_ae8da301bbf98e31b07f5c5f541a7976c} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/network.\-nfc} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{NFC_8h_a967e0ea57b1755212f3793e2b6133f46_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{NFC_8h_a967e0ea57b1755212f3793e2b6133f46_icgraph}
+\end{center}
+\end{figure}
+
+

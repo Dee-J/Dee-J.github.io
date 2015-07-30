@@ -1,0 +1,9 @@
+<map id="NewMagnetometer" name="NewMagnetometer">
+<area shape="rect" id="node2" href="$Sensor_8c.html#aadcb29619df3dc384412150dd9722aad" title="생성한 Magnetometer를 비활성화 시킨다. " alt="" coords="224,5,349,33"/>
+<area shape="rect" id="node3" href="$Sensor_8c.html#a33e0660fc6c3a5440918fc7f9f63b148" title="생성한 Magnetometer를 활성화 시킨다. " alt="" coords="224,57,349,85"/>
+<area shape="rect" id="node4" href="$Sensor_8c.html#a0f570a2cb585bed7fcbf74608f35968b" title="생성한 Magnetometer에 callback 함수를 등록한다. " alt="" coords="196,109,377,137"/>
+<area shape="rect" id="node6" href="$Sensor_8c.html#a22f091215f444d6ed9cc2b5004151c85" title="활성화 되어 있는 Magnetometer의 센서 값을 반환한다. " alt="" coords="207,161,366,189"/>
+<area shape="rect" id="node7" href="$Sensor_8c.html#aa242895b9c4d18cd55b220df73161784" title="Magnetometer의 사용 가능 여부를 판단한다. " alt="" coords="197,213,376,241"/>
+<area shape="rect" id="node8" href="$Sensor_8c.html#af9327c445d7123300afaab40859f46d3" title="생성한 Magnetometer에서 callback 함수를 삭제한다. " alt="" coords="187,265,386,293"/>
+<area shape="rect" id="node5" href="$Sensor_8c.html#a566cf5c5efdb6cb13b9548e0303538af" title="Device Status API에서 발생하는 Error Code들을 확인 해준다. " alt="" coords="434,187,566,215"/>
+</map>

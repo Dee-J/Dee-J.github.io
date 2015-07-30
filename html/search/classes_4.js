@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['socketextends',['SocketExtends',['../da/d75/Socket_8h.html#dc/d24/structSocketExtends',1,'']]]
+  ['gpsextends',['GPSExtends',['../GPS_8h.html#structGPSExtends',1,'']]],
+  ['gravityextend',['GravityExtend',['../Sensor_8h.html#structGravityExtend',1,'']]],
+  ['gyroscopeextend',['GyroscopeExtend',['../Sensor_8h.html#structGyroscopeExtend',1,'']]]
 ];

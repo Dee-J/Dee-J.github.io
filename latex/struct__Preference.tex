@@ -1,0 +1,70 @@
+\section{Preference Struct Reference}
+\label{struct__Preference}\index{Preference@{Preference}}
+
+
+Preference 모듈에 대한 구조체이다. Preference 모듈은 다양한 형식으로 key값을 제어 할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Preference.\-h$>$}
+
+
+
+Collaboration diagram for Preference\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{struct__Preference__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int($\ast$ {\bfseries get\-Int} )(String key, int def\-Value)\label{struct__Preference_a08aef2f90f68879084cdf30c429dd254}
+
+\item 
+double($\ast$ {\bfseries get\-Double} )(String key, double def\-Value)\label{struct__Preference_a4d2661aa3902681e9b9db65a22d9a10f}
+
+\item 
+bool($\ast$ {\bfseries get\-Boolean} )(String key, bool def\-Value)\label{struct__Preference_af9b075ff4bab68bc92e8eb251512a1b2}
+
+\item 
+String($\ast$ {\bfseries get\-String} )(String key, String def\-Value)\label{struct__Preference_adbb40854acc6f2914e59fa73c7ce91d7}
+
+\item 
+bool($\ast$ {\bfseries set\-Int} )(String key, int value)\label{struct__Preference_a627031ee228649bf20a69315f949d6e8}
+
+\item 
+bool($\ast$ {\bfseries set\-Double} )(String key, double value)\label{struct__Preference_ab48f7a99ebd4df48cc51d415eb519f6a}
+
+\item 
+bool($\ast$ {\bfseries set\-Boolean} )(String key, bool value)\label{struct__Preference_a6455d65bcd57c85d49333a944c505cc0}
+
+\item 
+bool($\ast$ {\bfseries set\-String} )(String key, String value)\label{struct__Preference_ae7c94ad7b1bf5ab298a6db3022b1dc72}
+
+\item 
+bool($\ast$ {\bfseries Remove} )(String key)\label{struct__Preference_a438180009a819ea5112722292cb19b96}
+
+\item 
+bool($\ast$ {\bfseries Clear} )(void)\label{struct__Preference_adcc0494c6e27e1876ad64f054d627c00}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Preference 모듈에 대한 구조체이다. Preference 모듈은 다양한 형식으로 key값을 제어 할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Preference 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Preference()}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Preference()}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Preference part} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Preference.\-h}\end{DoxyCompactItemize}

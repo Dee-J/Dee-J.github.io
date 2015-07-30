@@ -1,7 +1,0 @@
-<map id="NewTemperature" name="NewTemperature">
-<area shape="rect" id="node2" href="$d4/d9f/_sensor_8c.html#a9f5b9a0490e2f413db412c87b3c2c0c8" title="TemperatureOff" alt="" coords="204,5,318,33"/>
-<area shape="rect" id="node3" href="$d4/d9f/_sensor_8c.html#a618e482f104d7eb72bd47a37586334db" title="TemperatureOn" alt="" coords="204,57,318,85"/>
-<area shape="rect" id="node4" href="$d4/d9f/_sensor_8c.html#a9a29ee5eed846d464e1044379e0eede3" title="addTemperatureCallback" alt="" coords="177,109,346,137"/>
-<area shape="rect" id="node5" href="$d4/d9f/_sensor_8c.html#ade596fb9c371d8a5a12e12874d22d547" title="getTemperatureValue" alt="" coords="187,161,335,189"/>
-<area shape="rect" id="node6" href="$d4/d9f/_sensor_8c.html#aec6c9326762b2f8f8f7ce662a03e9d5f" title="isTemperatureSupported" alt="" coords="178,213,345,241"/>
-</map>

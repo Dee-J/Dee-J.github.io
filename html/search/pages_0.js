@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['do_20it_20tizen_20for_20native_20api',['Do It Tizen for Native API',['../index.html',1,'']]]
+  ['d_2ei_2et_2e_20api_20reference_20list',['D.I.T. API Reference list',['../md__Users_CDJ_Dropbox_DJ_SSM_DIT_doxygen_DIT_API_Reference_list.html',1,'']]]
 ];

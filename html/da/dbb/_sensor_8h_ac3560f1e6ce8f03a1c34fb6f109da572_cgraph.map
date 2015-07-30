@@ -1,7 +1,0 @@
-<map id="NewOrientation" name="NewOrientation">
-<area shape="rect" id="node2" href="$d4/d9f/_sensor_8c.html#ab066d53e2553663195ec202037b4c90e" title="OrientationOff" alt="" coords="196,5,300,33"/>
-<area shape="rect" id="node3" href="$d4/d9f/_sensor_8c.html#ad315026a5c51a1e139e4e83ed9aa57c0" title="OrientationOn" alt="" coords="196,57,300,85"/>
-<area shape="rect" id="node4" href="$d4/d9f/_sensor_8c.html#ab79f8a05d768ee307b1a50319d556e98" title="addOrientationCallback" alt="" coords="168,109,328,137"/>
-<area shape="rect" id="node5" href="$d4/d9f/_sensor_8c.html#aca22031b16714ba50a646b347bf662a6" title="getOrientationValue" alt="" coords="179,161,317,189"/>
-<area shape="rect" id="node6" href="$d4/d9f/_sensor_8c.html#aa96ba937a81f05a243c500ff3a20c882" title="isOrientationSupported" alt="" coords="169,213,327,241"/>
-</map>

@@ -1,0 +1,685 @@
+\section{Socket.\-c File Reference}
+\label{Socket_8c}\index{Socket.\-c@{Socket.\-c}}
+
+
+Socket A\-P\-I가 정의되어있다.  
+
+
+{\ttfamily \#include \char`\"{}Commnucation/\-Socket.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$sys/select.\-h$>$}\\*
+{\ttfamily \#include $<$dlog.\-h$>$}\\*
+{\ttfamily \#include $<$curl.\-h$>$}\\*
+{\ttfamily \#include $<$system\-\_\-info.\-h$>$}\\*
+Include dependency graph for Socket.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Socket_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Socket {\bf New\-Socket} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Socket 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destory\-Socket} (Socket this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Socket 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+bool {\bf is\-Socket\-Accessible} (Socket this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em T\-C\-P/\-U\-D\-P 연결 지원 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf on\-Socket\-Connect} (Socket this\-\_\-gen, String url, int port)
+\begin{DoxyCompactList}\small\item\em T\-C\-P/\-U\-D\-P 로 연결을 시도하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf on\-Socket\-Disconnect} (Socket this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em T\-C\-P/\-U\-D\-P 로 연결 해제하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf Socket\-Message\-Send} (Socket this\-\_\-gen, String msg)
+\begin{DoxyCompactList}\small\item\em T\-C\-P/\-U\-D\-P 연결로 데이터를 송신하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+bool {\bf Socket\-Message\-Recv} (Socket this\-\_\-gen, String $\ast$msg)
+\begin{DoxyCompactList}\small\item\em T\-C\-P/\-U\-D\-P 연결로 데이터를 수신하며 이의 성공 여부를 반환한다. \end{DoxyCompactList}\item 
+const char $\ast$ {\bf Socket\-Error\-Check} (C\-U\-R\-Lcode error\-Code)
+\begin{DoxyCompactList}\small\item\em Socket A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Socket A\-P\-I가 정의되어있다. \begin{DoxyNote}{Note}
+Socket A\-P\-I가 정의되어있다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Socket.\-h}{p.}{Socket_8h} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{Socket.\-c@{Socket.\-c}!Destory\-Socket@{Destory\-Socket}}
+\index{Destory\-Socket@{Destory\-Socket}!Socket.c@{Socket.\-c}}
+\subsubsection[{Destory\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}void Destory\-Socket (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_a72ff91c23eed60f629fbae39dbce94e2}
+
+
+생성한 Socket 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Socket 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Socket 객체를 소멸 시킨다. \par
+ Socket 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\index{Socket.\-c@{Socket.\-c}!is\-Socket\-Accessible@{is\-Socket\-Accessible}}
+\index{is\-Socket\-Accessible@{is\-Socket\-Accessible}!Socket.c@{Socket.\-c}}
+\subsubsection[{is\-Socket\-Accessible}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Socket\-Accessible (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_aabc799937e9e7c40e65fb70e5856bf77}
+
+
+T\-C\-P/\-U\-D\-P 연결 지원 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 지원 여부를 반환 할 Socket 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+T\-C\-P/\-U\-D\-P 연결 지원 여부를 반환한다. \par
+ 지원 가능 시 {\ttfamily true}, 불가능 시 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} \par
+ \doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{on\-Socket\-Connect}{p.}{Socket_8h_aa91c538d1bd84f6ea61db070ea8f290f} \par
+ \doxyref{on\-Socket\-Disconnect}{p.}{Socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406} \par
+ \doxyref{Socket\-Message\-Send}{p.}{Socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a} \par
+ \doxyref{Socket\-Message\-Recv}{p.}{Socket_8h_a0142d2cfc1e9fe892cad2f9d2bf19f09} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{Socket_8c_aabc799937e9e7c40e65fb70e5856bf77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!New\-Socket@{New\-Socket}}
+\index{New\-Socket@{New\-Socket}!Socket.c@{Socket.\-c}}
+\subsubsection[{New\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Socket New\-Socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_a1e1d2bbe80adb61014a4a67b3b507aae}
+
+
+새로운 Socket 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Socket} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Socket 객체를 생성한다. \par
+ Socket 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{is\-Socket\-Accessible}{p.}{Socket_8h_aabc799937e9e7c40e65fb70e5856bf77} \par
+ \doxyref{on\-Socket\-Connect}{p.}{Socket_8h_aa91c538d1bd84f6ea61db070ea8f290f} \par
+ \doxyref{on\-Socket\-Disconnect}{p.}{Socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406} \par
+ \doxyref{Socket\-Message\-Send}{p.}{Socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a} \par
+ \doxyref{Socket\-Message\-Recv}{p.}{Socket_8h_a0142d2cfc1e9fe892cad2f9d2bf19f09} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destory\-Socket()}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Socket NewSocket (\textcolor{keywordtype}{void})
+\{
+    SocketExtends * \textcolor{keyword}{this} = (SocketExtends *)malloc (\textcolor{keyword}{sizeof} (SocketExtends));
+
+    this->socket.isAccessible = isSocketAccessible;
+    this->socket.onConnect    = onSocketConnect;
+    this->socket.onDisconnect = onSocketDisconnect;
+    this->socket.Send         = SocketMessageSend;
+    this->socket.Recv         = SocketMessageRecv;
+
+    this->curl   = NULL;
+    this->access = \textcolor{keyword}{false};
+    this->conect = \textcolor{keyword}{false};
+
+    \textcolor{keywordflow}{return} &this->socket;
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Socket_8c_a1e1d2bbe80adb61014a4a67b3b507aae_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!on\-Socket\-Connect@{on\-Socket\-Connect}}
+\index{on\-Socket\-Connect@{on\-Socket\-Connect}!Socket.c@{Socket.\-c}}
+\subsubsection[{on\-Socket\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Socket\-Connect (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen, }
+\item[{String}]{url, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_aa91c538d1bd84f6ea61db070ea8f290f}
+
+
+T\-C\-P/\-U\-D\-P 로 연결을 시도하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 성공 여부를 확인할 Socket 객체 \\
+\hline
+\mbox{\tt in}  & {\em url} & 연결을 시도할 U\-R\-L \\
+\hline
+\mbox{\tt in}  & {\em port} & 연결을 시도할 포트 번호 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+T\-C\-P/\-U\-D\-P 로 연결을 시도하며 이의 성공 여부를 반환한다. \par
+ 연결에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} \par
+ \doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{is\-Socket\-Accessible}{p.}{Socket_8h_aabc799937e9e7c40e65fb70e5856bf77} \par
+ \doxyref{on\-Socket\-Disconnect}{p.}{Socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406} \par
+ \doxyref{Socket\-Message\-Send}{p.}{Socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a} \par
+ \doxyref{Socket\-Message\-Recv}{p.}{Socket_8h_a0142d2cfc1e9fe892cad2f9d2bf19f09} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{Socket_8c_aa91c538d1bd84f6ea61db070ea8f290f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{Socket_8c_aa91c538d1bd84f6ea61db070ea8f290f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!on\-Socket\-Disconnect@{on\-Socket\-Disconnect}}
+\index{on\-Socket\-Disconnect@{on\-Socket\-Disconnect}!Socket.c@{Socket.\-c}}
+\subsubsection[{on\-Socket\-Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}bool on\-Socket\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_a9ad6ab6f567f68b9d0fb508babc0e406}
+
+
+T\-C\-P/\-U\-D\-P 로 연결 해제하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 연결 해제 여부를 확인할 Socket 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+T\-C\-P/\-U\-D\-P 로 연결을 제하며 이의 성공 여부를 반환한다. \par
+ 연결 해제에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} \par
+ \doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{is\-Socket\-Accessible}{p.}{Socket_8h_aabc799937e9e7c40e65fb70e5856bf77} \par
+ \doxyref{on\-Socket\-Connect}{p.}{Socket_8h_aa91c538d1bd84f6ea61db070ea8f290f} \par
+ \doxyref{Socket\-Message\-Send}{p.}{Socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a} \par
+ \doxyref{Socket\-Message\-Recv}{p.}{Socket_8h_a0142d2cfc1e9fe892cad2f9d2bf19f09} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Socket_8c_a9ad6ab6f567f68b9d0fb508babc0e406_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!Socket\-Error\-Check@{Socket\-Error\-Check}}
+\index{Socket\-Error\-Check@{Socket\-Error\-Check}!Socket.c@{Socket.\-c}}
+\subsubsection[{Socket\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Socket\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{C\-U\-R\-Lcode}]{error\-Code}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_a89bce65fc625a53579a88101c2bf9dac}
+
+
+Socket A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em C\-U\-R\-L\-E\-\_\-\-O\-K} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-P\-R\-O\-T\-O\-C\-O\-L} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-A\-I\-L\-E\-D\-\_\-\-I\-N\-I\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-R\-L\-\_\-\-M\-A\-L\-F\-O\-R\-M\-A\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-N\-O\-T\-\_\-\-B\-U\-I\-L\-T\-\_\-\-I\-N} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-S\-O\-L\-V\-E\-\_\-\-P\-R\-O\-X\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-S\-O\-L\-V\-E\-\_\-\-H\-O\-S\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-C\-O\-N\-N\-E\-C\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-S\-E\-R\-V\-E\-R\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-D\-E\-N\-I\-E\-D} & \-: A service was denied by the server due to lack of access -\/ when login fails this is not returned. \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-A\-C\-C\-E\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-P\-A\-S\-S\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-A\-C\-C\-E\-P\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T} & \-: Timeout occurred accepting server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-\-P\-A\-S\-V\-\_\-\-R\-E\-P\-L\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-W\-E\-I\-R\-D\-\_\-227\-\_\-\-F\-O\-R\-M\-A\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-A\-N\-T\-\_\-\-G\-E\-T\-\_\-\-H\-O\-S\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-S\-E\-T\-\_\-\-T\-Y\-P\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-P\-A\-R\-T\-I\-A\-L\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-T\-R\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-Q\-U\-O\-T\-E\-\_\-\-E\-R\-R\-O\-R} & \-: Quote command failure \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-H\-T\-T\-P\-\_\-\-R\-E\-T\-U\-R\-N\-E\-D\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-P\-L\-O\-A\-D\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Failed upload \char`\"{}command\char`\"{} \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-A\-D\-\_\-\-E\-R\-R\-O\-R} & \-: Couldn't open/read from file \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-O\-P\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-D\-O\-U\-T} & \-: The timeout time was reached \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-P\-O\-R\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \-: F\-T\-P P\-O\-R\-T operation failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-U\-S\-E\-\_\-\-R\-E\-S\-T} & \-: The R\-E\-S\-T command failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-R\-R\-O\-R} & R\-A\-N\-G\-E \-: Command" didn't work \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-H\-T\-T\-P\-\_\-\-P\-O\-S\-T\-\_\-\-E\-R\-R\-O\-R} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-E\-R\-R\-O\-R} & \-: Wrong when connecting with S\-S\-L \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-D\-O\-W\-N\-L\-O\-A\-D\-\_\-\-R\-E\-S\-U\-M\-E} & \-: Couldn't resume download \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-I\-L\-E\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-R\-E\-A\-D\-\_\-\-F\-I\-L\-E} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-C\-A\-N\-N\-O\-T\-\_\-\-B\-I\-N\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-S\-E\-A\-R\-C\-H\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-A\-B\-O\-R\-T\-E\-D\-\_\-\-B\-Y\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-A\-R\-G\-U\-M\-E\-N\-T} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-\_\-\-F\-A\-I\-L\-E\-D} & \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-O\-O\-\_\-\-M\-A\-N\-Y\-\_\-\-R\-E\-D\-I\-R\-E\-C\-T\-S} & \-: Catch endless re-\/direct loops \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-N\-K\-N\-O\-W\-N\-\_\-\-O\-P\-T\-I\-O\-N} & \-: User specified an unknown option \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-E\-L\-N\-E\-T\-\_\-\-O\-P\-T\-I\-O\-N\-\_\-\-S\-Y\-N\-T\-A\-X} & \-: Malformed telnet option \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-P\-E\-E\-R\-\_\-\-F\-A\-I\-L\-E\-D\-\_\-\-V\-E\-R\-I\-F\-I\-C\-A\-T\-I\-O\-N} & \-: Peer's certificate or finger print wasn't verified fine \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-G\-O\-T\-\_\-\-N\-O\-T\-H\-I\-N\-G} & \-: When this is a specific error \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D} & \-: S\-S\-L crypto engine not found \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-S\-E\-T\-F\-A\-I\-L\-E\-D} & \-: Can not set S\-S\-L crypto engine as default \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-E\-R\-R\-O\-R} & \-: Failed sending network data \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-C\-V\-\_\-\-E\-R\-R\-O\-R} & \-: Failure in receiving network data \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-E\-R\-T\-P\-R\-O\-B\-L\-E\-M} & \-: Problem with the local certificate \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-I\-P\-H\-E\-R} & \-: Couldn't use specified cipher \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-A\-C\-E\-R\-T} & \-: Problem with the C\-A cert \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} & \-: Unrecognized/bad encoding \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-D\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-R\-L} & \-: Invalid L\-D\-A\-P U\-R\-L \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-I\-L\-E\-S\-I\-Z\-E\-\_\-\-E\-X\-C\-E\-E\-D\-E\-D} & \-: Maximum file size exceeded \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-U\-S\-E\-\_\-\-S\-S\-L\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Requested F\-T\-P S\-S\-L level failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-\_\-\-R\-E\-W\-I\-N\-D} & \-: Sending the data requires a rewind that failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-E\-N\-G\-I\-N\-E\-\_\-\-I\-N\-I\-T\-F\-A\-I\-L\-E\-D} & \-: Failed to initialize E\-N\-G\-I\-N\-E \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-L\-O\-G\-I\-N\-\_\-\-D\-E\-N\-I\-E\-D} & \-: User, password or similar was not accepted and we failed to login \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D} & \-: File not found on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-P\-E\-R\-M} & \-: Permission problem on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-D\-I\-S\-K\-\_\-\-F\-U\-L\-L} & \-: Out of disk space on server \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-I\-L\-L\-E\-G\-A\-L} & \-: Illegal T\-F\-T\-P operation \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-U\-N\-K\-N\-O\-W\-N\-I\-D} & \-: Unknown transfer I\-D \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-I\-S\-T\-S} & \-: File already exists \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-T\-F\-T\-P\-\_\-\-N\-O\-S\-U\-C\-H\-U\-S\-E\-R} & \-: No such user \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-N\-V\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Conversion failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-O\-N\-V\-\_\-\-R\-E\-Q\-D} & \-: Caller must register conversion callbacks using curl\-\_\-easy\-\_\-setopt options. \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-A\-C\-E\-R\-T\-\_\-\-B\-A\-D\-F\-I\-L\-E} & \-: Could not load C\-A\-C\-E\-R\-T file, missing or wrong format \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-E\-M\-O\-T\-E\-\_\-\-F\-I\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D} & \-: Remote file not found \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-H} & \-: Error from the S\-S\-H layer, somewhat generic so the error message will be of interest when this has happened \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-S\-H\-U\-T\-D\-O\-W\-N\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Failed to shut down the S\-S\-L connection \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-A\-G\-A\-I\-N} & \-: Socket is not ready for send/recv wait till it's ready and try again \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-C\-R\-L\-\_\-\-B\-A\-D\-F\-I\-L\-E} & \-: Could not load C\-R\-L file, missing or wrong format \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-S\-S\-L\-\_\-\-I\-S\-S\-U\-E\-R\-\_\-\-E\-R\-R\-O\-R} & \-: Issuer check failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-P\-R\-E\-T\-\_\-\-F\-A\-I\-L\-E\-D} & \-: A P\-R\-E\-T command failed \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-T\-S\-P\-\_\-\-C\-S\-E\-Q\-\_\-\-E\-R\-R\-O\-R} & \-: Mismatch of R\-T\-S\-P C\-Seq numbers \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-R\-T\-S\-P\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-E\-R\-R\-O\-R} & \-: Mismatch of R\-T\-S\-P Session Ids \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-F\-T\-P\-\_\-\-B\-A\-D\-\_\-\-F\-I\-L\-E\-\_\-\-L\-I\-S\-T} & \-: Unable to parse F\-T\-P file list \\
+\hline
+{\em C\-U\-R\-L\-E\-\_\-\-C\-H\-U\-N\-K\-\_\-\-F\-A\-I\-L\-E\-D} & \-: Chunk callback reported error \\
+\hline
+{\em C\-U\-R\-L\-\_\-\-L\-A\-S\-T} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Socket A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Libcurl Error Document} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Socket_8c_a89bce65fc625a53579a88101c2bf9dac_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!Socket\-Message\-Recv@{Socket\-Message\-Recv}}
+\index{Socket\-Message\-Recv@{Socket\-Message\-Recv}!Socket.c@{Socket.\-c}}
+\subsubsection[{Socket\-Message\-Recv}]{\setlength{\rightskip}{0pt plus 5cm}bool Socket\-Message\-Recv (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen, }
+\item[{String $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_a0142d2cfc1e9fe892cad2f9d2bf19f09}
+
+
+T\-C\-P/\-U\-D\-P 연결로 데이터를 수신하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 수신할 Socket 객체 \\
+\hline
+\mbox{\tt in}  & {\em msg} & 수신할 데이터를 저장할 주소 \\
+\hline
+\mbox{\tt out}  & {\em msg} & 수신한 데이터 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+T\-C\-P/\-U\-D\-P 연결로 데이터를 수신하며 이의 성공 여부를 반환한다. \par
+ 수신에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} \par
+ \doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{is\-Socket\-Accessible}{p.}{Socket_8h_aabc799937e9e7c40e65fb70e5856bf77} \par
+ \doxyref{on\-Socket\-Connect}{p.}{Socket_8h_aa91c538d1bd84f6ea61db070ea8f290f} \par
+ \doxyref{on\-Socket\-Disconnect}{p.}{Socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406} \par
+ \doxyref{Socket\-Message\-Send}{p.}{Socket_8h_ac8f8449fafaf2cb32af836eacc2dcc8a} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{Socket_8c_a0142d2cfc1e9fe892cad2f9d2bf19f09_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{Socket_8c_a0142d2cfc1e9fe892cad2f9d2bf19f09_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Socket.\-c@{Socket.\-c}!Socket\-Message\-Send@{Socket\-Message\-Send}}
+\index{Socket\-Message\-Send@{Socket\-Message\-Send}!Socket.c@{Socket.\-c}}
+\subsubsection[{Socket\-Message\-Send}]{\setlength{\rightskip}{0pt plus 5cm}bool Socket\-Message\-Send (
+\begin{DoxyParamCaption}
+\item[{Socket}]{this\-\_\-gen, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}\label{Socket_8c_ac8f8449fafaf2cb32af836eacc2dcc8a}
+
+
+T\-C\-P/\-U\-D\-P 연결로 데이터를 송신하며 이의 성공 여부를 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 데이터를 송신할 Socket 객체 \\
+\hline
+\mbox{\tt in}  & {\em msg} & 송신할 데이터 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+T\-C\-P/\-U\-D\-P 연결로 데이터를 송신하며 이의 성공 여부를 반환한다. \par
+ 송신에 성공하면 {\ttfamily true}, 실패하면 {\ttfamily false를} 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Socket}{p.}{Socket_8h_a1e1d2bbe80adb61014a4a67b3b507aae} \par
+ \doxyref{Destory\-Socket}{p.}{Socket_8h_a72ff91c23eed60f629fbae39dbce94e2} \par
+ \doxyref{is\-Socket\-Accessible}{p.}{Socket_8h_aabc799937e9e7c40e65fb70e5856bf77} \par
+ \doxyref{on\-Socket\-Connect}{p.}{Socket_8h_aa91c538d1bd84f6ea61db070ea8f290f} \par
+ \doxyref{on\-Socket\-Disconnect}{p.}{Socket_8h_a9ad6ab6f567f68b9d0fb508babc0e406} \par
+ \doxyref{Socket\-Message\-Recv}{p.}{Socket_8h_a0142d2cfc1e9fe892cad2f9d2bf19f09} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries privilege} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/privilege/internet} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{Socket_8c_ac8f8449fafaf2cb32af836eacc2dcc8a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{Socket_8c_ac8f8449fafaf2cb32af836eacc2dcc8a_icgraph}
+\end{center}
+\end{figure}
+
+

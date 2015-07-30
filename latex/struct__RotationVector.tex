@@ -1,0 +1,65 @@
+\section{Rotation\-Vector Struct Reference}
+\label{struct__RotationVector}\index{Rotation\-Vector@{Rotation\-Vector}}
+
+
+Rotation\-Vector 모듈에 대한 구조체이다. Rotation\-Vector 모듈은 Rotation\-Vector Sensor를 다양한 방식으로 제어할 수 있다.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\-h$>$}
+
+
+
+Collaboration diagram for Rotation\-Vector\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{struct__RotationVector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$ {\bfseries add\-Callback} )(Rotation\-Vector this\-\_\-gen, sensor\-\_\-callback sensor\-Callback, int timeinterval, void $\ast$data)\label{struct__RotationVector_a5c7c1ef26d4066e4b168ad0bdaa87c9c}
+
+\item 
+bool($\ast$ {\bfseries detach\-Callback} )(Rotation\-Vector this\-\_\-gen)\label{struct__RotationVector_ad95cf3aeadc994d223c58108b4c18521}
+
+\item 
+bool($\ast$ {\bfseries On} )(Rotation\-Vector this\-\_\-gen)\label{struct__RotationVector_a6c4bab80ab480bd0cb338a7b516290cc}
+
+\item 
+bool($\ast$ {\bfseries Off} )(Rotation\-Vector this\-\_\-gen)\label{struct__RotationVector_ac237d7751564daacd203f589c2da277a}
+
+\item 
+bool($\ast$ {\bfseries is\-Supported} )(Rotation\-Vector this\-\_\-gen)\label{struct__RotationVector_a461da1063b0477549abb8f3eb27e771a}
+
+\item 
+{\bf Rotation\-Vector\-\_\-data}($\ast$ {\bfseries get\-Value} )(Rotation\-Vector this\-\_\-gen)\label{struct__RotationVector_ab9137dff6865eb8ede19ef67318fdb26}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rotation\-Vector 모듈에 대한 구조체이다. Rotation\-Vector 모듈은 Rotation\-Vector Sensor를 다양한 방식으로 제어할 수 있다. 
+
+\begin{DoxyNote}{Note}
+Rotation\-Vector 모듈에 대한 구조체이다. \par
+ 구조체를 사용하기 전에 \doxyref{New\-Rotation\-Vector()}{p.}{Sensor_8h_a5feb892af05fc21bb647dd0203ce384e} 함수를 사용해야 하며 사용이 끝났을 때 \doxyref{Destroy\-Rotation\-Vector()}{p.}{Sensor_8h_a88e94d5f3af20819de0f97b12f5435b1} 함수를 꼭 사용해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Sensor part} 
+\end{DoxySeeAlso}
+\begin{DoxyPrecond}{Precondition}
+{\bfseries feature} \par
+
+\begin{DoxyItemize}
+\item {\tt http\-://tizen.\-org/feature/sensor.\-rotation\-\_\-vector} 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf Sensor.\-h}\end{DoxyCompactItemize}

@@ -1,8 +1,0 @@
-<map id="NewUltraViolet" name="NewUltraViolet">
-<area shape="rect" id="node2" href="$d1/d38/Sensor_8c.html#ae88a4f6ad9e9078a5188a603bfb8c638" title="UltraVioletOff" alt="" coords="199,5,299,33"/>
-<area shape="rect" id="node3" href="$d1/d38/Sensor_8c.html#a1c2365b2cd8c611014af58c29b4cd0b4" title="UltraVioletOn" alt="" coords="199,57,300,85"/>
-<area shape="rect" id="node4" href="$d1/d38/Sensor_8c.html#ab115bb8cdb30c9cc3171958d5fbf5342" title="addUltraVioletCallback" alt="" coords="171,109,327,137"/>
-<area shape="rect" id="node5" href="$d1/d38/Sensor_8c.html#a5fe7dc8b14714ace15c1e61f2229a0fc" title="getUltraVioletValue" alt="" coords="182,161,316,189"/>
-<area shape="rect" id="node6" href="$d1/d38/Sensor_8c.html#af0cc0227baf15db2ebcbccb183fdfa5b" title="isUltraVioletSupported" alt="" coords="172,213,326,241"/>
-<area shape="rect" id="node7" href="$d1/d38/Sensor_8c.html#aa1a46a2ffd52fc3a5d8889a59e58ce14" title="detachUltraVioletCallback" alt="" coords="162,265,336,293"/>
-</map>

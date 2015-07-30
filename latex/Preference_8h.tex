@@ -1,0 +1,877 @@
+\section{Preference.\-h File Reference}
+\label{Preference_8h}\index{Preference.\-h@{Preference.\-h}}
+
+
+Preference A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$stdalign.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dit.\-h\char`\"{}}\\*
+Include dependency graph for Preference.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{Preference_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{Preference_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Preference}
+\begin{DoxyCompactList}\small\item\em Preference 모듈에 대한 구조체이다. Preference 모듈은 다양한 형식으로 key값을 제어 할 수 있다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf Preference\-Error\-Check} (int err\-Code)
+\begin{DoxyCompactList}\small\item\em Preference A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \end{DoxyCompactList}\item 
+Preference {\bf New\-Preference} (void)
+\begin{DoxyCompactList}\small\item\em 새로운 Preference 객체를 생성한다. \end{DoxyCompactList}\item 
+void {\bf Destroy\-Preference} (Preference this\-\_\-gen)
+\begin{DoxyCompactList}\small\item\em 생성한 Preference 객체를 소멸 시킨다. \end{DoxyCompactList}\item 
+int {\bf get\-Preference\-Int} (String key, int def\-Value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference의 {\ttfamily int} 값을 반환한다. \end{DoxyCompactList}\item 
+double {\bf get\-Preference\-Double} (String key, double def\-Value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference의 {\ttfamily double} 값을 반환한다. \end{DoxyCompactList}\item 
+bool {\bf get\-Preference\-Boolean} (String key, bool def\-Value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference의 {\ttfamily boolean} 값을 반환한다. \end{DoxyCompactList}\item 
+String {\bf get\-Preference\-String} (String key, String def\-Value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference의 {\ttfamily string} 값을 반환한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Preference\-Int} (String key, int value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference에 {\ttfamily int} 값을 저장한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Preference\-Double} (String key, double value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference에 {\ttfamily double} 값을 저장한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Preference\-Boolean} (String key, bool value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference에 {\ttfamily boolean} 값을 저장한다. \end{DoxyCompactList}\item 
+bool {\bf set\-Preference\-String} (String key, String value)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference에 {\ttfamily string} 값을 저장한다. \end{DoxyCompactList}\item 
+bool {\bf Preference\-Remove} (String key)
+\begin{DoxyCompactList}\small\item\em 키 값에 대응하는 Preference의 값을 삭제한다. \end{DoxyCompactList}\item 
+bool {\bf Preference\-Clear} (void)
+\begin{DoxyCompactList}\small\item\em 모든 Preference의 값을 삭제한다. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Preference A\-P\-I 를 사용하기 위해 포함해야 하는 헤더이다. \begin{DoxyNote}{Note}
+Preference의 get Preference / set Preference / Remove / Clear 관련 Preference A\-P\-I를 제공한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\index{Preference.\-h@{Preference.\-h}!Destroy\-Preference@{Destroy\-Preference}}
+\index{Destroy\-Preference@{Destroy\-Preference}!Preference.h@{Preference.\-h}}
+\subsubsection[{Destroy\-Preference}]{\setlength{\rightskip}{0pt plus 5cm}void Destroy\-Preference (
+\begin{DoxyParamCaption}
+\item[{Preference}]{this\-\_\-gen}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4}
+
+
+생성한 Preference 객체를 소멸 시킨다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em this\-\_\-gen} & 소멸시킬 Preference 객체 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+생성한 Preference 객체를 소멸 시킨다. \par
+ Preference 객체를 사용한 후 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} 
+\end{DoxySeeAlso}
+\index{Preference.\-h@{Preference.\-h}!get\-Preference\-Boolean@{get\-Preference\-Boolean}}
+\index{get\-Preference\-Boolean@{get\-Preference\-Boolean}!Preference.h@{Preference.\-h}}
+\subsubsection[{get\-Preference\-Boolean}]{\setlength{\rightskip}{0pt plus 5cm}bool get\-Preference\-Boolean (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{bool}]{def\-Value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539}
+
+
+키 값에 대응하는 Preference의 {\ttfamily boolean} 값을 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em def\-Value} & 키 값에 대응하는 {\ttfamily boolen} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em boolen} & Preference의 {\ttfamily boolen} 값 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 {\ttfamily boolen} 값을 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!get\-Preference\-Double@{get\-Preference\-Double}}
+\index{get\-Preference\-Double@{get\-Preference\-Double}!Preference.h@{Preference.\-h}}
+\subsubsection[{get\-Preference\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double get\-Preference\-Double (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{double}]{def\-Value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a}
+
+
+키 값에 대응하는 Preference의 {\ttfamily double} 값을 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em def\-Value} & 키 값에 대응하는 {\ttfamily double} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em double} & Preference의 {\ttfamily double} 값 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 {\ttfamily double} 값을 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!get\-Preference\-Int@{get\-Preference\-Int}}
+\index{get\-Preference\-Int@{get\-Preference\-Int}!Preference.h@{Preference.\-h}}
+\subsubsection[{get\-Preference\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Preference\-Int (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{int}]{def\-Value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8}
+
+
+키 값에 대응하는 Preference의 {\ttfamily int} 값을 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em def\-Value} & 키 값에 대응하는 {\ttfamily int} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & Preference의 {\ttfamily int} 값 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 {\ttfamily int} 값을 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!get\-Preference\-String@{get\-Preference\-String}}
+\index{get\-Preference\-String@{get\-Preference\-String}!Preference.h@{Preference.\-h}}
+\subsubsection[{get\-Preference\-String}]{\setlength{\rightskip}{0pt plus 5cm}String get\-Preference\-String (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{String}]{def\-Value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_a11547ec4c79c469153d7db22e6166f92}
+
+
+키 값에 대응하는 Preference의 {\ttfamily string} 값을 반환한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em def\-Value} & 키 값에 대응하는 {\ttfamily string} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em string} & Preference의 {\ttfamily string} 값 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 {\ttfamily string} 값을 반환한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+반환된 {\ttfamily string} 값은 이후 반드시 {\itshape free()를} 통해 메모리 해제를 해야 한다. 
+\end{DoxyWarning}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{Preference_8h_a11547ec4c79c469153d7db22e6166f92_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{Preference_8h_a11547ec4c79c469153d7db22e6166f92_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!New\-Preference@{New\-Preference}}
+\index{New\-Preference@{New\-Preference}!Preference.h@{Preference.\-h}}
+\subsubsection[{New\-Preference}]{\setlength{\rightskip}{0pt plus 5cm}Preference New\-Preference (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_ac230ae82d235023850371be1c8e281fb}
+
+
+새로운 Preference 객체를 생성한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Preference} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+새로운 Preference 객체를 생성한다. \par
+ Preference 객체를 사용하기 전에 반드시 호출해야 한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+사용이 끝났을 때 \doxyref{Destroy\-Preference()}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} 함수를 꼭 사용해야 한다.
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+Preference NewPreference (\textcolor{keywordtype}{void})
+\{
+    Preference \textcolor{keyword}{this} = (Preference)malloc (\textcolor{keyword}{sizeof} (\textcolor{keyword}{struct} _Preference));
+
+    this->getInt     = getPreferenceInt;
+    this->getDouble  = getPreferenceDouble;
+    this->getBoolean = getPreferenceBoolean;
+    this->getString  = getPreferenceString;
+
+    this->setInt     = setPreferenceInt;
+    this->setDouble  = setPreferenceDouble;
+    this->setBoolean = setPreferenceBoolean;
+    this->setString  = setPreferenceString;
+
+    this->Remove = PreferenceRemove;
+    this->Clear  = PreferenceClear;
+
+    \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+\}
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Preference_8h_ac230ae82d235023850371be1c8e281fb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!Preference\-Clear@{Preference\-Clear}}
+\index{Preference\-Clear@{Preference\-Clear}!Preference.h@{Preference.\-h}}
+\subsubsection[{Preference\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}bool Preference\-Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770}
+
+
+모든 Preference의 값을 삭제한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+모든 Preference의 값을 삭제한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!Preference\-Error\-Check@{Preference\-Error\-Check}}
+\index{Preference\-Error\-Check@{Preference\-Error\-Check}!Preference.h@{Preference.\-h}}
+\subsubsection[{Preference\-Error\-Check}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Preference\-Error\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{err\-Code}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_aa9c526979121b323bb7db9707ceed2dd}
+
+
+Preference A\-P\-I에서 발생하는 Error Code들을 확인 해준다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em err\-Code} & 확인 하고자 하는 Error Code \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-N\-E} & \-: Successful \\
+\hline
+{\em P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R} & \-: Invalid parameter \\
+\hline
+{\em P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} & \-: Out of memory \\
+\hline
+{\em P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-K\-E\-Y} & \-: Required key not available \\
+\hline
+{\em P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-O\-\_\-\-E\-R\-R\-O\-R} & \-: Internal I/\-O Error \\
+\hline
+{\em D\-E\-V\-I\-C\-E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-N\-O\-T\-\_\-\-U\-N\-K\-N\-O\-W\-N} & \-: Unknown error occurred \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Preference A\-P\-I에서 발생하는 Error Code들을 확인 해준다. \par
+ Error의 내용은 Log를 통해 출력 된다. \par
+ 6가지의 Error Code들을 확인 가능 하다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+{\tt Tizen Native A\-P\-I Document -\/ Preference part} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Preference_8h_aa9c526979121b323bb7db9707ceed2dd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!Preference\-Remove@{Preference\-Remove}}
+\index{Preference\-Remove@{Preference\-Remove}!Preference.h@{Preference.\-h}}
+\subsubsection[{Preference\-Remove}]{\setlength{\rightskip}{0pt plus 5cm}bool Preference\-Remove (
+\begin{DoxyParamCaption}
+\item[{String}]{key}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8}
+
+
+키 값에 대응하는 Preference의 값을 삭제한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 값을 삭제한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!set\-Preference\-Boolean@{set\-Preference\-Boolean}}
+\index{set\-Preference\-Boolean@{set\-Preference\-Boolean}!Preference.h@{Preference.\-h}}
+\subsubsection[{set\-Preference\-Boolean}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Preference\-Boolean (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_aca395e55f92942979a28225405f4b9c5}
+
+
+키 값에 대응하는 Preference에 {\ttfamily boolean} 값을 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em value} & 키 값에 대응하는 Preference에 저장할 {\ttfamily boolean} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference에 {\ttfamily boolean} 값을 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{Preference_8h_aca395e55f92942979a28225405f4b9c5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{Preference_8h_aca395e55f92942979a28225405f4b9c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!set\-Preference\-Double@{set\-Preference\-Double}}
+\index{set\-Preference\-Double@{set\-Preference\-Double}!Preference.h@{Preference.\-h}}
+\subsubsection[{set\-Preference\-Double}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Preference\-Double (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_a3652b09662147a05969146d328e117e3}
+
+
+키 값에 대응하는 Preference에 {\ttfamily double} 값을 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em value} & 키 값에 대응하는 Preference에 저장할 {\ttfamily double} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference에 {\ttfamily double} 값을 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{Preference_8h_a3652b09662147a05969146d328e117e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{Preference_8h_a3652b09662147a05969146d328e117e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!set\-Preference\-Int@{set\-Preference\-Int}}
+\index{set\-Preference\-Int@{set\-Preference\-Int}!Preference.h@{Preference.\-h}}
+\subsubsection[{set\-Preference\-Int}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Preference\-Int (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac}
+
+
+키 값에 대응하는 Preference에 {\ttfamily int} 값을 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em value} & 키 값에 대응하는 Preference에 저장할 {\ttfamily int} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference의 {\ttfamily int} 값을 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{get\-Preference\-String}{p.}{Preference_8h_a11547ec4c79c469153d7db22e6166f92} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-String}{p.}{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Preference.\-h@{Preference.\-h}!set\-Preference\-String@{set\-Preference\-String}}
+\index{set\-Preference\-String@{set\-Preference\-String}!Preference.h@{Preference.\-h}}
+\subsubsection[{set\-Preference\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-Preference\-String (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)}\label{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5}
+
+
+키 값에 대응하는 Preference에 {\ttfamily string} 값을 저장한다. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & 키 값 \\
+\hline
+\mbox{\tt in}  & {\em value} & 키 값에 대응하는 Preference에 저장할 {\ttfamily string} 값 \\
+\hline
+\mbox{\tt out}  & {\em null} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & \par
+ 함수의 성공 여부를 반환한다. \par
+ 실패시 {\ttfamily false를} 반환하며 상세한 원인을 Log로 출력한다. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+키 값에 대응하는 Preference에 {\ttfamily string} 값을 저장한다. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{New\-Preference}{p.}{Preference_8h_ac230ae82d235023850371be1c8e281fb} \par
+ \doxyref{Destroy\-Preference}{p.}{Preference_8h_afb9b36e8c53758ed9f012b907e1a17c4} \par
+ \doxyref{get\-Preference\-Int}{p.}{Preference_8h_ae08262f971e11f2f3e79e91b653c84a8} \par
+ \doxyref{get\-Preference\-Double}{p.}{Preference_8h_a9f8b66185538105d2a28aa80d4ff5b0a} \par
+ \doxyref{get\-Preference\-Boolean}{p.}{Preference_8h_aef5f80fdfafd0672c8659f0bd503b539} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{set\-Preference\-Int}{p.}{Preference_8h_a0d4ba588abcc9bdf3fd7c91ff474a5ac} \par
+ \doxyref{set\-Preference\-Double}{p.}{Preference_8h_a3652b09662147a05969146d328e117e3} \par
+ \doxyref{set\-Preference\-Boolean}{p.}{Preference_8h_aca395e55f92942979a28225405f4b9c5} \par
+ \doxyref{Preference\-Remove}{p.}{Preference_8h_a949d1e63a73d48d921867d744d2c8aa8} \par
+ \doxyref{Preference\-Clear}{p.}{Preference_8h_acb68ce19ab0dca923aa6fb91952b4770} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{Preference_8h_ab9f664946db96a5ad8bc1a8c45dc99d5_icgraph}
+\end{center}
+\end{figure}
+
+
